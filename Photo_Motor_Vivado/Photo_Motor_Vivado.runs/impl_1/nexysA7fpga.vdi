@@ -1,0 +1,349 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  3 07:33:25 2022
+# Process ID: 16064
+# Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1
+# Command line: vivado.exe -log nexysA7fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nexysA7fpga.tcl -notrace
+# Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga.vdi
+# Journal file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nexysA7fpga.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/ece544ip_v2021'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/vivado-library-v2019.1-1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.cache/ip 
+Command: link_design -top nexysA7fpga -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PWM_0_0/embsys_PWM_0_0.dcp' for cell 'EMBSYS/PWM_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC544_0_0/embsys_PmodENC544_0_0.dcp' for cell 'EMBSYS/PmodENC544_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/embsys_PmodENC_0_0.dcp' for cell 'EMBSYS/PmodENC_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/embsys_PmodOLEDrgb_0_0.dcp' for cell 'EMBSYS/PmodOLEDrgb_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.dcp' for cell 'EMBSYS/axi_ButtonSwitch_GPIO'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0.dcp' for cell 'EMBSYS/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.dcp' for cell 'EMBSYS/axi_timebase_wdt_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0.dcp' for cell 'EMBSYS/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0.dcp' for cell 'EMBSYS/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.dcp' for cell 'EMBSYS/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_fit_timer_0_0/embsys_fit_timer_0_0.dcp' for cell 'EMBSYS/fit_timer_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.dcp' for cell 'EMBSYS/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0.dcp' for cell 'EMBSYS/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.dcp' for cell 'EMBSYS/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/embsys_nexys4io_0_0.dcp' for cell 'EMBSYS/nexys4io_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0.dcp' for cell 'EMBSYS/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.dcp' for cell 'EMBSYS/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_0_0/embsys_tier2_xbar_0_0.dcp' for cell 'EMBSYS/microblaze_0_axi_periph/tier2_xbar_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_1_0/embsys_tier2_xbar_1_0.dcp' for cell 'EMBSYS/microblaze_0_axi_periph/tier2_xbar_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_2_0/embsys_tier2_xbar_2_0.dcp' for cell 'EMBSYS/microblaze_0_axi_periph/tier2_xbar_2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xbar_0/embsys_xbar_0.dcp' for cell 'EMBSYS/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_auto_pc_0/embsys_auto_pc_0.dcp' for cell 'EMBSYS/microblaze_0_axi_periph/i02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_dlmb_v10_0/embsys_dlmb_v10_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_ilmb_v10_0/embsys_ilmb_v10_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_lmb_bram_0/embsys_lmb_bram_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.239 . Memory (MB): peak = 1146.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0.xdc] for cell 'EMBSYS/microblaze_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0.xdc] for cell 'EMBSYS/microblaze_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0_board.xdc] for cell 'EMBSYS/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0_board.xdc] for cell 'EMBSYS/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0.xdc] for cell 'EMBSYS/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0.xdc] for cell 'EMBSYS/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0.xdc] for cell 'EMBSYS/axi_timer_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0.xdc] for cell 'EMBSYS/axi_timer_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0_board.xdc] for cell 'EMBSYS/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0_board.xdc] for cell 'EMBSYS/axi_uartlite_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0.xdc] for cell 'EMBSYS/axi_uartlite_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0.xdc] for cell 'EMBSYS/axi_uartlite_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc] for cell 'EMBSYS/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1783.176 ; gain = 584.281
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc] for cell 'EMBSYS/mdm_1/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_board.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_board.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0_board.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0_board.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0.xdc] for cell 'EMBSYS/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/embsys_PmodOLEDrgb_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/embsys_PmodOLEDrgb_0_0_board.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_axi_gpio_0_0/PmodENC_axi_gpio_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_axi_gpio_0_0/PmodENC_axi_gpio_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_axi_gpio_0_0/PmodENC_axi_gpio_0_0.xdc] for cell 'EMBSYS/PmodENC_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_axi_gpio_0_0/PmodENC_axi_gpio_0_0.xdc] for cell 'EMBSYS/PmodENC_0/inst/axi_gpio_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_pmod_bridge_0_0/PmodENC_pmod_bridge_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_pmod_bridge_0_0/PmodENC_pmod_bridge_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/embsys_PmodENC_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodENC_0_0/embsys_PmodENC_0_0_board.xdc] for cell 'EMBSYS/PmodENC_0/inst'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xdc] for cell 'EMBSYS/axi_timebase_wdt_0/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xdc] for cell 'EMBSYS/axi_timebase_wdt_0/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4_board.xdc] for cell 'EMBSYS/axi_ButtonSwitch_GPIO/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4_board.xdc] for cell 'EMBSYS/axi_ButtonSwitch_GPIO/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.xdc] for cell 'EMBSYS/axi_ButtonSwitch_GPIO/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.xdc] for cell 'EMBSYS/axi_ButtonSwitch_GPIO/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xdc] for cell 'EMBSYS/xadc_wiz_0/inst'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xdc] for cell 'EMBSYS/xadc_wiz_0/inst'
+Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST Illegal to place instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST on site ILOGIC_X0Y132. The location site type (ILOGICE3) and bel type (ILOGICE3_IFF) do not match the cell type (XADC). Instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST belongs to a shape with reference instance XA_P_IBUF[1]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:149]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST Illegal to place instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST on site ILOGIC_X0Y132. The location site type (ILOGICE3) and bel type (ILOGICE3_IFF) do not match the cell type (XADC). Instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST belongs to a shape with reference instance XA_P_IBUF[1]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:150]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:151]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:152]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:153]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:154]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:155]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVDS' is not supported on 'xc7a100tcsg324-1' part. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:156]
+Finished Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc]
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_clocks.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_clocks.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:50]
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0'
+INFO: [Project 1-1715] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Generating merged BMM file for the design top 'nexysA7fpga'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1783.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 132 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 20 instances
+
+43 Infos, 3 Warnings, 8 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1783.176 ; gain = 637.078
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_N[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_P[1] expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 26 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.683 . Memory (MB): peak = 1783.176 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: b7d08b7b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.340 . Memory (MB): peak = 1783.176 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 7b6948b4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.604 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-389] Phase Retarget created 393 cells and removed 561 cells
+INFO: [Opt 31-1021] In phase Retarget, 28 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 110618bd2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.704 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-389] Phase Constant propagation created 47 cells and removed 319 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 80ae5732
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-389] Phase Sweep created 20 cells and removed 450 cells
+INFO: [Opt 31-1021] In phase Sweep, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG EMBSYS/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 42 load(s) on clock net EMBSYS/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 79b5f6af
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 79b5f6af
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: c4044ab2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.145 ; gain = 0.543
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             393  |             561  |                                             28  |
+|  Constant propagation         |              47  |             319  |                                              2  |
+|  Sweep                        |              20  |             450  |                                              2  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              2  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1962.145 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 15e70e6cb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.145 ; gain = 0.543
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 64
+Ending PowerOpt Patch Enables Task | Checksum: 15e70e6cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 2120.363 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 15e70e6cb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2120.363 ; gain = 158.219
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 15e70e6cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2120.363 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2120.363 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15e70e6cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2120.363 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 29 Warnings, 8 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2120.363 ; gain = 337.188
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2120.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file nexysA7fpga_drc_opted.rpt -pb nexysA7fpga_drc_opted.pb -rpx nexysA7fpga_drc_opted.rpx
+Command: report_drc -file nexysA7fpga_drc_opted.rpt -pb nexysA7fpga_drc_opted.pb -rpx nexysA7fpga_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC BIVC-1] Bank IO standard Vcc: Conflicting Vcc voltages in bank 15. For example, the following two ports in this bank have conflicting VCCOs:  
+XA_N[2] (LVCMOS18, requiring VCCO=1.800) and sw[0] (LVCMOS33, requiring VCCO=3.300)
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JA[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JB[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[0] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[2] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[3] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[4] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[5] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[6] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[7] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_N[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_P[1] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors, 26 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+86 Infos, 55 Warnings, 8 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  3 07:34:02 2022...

@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun  3 07:04:17 2022
+# Process ID: 27608
+# Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1
+# Command line: vivado.exe -log embsys_axi_timebase_wdt_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source embsys_axi_timebase_wdt_0_0.tcl
+# Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/embsys_axi_timebase_wdt_0_0.vds
+# Journal file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source embsys_axi_timebase_wdt_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/ece544ip_v2021'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/vivado-library-v2019.1-1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.cache/ip 
+Command: synth_design -top embsys_axi_timebase_wdt_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.938 ; gain = 30.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'embsys_axi_timebase_wdt_0_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/synth/embsys_axi_timebase_wdt_0_0.vhd:87]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_WDT_INTERVAL bound to: 30 - type: integer 
+	Parameter C_WDT_ENABLE_ONCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_WINDOW_WDT bound to: 0 - type: integer 
+	Parameter C_SST_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_COUNT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'axi_timebase_wdt_top' declared at 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:2905' bound to instance 'U0' of component 'axi_timebase_wdt_top' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/synth/embsys_axi_timebase_wdt_0_0.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'axi_timebase_wdt_top' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:2947]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_WDT_INTERVAL bound to: 30 - type: integer 
+	Parameter C_WDT_ENABLE_ONCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_WINDOW_WDT bound to: 0 - type: integer 
+	Parameter C_SST_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter C_MAX_COUNT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_timebase_wdt' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:1297]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_WDT_INTERVAL bound to: 30 - type: integer 
+	Parameter C_WDT_ENABLE_ONCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'timebase_wdt_core' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:603]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_WDT_INTERVAL bound to: 30 - type: integer 
+	Parameter C_WDT_ENABLE_ONCE bound to: 1 - type: bool 
+	Parameter C_NATIVE_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-226] default block is never used [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:625]
+INFO: [Synth 8-256] done synthesizing module 'timebase_wdt_core' (2#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:603]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timebase_wdt' (7#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:1297]
+INFO: [Synth 8-256] done synthesizing module 'axi_timebase_wdt_top' (8#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/52c7/hdl/axi_timebase_wdt_v3_0_vh_rfs.vhd:2947]
+INFO: [Synth 8-256] done synthesizing module 'embsys_axi_timebase_wdt_0_0' (9#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/synth/embsys_axi_timebase_wdt_0_0.vhd:87]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1232.605 ; gain = 91.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.605 ; gain = 91.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.605 ; gain = 91.188
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1232.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xdc] for cell 'U0'
+Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1332.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDR => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1345.086 ; gain = 12.723
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'WDT_Current_State_reg' in module 'timebase_wdt_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              resetstate |                             0001 |                               00
+             expiredonce |                             0010 |                               10
+      expiredoncedelayed |                             0100 |                               01
+            expiredtwice |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'WDT_Current_State_reg' using encoding 'one-hot' in module 'timebase_wdt_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 9     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------------+----------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                               | Depth x Width | Implemented As | 
++---------------------+----------------------------------------------------------+---------------+----------------+
+|timebase_wdt_core    | number                                                   | 32x5          | LUT            | 
+|axi_timebase_wdt_top | LEGACY_WDT.axi_timebase_wdt_i/TIMEBASE_WDT_CORE_I/number | 32x5          | LUT            | 
++---------------------+----------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1345.086 ; gain = 203.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1349.660 ; gain = 208.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     4|
+|3     |LUT2   |    13|
+|4     |LUT3   |    10|
+|5     |LUT4   |    11|
+|6     |LUT5   |    19|
+|7     |LUT6   |    65|
+|8     |MUXF7  |     2|
+|9     |FDR    |     4|
+|10    |FDRE   |   106|
+|11    |FDSE   |     6|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1349.688 ; gain = 95.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1349.688 ; gain = 208.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1349.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDR => FDRE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1364.617 ; gain = 223.199
+INFO: [Common 17-1381] The checkpoint 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/embsys_axi_timebase_wdt_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP embsys_axi_timebase_wdt_0_0, cache-ID = 686b2f7c830f8db1
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/Light_Motor_Vivado/Light_Motor_Vivado.runs/embsys_axi_timebase_wdt_0_0_synth_1/embsys_axi_timebase_wdt_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file embsys_axi_timebase_wdt_0_0_utilization_synth.rpt -pb embsys_axi_timebase_wdt_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  3 07:04:58 2022...
