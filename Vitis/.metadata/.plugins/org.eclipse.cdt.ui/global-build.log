@@ -1,34 +1,42 @@
-09:22:05 **** Clean-only build of project SolarMotorPlatform ****
-buildplatform.bat 62955 SolarMotorPlatform clean 
-XSDB Server Channel: tcfchan#8
-Cleaning the BSP for domain  - standalone_domain
-make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+Nothing to build in platform 'SolarMotorPlatform'
 
-make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
-
-make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
-
-make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
-
-make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
-
-make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
-
-make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
-
-make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
-
-make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
-
-make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
-
-make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
-
-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
-
-make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
-
-make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
-
-rm -f microblaze_0/lib/libxil.a
-
+14:08:28 **** Incremental Build of configuration Debug for project SolarServoApp ****
+make all 
+'Building file: ../src/PWMTester.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTester.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PWMTester.d" -MT"src/PWMTester.o" -o "src/PWMTester.o" "../src/PWMTester.c"
+../src/PWMTester.c: In function 'routineLoop':
+../src/PWMTester.c:613:2: warning: implicit declaration of function 'OLED_Display_Label' [-Wimplicit-function-declaration]
+  613 |  OLED_Display_Label();
+      |  ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c:638:4: warning: implicit declaration of function 'buttonHandling' [-Wimplicit-function-declaration]
+  638 |    buttonHandling();
+      |    ^~~~~~~~~~~~~~
+../src/PWMTester.c:639:4: warning: implicit declaration of function 'OLED_Display_Pulse' [-Wimplicit-function-declaration]
+  639 |    OLED_Display_Pulse();
+      |    ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c: At top level:
+../src/PWMTester.c:660:6: warning: conflicting types for 'buttonHandling'
+  660 | void buttonHandling(){
+      |      ^~~~~~~~~~~~~~
+../src/PWMTester.c:638:4: note: previous implicit declaration of 'buttonHandling' was here
+  638 |    buttonHandling();
+      |    ^~~~~~~~~~~~~~
+../src/PWMTester.c:707:6: warning: conflicting types for 'OLED_Display_Pulse'
+  707 | void OLED_Display_Pulse(){
+      |      ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c:639:4: note: previous implicit declaration of 'OLED_Display_Pulse' was here
+  639 |    OLED_Display_Pulse();
+      |    ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/PWMTester.c'
+' '
+'Building target: SolarServoApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SolarServoApp.elf"  ./src/PWMTester.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: ./src/PWMTester.o: in function `routineLoop':
+D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarServoApp\Debug/../src/PWMTester.c:613: undefined reference to `OLED_Display_Label'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: SolarServoApp.elf] Error 1
+14:08:29 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

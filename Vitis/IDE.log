@@ -20,3 +20,100 @@ Reason: No Platforms Found.
 
 
 09:11:19 INFO  : Platform repository initialization has completed.
+10:52:33 INFO  : Result from executing command 'getProjects': SolarMotorPlatform
+10:52:33 INFO  : Result from executing command 'getPlatforms': 
+11:12:55 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+11:14:53 INFO  : Bit file 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit' is generated.
+11:14:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+11:14:58 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit"
+11:15:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:37 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+11:15:37 INFO  : 'jtag frequency' command is executed.
+11:15:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+11:15:39 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit"
+11:15:39 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:39 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+11:15:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:15:39 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:40 INFO  : System reset is completed.
+11:15:43 INFO  : 'after 3000' command is executed.
+11:15:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:43 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+11:15:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+11:15:43 INFO  : Context for processor 'microblaze_0' is selected.
+11:15:43 INFO  : 'con' command is executed.
+11:15:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:15:43 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+11:38:01 INFO  : Result from executing command 'getProjects': SolarMotorPlatform
+11:38:01 INFO  : Result from executing command 'getPlatforms': SolarMotorPlatform|D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/SolarMotorPlatform.xpfm
+11:38:01 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+11:38:06 INFO  : Disconnected from the channel tcfchan#14.
+11:38:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:07 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+11:38:07 INFO  : 'jtag frequency' command is executed.
+11:38:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+11:38:10 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit"
+11:38:10 INFO  : Context for processor 'microblaze_0' is selected.
+11:38:10 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+11:38:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:38:10 INFO  : Context for processor 'microblaze_0' is selected.
+11:38:10 INFO  : System reset is completed.
+11:38:13 INFO  : 'after 3000' command is executed.
+11:38:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:38:13 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+11:38:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+11:38:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:38:13 INFO  : 'con' command is executed.
+11:38:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:38:13 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+11:48:15 INFO  : Disconnected from the channel tcfchan#16.
+13:27:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\temp_xsdb_launch_script.tcl
+13:27:24 INFO  : XSCT server has started successfully.
+13:27:24 INFO  : plnx-install-location is set to ''
+13:27:24 INFO  : Successfully done setting XSCT server connection channel  
+13:27:24 INFO  : Successfully done setting workspace for the tool. 
+13:27:25 INFO  : Platform repository initialization has completed.
+13:27:26 INFO  : Successfully done query RDI_DATADIR 
+13:27:26 INFO  : Registering command handlers for Vitis TCF services
+14:02:07 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:02:29 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:03:10 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:03:36 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:04:59 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:07:19 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+14:08:28 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SolarServoApp/src/ece544_IP_Test.c&apos;" deleteContents="false" description="Delete resource &apos;SolarServoApp/src/ece544_IP_Test.c&apos;" element1="/SolarServoApp/src/ece544_IP_Test.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1654376541456"/>
+</session>

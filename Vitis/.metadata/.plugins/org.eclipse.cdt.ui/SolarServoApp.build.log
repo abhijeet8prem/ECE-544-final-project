@@ -1,0 +1,40 @@
+14:08:28 **** Incremental Build of configuration Debug for project SolarServoApp ****
+make all 
+'Building file: ../src/PWMTester.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTester.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PWMTester.d" -MT"src/PWMTester.o" -o "src/PWMTester.o" "../src/PWMTester.c"
+../src/PWMTester.c: In function 'routineLoop':
+../src/PWMTester.c:613:2: warning: implicit declaration of function 'OLED_Display_Label' [-Wimplicit-function-declaration]
+  613 |  OLED_Display_Label();
+      |  ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c:638:4: warning: implicit declaration of function 'buttonHandling' [-Wimplicit-function-declaration]
+  638 |    buttonHandling();
+      |    ^~~~~~~~~~~~~~
+../src/PWMTester.c:639:4: warning: implicit declaration of function 'OLED_Display_Pulse' [-Wimplicit-function-declaration]
+  639 |    OLED_Display_Pulse();
+      |    ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c: At top level:
+../src/PWMTester.c:660:6: warning: conflicting types for 'buttonHandling'
+  660 | void buttonHandling(){
+      |      ^~~~~~~~~~~~~~
+../src/PWMTester.c:638:4: note: previous implicit declaration of 'buttonHandling' was here
+  638 |    buttonHandling();
+      |    ^~~~~~~~~~~~~~
+../src/PWMTester.c:707:6: warning: conflicting types for 'OLED_Display_Pulse'
+  707 | void OLED_Display_Pulse(){
+      |      ^~~~~~~~~~~~~~~~~~
+../src/PWMTester.c:639:4: note: previous implicit declaration of 'OLED_Display_Pulse' was here
+  639 |    OLED_Display_Pulse();
+      |    ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/PWMTester.c'
+' '
+'Building target: SolarServoApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SolarServoApp.elf"  ./src/PWMTester.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: ./src/PWMTester.o: in function `routineLoop':
+D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarServoApp\Debug/../src/PWMTester.c:613: undefined reference to `OLED_Display_Label'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: SolarServoApp.elf] Error 1
+
+14:08:29 Build Finished (took 345ms)
+
