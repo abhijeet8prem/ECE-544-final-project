@@ -1,0 +1,17 @@
+timestamp=[2022-06-04 08:54:43], mode=WORKBENCH_START, duration=0:00:03.535, duration_ms=3535, data={}
+timestamp=[2022-06-04 08:54:43], mode=WORKBENCH_UI_INIT, duration=0:00:00.252, duration_ms=252, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2022-06-04 08:54:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.155, duration_ms=2155, data={}
+timestamp=[2022-06-04 08:55:42], mode=PLATFORM_CREATION, duration=0:00:03.234, duration_ms=3234, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2022-06-04 08:55:57], mode=PLATFORM_GENERATION, duration=0:00:04.156, duration_ms=4156, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 08:56:17], mode=PLATFORM_GENERATION, duration=0:00:03.095, duration_ms=3095, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:11:16], mode=WORKBENCH_START, duration=0:00:03.842, duration_ms=3842, data={}
+timestamp=[2022-06-04 09:11:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.438, duration_ms=438, data={editors_count=1, platform_editors_count=1, projects_count=2, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,SolarMotorPlatform}
+timestamp=[2022-06-04 09:11:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.244, duration_ms=2244, data={}
+timestamp=[2022-06-04 09:11:26], mode=PLATFORM_GENERATION, duration=0:00:03.205, duration_ms=3205, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:11:46], mode=PLATFORM_GENERATION, duration=0:00:01.894, duration_ms=1894, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:12:00], mode=PLATFORM_GENERATION, duration=0:00:03.152, duration_ms=3152, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:12:35], mode=PLATFORM_GENERATION, duration=0:00:01.915, duration_ms=1915, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:14:29], mode=PLATFORM_GENERATION, duration=0:00:03.227, duration_ms=3227, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:20:35], mode=PLATFORM_GENERATION, duration=0:00:01.909, duration_ms=1909, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:21:37], mode=PLATFORM_GENERATION, duration=0:00:03.169, duration_ms=3169, data={name=SolarMotorPlatform}
+timestamp=[2022-06-04 09:22:07], mode=PLATFORM_GENERATION, duration=0:00:01.909, duration_ms=1909, data={name=SolarMotorPlatform}

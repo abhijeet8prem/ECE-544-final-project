@@ -1,0 +1,22 @@
+08:54:44 INFO  : Registering command handlers for Vitis TCF services
+08:54:44 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\temp_xsdb_launch_script.tcl
+08:54:46 INFO  : XSCT server has started successfully.
+08:54:46 INFO  : Platform repository initialization has completed.
+08:54:46 INFO  : plnx-install-location is set to ''
+08:54:46 INFO  : Successfully done setting XSCT server connection channel  
+08:54:46 INFO  : Successfully done query RDI_DATADIR 
+08:54:46 INFO  : Successfully done setting workspace for the tool. 
+08:55:42 INFO  : Result from executing command 'getProjects': SolarMotorPlatform
+08:55:42 INFO  : Result from executing command 'getPlatforms': 
+09:11:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\temp_xsdb_launch_script.tcl
+09:11:17 INFO  : Registering command handlers for Vitis TCF services
+09:11:17 INFO  : XSCT server has started successfully.
+09:11:17 INFO  : Successfully done setting XSCT server connection channel  
+09:11:17 INFO  : plnx-install-location is set to ''
+09:11:17 INFO  : Successfully done setting workspace for the tool. 
+09:11:17 INFO  : Successfully done query RDI_DATADIR 
+09:11:19 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+09:11:19 INFO  : Platform repository initialization has completed.

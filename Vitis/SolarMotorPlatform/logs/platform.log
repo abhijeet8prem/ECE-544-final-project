@@ -1,0 +1,1949 @@
+TRACE::2022-06-04.08:55:39::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:39::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:39::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:40::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:40::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-06-04.08:55:41::SCWPlatform::Opened new HwDB with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-06-04.08:55:41::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform"
+		}]
+}
+TRACE::2022-06-04.08:55:41::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-06-04.08:55:41::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2022-06-04.08:55:41::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform"
+		}]
+}
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:41::SCWDomain::checking for install qemu data   : 
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:41::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:41::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-06-04.08:55:41::SCWMssOS::No sw design opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::mss does not exists at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::Creating sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::Adding the swdes entry, created swdb D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss with des name D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::updating the scw layer changes to swdes at   D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::Writing mss at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:41::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.08:55:41::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-06-04.08:55:41::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-06-04.08:55:41::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.08:55:41::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Running validate of swdbs.
+KEYINFO::2022-06-04.08:55:42::SCWMssOS::Could not open the swdb for D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2022-06-04.08:55:42::SCWMssOS::Could not open the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-06-04.08:55:42::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-06-04.08:55:42::SCWMssOS::Writing the mss file completed D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-06-04.08:55:42::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.08:55:42::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.08:55:42::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.08:55:42::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.08:55:42::SCWSystem::Not a boot domain 
+LOG::2022-06-04.08:55:42::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.08:55:42::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.08:55:42::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.08:55:42::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.08:55:42::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.08:55:42::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.08:55:42::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-06-04.08:55:42::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-06-04.08:55:42::SCWMssOS::Copying to export directory.
+TRACE::2022-06-04.08:55:42::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-06-04.08:55:42::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-06-04.08:55:42::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-06-04.08:55:42::SCWSystem::Completed Processing the sysconfig SolarMotorPlatform
+LOG::2022-06-04.08:55:42::SCWPlatform::Completed generating the artifacts for system configuration SolarMotorPlatform
+TRACE::2022-06-04.08:55:42::SCWPlatform::Started preparing the platform 
+TRACE::2022-06-04.08:55:42::SCWSystem::Writing the bif file for system config SolarMotorPlatform
+TRACE::2022-06-04.08:55:42::SCWSystem::dir created 
+TRACE::2022-06-04.08:55:42::SCWSystem::Writing the bif 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Started writing the spfm file 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Completed generating the platform
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-06-04.08:55:42::SCWPlatform::updated the xpfm file.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-06-04.08:55:42::SCWPlatform::Clearing the existing platform
+TRACE::2022-06-04.08:55:42::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-06-04.08:55:42::SCWMssOS::Removing the swdes entry for  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWSystem::Clearing the domains completed.
+TRACE::2022-06-04.08:55:42::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform location is D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Removing the HwDB with name D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened new HwDB with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWReader::Active system found as  SolarMotorPlatform
+TRACE::2022-06-04.08:55:42::SCWReader::Handling sysconfig SolarMotorPlatform
+TRACE::2022-06-04.08:55:42::SCWDomain::checking for install qemu data   : 
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-06-04.08:55:42::SCWMssOS::No sw design opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::mss exists loading the mss file  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Opened the sw design from mss  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Adding the swdes entry D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-06-04.08:55:42::SCWMssOS::updating the scw layer about changes
+TRACE::2022-06-04.08:55:42::SCWMssOS::Opened the sw design.  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.08:55:42::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.08:55:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-06-04.08:55:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:42::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:42::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:42::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:42::SCWReader::No isolation master present  
+LOG::2022-06-04.08:55:54::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.08:55:54::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.08:55:54::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.08:55:54::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.08:55:54::SCWSystem::Not a boot domain 
+LOG::2022-06-04.08:55:54::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.08:55:54::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.08:55:54::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.08:55:54::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.08:55:54::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:54::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:54::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:54::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:55:54::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:55:54::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:55:54::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:55:54::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:55:54::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:54::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:54::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.08:55:54::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:55:54::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.08:55:54::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.08:55:54::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.08:55:54::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.08:55:54::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.08:55:54::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:55:54::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:55:54::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:55:54::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:55:54::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:55:54::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:55:54::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:55:54::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:55:54::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:55:54::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:55:54::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.08:55:54::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.08:55:54::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.08:55:54::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.08:55:54::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.08:55:54::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.08:55:54::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.08:55:54::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.08:55:54::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.08:55:54::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.08:55:54::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.08:55:54::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.08:55:55::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.08:55:55::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.08:55:55::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.08:55:55::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:55:55::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:55:55::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:55:55::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:55:55::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:55:55::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:55:55::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.08:55:55::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.08:55:55::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.08:55:55::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:55:56::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:55:56::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:55:56::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:55:56::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.08:55:56::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.08:55:56::SCWMssOS::tra"
+
+TRACE::2022-06-04.08:55:56::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.08:55:57::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.08:55:57::SCWSystem::Error in Processing the domain standalone_domain
+LOG::2022-06-04.08:56:15::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.08:56:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.08:56:15::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.08:56:15::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.08:56:15::SCWSystem::Not a boot domain 
+LOG::2022-06-04.08:56:15::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.08:56:15::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.08:56:15::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.08:56:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.08:56:15::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:56:15::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:56:15::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:56:15::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.08:56:15::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.08:56:15::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.08:56:15::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-06-04.08:56:15::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-06-04.08:56:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.08:56:15::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:56:15::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:56:15::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.08:56:15::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.08:56:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.08:56:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.08:56:15::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.08:56:15::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.08:56:15::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.08:56:15::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:56:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:56:15::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:56:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:56:15::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:56:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:56:15::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:56:15::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:56:15::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:56:15::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:56:15::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.08:56:15::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.08:56:15::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.08:56:15::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.08:56:15::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.08:56:15::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.08:56:15::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.08:56:15::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.08:56:15::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.08:56:15::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.08:56:15::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.08:56:15::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.08:56:15::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.08:56:15::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.08:56:15::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:56:15::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:56:15::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:56:15::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:56:15::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.08:56:15::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.08:56:15::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.08:56:15::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.08:56:16::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.08:56:16::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.08:56:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.08:56:16::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.08:56:16::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.08:56:16::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.08:56:16::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.08:56:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.08:56:17::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.08:56:17::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.08:56:17::SCWMssOS::tra"
+
+TRACE::2022-06-04.08:56:17::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.08:56:17::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.08:56:17::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2022-06-04.09:11:17::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:17::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:17::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened new HwDB with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWReader::Active system found as  SolarMotorPlatform
+TRACE::2022-06-04.09:11:19::SCWReader::Handling sysconfig SolarMotorPlatform
+TRACE::2022-06-04.09:11:19::SCWDomain::checking for install qemu data   : 
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:19::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-06-04.09:11:19::SCWMssOS::No sw design opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::mss exists loading the mss file  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::Opened the sw design from mss  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::Adding the swdes entry D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-06-04.09:11:19::SCWMssOS::updating the scw layer about changes
+TRACE::2022-06-04.09:11:19::SCWMssOS::Opened the sw design.  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-04.09:11:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-04.09:11:19::SCWMssOS::Commit changes completed.
+TRACE::2022-06-04.09:11:19::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-06-04.09:11:19::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:19::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:19::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.09:11:19::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:19::SCWReader::No isolation master present  
+LOG::2022-06-04.09:11:24::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.09:11:24::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.09:11:24::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.09:11:24::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.09:11:24::SCWSystem::Not a boot domain 
+LOG::2022-06-04.09:11:24::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.09:11:24::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.09:11:24::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.09:11:24::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.09:11:24::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:24::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:24::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:24::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:24::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:24::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:24::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:24::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:24::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:24::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.09:11:24::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:24::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.09:11:24::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.09:11:24::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.09:11:24::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.09:11:24::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.09:11:24::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:24::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:24::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:24::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:24::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:24::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:24::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:24::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:24::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:24::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:24::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:11:24::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:11:24::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:11:24::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:11:24::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.09:11:24::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.09:11:24::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.09:11:24::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.09:11:24::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:11:24::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:11:24::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:11:24::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:11:24::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:11:24::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:11:24::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:24::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:24::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:24::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:24::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:24::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:24::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:24::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:11:25::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:11:25::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:25::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:25::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:25::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:25::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:25::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.09:11:26::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:11:26::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.09:11:26::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.09:11:26::SCWMssOS::tra"
+
+TRACE::2022-06-04.09:11:26::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.09:11:26::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.09:11:26::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2022-06-04.09:11:45::SCWMssOS::cleaning the bsp 
+TRACE::2022-06-04.09:11:45::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
+
+TRACE::2022-06-04.09:11:45::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:11:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2022-06-04.09:11:46::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
+
+TRACE::2022-06-04.09:11:46::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2022-06-04.09:11:58::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.09:11:58::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.09:11:58::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.09:11:58::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.09:11:58::SCWSystem::Not a boot domain 
+LOG::2022-06-04.09:11:58::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.09:11:58::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.09:11:58::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.09:11:58::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.09:11:58::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:58::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:58::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:58::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:11:58::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:11:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:11:58::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:11:58::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:11:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:11:58::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:58::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:58::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.09:11:58::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:11:58::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.09:11:58::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.09:11:58::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.09:11:58::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.09:11:58::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.09:11:58::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:58::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:58::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:58::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:58::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:58::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:58::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:58::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:58::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:58::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:58::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:11:58::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:11:58::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:11:58::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:11:58::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.09:11:58::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.09:11:58::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.09:11:58::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.09:11:58::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:11:58::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:11:58::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:11:58::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:11:58::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:11:58::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:11:58::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:58::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:58::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:58::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:58::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:11:58::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:11:58::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:11:58::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:11:59::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:11:59::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:11:59::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:11:59::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:11:59::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:11:59::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:11:59::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.09:12:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:12:00::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.09:12:00::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.09:12:00::SCWMssOS::tra"
+
+TRACE::2022-06-04.09:12:00::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.09:12:00::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.09:12:00::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2022-06-04.09:12:34::SCWMssOS::cleaning the bsp 
+TRACE::2022-06-04.09:12:34::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2022-06-04.09:12:34::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
+
+TRACE::2022-06-04.09:12:35::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2022-06-04.09:14:27::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.09:14:27::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.09:14:27::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.09:14:27::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.09:14:27::SCWSystem::Not a boot domain 
+LOG::2022-06-04.09:14:27::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.09:14:27::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.09:14:27::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.09:14:27::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.09:14:27::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:14:27::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:14:27::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:14:27::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:14:27::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:14:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:14:27::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:14:27::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:14:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:14:27::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:14:27::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:14:27::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.09:14:27::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:14:27::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.09:14:27::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.09:14:27::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.09:14:27::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.09:14:27::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.09:14:27::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:14:27::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:14:27::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:14:27::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:14:27::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:14:27::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:14:27::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:14:27::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:14:27::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:14:27::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:14:27::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:14:27::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:14:27::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:14:27::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:14:27::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.09:14:27::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.09:14:27::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.09:14:27::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.09:14:27::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:14:27::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:14:27::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:14:27::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:14:27::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:14:27::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:14:27::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:14:27::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:14:27::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:14:27::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:14:27::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:14:27::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:14:27::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:14:27::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:14:28::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:14:28::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:14:28::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:14:28::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:14:28::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:14:28::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:14:28::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.09:14:29::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:14:29::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.09:14:29::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.09:14:29::SCWMssOS::tra"
+
+TRACE::2022-06-04.09:14:29::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.09:14:29::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.09:14:29::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2022-06-04.09:20:34::SCWMssOS::cleaning the bsp 
+TRACE::2022-06-04.09:20:34::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:20:34::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2022-06-04.09:20:35::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
+
+TRACE::2022-06-04.09:20:35::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:20:35::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2022-06-04.09:20:35::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
+
+TRACE::2022-06-04.09:20:35::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2022-06-04.09:21:35::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-04.09:21:35::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-04.09:21:35::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-04.09:21:35::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-04.09:21:35::SCWSystem::Not a boot domain 
+LOG::2022-06-04.09:21:35::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-04.09:21:35::SCWDomain::Generating domain artifcats
+TRACE::2022-06-04.09:21:35::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-04.09:21:35::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-04.09:21:35::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:21:35::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:21:35::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:21:35::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-04.09:21:35::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-04.09:21:35::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-04.09:21:35::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-04.09:21:35::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-04.09:21:35::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-04.09:21:35::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:21:35::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:21:35::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-04.09:21:35::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-04.09:21:35::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-04.09:21:35::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-04.09:21:35::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2022-06-04.09:21:35::SCWMssOS::doing bsp build ... 
+TRACE::2022-06-04.09:21:35::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make 
+TRACE::2022-06-04.09:21:35::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:21:35::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:21:35::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:21:35::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:21:35::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:21:35::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:21:35::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:21:35::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:21:35::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:21:35::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:21:35::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:21:35::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:21:35::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:21:35::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:21:35::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-06-04.09:21:35::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-06-04.09:21:35::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-06-04.09:21:35::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-06-04.09:21:35::SCWMssOS::Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-06-04.09:21:35::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-06-04.09:21:35::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/sysmon_v7_7/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:21:35::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:21:35::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-06-04.09:21:35::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-06-04.09:21:35::SCWMssOS::l -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:21:35::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:21:35::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:21:35::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:21:35::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-06-04.09:21:35::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-06-04.09:21:35::SCWMssOS:: -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-06-04.09:21:35::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-06-04.09:21:35::SCWMssOS::ll -Wextra"
+
+TRACE::2022-06-04.09:21:35::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-06-04.09:21:36::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-06-04.09:21:36::SCWMssOS::-Wextra"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Compiling PmodENC..."
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-06-04.09:21:36::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-06-04.09:21:36::SCWMssOS::all -Wextra"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PWM_v1_0/src"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2022-06-04.09:21:36::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2022-06-04.09:21:36::SCWMssOS::tra"
+
+TRACE::2022-06-04.09:21:36::SCWMssOS::"Compiling PWM..."
+
+ERROR::2022-06-04.09:21:36::SCWMssOS::Failed to build  the bsp sources for domain - standalone_domain
+ERROR::2022-06-04.09:21:36::SCWSystem::Error in Processing the domain standalone_domain
+TRACE::2022-06-04.09:22:06::SCWMssOS::cleaning the bsp 
+TRACE::2022-06-04.09:22:06::SCWMssOS::System Command Ran  D: & cd  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+TRACE::2022-06-04.09:22:06::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2022-06-04.09:22:07::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
+
+TRACE::2022-06-04.09:22:07::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+

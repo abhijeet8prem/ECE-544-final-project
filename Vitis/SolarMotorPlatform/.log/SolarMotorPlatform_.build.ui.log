@@ -1,0 +1,37 @@
+2022-06-04T09:22:05.308872400255-09:22:05 **** Clean-only build of project SolarMotorPlatform ****
+000-buildplatform.bat 62955 SolarMotorPlatform clean 
+000-XSDB Server Channel: tcfchan#8
+000-Cleaning the BSP for domain  - standalone_domain
+000-make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/gpio_v4_7/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/nexys4io_v1_0/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/PmodENC_v1_0/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/PWM_v1_0/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/sysmon_v7_7/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+000-
+000-make -C microblaze_0/libsrc/wdttb_v5_1/src -s clean 
+000-
+000-rm -f microblaze_0/lib/libxil.a
+000-
+00255-
+09:22:07 Build Finished (took 1s.864ms)
+
