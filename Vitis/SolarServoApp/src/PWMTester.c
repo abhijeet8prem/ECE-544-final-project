@@ -170,10 +170,8 @@ int AXI_Timer_initialize(void);
 int period_ms_to_RPM( int period_ms);
 int RPM_to_period_ms( int RPM);
 
-void OLED_Display_Pulse(){
-void buttonHandling(){
-
-
+void OLED_Display_Pulse();
+void buttonHandling();
 // Print Functions
 void xil_print_u8toBinary(u8 number);
 void xil_print_u8toHex(u8 number);
@@ -609,12 +607,28 @@ void routineLoop()
 		// Update Motor Inputs every 200 ticks
 		if(loopTracker%1000==0){
 			// This if statement handles changing the direction  of the motor
+			uint16_t switchStateString = NX4IO_getSwitches();
+
 
 			// Period_Global and Duty_Cycle are in terms of Microseconds
 			//  The PWM Generator is using a 100MHz Clock
 			// Multiply period of 100MHz by 100 to get period of 1MHz and by 1000 again to get to period of 1KHz or 1 millisecond
 			PWM_Set_Period(PWM_BASEADDR, 100*1000*Period_Global);
-		    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 1);
+
+			if((switchStateString & SWITCH00_MASK) == SWITCH00_MASK){
+			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 0);
+			}
+			if((switchStateString & SWITCH01_MASK) == SWITCH01_MASK){
+			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 1);
+			}
+			if((switchStateString & SWITCH02_MASK) == SWITCH02_MASK){
+			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 2);
+			}
+			if((switchStateString & SWITCH03_MASK) == SWITCH03_MASK){
+			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 3);
+			}
+
+
 		    PWM_Enable(PWM_BASEADDR);
 
 		}
@@ -654,12 +668,12 @@ void buttonHandling(){
 
 	uint16_t switchStateString = NX4IO_getSwitches();
 
-	u32 magnitude_bits = switchStateString & (SWITCH01_MASK |SWITCH02_MASK | SWITCH03_MASK);
-	if(magnitude_bits == SWITCH03_MASK){
+	u32 magnitude_bits = switchStateString & (SWITCH13_MASK |SWITCH14_MASK | SWITCH15_MASK);
+	if(magnitude_bits == SWITCH15_MASK){
 		delta_Magnitude=1000;
-	}else if(magnitude_bits == SWITCH02_MASK){
+	}else if(magnitude_bits == SWITCH14_MASK){
 		delta_Magnitude=100;
-	}else if(magnitude_bits == SWITCH01_MASK){
+	}else if(magnitude_bits == SWITCH13_MASK){
 		delta_Magnitude=10;
 	}
 	else{
@@ -682,7 +696,7 @@ void buttonHandling(){
 	}
 
 	Period_Global =Period_Global+delta_Period_Sign*delta_Magnitude;
-	DutyCycle_Global =Period_Global+delta_DutyCycle_Sign*delta_Magnitude;
+	DutyCycle_Global =DutyCycle_Global+delta_DutyCycle_Sign*delta_Magnitude;
 	if(DutyCycle_Global>Period_Global){
 		DutyCycle_Global=Period_Global;
 	}
@@ -692,12 +706,16 @@ void buttonHandling(){
 
 
 void OLED_Display_Pulse(){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 3);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "DC");
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 	PMDIO_putnum(&pmodOLEDrgb_inst, DutyCycle_Global,10);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 3);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
 
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 5);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "P");
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 	PMDIO_putnum(&pmodOLEDrgb_inst, Period_Global,10);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
