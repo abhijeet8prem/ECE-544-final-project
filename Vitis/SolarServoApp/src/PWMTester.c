@@ -48,7 +48,7 @@
 #include "PWM.h"
 #include "xintc.h"
 #include "xtmrctr.h"
-
+#include "PmodENC544.h"
 /************************** Constant Definitions ****************************/
 
 // Clock frequencies
@@ -73,10 +73,14 @@
 #define BUTTONSWITCH_GPIO_BASEADDR	XPAR_GPIO_1_BASEADDR
 #define SA_ANALYZER_BASEADDR	XPAR_SA_PWM_ANALYZER_S00_AXI_BASEADDR
 
+
+
 // Definitions for peripheral PMODENC
 #define PMODENC_DEVICE_ID		XPAR_PMODENC_0_DEVICE_ID
 #define PMODENC_BASEADDR		XPAR_PMODENC_0_AXI_LITE_GPIO_BASEADDR
 #define PMODENC_HIGHADDR		XPAR_PMODENC_0_AXI_LITE_GPIO_HIGHADDR
+
+#define PMOD_ROTARY_ENC_BASEADDR XPAR_PMODENC544_0_S00_AXI_BASEADDR
 
 //Define OLREDRGB
 #define RGBDSPLY_GPIO_BASEADDR	XPAR_PMODOLEDRGB_0_AXI_LITE_GPIO_BASEADDR
@@ -99,6 +103,7 @@
 
 // PWM
 #define PWM_BASEADDR	XPAR_PWM_0_PWM_AXI_BASEADDR
+
 
 //  Define Values to be referenced and Masks
 
@@ -165,20 +170,17 @@ int AXI_Timer_initialize(void);
 
 
 
-
-//Translation functions
-int period_ms_to_RPM( int period_ms);
-int RPM_to_period_ms( int RPM);
-
-void OLED_Display_Pulse();
+void OLED_Display_Global_DCP();
 void buttonHandling();
+void encoderHandling();
+
 // Print Functions
 void xil_print_u8toBinary(u8 number);
 void xil_print_u8toHex(u8 number);
 
 
-//7 Seg Display Function
-void routineLoop();
+
+void PWM_Tester();
 
 
 
@@ -204,7 +206,7 @@ int main(void)
 
 
 	FIT_Handler_Switch=1;
-	routineLoop();
+	PWM_Tester();
 	// blank the display digits and turn off the decimal points
 	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
@@ -265,8 +267,8 @@ int	 do_init(void)
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR, RGBDSPLY_SPI_BASEADDR);
 
 	// initialize the pmodENC and hardware
-	ENC_begin(&pmodENC_inst, PMODENC_BASEADDR);
-
+	//ENC_begin(&pmodENC_inst, PMODENC_BASEADDR);  // This is the Bad version of the Rotary Encoder Module
+	PMODENC544_initialize(PMOD_ROTARY_ENC_BASEADDR);
 	status = AXI_Timer_initialize();
 	if (status != XST_SUCCESS)
 	{
@@ -535,19 +537,7 @@ void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix)
 }
 
 
-int period_ms_to_RPM( int period_ms){
-	return (60*1000)/period_ms;
-}
-int RPM_to_period_ms( int RPM){
-	return (60*1000)/RPM;
-}
 
-int PowerFactorToRPM_Expected( int PowerFactor){
-	return ((float)PowerFactor/MAX_POWERFACTOR)*MAX_RPM;
-}
-int RPMToPowerFactor_Expected( int RPM){
-	return ((float)RPM /MAX_RPM)*MAX_POWERFACTOR;
-}
 
 
 
@@ -575,6 +565,7 @@ int RPMToPowerFactor_Expected( int RPM){
 
 void FIT_Handler(void){
 	// This handler is used to sample to Rotary input encoder PMOD and to sample the Motor Encoder
+	encoderHandling();
 }
 
 
@@ -590,7 +581,45 @@ void FIT_Handler(void){
 int Period_Global = 0;
 int DutyCycle_Global = 0;
 
-void routineLoop()
+// These two buffers will act to prevent
+//
+int ENC_Filter_Buffer=0; //
+int ENC_Filter_Input_Current=0; //
+int ENC_Filter_Input_Previous=0;
+
+
+
+// These set points determine the ratio of signals from each light sensor
+//the system changes its motor positions to attempt to achieve
+float setpoint_Light_X= 1.0;  // Fractional Value of Right/Left
+float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
+
+int verticle_Angle = 0;  // Positive value are for up facing angles and negative values are for down facing angles
+int horizontal_Angle = 0;  // Positive value are for right facing angles and negative values are for left facing angles
+
+void Light_Servo_Calculations(uint16_t signal_RightTop, uint16_t signal_RightBottom, uint16_t signal_LeftTop, uint16_t signal_LeftBottom){
+	float signal_Right=(float)((uint32_t)signal_RightTop+(uint32_t)signal_RightBottom);
+	float signal_Left=(float)((uint32_t)signal_LeftTop+(uint32_t)signal_LeftBottom);
+	float signal_Top=(float)((uint32_t)signal_RightTop+(uint32_t)signal_LeftTop);
+	float signal_Bottom=(float)((uint32_t)signal_RightBottom+(uint32_t)signal_LeftBottom);
+
+	float horizontalRatio = signal_Right/signal_Left;
+	if(horizontalRatio>setpoint_Light_X){
+		horizontal_Angle=horizontal_Angle-1;
+	} else if(horizontalRatio<setpoint_Light_X){
+		horizontal_Angle=horizontal_Angle+1;
+	}
+
+	float verticleRatio = signal_Top/signal_Bottom;
+	if(verticleRatio>setpoint_Light_Y){
+		verticle_Angle=verticle_Angle-1;
+	} else if(verticleRatio<setpoint_Light_Y){
+		verticle_Angle=verticle_Angle+1;
+	}
+}
+
+
+void PWM_Tester()
 {
 	//ROTARY ENCODER CODE
 
@@ -637,14 +666,13 @@ void routineLoop()
 		if(loopTracker%100==0){ // Change Speeds less Frequently
 
 			buttonHandling();
-			OLED_Display_Pulse();
+
+			OLED_Display_Global_DCP();
 		}
 
 		usleep(1000);
 
 	} // rotary button has been pressed - exit the loop
-
-
 
 
 	// Write one final string
@@ -656,6 +684,48 @@ void routineLoop()
 
 }
 
+
+void filter_Period_DutyCycle(){
+	if(DutyCycle_Global<0){
+		DutyCycle_Global = 0;
+	}
+	if(Period_Global<0){
+		Period_Global = 0;
+	}
+
+	if(DutyCycle_Global>Period_Global){
+		DutyCycle_Global=Period_Global;
+	}
+}
+
+
+void encoderHandling(){
+	//This function takes the data from the improved version of the encoder and uses various global variables to more properly filter the data.
+	// This function should be called in the FIT timer.
+	if(PMODENC544_isBtnPressed()){ //Reset the Encoder and our encoder filters
+		PMODENC544_clearRotaryCount();
+		ENC_Filter_Buffer=0;
+		ENC_Filter_Input_Current=0;
+		ENC_Filter_Input_Previous=0;
+	}
+
+	//The following section of code acts as a filter that prevents us from taking in data from the encoder that is more than 1 unit different from previous value
+	// This is because even the improved ENC544 IP still has problems when not turned at the exact right speed and this is an attempt to filter out those problems
+
+	ENC_Filter_Input_Current = PMODENC544_getRotaryCount();
+	int maxRotaryChange=1;
+	int rotaryChange= ENC_Filter_Input_Current-ENC_Filter_Input_Previous;
+	if(abs(rotaryChange)>maxRotaryChange){
+
+	}else{
+		ENC_Filter_Buffer= ENC_Filter_Buffer+rotaryChange; //
+	}
+
+	if((PMODENC544_getBtnSwReg() & 0x00000002)== 0x00000002) {
+		Period_Global=ENC_Filter_Buffer;
+	}
+	ENC_Filter_Input_Previous= ENC_Filter_Input_Current;
+}
 
 // This function handles updating K value using the buttons and switches and reseting RPM with the center button
 void buttonHandling(){
@@ -681,7 +751,7 @@ void buttonHandling(){
 	}
 
 	if(NX4IO_isPressed(BTNC)){ // reset Speed and Controls
-
+		DutyCycle_Global=0;
 		Period_Global=0;
 
 	} else if(NX4IO_isPressed(BTNU)){ // increment
@@ -697,28 +767,74 @@ void buttonHandling(){
 
 	Period_Global =Period_Global+delta_Period_Sign*delta_Magnitude;
 	DutyCycle_Global =DutyCycle_Global+delta_DutyCycle_Sign*delta_Magnitude;
-	if(DutyCycle_Global>Period_Global){
-		DutyCycle_Global=Period_Global;
-	}
+
+	filter_Period_DutyCycle();
 
 }
 
 
 
-void OLED_Display_Pulse(){
+void OLED_Display_Global_DCP(){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "P");
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 0);
+	PMDIO_putnum(&pmodOLEDrgb_inst, Period_Global,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
+
+
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 3);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "DC");
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 	PMDIO_putnum(&pmodOLEDrgb_inst, DutyCycle_Global,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 3);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
 
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 5);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "P");
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
-	PMDIO_putnum(&pmodOLEDrgb_inst, Period_Global,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 5);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
 }
+
+
+int queriedDutyCycle0=0;
+int queriedDutyCycle1=0;
+int queriedDutyCycle2=0;
+int queriedDutyCycle3=0;
+int queriedPeriod=0;
+
+void OLED_Write_Time_millisconds(char name[] ,int value, int row){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, name);
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
+	PMDIO_putnum(&pmodOLEDrgb_inst, value,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 8, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, " ms");
+}
+
+void OLED_Display_Queried_DutyCycleAndPeriod(){
+
+
+	queriedDutyCycle0=PWM_Get_Duty(PWM_BASEADDR, 0);
+	queriedDutyCycle1=PWM_Get_Duty(PWM_BASEADDR, 1);
+	queriedDutyCycle2=PWM_Get_Duty(PWM_BASEADDR, 2);
+	queriedDutyCycle3=PWM_Get_Duty(PWM_BASEADDR, 3);
+	queriedPeriod=PWM_Get_Period(PWM_BASEADDR);
+
+	OLED_Write_Time_millisconds("P",queriedPeriod, 0);
+	OLED_Write_Time_millisconds("D0",queriedDutyCycle0, 2);
+	OLED_Write_Time_millisconds("D1",queriedDutyCycle1, 3);
+	OLED_Write_Time_millisconds("D2",queriedDutyCycle2, 4);
+	OLED_Write_Time_millisconds("D3",queriedDutyCycle3, 5);
+
+
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "DC");
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 3, 0);
+	PMDIO_putnum(&pmodOLEDrgb_inst, DutyCycle_Global,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
+
+
+}
+PWM_Get_Duty(u32 baseAddr, u32 pwmIndex)

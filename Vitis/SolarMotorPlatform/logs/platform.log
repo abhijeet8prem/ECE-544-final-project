@@ -3096,3 +3096,206 @@ TRACE::2022-06-04.11:38:01::SCWMssOS::Checking the sw design at  D:/PSU_Work_and
 TRACE::2022-06-04.11:38:01::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2022-06-04.11:38:01::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:24::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:24::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:24::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened new HwDB with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWReader::Active system found as  SolarMotorPlatform
+TRACE::2022-06-05.11:44:26::SCWReader::Handling sysconfig SolarMotorPlatform
+TRACE::2022-06-05.11:44:26::SCWDomain::checking for install qemu data   : 
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:26::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-06-05.11:44:26::SCWMssOS::No sw design opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::mss exists loading the mss file  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::Opened the sw design from mss  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::Adding the swdes entry D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-06-05.11:44:26::SCWMssOS::updating the scw layer about changes
+TRACE::2022-06-05.11:44:26::SCWMssOS::Opened the sw design.  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-05.11:44:26::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-05.11:44:26::SCWMssOS::Commit changes completed.
+TRACE::2022-06-05.11:44:26::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-06-05.11:44:26::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:26::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:26::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:26::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:26::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-05.11:44:26::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:26::SCWReader::No isolation master present  
+LOG::2022-06-05.11:44:49::SCWPlatform::Started generating the artifacts platform SolarMotorPlatform
+TRACE::2022-06-05.11:44:49::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-06-05.11:44:49::SCWPlatform::Started generating the artifacts for system configuration SolarMotorPlatform
+LOG::2022-06-05.11:44:49::SCWSystem::Checking the domain standalone_domain
+LOG::2022-06-05.11:44:49::SCWSystem::Not a boot domain 
+LOG::2022-06-05.11:44:49::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-06-05.11:44:49::SCWDomain::Generating domain artifcats
+TRACE::2022-06-05.11:44:49::SCWMssOS::Generating standalone artifcats
+TRACE::2022-06-05.11:44:49::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:49::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-05.11:44:49::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::Completed writing the mss file at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp
+TRACE::2022-06-05.11:44:49::SCWMssOS::Mss edits present, copying mssfile into export location D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-06-05.11:44:49::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-06-05.11:44:49::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-06-05.11:44:49::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-06-05.11:44:49::SCWMssOS::Copying to export directory.
+TRACE::2022-06-05.11:44:49::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-06-05.11:44:49::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-06-05.11:44:49::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-06-05.11:44:49::SCWSystem::Completed Processing the sysconfig SolarMotorPlatform
+LOG::2022-06-05.11:44:49::SCWPlatform::Completed generating the artifacts for system configuration SolarMotorPlatform
+TRACE::2022-06-05.11:44:49::SCWPlatform::Started preparing the platform 
+TRACE::2022-06-05.11:44:49::SCWSystem::Writing the bif file for system config SolarMotorPlatform
+TRACE::2022-06-05.11:44:49::SCWSystem::dir created 
+TRACE::2022-06-05.11:44:49::SCWSystem::Writing the bif 
+TRACE::2022-06-05.11:44:49::SCWPlatform::Started writing the spfm file 
+TRACE::2022-06-05.11:44:49::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-06-05.11:44:49::SCWPlatform::Completed generating the platform
+TRACE::2022-06-05.11:44:49::SCWMssOS::Saving the mss changes D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-06-05.11:44:49::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-06-05.11:44:49::SCWMssOS::Commit changes completed.
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:49::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-05.11:44:49::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWWriter::formatted JSON is {
+	"platformName":	"SolarMotorPlatform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"SolarMotorPlatform",
+	"platHandOff":	"D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"SolarMotorPlatform",
+	"systems":	[{
+			"systemName":	"SolarMotorPlatform",
+			"systemDesc":	"SolarMotorPlatform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"SolarMotorPlatform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"bf844f2b802e64d79e12582db223c477",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-06-05.11:44:49::SCWPlatform::updated the xpfm file.
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to open the hw design at D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA given D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA absoulate path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform::DSA directory D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Platform Path D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa
+TRACE::2022-06-05.11:44:49::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-06-05.11:44:49::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Opened existing hwdb nexysA7fpga
+TRACE::2022-06-05.11:44:49::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-06-05.11:44:49::SCWMssOS::Checking the sw design at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-06-05.11:44:49::SCWMssOS::DEBUG:  swdes dump  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-06-05.11:44:49::SCWMssOS::Sw design exists and opened at  D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/microblaze_0/standalone_domain/bsp/system.mss

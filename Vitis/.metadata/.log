@@ -7348,3 +7348,3336 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-31: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-06-04 22:30:24.238
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-31: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-04 23:18:05.732
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-415
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-04 23:18:05.735
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-415
+!SESSION 2022-06-05 11:04:40.365 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-06-05 11:04:45.655
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:51.942
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:51.942
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:51.957
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:51.986
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:51.987
+!MESSAGE XSCT Command: [setws D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:52.182
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:52.182
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:52.182
+!MESSAGE XSCT command with result: [setws D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:52.184
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:04:52.185
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-05 11:05:23.364
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-05 11:05:23.365
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-06-05 11:05:23.365
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:24.591
+!MESSAGE XSCT Command: [platform read {D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\platform.spr}], Thread: Worker-13: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:24.597
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:26.440
+!MESSAGE XSCT command with result: [platform read {D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\platform.spr}], Result: [null, ]. Thread: Worker-13: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:26.440
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, ]. Thread: Worker-3: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:26.442
+!MESSAGE XSCT Command: [platform active {SolarMotorPlatform}], Thread: Worker-13: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:26.443
+!MESSAGE XSCT command with result: [platform active {SolarMotorPlatform}], Result: [null, ]. Thread: Worker-13: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.444
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.708
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.713
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.717
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.718
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.721
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 11:44:49.722
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.726
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:49.728
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:54.716
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:44:54.722
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, {"PWM_0": {"hier_name": "PWM_0",
+"type": "PWM",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"PmodENC544_0": {"hier_name": "PmodENC544_0",
+"type": "PmodENC544",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PmodENC_0": {"hier_name": "PmodENC_0",
+"type": "PmodENC",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PmodOLEDrgb_0": {"hier_name": "PmodOLEDrgb_0",
+"type": "PmodOLEDrgb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"UDRLCCCC_Concat": {"hier_name": "UDRLCCCC_Concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_ButtonSwitch_GPIO": {"hier_name": "axi_ButtonSwitch_GPIO",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timebase_wdt_0": {"hier_name": "axi_timebase_wdt_0",
+"type": "axi_timebase_wdt",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"fit_timer_0": {"hier_name": "fit_timer_0",
+"type": "fit_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xadc_wiz_0": {"hier_name": "xadc_wiz_0",
+"type": "xadc_wiz",
+"version": "3.3",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:52.243
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:52.245
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Fri Jun  3 07:04:53 2022",
+"vivado_version": "2020.2",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:52.246
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:52.248
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Result: [null, {"microblaze_0": "EMBSYS/microblaze_0:EMBSYS/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.221
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.223
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.232
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.234
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.235
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:45:54.237
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:03.354
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY org.eclipse.tcf 4 0 2022-06-05 11:46:06.030
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.068
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.069
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.461
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.464
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.469
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.469
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.481
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.504
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.527
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:06.528
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:08.722
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:09.536
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:09.541
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.741
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.745
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, {}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.745
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.774
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Result: [null, {"PWM_0": {},
+"PmodENC544_0": {},
+"PmodENC_0": {},
+"PmodOLEDrgb_0": {},
+"axi_ButtonSwitch_GPIO": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807360,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807364,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807368,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807372,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807644,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807656,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073807648,
+},
+},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741824,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741828,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741832,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741836,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742108,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742120,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742112,
+},
+},
+"axi_timebase_wdt_0": {"TWCSR0": {"description": "Control/Status Register 0",
+"address_offset": "0x00",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"EWDT2": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Watchdog Timer (Enable 2)
+This bit is read-only and is the only place to read back a value written to Bit[0] of TWCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"EWDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Watchdog Timer (Enable 1)
+This bit must be used in conjunction with the EWDT2 bit in the TWCSR1 register. Both bits must be 0 to disable the WDT.   0 - Disable WDT function if EWDT2 also equals 0   1 - Enable WDT function
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"WDS": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Watchdog Timer State
+Indicates the WDT period has expired. The wdt_reset signal is asserted if the WDT period expires again before this bit is cleared by software.
+Writing a 1 to this bit clears the watchdog timer state.
+Writing a 0 to this bit has no effect.   0 - WDT period has not expired   1 - WDT period has expired, reset occurs on next expiration
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"WRS": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Watchdog Reset Status
+Indicates the WDT reset signal was asserted. This bit is not cleared by a system reset so that it can be read after a system reset to determine if the reset was caused by a watchdog timeout.
+This bit can be cleared by applying reset to the IP (asserting the s_axi_aresetn) followed by writing 1 to this bit. Writing a 0 to this bit has no effect.   0 - WDT reset has not occurred   1 - WDT reset has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TBR": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "28",
+"desc": "Timebase Register (Most significant 28 bits)
+This read-only field contains the most significant 28 bits of the timebase register. The timebase register is mirrored here so that a single read can be used to obtain the count value and the watchdog timer state if the upper 28 bits of the timebase provide sufficient timing resolution.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1101004800,
+},
+"TWCSR1": {"description": "Control/Status Register 1",
+"address_offset": "0x04",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"EWDT2": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Watchdog Timer (Enable 2)
+This bit must be used in conjunction with the EWDT1 bit in the TWCSR0 register to disable the WDT. Both bits must be 0 to disable the WDT.
+The value of EWDT2 can be read back only in TWCSR0.   0 - Disable WDT function if EWDT1 also equals 0   1 - Enable WDT function
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1101004804,
+},
+"TBR": {"description": "Timebase Register",
+"address_offset": "0x08",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TBR": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timebase Register
+This register indicates the free-running incrementing counter value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1101004808,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101952,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101956,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101960,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101968,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101972,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101976,
+},
+},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"mdm_1": {"UART_Receive": {"description": "JTAG UART Receive Data",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_RX": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713344,
+},
+"UART_Transmit": {"description": "JTAG UART Transmit Data",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_TX": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713348,
+},
+"UART_Status": {"description": "JTAG UART Status Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has valid data:
+  0 - Receive FIFO is empty.
+  1 - Receive FIFO has valid data.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full:
+  0 - Receive FIFO is not full.
+  1 - Receive FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty:
+  0 - Transmit FIFO is not empty.
+  1 - Transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full:
+  0 - Transmit FIFO is not full.
+  1 - Transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupt is enabled:
+  0 - Interrupt is disabled.
+  1 - Interrupt is enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713352,
+},
+"UART_Control": {"description": "JTAG UART Control Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"Reset_TX_FIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO:
+  0 - Do nothing.
+  1 - Clear the transmit FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Reset_RX_FIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO:
+  0 - Do nothing.
+  1 - Clear the receive FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Clear_EXT_BRK": {"access": "write-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear the EXT_BRK signal set by JTAG:
+  0 - Do nothing.
+  1 - Clear the signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates interrupt for the MDM JTAG UART:
+  0 - Disable interrupt interrupt.
+  1 - Enable interrupt signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713356,
+},
+},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+"IVAR[1]": {"description": "Interrupt Vector Address Register 1",
+"address_offset": "0x104",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 1 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616452,
+},
+"IVAR[2]": {"description": "Interrupt Vector Address Register 2",
+"address_offset": "0x108",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 2 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616456,
+},
+"IVAR[3]": {"description": "Interrupt Vector Address Register 3",
+"address_offset": "0x10C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 3 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616460,
+},
+"IVAR[4]": {"description": "Interrupt Vector Address Register 4",
+"address_offset": "0x110",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 4 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616464,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"nexys4io_0": {},
+"xadc_wiz_0": {},
+}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.776
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.782
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Result: [null, {"PmodENC_0_AXI_LITE_GPIO": {"name": "PmodENC_0",
+"base": "0x00020000",
+"high": "0x00020FFF",
+"size": "4096",
+"slaveintf": "AXI_LITE_GPIO",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_ButtonSwitch_GPIO_S_AXI": {"name": "axi_ButtonSwitch_GPIO",
+"base": "0x40010000",
+"high": "0x4001FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mdm_1_S_AXI": {"name": "mdm_1",
+"base": "0x41400000",
+"high": "0x41400FFF",
+"size": "4096",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timebase_wdt_0_S_AXI": {"name": "axi_timebase_wdt_0",
+"base": "0x41A00000",
+"high": "0x41A0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"nexys4io_0_S00_AXI": {"name": "nexys4io_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PmodOLEDrgb_0_AXI_LITE_GPIO": {"name": "PmodOLEDrgb_0",
+"base": "0x44A10000",
+"high": "0x44A1FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE_GPIO",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PmodOLEDrgb_0_AXI_LITE_SPI": {"name": "PmodOLEDrgb_0",
+"base": "0x44A20000",
+"high": "0x44A2FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE_SPI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PmodENC544_0_S00_AXI": {"name": "PmodENC544_0",
+"base": "0x44A30000",
+"high": "0x44A3FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_0_PWM_AXI": {"name": "PWM_0",
+"base": "0x44A40000",
+"high": "0x44A4FFFF",
+"size": "65536",
+"slaveintf": "PWM_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"xadc_wiz_0_s_axi_lite": {"name": "xadc_wiz_0",
+"base": "0x44A60000",
+"high": "0x44A6FFFF",
+"size": "65536",
+"slaveintf": "s_axi_lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0001FFFF",
+"size": "131072",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.783
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.786
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.787
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.789
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Result: [null, {}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.790
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.793
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.793
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.812
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.813
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.814
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.814
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.815
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.816
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.817
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.818
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_FREQ], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.819
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.827
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.829
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.829
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.843
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.844
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.846
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.846
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.847
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.849
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.859
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.859
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.872
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.878
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.879
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.891
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.892
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.896
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.896
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.909
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.909
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.914
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.914
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.927
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.928
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.932
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.932
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.945
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.945
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.957
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.957
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.958
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.958
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.961
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.974
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.979
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.979
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.990
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:21.991
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:22.014
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:22.015
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.209
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.225
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.237
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.237
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.281
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_0]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.282
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.284
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.285
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.296
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.297
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.301
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:24.302
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.313
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.315
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.348
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.350
+!MESSAGE XSCT Command: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.511
+!MESSAGE XSCT command with result: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.607
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.619
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.620
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:46:27.649
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.137
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.140
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.140
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.143
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 11:53:25.143
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.144
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:25.145
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:30.128
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-352
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:30.147
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-352
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.173
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.177
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.178
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.185
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.186
+!MESSAGE XSCT Command: [version -server], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.187
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.187
+!MESSAGE XSCT Command: [version], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.188
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.193
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.193
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.207
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.207
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.214
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.214
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.228
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.229
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.235
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.235
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.249
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.250
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.254
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.255
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.268
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.269
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.274
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.275
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.287
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.287
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.300
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.301
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.302
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.313
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.317
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.317
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.329
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.330
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.354
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:31.355
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.550
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.563
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.575
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.575
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.583
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_0]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.584
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.585
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.586
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.596
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.597
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.600
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:33.600
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.610
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.612
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.645
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.646
+!MESSAGE XSCT Command: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.780
+!MESSAGE XSCT command with result: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.828
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.842
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.842
+!MESSAGE XSCT Command: [con], Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:53:36.853
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-3: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.816
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.818
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.818
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.821
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 11:56:22.821
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.822
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:22.823
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:29.030
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-409
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:29.049
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-409
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.063
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.071
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.072
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.083
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.085
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.085
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.086
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.086
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.090
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.090
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.107
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.108
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.112
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.112
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.124
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.124
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.129
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.129
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.140
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.141
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.145
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.145
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.157
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.157
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.163
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.163
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.177
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.178
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.195
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.196
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.198
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.208
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.212
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.212
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.224
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.225
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.257
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:30.257
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.452
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.466
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.477
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.478
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.484
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_0]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.485
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.486
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.486
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.497
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.497
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.500
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:32.500
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.508
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.510
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.538
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.539
+!MESSAGE XSCT Command: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.672
+!MESSAGE XSCT command with result: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.741
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.742
+!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 11:56:35.759
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.566
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.568
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.569
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.571
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 12:27:35.572
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.572
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:35.574
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-24: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:42.895
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-776
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:42.897
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-776
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.906
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.909
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.909
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.915
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.916
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.916
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.917
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.917
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.917
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.936
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.936
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.948
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.948
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.954
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.954
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.965
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.966
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.970
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.971
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.982
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.983
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.987
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.987
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:43.999
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.000
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.004
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.004
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.016
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.017
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.029
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.029
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.033
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.044
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.048
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.049
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.062
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.062
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.087
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:44.088
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.284
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.297
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.308
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.309
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.319
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_0]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.319
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.320
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.321
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.338
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.338
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.342
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:46.342
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.359
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.361
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.382
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.382
+!MESSAGE XSCT Command: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.516
+!MESSAGE XSCT command with result: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.562
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.580
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.581
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:27:49.712
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.760
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.763
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.763
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.765
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 12:57:10.765
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.766
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:57:10.767
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.788
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.791
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.791
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.793
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 12:59:31.793
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.794
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-31: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 12:59:31.795
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-31: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2022-06-05 13:59:28.538
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.092
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.095
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.095
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.097
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 14:20:20.098
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.098
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:20.099
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-39: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.342
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.345
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.345
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.347
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 14:20:49.348
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.348
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:49.349
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.731
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.734
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.734
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.736
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-05 14:20:59.736
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.737
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:20:59.738
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-37: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:07.243
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-1618
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:07.246
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-1618
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.255
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.260
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.270
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.270
+!MESSAGE XSCT Command: [version -server], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.272
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.273
+!MESSAGE XSCT Command: [version], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.273
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.274
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.278
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.278
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.292
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.296
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.297
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.311
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.312
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.316
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.316
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.329
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.330
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.334
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.335
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.348
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.348
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.354
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.355
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.367
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.368
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.380
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level == 0}], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.381
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.383
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.392
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.396
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292AE38CEA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.397
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.409
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.409
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.433
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:08.433
+!MESSAGE XSCT Command: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.628
+!MESSAGE XSCT command with result: [fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.642
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.655
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.656
+!MESSAGE XSCT Command: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.662
+!MESSAGE XSCT command with result: [loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_0]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.662
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.663
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.663
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.674
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.674
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.681
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:10.681
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.695
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.696
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.719
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.720
+!MESSAGE XSCT Command: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.867
+!MESSAGE XSCT command with result: [dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarServoApp/Debug/SolarServoApp.elf], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.929
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.959
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:13.960
+!MESSAGE XSCT Command: [con], Thread: Worker-32: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-05 14:21:14.085
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-32: Launching Debugger_SolarServoApp-Default
