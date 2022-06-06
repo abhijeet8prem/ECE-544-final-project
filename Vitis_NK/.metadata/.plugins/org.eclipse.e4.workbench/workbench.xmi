@@ -56,7 +56,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_pSoI9-QeEeyJ6dQ2_jkYpg" containerData="6223" selectedElement="_pSoI_OQeEeyJ6dQ2_jkYpg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_pSoI9-QeEeyJ6dQ2_jkYpg" containerData="6223" selectedElement="_pSoI-OQeEeyJ6dQ2_jkYpg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_pSoI-OQeEeyJ6dQ2_jkYpg" containerData="3825" selectedElement="_pSoI-eQeEeyJ6dQ2_jkYpg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_pSoI-eQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.editorss" containerData="8000" ref="_pSVOAOQeEeyJ6dQ2_jkYpg"/>
                 <children xsi:type="basic:PartStack" xmi:id="_pSoI-uQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.views.ContentOutlineMStack" visible="false" containerData="2000" selectedElement="_pSoI--QeEeyJ6dQ2_jkYpg">
@@ -70,7 +70,6 @@
               <children xsi:type="basic:PartSashContainer" xmi:id="_pSoI_OQeEeyJ6dQ2_jkYpg" visible="false" containerData="6175" selectedElement="_pSoI_eQeEeyJ6dQ2_jkYpg" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_pSoI_eQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.console.ConsoleViewMStack" visible="false" containerData="6000" selectedElement="_pSoI_uQeEeyJ6dQ2_jkYpg">
                   <tags>Minimized</tags>
-                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_pSoI_uQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.console.ConsoleView" ref="_pSfmEeQeEeyJ6dQ2_jkYpg" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -393,6 +392,7 @@
       <children xsi:type="basic:PartStack" xmi:id="_pSVOAeQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_7HBiYOREEeyWhL0NlKRKpg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_cSBpUOQyEey2ebremnNmRg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xparameters.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xparameters.h&quot; partName=&quot;xparameters.h&quot; title=&quot;xparameters.h&quot; tooltip=&quot;SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include/xparameters.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include/xparameters.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;34&quot; selectionOffset=&quot;22633&quot; selectionTopPixel=&quot;7260&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -416,6 +416,8 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EwFsIOT6EeyHxtNRzCkcQw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PmodENC544.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;PmodENC544.h&quot; partName=&quot;PmodENC544.h&quot; title=&quot;PmodENC544.h&quot; tooltip=&quot;SolarMotorPlatform/hw/drivers/PmodENC544_v1_0/src/PmodENC544.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SolarMotorPlatform/hw/drivers/PmodENC544_v1_0/src/PmodENC544.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;25&quot; selectionOffset=&quot;2616&quot; selectionTopPixel=&quot;766&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -485,8 +487,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_pkulkOQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -3401,7 +3401,7 @@
   <addons xmi:id="_pIOP1-QeEeyJ6dQ2_jkYpg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_pIOP2OQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_pIR6IOQeEeyJ6dQ2_jkYpg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_oezrkOVsEeycao4tTcxmSg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_pJKD4OQeEeyJ6dQ2_jkYpg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_9ET40OQgEey2ebremnNmRg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
@@ -3410,6 +3410,7 @@
   <addons xmi:id="_-l4MoeT5EeyHxtNRzCkcQw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_WuU04OVeEeyLGI5q2yTcJw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_z-PDoeVpEeyXuNHWwgaraQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_oe-DoOVsEeycao4tTcxmSg" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_pIeHYOQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_pIeHYeQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_pIeHYuQeEeyJ6dQ2_jkYpg" elementId="org.eclipse.ui.category.edit" name="Edit"/>
