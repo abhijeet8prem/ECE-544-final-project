@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654266798">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654483540">
   <File Type="BITSTR-BMM" Name="nexysA7fpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="nexysA7fpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="nexysA7fpga_timing_summary_init.rpt"/>
@@ -132,9 +132,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -162,12 +160,8 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_rst_clk_wiz_1_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_PmodOLEDrgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_PmodENC_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_timebase_wdt_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_PmodENC544_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_tier2_xbar_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_tier2_xbar_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_tier2_xbar_2_0"/>
 </GenRun>

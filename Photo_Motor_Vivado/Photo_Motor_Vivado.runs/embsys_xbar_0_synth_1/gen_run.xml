@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="embsys_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654266650">
+<GenRun Id="embsys_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654481808">
   <File Type="PA-TCL" Name="embsys_xbar_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="embsys_xbar_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="embsys_xbar_0_reports.tcl"/>
@@ -48,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.542729",
-   "Default View_TopLeft":"2659,1808",
+   "Default View_ScaleFactor":"2.32673",
+   "Default View_TopLeft":"2114,-539",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -9,7 +9,6 @@ preplace port gpio_rtl_0 -pg 1 -lvl 10 -x 3300 -y 2020 -defaultsOSRD
 preplace port uart_rtl_0 -pg 1 -lvl 10 -x 3300 -y 1180 -defaultsOSRD
 preplace port gpio_rtl_1 -pg 1 -lvl 10 -x 3300 -y 2040 -defaultsOSRD
 preplace port PmodOLEDrgb_out_0 -pg 1 -lvl 10 -x 3300 -y 1360 -defaultsOSRD
-preplace port Pmod_out_0 -pg 1 -lvl 10 -x 3300 -y 1050 -defaultsOSRD
 preplace port sysreset_n -pg 1 -lvl 0 -x -30 -y 470 -defaultsOSRD
 preplace port sysclk -pg 1 -lvl 0 -x -30 -y 780 -defaultsOSRD
 preplace port btnC_0 -pg 1 -lvl 0 -x -30 -y 1610 -defaultsOSRD
@@ -49,7 +48,6 @@ preplace inst mdm_1 -pg 1 -lvl 5 -x 1340 -y 730 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 90 -y 780 -defaultsOSRD
 preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 4 -x 950 -y 490 -defaultsOSRD
 preplace inst PmodOLEDrgb_0 -pg 1 -lvl 9 -x 3070 -y 1360 -defaultsOSRD
-preplace inst PmodENC_0 -pg 1 -lvl 9 -x 3070 -y 1050 -defaultsOSRD
 preplace inst axi_timebase_wdt_0 -pg 1 -lvl 9 -x 3070 -y 900 -defaultsOSRD
 preplace inst axi_ButtonSwitch_GPIO -pg 1 -lvl 9 -x 3070 -y 1870 -defaultsOSRD
 preplace inst UDRLCCCC_Concat -pg 1 -lvl 6 -x 1790 -y 1600 -defaultsOSRD
@@ -72,7 +70,7 @@ preplace netloc axi_timer_0_generateout0 1 8 2 2880 550 3230
 preplace netloc btnC_0_1 1 0 9 NJ 1610 NJ 1610 NJ 1610 NJ 1610 NJ 1610 1520 1760 NJ 1760 NJ 1760 2870
 preplace netloc btnL_0_1 1 0 9 NJ 1590 NJ 1590 NJ 1590 NJ 1590 NJ 1590 1540 1730 NJ 1730 NJ 1730 2860
 preplace netloc btnR_0_1 1 0 9 NJ 1490 NJ 1490 NJ 1490 NJ 1490 NJ 1490 1500 1750 2080J 1710 NJ 1710 2820
-preplace netloc btnD_0_1 1 0 9 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 1510 1740 NJ 1740 2550J 1700 2800
+preplace netloc btnD_0_1 1 0 9 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 1510 1740 NJ 1740 2540J 1700 2800
 preplace netloc btnU_0_1 1 0 9 -10J 1500 NJ 1500 NJ 1500 NJ 1500 NJ 1500 1540 1470 2030J 1570 NJ 1570 2780
 preplace netloc sw_0_1 1 0 10 NJ 1750 NJ 1750 NJ 1750 NJ 1750 NJ 1750 1490J 1770 NJ 1770 N 1770 2880 1770 3230
 preplace netloc nexys4io_0_led 1 9 1 NJ 1510
@@ -84,8 +82,8 @@ preplace netloc nexys4io_0_dp 1 9 1 NJ 1670
 preplace netloc nexys4io_0_RGB2_Blue 1 9 1 NJ 1630
 preplace netloc nexys4io_0_RGB2_Green 1 9 1 NJ 1610
 preplace netloc nexys4io_0_an 1 9 1 NJ 1690
-preplace netloc clk_wiz_1_clk_out2 1 1 8 190J 810 NJ 810 NJ 810 NJ 810 NJ 810 2040J 1580 2550 1350 N
-preplace netloc clk_wiz_1_clk_out1 1 1 8 180 620 450J 600 750 600 1180 650 1540 620 2060 1940 2550 1940 2840
+preplace netloc clk_wiz_1_clk_out2 1 1 8 190J 810 NJ 810 NJ 810 NJ 810 NJ 810 2040J 1580 2540 1350 N
+preplace netloc clk_wiz_1_clk_out1 1 1 8 180 620 450J 600 750 600 1180 650 1540 620 2060 1940 2540 1940 2840
 preplace netloc axi_gpio_1_ip2intc_irpt 1 2 8 450 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 N 340 3280
 preplace netloc xlconcat_0_dout 1 6 4 2030 1720 NJ 1720 2780 1750 3240
 preplace netloc axi_timebase_wdt_0_timebase_interrupt 1 2 8 460 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 N 350 3270
@@ -100,30 +98,28 @@ preplace netloc encA_1 1 0 8 NJ 2020 NJ 2020 NJ 2020 NJ 2020 NJ 2020 NJ 2020 NJ 
 preplace netloc encB_1 1 0 8 NJ 2040 NJ 2040 NJ 2040 NJ 2040 NJ 2040 NJ 2040 NJ 2040 N
 preplace netloc encBTN_1 1 0 8 NJ 2060 NJ 2060 NJ 2060 NJ 2060 NJ 2060 NJ 2060 NJ 2060 N
 preplace netloc encSWT_1 1 0 8 NJ 2080 NJ 2080 NJ 2080 NJ 2080 NJ 2080 NJ 2080 NJ 2080 N
-preplace netloc microblaze_0_axi_periph_M07_AXI 1 7 2 N 1080 2860
-preplace netloc axi_gpio_0_GPIO2 1 9 1 NJ 2040
-preplace netloc microblaze_0_mdm_axi 1 4 4 1190 370 NJ 370 NJ 370 2490
-preplace netloc microblaze_0_interrupt 1 5 1 1530 530n
-preplace netloc microblaze_0_intc_axi 1 4 4 1180 330 NJ 330 NJ 330 2500
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 7 2 N 1020 2870
-preplace netloc microblaze_0_axi_periph_M13_AXI 1 7 2 N 1200 2790
 preplace netloc microblaze_0_axi_periph_M15_AXI 1 6 2 2080J -590 2510
 preplace netloc microblaze_0_debug 1 5 1 1500 700n
-preplace netloc microblaze_0_axi_dp 1 6 1 2050 710n
 preplace netloc microblaze_0_axi_periph_M05_AXI 1 7 2 N 1040 2850
-preplace netloc PmodENC_0_Pmod_out 1 9 1 NJ 1050
+preplace netloc microblaze_0_axi_periph_M13_AXI 1 7 2 N 1200 2790
+preplace netloc microblaze_0_interrupt 1 5 1 1530 530n
+preplace netloc microblaze_0_intc_axi 1 4 4 1180 330 NJ 330 NJ 330 2500
+preplace netloc microblaze_0_axi_dp 1 6 1 2050 710n
+preplace netloc axi_gpio_0_GPIO2 1 9 1 NJ 2040
+preplace netloc microblaze_0_mdm_axi 1 4 4 1190 370 NJ 370 NJ 370 2490
+preplace netloc microblaze_0_axi_periph_M07_AXI 1 7 2 N 1080 2860
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 7 2 N 1020 2870
 preplace netloc axi_uartlite_0_UART 1 9 1 NJ 1180
-preplace netloc microblaze_0_axi_periph_M09_AXI 1 7 2 2530 150 N
-preplace netloc microblaze_0_dlmb_1 1 6 1 2030 560n
-preplace netloc axi_gpio_0_GPIO 1 9 1 NJ 2020
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 2 N 980 2830
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 2 2520 610 N
-preplace netloc microblaze_0_axi_periph_M12_AXI 1 7 2 2550 870 N
-preplace netloc microblaze_0_ilmb_1 1 6 1 2040 580n
 preplace netloc microblaze_0_axi_periph_M08_AXI 1 7 2 N 1100 2820
-preplace netloc microblaze_0_axi_periph_M06_AXI 1 7 2 2540 1030 N
+preplace netloc axi_gpio_0_GPIO 1 9 1 NJ 2020
+preplace netloc microblaze_0_axi_periph_M12_AXI 1 7 2 2540 870 N
+preplace netloc microblaze_0_dlmb_1 1 6 1 2030 560n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 2 2530 610 N
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 7 2 2520 150 N
 preplace netloc PmodOLEDrgb_0_PmodOLEDrgb_out 1 9 1 NJ 1360
-preplace netloc microblaze_0_axi_periph_M10_AXI 1 7 1 2540 1140n
+preplace netloc microblaze_0_ilmb_1 1 6 1 2040 580n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 2 N 980 2830
+preplace netloc microblaze_0_axi_periph_M10_AXI 1 7 1 2530 1140n
 levelinfo -pg 1 -30 90 340 630 950 1340 1790 2340 2670 3070 3300
 pagesize -pg 1 -db -bbox -sgen -150 -800 3490 2330
 "

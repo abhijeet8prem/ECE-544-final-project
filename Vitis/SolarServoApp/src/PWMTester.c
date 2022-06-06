@@ -645,16 +645,16 @@ void PWM_Tester()
 			PWM_Set_Period(PWM_BASEADDR, 100*1000*Period_Global);
 
 			if((switchStateString & SWITCH00_MASK) == SWITCH00_MASK){
-			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 0);
+			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 0);
 			}
 			if((switchStateString & SWITCH01_MASK) == SWITCH01_MASK){
-			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 1);
+			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 1);
 			}
 			if((switchStateString & SWITCH02_MASK) == SWITCH02_MASK){
-			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 2);
+			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 2);
 			}
 			if((switchStateString & SWITCH03_MASK) == SWITCH03_MASK){
-			    PWM_Set_Duty(PWM_BASEADDR, 100*1000*DutyCycle_Global, 3);
+			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 3);
 			}
 
 
@@ -693,9 +693,9 @@ void filter_Period_DutyCycle(){
 		Period_Global = 0;
 	}
 
-	if(DutyCycle_Global>Period_Global){
-		DutyCycle_Global=Period_Global;
-	}
+	//if(DutyCycle_Global>Period_Global){
+	//	DutyCycle_Global=Period_Global;
+	//}
 }
 
 
@@ -790,7 +790,7 @@ void OLED_Display_Global_DCP(){
 	PMDIO_putnum(&pmodOLEDrgb_inst, DutyCycle_Global,10);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 3);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "00us");
 
 }
 
@@ -826,15 +826,4 @@ void OLED_Display_Queried_DutyCycleAndPeriod(){
 	OLED_Write_Time_millisconds("D2",queriedDutyCycle2, 4);
 	OLED_Write_Time_millisconds("D3",queriedDutyCycle3, 5);
 
-
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "DC");
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 3, 0);
-	PMDIO_putnum(&pmodOLEDrgb_inst, DutyCycle_Global,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 0);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "ms");
-
-
 }
-PWM_Get_Duty(u32 baseAddr, u32 pwmIndex)

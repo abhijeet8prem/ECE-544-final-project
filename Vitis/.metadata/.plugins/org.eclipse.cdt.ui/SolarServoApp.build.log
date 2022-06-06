@@ -1,22 +1,21 @@
-14:20:59 **** Incremental Build of configuration Debug for project SolarServoApp ****
+00:09:45 **** Incremental Build of configuration Debug for project SolarServoApp ****
 make all 
 'Building file: ../src/PWMTester.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTester.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PWMTester.d" -MT"src/PWMTester.o" -o "src/PWMTester.o" "../src/PWMTester.c"
-../src/PWMTester.c:839:1: warning: return type defaults to 'int' [-Wimplicit-int]
-  839 | PWM_Get_Duty(u32 baseAddr, u32 pwmIndex)
-      | ^~~~~~~~~~~~
-../src/PWMTester.c:839:1: error: conflicting types for 'PWM_Get_Duty'
-In file included from ../src/PWMTester.c:48:
-D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include/PWM.h:81:5: note: previous declaration of 'PWM_Get_Duty' was here
-   81 | u32 PWM_Get_Duty(u32 baseAddr, u32 pwmIndex);
-      |     ^~~~~~~~~~~~
-../src/PWMTester.c: In function 'PWM_Get_Duty':
-../src/PWMTester.c:840: error: expected '{' at end of input
-../src/PWMTester.c:839:1: warning: control reaches end of non-void function [-Wreturn-type]
-  839 | PWM_Get_Duty(u32 baseAddr, u32 pwmIndex)
-      | ^~~~~~~~~~~~
-make: *** [src/subdir.mk:26: src/PWMTester.o] Error 1
+'Finished building: ../src/PWMTester.c'
+' '
+'Building target: SolarServoApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SolarServoApp.elf"  ./src/PWMTester.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SolarServoApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21520	    396	   3740	  25656	   6438	SolarServoApp.elf
+'Finished building: SolarServoApp.elf.size'
+' '
 
-14:20:59 Build Finished (took 151ms)
+00:09:46 Build Finished (took 412ms)
 

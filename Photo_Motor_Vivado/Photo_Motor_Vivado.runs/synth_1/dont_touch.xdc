@@ -63,9 +63,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_rst_
 # IP: bd/embsys/ip/embsys_PmodOLEDrgb_0_0/embsys_PmodOLEDrgb_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PmodOLEDrgb_0_0 || ORIG_REF_NAME==embsys_PmodOLEDrgb_0_0} -quiet] -quiet
 
-# IP: bd/embsys/ip/embsys_PmodENC_0_0/embsys_PmodENC_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PmodENC_0_0 || ORIG_REF_NAME==embsys_PmodENC_0_0} -quiet] -quiet
-
 # IP: bd/embsys/ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_axi_timebase_wdt_0_0 || ORIG_REF_NAME==embsys_axi_timebase_wdt_0_0} -quiet] -quiet
 
@@ -99,4 +96,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier
 # IP: bd/embsys/ip/embsys_auto_pc_0/embsys_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_auto_pc_0 || ORIG_REF_NAME==embsys_auto_pc_0} -quiet] -quiet
 
-# XDC: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/embsys_ooc.xdc
+# XDC: d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/embsys_ooc.xdc

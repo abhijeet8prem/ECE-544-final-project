@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Fri Jun  3 07:30:44 2022
+//Date        : Sun Jun  5 19:16:44 2022
 //Host        : BACCHUS running 64-bit major release  (build 9200)
 //Command     : generate_target embsys_wrapper.bd
 //Design      : embsys_wrapper
@@ -19,14 +19,6 @@ module embsys_wrapper
     PmodOLEDrgb_out_0_pin7_io,
     PmodOLEDrgb_out_0_pin8_io,
     PmodOLEDrgb_out_0_pin9_io,
-    Pmod_out_0_pin10_io,
-    Pmod_out_0_pin1_io,
-    Pmod_out_0_pin2_io,
-    Pmod_out_0_pin3_io,
-    Pmod_out_0_pin4_io,
-    Pmod_out_0_pin7_io,
-    Pmod_out_0_pin8_io,
-    Pmod_out_0_pin9_io,
     RGB1_Blue_0,
     RGB1_Green_0,
     RGB1_Red_0,
@@ -64,14 +56,6 @@ module embsys_wrapper
   inout PmodOLEDrgb_out_0_pin7_io;
   inout PmodOLEDrgb_out_0_pin8_io;
   inout PmodOLEDrgb_out_0_pin9_io;
-  inout Pmod_out_0_pin10_io;
-  inout Pmod_out_0_pin1_io;
-  inout Pmod_out_0_pin2_io;
-  inout Pmod_out_0_pin3_io;
-  inout Pmod_out_0_pin4_io;
-  inout Pmod_out_0_pin7_io;
-  inout Pmod_out_0_pin8_io;
-  inout Pmod_out_0_pin9_io;
   output RGB1_Blue_0;
   output RGB1_Green_0;
   output RGB1_Red_0;
@@ -134,38 +118,6 @@ module embsys_wrapper
   wire PmodOLEDrgb_out_0_pin9_io;
   wire PmodOLEDrgb_out_0_pin9_o;
   wire PmodOLEDrgb_out_0_pin9_t;
-  wire Pmod_out_0_pin10_i;
-  wire Pmod_out_0_pin10_io;
-  wire Pmod_out_0_pin10_o;
-  wire Pmod_out_0_pin10_t;
-  wire Pmod_out_0_pin1_i;
-  wire Pmod_out_0_pin1_io;
-  wire Pmod_out_0_pin1_o;
-  wire Pmod_out_0_pin1_t;
-  wire Pmod_out_0_pin2_i;
-  wire Pmod_out_0_pin2_io;
-  wire Pmod_out_0_pin2_o;
-  wire Pmod_out_0_pin2_t;
-  wire Pmod_out_0_pin3_i;
-  wire Pmod_out_0_pin3_io;
-  wire Pmod_out_0_pin3_o;
-  wire Pmod_out_0_pin3_t;
-  wire Pmod_out_0_pin4_i;
-  wire Pmod_out_0_pin4_io;
-  wire Pmod_out_0_pin4_o;
-  wire Pmod_out_0_pin4_t;
-  wire Pmod_out_0_pin7_i;
-  wire Pmod_out_0_pin7_io;
-  wire Pmod_out_0_pin7_o;
-  wire Pmod_out_0_pin7_t;
-  wire Pmod_out_0_pin8_i;
-  wire Pmod_out_0_pin8_io;
-  wire Pmod_out_0_pin8_o;
-  wire Pmod_out_0_pin8_t;
-  wire Pmod_out_0_pin9_i;
-  wire Pmod_out_0_pin9_io;
-  wire Pmod_out_0_pin9_o;
-  wire Pmod_out_0_pin9_t;
   wire RGB1_Blue_0;
   wire RGB1_Green_0;
   wire RGB1_Red_0;
@@ -235,46 +187,6 @@ module embsys_wrapper
         .IO(PmodOLEDrgb_out_0_pin9_io),
         .O(PmodOLEDrgb_out_0_pin9_i),
         .T(PmodOLEDrgb_out_0_pin9_t));
-  IOBUF Pmod_out_0_pin10_iobuf
-       (.I(Pmod_out_0_pin10_o),
-        .IO(Pmod_out_0_pin10_io),
-        .O(Pmod_out_0_pin10_i),
-        .T(Pmod_out_0_pin10_t));
-  IOBUF Pmod_out_0_pin1_iobuf
-       (.I(Pmod_out_0_pin1_o),
-        .IO(Pmod_out_0_pin1_io),
-        .O(Pmod_out_0_pin1_i),
-        .T(Pmod_out_0_pin1_t));
-  IOBUF Pmod_out_0_pin2_iobuf
-       (.I(Pmod_out_0_pin2_o),
-        .IO(Pmod_out_0_pin2_io),
-        .O(Pmod_out_0_pin2_i),
-        .T(Pmod_out_0_pin2_t));
-  IOBUF Pmod_out_0_pin3_iobuf
-       (.I(Pmod_out_0_pin3_o),
-        .IO(Pmod_out_0_pin3_io),
-        .O(Pmod_out_0_pin3_i),
-        .T(Pmod_out_0_pin3_t));
-  IOBUF Pmod_out_0_pin4_iobuf
-       (.I(Pmod_out_0_pin4_o),
-        .IO(Pmod_out_0_pin4_io),
-        .O(Pmod_out_0_pin4_i),
-        .T(Pmod_out_0_pin4_t));
-  IOBUF Pmod_out_0_pin7_iobuf
-       (.I(Pmod_out_0_pin7_o),
-        .IO(Pmod_out_0_pin7_io),
-        .O(Pmod_out_0_pin7_i),
-        .T(Pmod_out_0_pin7_t));
-  IOBUF Pmod_out_0_pin8_iobuf
-       (.I(Pmod_out_0_pin8_o),
-        .IO(Pmod_out_0_pin8_io),
-        .O(Pmod_out_0_pin8_i),
-        .T(Pmod_out_0_pin8_t));
-  IOBUF Pmod_out_0_pin9_iobuf
-       (.I(Pmod_out_0_pin9_o),
-        .IO(Pmod_out_0_pin9_io),
-        .O(Pmod_out_0_pin9_i),
-        .T(Pmod_out_0_pin9_t));
   embsys embsys_i
        (.PWM(PWM),
         .PmodOLEDrgb_out_0_pin10_i(PmodOLEDrgb_out_0_pin10_i),
@@ -301,30 +213,6 @@ module embsys_wrapper
         .PmodOLEDrgb_out_0_pin9_i(PmodOLEDrgb_out_0_pin9_i),
         .PmodOLEDrgb_out_0_pin9_o(PmodOLEDrgb_out_0_pin9_o),
         .PmodOLEDrgb_out_0_pin9_t(PmodOLEDrgb_out_0_pin9_t),
-        .Pmod_out_0_pin10_i(Pmod_out_0_pin10_i),
-        .Pmod_out_0_pin10_o(Pmod_out_0_pin10_o),
-        .Pmod_out_0_pin10_t(Pmod_out_0_pin10_t),
-        .Pmod_out_0_pin1_i(Pmod_out_0_pin1_i),
-        .Pmod_out_0_pin1_o(Pmod_out_0_pin1_o),
-        .Pmod_out_0_pin1_t(Pmod_out_0_pin1_t),
-        .Pmod_out_0_pin2_i(Pmod_out_0_pin2_i),
-        .Pmod_out_0_pin2_o(Pmod_out_0_pin2_o),
-        .Pmod_out_0_pin2_t(Pmod_out_0_pin2_t),
-        .Pmod_out_0_pin3_i(Pmod_out_0_pin3_i),
-        .Pmod_out_0_pin3_o(Pmod_out_0_pin3_o),
-        .Pmod_out_0_pin3_t(Pmod_out_0_pin3_t),
-        .Pmod_out_0_pin4_i(Pmod_out_0_pin4_i),
-        .Pmod_out_0_pin4_o(Pmod_out_0_pin4_o),
-        .Pmod_out_0_pin4_t(Pmod_out_0_pin4_t),
-        .Pmod_out_0_pin7_i(Pmod_out_0_pin7_i),
-        .Pmod_out_0_pin7_o(Pmod_out_0_pin7_o),
-        .Pmod_out_0_pin7_t(Pmod_out_0_pin7_t),
-        .Pmod_out_0_pin8_i(Pmod_out_0_pin8_i),
-        .Pmod_out_0_pin8_o(Pmod_out_0_pin8_o),
-        .Pmod_out_0_pin8_t(Pmod_out_0_pin8_t),
-        .Pmod_out_0_pin9_i(Pmod_out_0_pin9_i),
-        .Pmod_out_0_pin9_o(Pmod_out_0_pin9_o),
-        .Pmod_out_0_pin9_t(Pmod_out_0_pin9_t),
         .RGB1_Blue_0(RGB1_Blue_0),
         .RGB1_Green_0(RGB1_Green_0),
         .RGB1_Red_0(RGB1_Red_0),
