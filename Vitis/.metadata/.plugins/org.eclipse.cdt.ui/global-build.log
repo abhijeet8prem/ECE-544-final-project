@@ -21,3 +21,11 @@ mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
 00:09:46 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+Nothing to build in platform 'SolarMotorPlatform'
+
+00:30:59 **** Incremental Build of configuration Debug for project SolarServoApp ****
+make all 
+make: Nothing to be done for 'all'.
+00:31:00 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
