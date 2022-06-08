@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon May 30 22:37:27 2022
+-- Date        : Wed Jun  8 13:04:02 2022
 -- Host        : BACCHUS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top embsys_PWM_0_0 -prefix
---               embsys_PWM_0_0_ embsys_PWM_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PWM_0_0/embsys_PWM_0_0_sim_netlist.vhdl
 -- Design      : embsys_PWM_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -44,6 +44,8 @@ entity embsys_PWM_0_0_PWM_AXI is
     pwm_axi_awvalid : in STD_LOGIC;
     pwm_axi_wvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_PWM_0_0_PWM_AXI : entity is "PWM_AXI";
 end embsys_PWM_0_0_PWM_AXI;
 
 architecture STRUCTURE of embsys_PWM_0_0_PWM_AXI is
@@ -6018,6 +6020,8 @@ entity embsys_PWM_0_0_PWM_v2_0 is
     pwm_axi_bready : in STD_LOGIC;
     pwm_axi_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_PWM_0_0_PWM_v2_0 : entity is "PWM_v2_0";
 end embsys_PWM_0_0_PWM_v2_0;
 
 architecture STRUCTURE of embsys_PWM_0_0_PWM_v2_0 is

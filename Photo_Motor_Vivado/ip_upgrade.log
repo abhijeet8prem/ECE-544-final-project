@@ -1,0 +1,16 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Jun  8 13:03:05 2022
+| Host         : BACCHUS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'embsys_PWM_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of embsys_PWM_0_0 (digilentinc.com:IP:PWM:2.0 (Rev. 10)) to Vivado generation flows.
+

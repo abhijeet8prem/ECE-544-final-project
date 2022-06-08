@@ -9,14 +9,15 @@ RELEASEDIR=../../../lib
 INCLUDEDIR=../../../include
 INCLUDES=-I./. -I${INCLUDEDIR}
 
-INCLUDEFILES=*.h
-LIBSOURCES=*.c
-OUTS = *.o
+INCLUDEFILES=$(wildcard *.h)
+LIBSOURCES=$(wildcard *.c)
+OBJECTS =	$(addsuffix .o, $(basename $(wildcard *.c)))
+ASSEMBLY_OBJECTS  = $(addsuffix .o, $(basename $(wildcard *.S)))
 
 libs:
 	echo "Compiling PWM..."
 	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
-	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OUTS}
+	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS} ${ASSEMBLY_OBJECTS}
 	make clean
 
 include:

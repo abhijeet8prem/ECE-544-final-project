@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -142,6 +142,12 @@ set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbo
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.xdc]
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_1_0/embsys_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_1_0/embsys_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_1_0/embsys_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0.xdc]
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_0_0/embsys_tier2_xbar_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_1_0/embsys_tier2_xbar_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_2_0/embsys_tier2_xbar_2_0_ooc.xdc]

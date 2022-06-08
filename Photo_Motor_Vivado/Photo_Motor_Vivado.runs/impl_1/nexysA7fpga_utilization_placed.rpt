@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jun  8 11:05:52 2022
+| Date         : Wed Jun  8 13:12:35 2022
 | Host         : BACCHUS running 64-bit major release  (build 9200)
 | Command      : report_utilization -file nexysA7fpga_utilization_placed.rpt -pb nexysA7fpga_utilization_placed.pb
 | Design       : nexysA7fpga
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 3801 |     0 |     63400 |  6.00 |
-|   LUT as Logic             | 3595 |     0 |     63400 |  5.67 |
+| Slice LUTs                 | 4006 |     0 |     63400 |  6.32 |
+|   LUT as Logic             | 3800 |     0 |     63400 |  5.99 |
 |   LUT as Memory            |  206 |     0 |     19000 |  1.08 |
 |     LUT as Distributed RAM |  112 |     0 |           |       |
 |     LUT as Shift Register  |   94 |     0 |           |       |
-| Slice Registers            | 5011 |     0 |    126800 |  3.95 |
-|   Register as Flip Flop    | 5010 |     0 |    126800 |  3.95 |
+| Slice Registers            | 5240 |     0 |    126800 |  4.13 |
+|   Register as Flip Flop    | 5239 |     0 |    126800 |  4.13 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
 |   Register as AND/OR       |    1 |     0 |    126800 | <0.01 |
 | F7 Muxes                   |  183 |     0 |     31700 |  0.58 |
@@ -59,8 +59,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 6     |          Yes |           - |          Set |
 | 71    |          Yes |           - |        Reset |
-| 149   |          Yes |         Set |            - |
-| 4785  |          Yes |       Reset |            - |
+| 168   |          Yes |         Set |            - |
+| 4995  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -70,13 +70,13 @@ Table of Contents
 +--------------------------------------------+------+-------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Available | Util% |
 +--------------------------------------------+------+-------+-----------+-------+
-| Slice                                      | 1705 |     0 |     15850 | 10.76 |
-|   SLICEL                                   | 1231 |     0 |           |       |
-|   SLICEM                                   |  474 |     0 |           |       |
-| LUT as Logic                               | 3595 |     0 |     63400 |  5.67 |
+| Slice                                      | 1787 |     0 |     15850 | 11.27 |
+|   SLICEL                                   | 1254 |     0 |           |       |
+|   SLICEM                                   |  533 |     0 |           |       |
+| LUT as Logic                               | 3800 |     0 |     63400 |  5.99 |
 |   using O5 output only                     |    1 |       |           |       |
-|   using O6 output only                     | 2720 |       |           |       |
-|   using O5 and O6                          |  874 |       |           |       |
+|   using O6 output only                     | 2875 |       |           |       |
+|   using O5 and O6                          |  924 |       |           |       |
 | LUT as Memory                              |  206 |     0 |     19000 |  1.08 |
 |   LUT as Distributed RAM                   |  112 |     0 |           |       |
 |     using O5 output only                   |    0 |       |           |       |
@@ -86,12 +86,12 @@ Table of Contents
 |     using O5 output only                   |    8 |       |           |       |
 |     using O6 output only                   |   42 |       |           |       |
 |     using O5 and O6                        |   44 |       |           |       |
-| Slice Registers                            | 5011 |     0 |    126800 |  3.95 |
-|   Register driven from within the Slice    | 2140 |       |           |       |
-|   Register driven from outside the Slice   | 2871 |       |           |       |
-|     LUT in front of the register is unused | 2101 |       |           |       |
-|     LUT in front of the register is used   |  770 |       |           |       |
-| Unique Control Sets                        |  300 |       |     15850 |  1.89 |
+| Slice Registers                            | 5240 |     0 |    126800 |  4.13 |
+|   Register driven from within the Slice    | 2278 |       |           |       |
+|   Register driven from outside the Slice   | 2962 |       |           |       |
+|     LUT in front of the register is unused | 2163 |       |           |       |
+|     LUT in front of the register is used   |  799 |       |           |       |
+| Unique Control Sets                        |  315 |       |     15850 |  1.99 |
 +--------------------------------------------+------+-------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
 
@@ -126,9 +126,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   87 |    87 |       210 | 41.43 |
-|   IOB Master Pads           |   43 |       |           |       |
-|   IOB Slave Pads            |   39 |       |           |       |
+| Bonded IOB                  |   91 |    91 |       210 | 43.33 |
+|   IOB Master Pads           |   45 |       |           |       |
+|   IOB Slave Pads            |   41 |       |           |       |
 |   IOB Flip Flops            |    1 |     1 |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
@@ -186,24 +186,24 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       | 4785 |        Flop & Latch |
-| LUT6       | 1307 |                 LUT |
-| LUT5       | 1079 |                 LUT |
-| LUT4       |  916 |                 LUT |
-| LUT3       |  612 |                 LUT |
-| LUT2       |  482 |                 LUT |
+| FDRE       | 4995 |        Flop & Latch |
+| LUT6       | 1450 |                 LUT |
+| LUT5       | 1103 |                 LUT |
+| LUT4       |  937 |                 LUT |
+| LUT3       |  655 |                 LUT |
+| LUT2       |  502 |                 LUT |
 | RAMD32     |  184 |  Distributed Memory |
 | MUXF7      |  183 |               MuxFx |
 | CARRY4     |  176 |          CarryLogic |
-| FDSE       |  149 |        Flop & Latch |
+| FDSE       |  168 |        Flop & Latch |
 | SRL16E     |  131 |  Distributed Memory |
-| LUT1       |   73 |                 LUT |
+| LUT1       |   77 |                 LUT |
 | FDCE       |   71 |        Flop & Latch |
 | OBUF       |   55 |                  IO |
 | RAMS32     |   40 |  Distributed Memory |
+| IBUF       |   36 |                  IO |
 | RAMB36E1   |   32 |        Block Memory |
 | MUXF8      |   32 |               MuxFx |
-| IBUF       |   32 |                  IO |
 | SRLC16E    |    7 |  Distributed Memory |
 | FDPE       |    6 |        Flop & Latch |
 | BUFG       |    5 |               Clock |
@@ -225,35 +225,37 @@ Table of Contents
 10. Instantiated Netlists
 -------------------------
 
-+--------------------------------+------+
-|            Ref Name            | Used |
-+--------------------------------+------+
-| embsys_xbar_0                  |    1 |
-| embsys_xadc_wiz_0_0            |    1 |
-| embsys_tier2_xbar_2_0          |    1 |
-| embsys_tier2_xbar_1_0          |    1 |
-| embsys_tier2_xbar_0_0          |    1 |
-| embsys_rst_clk_wiz_1_100M_0    |    1 |
-| embsys_nexys4io_0_0            |    1 |
-| embsys_microblaze_0_axi_intc_0 |    1 |
-| embsys_microblaze_0_0          |    1 |
-| embsys_mdm_1_0                 |    1 |
-| embsys_lmb_bram_0              |    1 |
-| embsys_ilmb_v10_0              |    1 |
-| embsys_ilmb_bram_if_cntlr_0    |    1 |
-| embsys_fit_timer_0_0           |    1 |
-| embsys_dlmb_v10_0              |    1 |
-| embsys_dlmb_bram_if_cntlr_0    |    1 |
-| embsys_clk_wiz_1_0             |    1 |
-| embsys_axi_uartlite_0_0        |    1 |
-| embsys_axi_timer_0_0           |    1 |
-| embsys_axi_timebase_wdt_0_0    |    1 |
-| embsys_axi_gpio_0_4            |    1 |
-| embsys_axi_gpio_0_0            |    1 |
-| embsys_auto_pc_0               |    1 |
-| embsys_PmodOLEDrgb_0_0         |    1 |
-| embsys_PmodENC544_0_0          |    1 |
-| embsys_PWM_0_0                 |    1 |
-+--------------------------------+------+
++---------------------------------+------+
+|             Ref Name            | Used |
++---------------------------------+------+
+| embsys_xbar_0                   |    1 |
+| embsys_xadc_wiz_0_0             |    1 |
+| embsys_tier2_xbar_2_0           |    1 |
+| embsys_tier2_xbar_1_0           |    1 |
+| embsys_tier2_xbar_0_0           |    1 |
+| embsys_rst_clk_wiz_1_100M_0     |    1 |
+| embsys_nexys4io_0_0             |    1 |
+| embsys_microblaze_0_axi_intc_0  |    1 |
+| embsys_microblaze_0_0           |    1 |
+| embsys_mdm_1_0                  |    1 |
+| embsys_lmb_bram_0               |    1 |
+| embsys_ilmb_v10_0               |    1 |
+| embsys_ilmb_bram_if_cntlr_0     |    1 |
+| embsys_fit_timer_0_0            |    1 |
+| embsys_dlmb_v10_0               |    1 |
+| embsys_dlmb_bram_if_cntlr_0     |    1 |
+| embsys_clk_wiz_1_0              |    1 |
+| embsys_axi_uartlite_0_0         |    1 |
+| embsys_axi_timer_0_0            |    1 |
+| embsys_axi_timebase_wdt_0_0     |    1 |
+| embsys_axi_gpio_XADC_Data_Out_0 |    1 |
+| embsys_axi_gpio_1_0             |    1 |
+| embsys_axi_gpio_0_4             |    1 |
+| embsys_axi_gpio_0_0             |    1 |
+| embsys_auto_pc_0                |    1 |
+| embsys_PmodOLEDrgb_0_0          |    1 |
+| embsys_PmodENC544_0_0           |    1 |
+| embsys_PWM_0_0                  |    1 |
++---------------------------------+------+
 
 

@@ -1,12 +1,8 @@
-06:46:13 **** Incremental Build of configuration Debug for project SolarServoApp ****
+15:05:26 **** Incremental Build of configuration Debug for project SolarServoApp ****
 make all 
 'Building file: ../src/PWMTester.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTester.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PWMTester.d" -MT"src/PWMTester.o" -o "src/PWMTester.o" "../src/PWMTester.c"
-../src/PWMTester.c: In function 'LightFollow':
-../src/PWMTester.c:639:13: warning: unused variable 'switchStateString' [-Wunused-variable]
-  639 |    uint16_t switchStateString = NX4IO_getSwitches();
-      |             ^~~~~~~~~~~~~~~~~
 'Finished building: ../src/PWMTester.c'
 ' '
 'Building target: SolarServoApp.elf'
@@ -17,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU_Work_and_Textbooks/ECE544/ECE544_Pr
 'Invoking: MicroBlaze Print Size'
 mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  21556	    400	   3740	  25696	   6460	SolarServoApp.elf
+  23944	    404	   3756	  28104	   6dc8	SolarServoApp.elf
 'Finished building: SolarServoApp.elf.size'
 ' '
 
-06:46:14 Build Finished (took 403ms)
+15:05:27 Build Finished (took 400ms)
 

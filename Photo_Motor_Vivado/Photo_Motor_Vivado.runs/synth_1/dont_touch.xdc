@@ -84,6 +84,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PWM_
 # IP: bd/embsys/ip/embsys_PmodENC544_0_0/embsys_PmodENC544_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PmodENC544_0_0 || ORIG_REF_NAME==embsys_PmodENC544_0_0} -quiet] -quiet
 
+# IP: bd/embsys/ip/embsys_axi_gpio_1_0/embsys_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_axi_gpio_1_0 || ORIG_REF_NAME==embsys_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_xlconstant_0_2/embsys_xlconstant_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xlconstant_0_2 || ORIG_REF_NAME==embsys_xlconstant_0_2} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_axi_gpio_XADC_Data_Out_0 || ORIG_REF_NAME==embsys_axi_gpio_XADC_Data_Out_0} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_xlconstant_1_0/embsys_xlconstant_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xlconstant_1_0 || ORIG_REF_NAME==embsys_xlconstant_1_0} -quiet] -quiet
+
 # IP: bd/embsys/ip/embsys_tier2_xbar_0_0/embsys_tier2_xbar_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_0_0 || ORIG_REF_NAME==embsys_tier2_xbar_0_0} -quiet] -quiet
 

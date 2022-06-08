@@ -44,7 +44,6 @@
 #include "microblaze_sleep.h"
 #include "nexys4IO.h"
 #include "PmodOLEDrgb.h"
-#include "PmodENC.h"
 #include "PWM.h"
 #include "xintc.h"
 #include "xtmrctr.h"
@@ -69,22 +68,21 @@
 
 // Definitions for peripheral PMODOLEDRGB
 
-#define PMODHB3_INPUT_GPIO_BASEADDR	XPAR_GPIO_0_BASEADDR
 #define BUTTONSWITCH_GPIO_BASEADDR	XPAR_GPIO_1_BASEADDR
-#define SA_ANALYZER_BASEADDR	XPAR_SA_PWM_ANALYZER_S00_AXI_BASEADDR
+
 
 
 
 // Definitions for peripheral PMODENC
-#define PMODENC_DEVICE_ID		XPAR_PMODENC_0_DEVICE_ID
-#define PMODENC_BASEADDR		XPAR_PMODENC_0_AXI_LITE_GPIO_BASEADDR
-#define PMODENC_HIGHADDR		XPAR_PMODENC_0_AXI_LITE_GPIO_HIGHADDR
 
 #define PMOD_ROTARY_ENC_BASEADDR XPAR_PMODENC544_0_S00_AXI_BASEADDR
 
 //Define OLREDRGB
 #define RGBDSPLY_GPIO_BASEADDR	XPAR_PMODOLEDRGB_0_AXI_LITE_GPIO_BASEADDR
 #define RGBDSPLY_SPI_BASEADDR	XPAR_PMODOLEDRGB_0_AXI_LITE_SPI_BASEADDR
+
+
+
 
 // Fixed Interval timer - 100 MHz input clock, 40KHz output clock
 // FIT_COUNT_1MSEC = FIT_CLOCK_FREQ_HZ * .001
@@ -104,6 +102,10 @@
 // PWM
 #define PWM_BASEADDR	XPAR_PWM_0_PWM_AXI_BASEADDR
 
+
+// XADC GPIO
+#define XADC_WRITE_GPIO_BASEADDR XPAR_AXI_GPIO_XADC_DATA_WRITE_BASEADDR
+#define XADC_READ_GPIO_BASEADDR XPAR_AXI_GPIO_XADC_DATA_READ_BASEADDR
 
 //  Define Values to be referenced and Masks
 
@@ -137,7 +139,13 @@
 /**************************** Type Definitions ******************************/
 
 
-enum _MotorEnum8 {READ = 0x00, WRITE = 0xFF, MOTOR_OFF = 0x00, MOTOR_ON_CLOCKWISE = 0x0F, MOTOR_ON_COUNTERCLOCKWISE = 0xF0};
+enum _MotorEnum8 { MOTOR_OFF = 0x00, MOTOR_ON_CLOCKWISE = 0x0F, MOTOR_ON_COUNTERCLOCKWISE = 0xF0};
+
+enum _GPIO_ENUM {READ = 0x00, WRITE = 0xFF};
+enum _XADC_GPIO {LEFT = 1, RIGHT = 3, UP = 2, DOWN = 4, GPIO1_IO = 0x0000, GPIO1_SETTINGS = 0x0004, GPIO2_IO = 0x0008, GPIO2_SETTINGS = 0x000C};
+
+
+
 
 
 /***************** Macros (Inline Functions) Definitions ********************/
@@ -146,7 +154,7 @@ enum _MotorEnum8 {READ = 0x00, WRITE = 0xFF, MOTOR_OFF = 0x00, MOTOR_ON_CLOCKWIS
 // Microblaze peripheral instances
 uint64_t 	timestamp = 0L;
 PmodOLEDrgb	pmodOLEDrgb_inst;
-PmodENC 	pmodENC_inst;
+//PMODENC544_H 	pmodENC_inst;
 XIntc 		IntrptCtlrInst;				// Interrupt Controller instance
 XTmrCtr		AXITimerInst;				// PWM timer instance
 
@@ -168,8 +176,9 @@ int	 do_init(void);											// initialize system
 void FIT_Handler(void);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
-
-
+void OLED_Write_Signal(char name[], int value, int row);
+void OLED_Display_Light_Signal();
+void OLED_Display_Angle();
 void OLED_Display_Global_DCP();
 void buttonHandling(int PeriodEditBool);
 void encoderHandling();
@@ -178,8 +187,14 @@ void encoderHandling();
 void xil_print_u8toBinary(u8 number);
 void xil_print_u8toHex(u8 number);
 
+//XADC Functions
+u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction);
+void set_ADC_channel(enum _XADC_GPIO direction);
+u16 read_ADC();
 
 
+// Define Structural Functions
+int debugCheck();
 void PWM_Tester();
 
 void LightFollow();
@@ -187,6 +202,14 @@ void LightFollow();
 /************************** MAIN PROGRAM ************************************/
 int FIT_Handler_Switch=0;  //This global variable is just used to tell the FIT_Handler when to start and stop
 
+int debugCheck(){
+	uint16_t switchStateString = NX4IO_getSwitches();
+	if((switchStateString & SWITCH00_MASK)==SWITCH00_MASK){
+		return 1;
+	} else {
+		return 0;
+	}
+}
 
 int main(void)
 {
@@ -202,11 +225,17 @@ int main(void)
 	}
 
 
-	 microblaze_enable_interrupts();
+	microblaze_enable_interrupts();
 
 
 	FIT_Handler_Switch=1;
-	PWM_Tester();
+	if(debugCheck()==1){
+		PWM_Tester();
+	}else{
+		LightFollow();
+	}
+
+
 	// blank the display digits and turn off the decimal points
 	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
@@ -266,8 +295,7 @@ int	 do_init(void)
 
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR, RGBDSPLY_SPI_BASEADDR);
 
-	// initialize the pmodENC and hardware
-	//ENC_begin(&pmodENC_inst, PMODENC_BASEADDR);  // This is the Bad version of the Rotary Encoder Module
+
 	PMODENC544_initialize(PMOD_ROTARY_ENC_BASEADDR);
 	status = AXI_Timer_initialize();
 	if (status != XST_SUCCESS)
@@ -340,211 +368,38 @@ int AXI_Timer_initialize(void){
 
 }
 
-/*********************** DISPLAY-RELATED FUNCTIONS ***********************************/
-
-/****************************************************************************/
-/**
-* Converts an integer to ASCII characters
-*
-* algorithm borrowed from ReactOS system libraries
-*
-* Converts an integer to ASCII in the specified base.  Assumes string[] is
-* long enough to hold the result plus the terminating null
-*
-* @param 	value is the integer to convert
-* @param 	*string is a pointer to a buffer large enough to hold the converted number plus
-*  			the terminating null
-* @param	radix is the base to use in conversion, 
-*
-* @return  *NONE*
-*
-* @note
-* No size check is done on the return string size.  Make sure you leave room
-* for the full string plus the terminating null in string
-*****************************************************************************/
-void PMDIO_itoa(int32_t value, char *string, int32_t radix)
-{
-	char tmp[33];
-	char *tp = tmp;
-	int32_t i;
-	uint32_t v;
-	int32_t  sign;
-	char *sp;
-
-	if (radix > 36 || radix <= 1)
-	{
-		return;
-	}
-
-	sign = ((10 == radix) && (value < 0));
-	if (sign)
-	{
-		v = -value;
-	}
-	else
-	{
-		v = (uint32_t) value;
-	}
-	
-  	while (v || tp == tmp)
-  	{
-		i = v % radix;
-		v = v / radix;
-		if (i < 10)
-		{
-			*tp++ = i+'0';
-		}
-		else
-		{
-			*tp++ = i + 'a' - 10;
-		}
-	}
-	sp = string;
-	
-	if (sign)
-		*sp++ = '-';
-
-	while (tp > tmp)
-		*sp++ = *--tp;
-	*sp = 0;
-	
-  	return;
-}
-
-
-/****************************************************************************/
-/**
-* Write a 32-bit unsigned hex number to PmodOLEDrgb in Hex
-*       
-* Writes  32-bit unsigned number to the pmodOLEDrgb display starting at the current
-* cursor position.
-*
-* @param num is the number to display as a hex value
-*
-* @return  *NONE*
-*
-* @note
-* No size checking is done to make sure the string will fit into a single line,
-* or the entire display, for that matter.  Watch your string sizes.
-*****************************************************************************/ 
-void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num)
-{
-  char  buf[9];
-  int32_t   cnt;
-  char  *ptr;
-  int32_t  digit;
-  
-  ptr = buf;
-  for (cnt = 7; cnt >= 0; cnt--) {
-    digit = (num >> (cnt * 4)) & 0xF;
-    
-    if (digit <= 9)
-	{
-      *ptr++ = (char) ('0' + digit);
-	}
-    else
-	{
-      *ptr++ = (char) ('a' - 10 + digit);
-	}
-  }
-
-  *ptr = (char) 0;
-  OLEDrgb_PutString(InstancePtr,buf);
-  
-  return;
-}
-
-void PMDIO_put4hex(PmodOLEDrgb* InstancePtr, uint16_t num)
-{
-  char  buf[5];
-  int16_t   cnt;
-  char  *ptr;
-  int16_t  digit;
-
-  ptr = buf;
-  for (cnt = 3; cnt >= 0; cnt--) {
-    digit = (num >> (cnt * 4)) & 0xF;
-
-    if (digit <= 9)
-	{
-      *ptr++ = (char) ('0' + digit);
-	}
-    else
-	{
-      *ptr++ = (char) ('a' - 10 + digit);
-	}
-  }
-
-  *ptr = (char) 0;
-  OLEDrgb_PutString(InstancePtr,buf);
-
-  return;
-}
-
-void PMDIO_put2hex(PmodOLEDrgb* InstancePtr, uint8_t num)
-{
-  char  buf[3];
-  int16_t   cnt;
-  char  *ptr;
-  int16_t  digit;
-
-  ptr = buf;
-  for (cnt = 1; cnt >= 0; cnt--) {
-    digit = (num >> (cnt * 4)) & 0xF;
-
-    if (digit <= 9)
-	{
-      *ptr++ = (char) ('0' + digit);
-	}
-    else
-	{
-      *ptr++ = (char) ('a' - 10 + digit);
-	}
-  }
-
-  *ptr = (char) 0;
-  OLEDrgb_PutString(InstancePtr,buf);
-
-  return;
-}
-
-
-/****************************************************************************/
-/**
-* Write a 32-bit number in Radix "radix" to LCD display
-*
-* Writes a 32-bit number to the LCD display starting at the current
-* cursor position. "radix" is the base to output the number in.
-*
-* @param num is the number to display
-*
-* @param radix is the radix to display number in
-*
-* @return *NONE*
-*
-* @note
-* No size checking is done to make sure the string will fit into a single line,
-* or the entire display, for that matter.  Watch your string sizes.
-*****************************************************************************/ 
-void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix)
-{
-  char  buf[16];
-  
-  PMDIO_itoa(num, buf, radix);
-  OLEDrgb_PutString(InstancePtr,buf);
-  
-  return;
-}
-
-
-
-
-
-
 // all global variables with adjusted in their name were meant to be part of the feedback system
 //We use a linear fit from RPM to the powerFactor, which is the hex value fed to the PWM to determine the effect voltage it outputs.
 
 
+
+
+
+
+int Period_Global = 20;
+int DutyCycle_Global = 0;
+
+// These two buffers will act to prevent
+//
+int ENC_Filter_Buffer=0; //
+int ENC_Filter_Input_Current=0; //
+int ENC_Filter_Input_Previous=0;
+
+int defaultAngle_Period100us = 200;
+
+// These set points determine the ratio of signals from each light sensor
+//the system changes its motor positions to attempt to achieve
+float setpoint_Light_X= 1.0;  // Fractional Value of Right/Left
+float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
+
+
+int verticle_Angle = 0;  // Positive value are for up facing angles and negative values are for down facing angles
+int horizontal_Angle = 0;  // Positive value are for right facing angles and negative values are for left facing angles
+
+uint16_t UP_Data = 0x0000;
+uint16_t DOWN_Data = 0x0000;
+uint16_t LEFT_Data = 0x0000;
+uint16_t RIGHT_Data = 0x0000;
 
 
 
@@ -565,9 +420,44 @@ void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix)
 
 void FIT_Handler(void){
 	// This handler is used to sample to Rotary input encoder PMOD and to sample the Motor Encoder
-	encoderHandling();
+	static int FIT_Tracker = 0;
+	if(FIT_Tracker>80){
+		FIT_Tracker=1;
+	}
+	uint16_t switchStateString = NX4IO_getSwitches();
+	if(debugCheck()==1){
+		encoderHandling();
+	}else{
+		if(FIT_Tracker%100==2){
+			if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){
+			set_ADC_channel(UP);
+			}
+		}else if(FIT_Tracker%100==20){
+			UP_Data = read_ADC();
+		}else if(FIT_Tracker%100==22){
+			if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){
+				set_ADC_channel(DOWN);
+			}
+		}else if(FIT_Tracker%100==40){
+			DOWN_Data = read_ADC();
+		}else if(FIT_Tracker%100==42){
+			if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){
+				set_ADC_channel(LEFT);
+			}
+		}else if(FIT_Tracker%100==60){
+			LEFT_Data = read_ADC();
+		}else if(FIT_Tracker%100==62){
+			if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){
+				set_ADC_channel(RIGHT);
+			}
+		}else if(FIT_Tracker%100==80){
+			RIGHT_Data = read_ADC();
+		} else{
+			encoderHandling();
+		}
+	}
+	FIT_Tracker=FIT_Tracker+1;
 }
-
 
 /**************************** MAIN ROUTINE ******************************/
 
@@ -578,25 +468,6 @@ void FIT_Handler(void){
 *  the functions that handle queries to the Rotary Encoder, the
  *****************************************************************************/
 
-int Period_Global = 20;
-int DutyCycle_Global = 0;
-
-// These two buffers will act to prevent
-//
-int ENC_Filter_Buffer=0; //
-int ENC_Filter_Input_Current=0; //
-int ENC_Filter_Input_Previous=0;
-
-
-
-// These set points determine the ratio of signals from each light sensor
-//the system changes its motor positions to attempt to achieve
-float setpoint_Light_X= 1.0;  // Fractional Value of Right/Left
-float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
-
-
-int verticle_Angle = 0;  // Positive value are for up facing angles and negative values are for down facing angles
-int horizontal_Angle = 0;  // Positive value are for right facing angles and negative values are for left facing angles
 
 void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
 	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
@@ -623,9 +494,10 @@ void LightFollow()
 
 	int loopTracker = 0;
 
-	int defaultAngle_Period100us = 200;
+
 	PWM_Set_Period(PWM_BASEADDR, 100*1000*Period_Global);
     PWM_Enable(PWM_BASEADDR);
+
 	while(1) {
 		loopTracker=loopTracker+1;
 		// loopTracker is used to determine which loop certain functions should be called in
@@ -642,10 +514,8 @@ void LightFollow()
 
 
 		if(loopTracker%100==0){ // Change Speeds less Frequently
-
-			buttonHandling(0);
-
 			OLED_Display_Angle();
+			OLED_Display_Light_Signal();
 		}
 
 		usleep(1000);
@@ -689,16 +559,16 @@ void PWM_Tester()
 			// Multiply period of 100MHz by 100 to get period of 1MHz and by 1000 again to get to period of 1KHz or 1 millisecond
 			PWM_Set_Period(PWM_BASEADDR, 100*1000*Period_Global);
 
-			if((switchStateString & SWITCH00_MASK) == SWITCH00_MASK){
+			if((switchStateString & SWITCH01_MASK) == SWITCH01_MASK){
 			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 0);
 			}
-			if((switchStateString & SWITCH01_MASK) == SWITCH01_MASK){
+			if((switchStateString & SWITCH02_MASK) == SWITCH02_MASK){
 			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 1);
 			}
-			if((switchStateString & SWITCH02_MASK) == SWITCH02_MASK){
+			if((switchStateString & SWITCH03_MASK) == SWITCH03_MASK){
 			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 2);
 			}
-			if((switchStateString & SWITCH03_MASK) == SWITCH03_MASK){
+			if((switchStateString & SWITCH04_MASK) == SWITCH04_MASK){
 			    PWM_Set_Duty(PWM_BASEADDR, 100*100*DutyCycle_Global, 3);
 			}
 
@@ -710,7 +580,7 @@ void PWM_Tester()
 
 		if(loopTracker%100==0){ // Change Speeds less Frequently
 
-			buttonHandling(1);
+			buttonHandling(0);
 
 			OLED_Display_Global_DCP();
 		}
@@ -823,6 +693,28 @@ void buttonHandling(int PeriodEditBool){
 
 
 
+
+void OLED_Write_Time_millisconds(char name[] ,int value, int row){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, name);
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
+	PMDIO_putnum(&pmodOLEDrgb_inst, value,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 8, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, " ms");
+}
+
+void OLED_Write_Signal(char name[], int value, int row){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, name);
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
+	PMDIO_putnum(&pmodOLEDrgb_inst, value,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, row);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  ");
+}
+
+
 void OLED_Display_Global_DCP(){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "P");
@@ -845,43 +737,31 @@ void OLED_Display_Global_DCP(){
 
 
 void OLED_Display_Angle(){
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "V");
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 0);
-	PMDIO_putnum(&pmodOLEDrgb_inst, defaultAngle_Period100us+verticle_Angle,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 0);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  ");
-
-
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 3);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "H");
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
-	PMDIO_putnum(&pmodOLEDrgb_inst, defaultAngle_Period100us+horizontal_Angle,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 3);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  ");
-
-
-
-int queriedDutyCycle0=0;
-int queriedDutyCycle1=0;
-int queriedDutyCycle2=0;
-int queriedDutyCycle3=0;
-int queriedPeriod=0;
-
-void OLED_Write_Time_millisconds(char name[] ,int value, int row){
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, name);
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
-	PMDIO_putnum(&pmodOLEDrgb_inst, value,10);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 8, row);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, " ms");
+	OLED_Write_Signal("V",defaultAngle_Period100us +verticle_Angle, 0);
+	OLED_Write_Signal("H",defaultAngle_Period100us+horizontal_Angle, 1);
 }
+
+
+
+
+void OLED_Display_Light_Signal(){
+	OLED_Write_Signal("U",UP_Data, 2);
+	OLED_Write_Signal("D",DOWN_Data, 3);
+	OLED_Write_Signal("L",LEFT_Data, 4);
+	OLED_Write_Signal("R",RIGHT_Data, 5);
+}
+
+
+
+
 
 void OLED_Display_Queried_DutyCycleAndPeriod(){
 
+	int queriedDutyCycle0=0;
+	int queriedDutyCycle1=0;
+	int queriedDutyCycle2=0;
+	int queriedDutyCycle3=0;
+	int queriedPeriod=0;
 
 	queriedDutyCycle0=PWM_Get_Duty(PWM_BASEADDR, 0);
 	queriedDutyCycle1=PWM_Get_Duty(PWM_BASEADDR, 1);
@@ -896,3 +776,255 @@ void OLED_Display_Queried_DutyCycleAndPeriod(){
 	OLED_Write_Time_millisconds("D3",queriedDutyCycle3, 5);
 
 }
+
+
+
+u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction){
+	u8 XADC_data_address= 0x00;
+	switch(direction) {
+		case LEFT  :
+			XADC_data_address=0x12;
+			break;
+		case UP  :
+			XADC_data_address=0x13;
+			break;
+		case RIGHT  :
+			XADC_data_address=0x1a;
+			break;
+		case DOWN  :
+			XADC_data_address=0x1b;
+			break;
+		default :
+			XADC_data_address=0x00;
+	}
+	return XADC_data_address;
+}
+
+
+void set_ADC_channel(enum _XADC_GPIO direction){
+	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_SETTINGS, WRITE);
+	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_IO, XADC_Channel_Data_Address(direction));  // Write Data  Active Channel
+
+}
+
+
+u16 read_ADC(){
+	u8 ReadyBool= 0x00;
+	u16 digital_Data= 0x0000;
+	int i=0;
+	for(i=0; i<100; i++){
+		ReadyBool= Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO1_IO);
+		if((ReadyBool& 0x01)==0x01){
+			digital_Data=Xil_In8(XADC_READ_GPIO_BASEADDR + 0x0008);
+			return digital_Data;
+			break;
+		}
+
+	}
+	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ);
+	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO2_SETTINGS, READ);
+	return digital_Data;
+}
+
+
+/*********************** DISPLAY-RELATED FUNCTIONS ***********************************/
+
+/****************************************************************************/
+/**
+* Converts an integer to ASCII characters
+*
+* algorithm borrowed from ReactOS system libraries
+*
+* Converts an integer to ASCII in the specified base.  Assumes string[] is
+* long enough to hold the result plus the terminating null
+*
+* @param 	value is the integer to convert
+* @param 	*string is a pointer to a buffer large enough to hold the converted number plus
+*  			the terminating null
+* @param	radix is the base to use in conversion,
+*
+* @return  *NONE*
+*
+* @note
+* No size check is done on the return string size.  Make sure you leave room
+* for the full string plus the terminating null in string
+*****************************************************************************/
+void PMDIO_itoa(int32_t value, char *string, int32_t radix)
+{
+	char tmp[33];
+	char *tp = tmp;
+	int32_t i;
+	uint32_t v;
+	int32_t  sign;
+	char *sp;
+
+	if (radix > 36 || radix <= 1)
+	{
+		return;
+	}
+
+	sign = ((10 == radix) && (value < 0));
+	if (sign)
+	{
+		v = -value;
+	}
+	else
+	{
+		v = (uint32_t) value;
+	}
+
+  	while (v || tp == tmp)
+  	{
+		i = v % radix;
+		v = v / radix;
+		if (i < 10)
+		{
+			*tp++ = i+'0';
+		}
+		else
+		{
+			*tp++ = i + 'a' - 10;
+		}
+	}
+	sp = string;
+
+	if (sign)
+		*sp++ = '-';
+
+	while (tp > tmp)
+		*sp++ = *--tp;
+	*sp = 0;
+
+  	return;
+}
+
+
+/****************************************************************************/
+/**
+* Write a 32-bit unsigned hex number to PmodOLEDrgb in Hex
+*
+* Writes  32-bit unsigned number to the pmodOLEDrgb display starting at the current
+* cursor position.
+*
+* @param num is the number to display as a hex value
+*
+* @return  *NONE*
+*
+* @note
+* No size checking is done to make sure the string will fit into a single line,
+* or the entire display, for that matter.  Watch your string sizes.
+*****************************************************************************/
+void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num)
+{
+  char  buf[9];
+  int32_t   cnt;
+  char  *ptr;
+  int32_t  digit;
+
+  ptr = buf;
+  for (cnt = 7; cnt >= 0; cnt--) {
+    digit = (num >> (cnt * 4)) & 0xF;
+
+    if (digit <= 9)
+	{
+      *ptr++ = (char) ('0' + digit);
+	}
+    else
+	{
+      *ptr++ = (char) ('a' - 10 + digit);
+	}
+  }
+
+  *ptr = (char) 0;
+  OLEDrgb_PutString(InstancePtr,buf);
+
+  return;
+}
+
+void PMDIO_put4hex(PmodOLEDrgb* InstancePtr, uint16_t num)
+{
+  char  buf[5];
+  int16_t   cnt;
+  char  *ptr;
+  int16_t  digit;
+
+  ptr = buf;
+  for (cnt = 3; cnt >= 0; cnt--) {
+    digit = (num >> (cnt * 4)) & 0xF;
+
+    if (digit <= 9)
+	{
+      *ptr++ = (char) ('0' + digit);
+	}
+    else
+	{
+      *ptr++ = (char) ('a' - 10 + digit);
+	}
+  }
+
+  *ptr = (char) 0;
+  OLEDrgb_PutString(InstancePtr,buf);
+
+  return;
+}
+
+void PMDIO_put2hex(PmodOLEDrgb* InstancePtr, uint8_t num)
+{
+  char  buf[3];
+  int16_t   cnt;
+  char  *ptr;
+  int16_t  digit;
+
+  ptr = buf;
+  for (cnt = 1; cnt >= 0; cnt--) {
+    digit = (num >> (cnt * 4)) & 0xF;
+
+    if (digit <= 9)
+	{
+      *ptr++ = (char) ('0' + digit);
+	}
+    else
+	{
+      *ptr++ = (char) ('a' - 10 + digit);
+	}
+  }
+
+  *ptr = (char) 0;
+  OLEDrgb_PutString(InstancePtr,buf);
+
+  return;
+}
+
+
+/****************************************************************************/
+/**
+* Write a 32-bit number in Radix "radix" to LCD display
+*
+* Writes a 32-bit number to the LCD display starting at the current
+* cursor position. "radix" is the base to output the number in.
+*
+* @param num is the number to display
+*
+* @param radix is the radix to display number in
+*
+* @return *NONE*
+*
+* @note
+* No size checking is done to make sure the string will fit into a single line,
+* or the entire display, for that matter.  Watch your string sizes.
+*****************************************************************************/
+void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix)
+{
+  char  buf[16];
+
+  PMDIO_itoa(num, buf, radix);
+  OLEDrgb_PutString(InstancePtr,buf);
+
+  return;
+}
+
+
+
+
+
+

@@ -113,3 +113,64 @@ timestamp=[2022-06-08 06:36:44], mode=BUILD, duration=0:00:00.162, duration_ms=1
 timestamp=[2022-06-08 06:36:44], mode=BUILD, duration=0:00:00.096, duration_ms=96, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
 timestamp=[2022-06-08 06:46:14], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=SolarServoApp, configuration=Debug, clean_build=false}
 timestamp=[2022-06-08 06:46:14], mode=BUILD, duration=0:00:00.091, duration_ms=91, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 11:52:52], mode=WORKBENCH_START, duration=0:00:06.065, duration_ms=6065, data={}
+timestamp=[2022-06-08 11:52:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.337, duration_ms=337, data={editors_count=8, platform_editors_count=6, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,SolarMotorPlatform,SolarServoApp,SolarServoApp_system}
+timestamp=[2022-06-08 11:52:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.030, duration_ms=30, data={}
+timestamp=[2022-06-08 12:01:20], mode=WORKBENCH_START, duration=0:00:06.037, duration_ms=6037, data={}
+timestamp=[2022-06-08 12:01:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.311, duration_ms=311, data={editors_count=8, platform_editors_count=6, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,SolarMotorPlatform,SolarServoApp,SolarServoApp_system}
+timestamp=[2022-06-08 12:01:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.029, duration_ms=29, data={}
+timestamp=[2022-06-08 13:20:37], mode=PLATFORM_GENERATION, duration=0:00:05.284, duration_ms=5284, data={name=SolarMotorPlatform}
+timestamp=[2022-06-08 13:20:44], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:20:45], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:21:03], mode=BUILD, duration=0:00:00.099, duration_ms=99, data={name=SolarServoApp, configuration=Debug, clean_build=true}
+timestamp=[2022-06-08 13:21:03], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:21:03], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:21:32], mode=PLATFORM_GENERATION, duration=0:00:01.391, duration_ms=1391, data={name=SolarMotorPlatform}
+timestamp=[2022-06-08 13:21:32], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:21:33], mode=BUILD, duration=0:00:00.092, duration_ms=92, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:23:38], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:23:38], mode=BUILD, duration=0:00:00.101, duration_ms=101, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:25:59], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:25:59], mode=BUILD, duration=0:00:00.088, duration_ms=88, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:27:30], mode=BUILD, duration=0:00:00.156, duration_ms=156, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:27:30], mode=BUILD, duration=0:00:00.089, duration_ms=89, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:28:22], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:28:22], mode=BUILD, duration=0:00:00.101, duration_ms=101, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:32:02], mode=BUILD, duration=0:00:00.165, duration_ms=165, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:32:02], mode=BUILD, duration=0:00:00.090, duration_ms=90, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:33:07], mode=BUILD, duration=0:00:00.155, duration_ms=155, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:33:07], mode=BUILD, duration=0:00:00.105, duration_ms=105, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:33:57], mode=BUILD, duration=0:00:00.155, duration_ms=155, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:33:57], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:34:36], mode=BUILD, duration=0:00:00.154, duration_ms=154, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:34:36], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:35:00], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:35:01], mode=BUILD, duration=0:00:00.091, duration_ms=91, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:35:50], mode=BUILD, duration=0:00:00.153, duration_ms=153, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:35:50], mode=BUILD, duration=0:00:00.089, duration_ms=89, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:36:46], mode=BUILD, duration=0:00:00.155, duration_ms=155, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:36:46], mode=BUILD, duration=0:00:00.089, duration_ms=89, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:37:01], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:37:01], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:39:32], mode=BUILD, duration=0:00:00.410, duration_ms=410, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:39:33], mode=BUILD, duration=0:00:00.103, duration_ms=103, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:40:53], mode=BUILD, duration=0:00:00.408, duration_ms=408, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:40:54], mode=BUILD, duration=0:00:00.092, duration_ms=92, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:56:29], mode=BUILD, duration=0:00:00.476, duration_ms=476, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:56:29], mode=BUILD, duration=0:00:00.095, duration_ms=95, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:57:57], mode=BUILD, duration=0:00:00.411, duration_ms=411, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 13:57:57], mode=BUILD, duration=0:00:00.105, duration_ms=105, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:29:27], mode=BUILD, duration=0:00:00.480, duration_ms=480, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:29:27], mode=BUILD, duration=0:00:00.099, duration_ms=99, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:56:55], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:56:55], mode=BUILD, duration=0:00:00.098, duration_ms=98, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:57:08], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:57:08], mode=BUILD, duration=0:00:00.097, duration_ms=97, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:59:48], mode=BUILD, duration=0:00:00.411, duration_ms=411, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 14:59:48], mode=BUILD, duration=0:00:00.103, duration_ms=103, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:00:13], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:00:14], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:00:25], mode=BUILD, duration=0:00:00.406, duration_ms=406, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:00:26], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:05:27], mode=BUILD, duration=0:00:00.404, duration_ms=404, data={name=SolarServoApp, configuration=Debug, clean_build=false}
+timestamp=[2022-06-08 15:05:27], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=SolarServoApp_system, configuration=Debug, clean_build=false}

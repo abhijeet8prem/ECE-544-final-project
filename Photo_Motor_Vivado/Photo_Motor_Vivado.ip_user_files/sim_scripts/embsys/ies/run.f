@@ -168,23 +168,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_xlconstant_0_1/sim/embsys_xlconstant_0_1.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_conv_funs_pkg.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_proc_common_pkg.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_ipif_pkg.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_family_support.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_family.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_soft_reset.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_pselect_f.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_address_decoder.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_slave_attachment.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_interrupt_control.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_axi_lite_ipif.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_xadc_core_drp.vhd" \
-  "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_axi_xadc.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib -sv \
@@ -196,7 +179,18 @@
   "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0_S00_AXI.v" \
   "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0.v" \
   "../../../bd/embsys/ip/embsys_PmodENC544_0_0/sim/embsys_PmodENC544_0_0.v" \
-  "../../../bd/embsys/sim/embsys.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_axi_gpio_1_0/sim/embsys_axi_gpio_1_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_xlconstant_0_2/sim/embsys_xlconstant_0_2.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_axi_gpio_XADC_Data_Out_0/sim/embsys_axi_gpio_XADC_Data_Out_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_xlconstant_1_0/sim/embsys_xlconstant_1_0.v" \
   "../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
   "../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
   "../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
@@ -206,6 +200,7 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
+  "../../../bd/embsys/sim/embsys.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="LightFollow"/>
+		<item key="selection" value="OLED_Display_Angle"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="LightFollow"/>
+			<item value="OLED_Display_Angle"/>
+			<item value="OLED_Display_Light_Signal"/>
 			<item value="buttonHandling"/>
-			<item value="OLED_Display_Global_DCP"/>
-			<item value="display"/>
-			<item value="u_int"/>
-			<item value="RPMToPowerFactor_Expected"/>
-			<item value="PMODENC_HIGHADDR"/>
-			<item value="PMODENC_DEVICE_ID"/>
-			<item value="PMODENC_BASEADDR"/>
-			<item value="PMOD_ROTARY_ENC_BASEADDR"/>
-			<item value="PWM"/>
-			<item value="&quot;Running Make include in microblaze_0/libsrc/PWM_v1_0/src&quot;"/>
+			<item value="SWITCH"/>
+			<item value="SWITCH04"/>
+			<item value="SWITCH03"/>
+			<item value="SWITCH01"/>
+			<item value="SWITCH00"/>
+			<item value="SWITCH15_MASK"/>
+			<item value="switch"/>
+			<item value="queriedDutyCycle0"/>
+			<item value="defaultAngle"/>
+			<item value="defaultAngle_Period"/>
+			<item value="defaultAngle_Period100us"/>
+			<item value="PMODENC544"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="485"/>
+		<item key="DIALOG_X_ORIGIN" value="672"/>
 		<item key="DIALOG_Y_ORIGIN" value="334"/>
 		<item key="DIALOG_WIDTH" value="593"/>
 		<item key="DIALOG_HEIGHT" value="394"/>

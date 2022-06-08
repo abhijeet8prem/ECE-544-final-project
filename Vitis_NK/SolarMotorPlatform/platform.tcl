@@ -26,3 +26,8 @@ platform generate -domains
 platform active {SolarMotorPlatform}
 platform generate -domains 
 platform generate
+platform active {SolarMotorPlatform}
+platform config -updatehw {D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/nexysA7fpga.xsa}
+platform config -updatehw {D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/nexysA7fpga.xsa}
+platform generate
+platform generate -domains 

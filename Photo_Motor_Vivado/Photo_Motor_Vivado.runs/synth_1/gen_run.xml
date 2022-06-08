@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654711447">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654718986">
   <File Type="PA-TCL" Name="nexysA7fpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nexysA7fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nexysA7fpga_reports.tcl"/>
@@ -62,11 +62,13 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_nexys4io_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_fit_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_XADC_Data_Out_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_0_4"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_timer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_bram_if_cntlr_0"/>
@@ -80,4 +82,5 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_PmodENC544_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_xadc_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_PWM_0_0"/>
 </GenRun>

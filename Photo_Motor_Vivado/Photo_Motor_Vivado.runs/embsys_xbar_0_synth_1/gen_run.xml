@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="embsys_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654636992">
+<GenRun Id="embsys_xbar_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654715351">
   <File Type="PA-TCL" Name="embsys_xbar_0.tcl"/>
   <File Type="REPORTS-TCL" Name="embsys_xbar_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="embsys_xbar_0.vds"/>
