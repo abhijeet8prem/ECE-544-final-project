@@ -13,7 +13,6 @@ vhdl xil_defaultlib  \
 "../../../bd/embsys/ip/embsys_rst_clk_wiz_1_100M_0/sim/embsys_rst_clk_wiz_1_100M_0.vhd" \
 "../../../bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/sim/PmodOLEDrgb_axi_quad_spi_0_0.vhd" \
 "../../../bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/sim/PmodOLEDrgb_axi_gpio_0_1.vhd" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_axi_gpio_0_0/sim/PmodENC_axi_gpio_0_0.vhd" \
 "../../../bd/embsys/ip/embsys_axi_timebase_wdt_0_0/sim/embsys_axi_timebase_wdt_0_0.vhd" \
 "../../../bd/embsys/ip/embsys_axi_gpio_0_4/sim/embsys_axi_gpio_0_4.vhd" \
 "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/embsys_xadc_wiz_0_0_conv_funs_pkg.vhd" \

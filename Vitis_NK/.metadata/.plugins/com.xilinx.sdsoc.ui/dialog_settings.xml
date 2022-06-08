@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform;D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform"/>
+	<item key="sdx.custom.platform.repository.locations" value="D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform;D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis\SolarMotorPlatform\export\SolarMotorPlatform;D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform"/>
 </section>

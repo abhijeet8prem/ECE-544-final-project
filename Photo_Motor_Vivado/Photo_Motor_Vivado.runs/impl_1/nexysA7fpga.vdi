@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Jun  5 19:45:47 2022
-# Process ID: 3904
+# Start of session at: Tue Jun  7 14:24:46 2022
+# Process ID: 29216
 # Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1
 # Command line: vivado.exe -log nexysA7fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nexysA7fpga.tcl -notrace
 # Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga.vdi
@@ -46,7 +46,7 @@ INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE54
 INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/ilmb_bram_if_cntlr'
 INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_ilmb_v10_0/embsys_ilmb_v10_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/ilmb_v10'
 INFO: [Project 1-454] Reading design checkpoint 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_lmb_bram_0/embsys_lmb_bram_0.dcp' for cell 'EMBSYS/microblaze_0_local_memory/lmb_bram'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.530 . Memory (MB): peak = 1144.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.228 . Memory (MB): peak = 1146.105 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
@@ -67,7 +67,7 @@ Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-fina
 Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
 Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc] for cell 'EMBSYS/mdm_1/U0'
 INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc:50]
-get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1778.707 ; gain = 583.195
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1777.082 ; gain = 583.555
 Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0.xdc] for cell 'EMBSYS/mdm_1/U0'
 Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_board.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
 Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_board.xdc] for cell 'EMBSYS/clk_wiz_1/inst'
@@ -99,8 +99,14 @@ Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE
 Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xdc] for cell 'EMBSYS/xadc_wiz_0/inst'
 Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xdc] for cell 'EMBSYS/xadc_wiz_0/inst'
 Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc]
-CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST Illegal to place instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST on site ILOGIC_X0Y132. The location site type (ILOGICE3) and bel type (ILOGICE3_IFF) do not match the cell type (XADC). Instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST belongs to a shape with reference instance XA_P_IBUF[1]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:148]
-CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST Illegal to place instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST on site ILOGIC_X0Y132. The location site type (ILOGICE3) and bel type (ILOGICE3_IFF) do not match the cell type (XADC). Instance EMBSYS/xadc_wiz_0/inst/AXI_XADC_CORE_I/XADC_INST belongs to a shape with reference instance XA_P_IBUF[1]_inst. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:149]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxn1_IBUF_inst at A14 (IOB_X0Y131) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxn1_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:148]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxp1_IBUF_inst at A13 (IOB_X0Y132) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxp1_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:149]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxn2_IBUF_inst at A16 (IOB_X0Y133) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxn2_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:150]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxp2_IBUF_inst at A15 (IOB_X0Y134) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxp2_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:151]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxn3_IBUF_inst at B17 (IOB_X0Y135) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxn3_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:152]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxp3_IBUF_inst at B16 (IOB_X0Y136) since it belongs to a shape containing instance EMBSYS/xadc_wiz_0/inst. The shape requires relative placement between vauxp3_IBUF_inst and EMBSYS/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for EMBSYS/xadc_wiz_0/inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:153]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxn4_IBUF_inst at A18 (IOB_X0Y129) since it belongs to a shape containing instance vauxp3_IBUF_inst. The shape requires relative placement between vauxn4_IBUF_inst and vauxp3_IBUF_inst that can not be honoured because it would result in an invalid location for vauxp3_IBUF_inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:154]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance vauxp4_IBUF_inst at B18 (IOB_X0Y130) since it belongs to a shape containing instance vauxp3_IBUF_inst. The shape requires relative placement between vauxp4_IBUF_inst and vauxp3_IBUF_inst that can not be honoured because it would result in an invalid location for vauxp3_IBUF_inst. [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc:155]
 Finished Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/constrs_1/imports/constraints/nexysA7fpga.xdc]
 Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_clocks.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
 Finished Parsing XDC File [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_clocks.xdc] for cell 'EMBSYS/microblaze_0_axi_intc/U0'
@@ -113,16 +119,16 @@ WARNING: [Constraints 18-5572] Instance EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0
 WARNING: [Constraints 18-5572] Instance EMBSYS/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO1_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
 Generating merged BMM file for the design top 'nexysA7fpga'...
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/data/mb_bootloop_le.elf 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1778.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1777.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 132 instances were transformed.
   LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 20 instances
 
-42 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+42 Infos, 3 Warnings, 8 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1778.707 ; gain = 633.848
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1777.082 ; gain = 630.977
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -150,64 +156,62 @@ WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[4] expects
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[5] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[6] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[7] expects both input and output buffering but the buffers are incomplete.
-WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_N[1] expects both input and output buffering but the buffers are incomplete.
-WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_P[1] expects both input and output buffering but the buffers are incomplete.
-INFO: [Project 1-461] DRC finished with 0 Errors, 22 Warnings
+INFO: [Project 1-461] DRC finished with 0 Errors, 20 Warnings
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1778.707 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.699 . Memory (MB): peak = 1777.082 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 11bc6c5c8
+Ending Cache Timing Information Task | Checksum: 113bb1608
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.894 . Memory (MB): peak = 1778.707 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 1777.082 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1056fc958
+Phase 1 Retarget | Checksum: 11ddd031c
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.234 ; gain = 0.594
-INFO: [Opt 31-389] Phase Retarget created 428 cells and removed 592 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.598 . Memory (MB): peak = 1956.480 ; gain = 0.680
+INFO: [Opt 31-389] Phase Retarget created 388 cells and removed 558 cells
 INFO: [Opt 31-1021] In phase Retarget, 24 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 2 Constant propagation | Checksum: 1dd24093b
+Phase 2 Constant propagation | Checksum: 137469bdb
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.234 ; gain = 0.594
-INFO: [Opt 31-389] Phase Constant propagation created 49 cells and removed 321 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.703 . Memory (MB): peak = 1956.480 ; gain = 0.680
+INFO: [Opt 31-389] Phase Constant propagation created 69 cells and removed 357 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 15a7318ef
+Phase 3 Sweep | Checksum: 84b269b1
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1962.234 ; gain = 0.594
-INFO: [Opt 31-389] Phase Sweep created 20 cells and removed 445 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1956.480 ; gain = 0.680
+INFO: [Opt 31-389] Phase Sweep created 20 cells and removed 436 cells
 INFO: [Opt 31-1021] In phase Sweep, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG EMBSYS/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 42 load(s) on clock net EMBSYS/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 1617cb96a
+Phase 4 BUFG optimization | Checksum: f2db85b7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1962.234 ; gain = 0.594
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1956.480 ; gain = 0.680
 INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1617cb96a
+Phase 5 Shift Register Optimization | Checksum: f2db85b7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1962.234 ; gain = 0.594
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1956.480 ; gain = 0.680
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 17e4e0910
+Phase 6 Post Processing Netlist | Checksum: 6ba8d8d6
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1962.234 ; gain = 0.594
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1956.480 ; gain = 0.680
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -217,9 +221,9 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |             428  |             592  |                                             24  |
-|  Constant propagation         |              49  |             321  |                                              2  |
-|  Sweep                        |              20  |             445  |                                              2  |
+|  Retarget                     |             388  |             558  |                                             24  |
+|  Constant propagation         |              69  |             357  |                                              2  |
+|  Sweep                        |              20  |             436  |                                              2  |
 |  BUFG optimization            |               1  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              2  |
@@ -229,10 +233,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1962.234 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 22ed8533e
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1956.480 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 855ef3e1
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1962.234 ; gain = 0.594
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1956.480 ; gain = 0.680
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -248,34 +252,34 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 64
-Ending PowerOpt Patch Enables Task | Checksum: 22ed8533e
+Ending PowerOpt Patch Enables Task | Checksum: 855ef3e1
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.244 . Memory (MB): peak = 2120.250 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 22ed8533e
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2112.484 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 855ef3e1
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2120.250 ; gain = 158.016
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2112.484 ; gain = 156.004
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 22ed8533e
+Ending Final Cleanup Task | Checksum: 855ef3e1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2112.484 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2120.250 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 22ed8533e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2112.484 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 855ef3e1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2112.484 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-70 Infos, 25 Warnings, 2 Critical Warnings and 0 Errors encountered.
+70 Infos, 23 Warnings, 8 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2120.250 ; gain = 341.543
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2112.484 ; gain = 335.402
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2112.484 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file nexysA7fpga_drc_opted.rpt -pb nexysA7fpga_drc_opted.pb -rpx nexysA7fpga_drc_opted.rpx
 Command: report_drc -file nexysA7fpga_drc_opted.rpt -pb nexysA7fpga_drc_opted.pb -rpx nexysA7fpga_drc_opted.rpx
@@ -283,7 +287,6 @@ INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/impl_1/nexysA7fpga_drc_opted.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2120.250 ; gain = 0.000
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -312,9 +315,7 @@ WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[4] expects
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[5] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[6] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port JC[7] expects both input and output buffering but the buffers are incomplete.
-WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_N[1] expects both input and output buffering but the buffers are incomplete.
-WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port XA_P[1] expects both input and output buffering but the buffers are incomplete.
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 20 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
 Starting Placer Task
@@ -323,26 +324,26 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2120.250 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13b405283
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2112.484 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 4ff8fc1f
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2120.250 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2112.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2112.484 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 98094a52
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 2a971763
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 2120.250 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 98094a52
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2112.484 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2a971763
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.166 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2112.484 ; gain = 0.000
 ERROR: [Place 30-99] Placer failed with error: 'Unable to place all the instance of site type XADC'
 Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: a76d5e53
+Ending Placer Task | Checksum: 2d6cd10b
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.168 . Memory (MB): peak = 2120.250 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2112.484 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-86 Infos, 47 Warnings, 2 Critical Warnings and 2 Errors encountered.
+86 Infos, 43 Warnings, 8 Critical Warnings and 2 Errors encountered.
 place_design failed
 ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  5 19:47:04 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  7 14:25:22 2022...

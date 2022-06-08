@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon May 30 22:31:43 2022
+-- Date        : Mon Jun  6 14:54:10 2022
 -- Host        : BACCHUS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top embsys_xadc_wiz_0_0 -prefix
---               embsys_xadc_wiz_0_0_ embsys_xadc_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_sim_netlist.vhdl
 -- Design      : embsys_xadc_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -110,6 +110,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 1 downto 0 );
     hard_macro_rst_reg : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder : entity is "embsys_xadc_wiz_0_0_address_decoder";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder is
@@ -1782,6 +1784,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control : entity is "embsys_xadc_wiz_0_0_interrupt_control";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control is
@@ -2769,6 +2773,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset is
     s_axi_arvalid : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset : entity is "embsys_xadc_wiz_0_0_soft_reset";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset is
@@ -3289,7 +3295,6 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp is
     eos_out : out STD_LOGIC;
     jtagmodified_i : out STD_LOGIC;
     s_axi_aclk_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    muxaddr_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     local_reg_wrack_d1 : out STD_LOGIC;
     local_reg_rdack_d1 : out STD_LOGIC;
     status_reg_rdack_d1 : out STD_LOGIC;
@@ -3306,6 +3311,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp is
     vn_in : in STD_LOGIC;
     vp_in : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    VAUXN : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    VAUXP : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \status_reg_reg[7]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     reset2ip_reset : in STD_LOGIC;
     local_reg_wrack_d1_reg_0 : in STD_LOGIC;
@@ -3332,6 +3339,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp is
     rst_ip2bus_rdack : in STD_LOGIC;
     dummy_intr_reg_rdack : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp : entity is "embsys_xadc_wiz_0_0_xadc_core_drp";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp is
@@ -3374,6 +3383,7 @@ architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp 
   signal p_4_out : STD_LOGIC_VECTOR ( 6 downto 5 );
   signal \^s_axi_aclk_0\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal status_reg_rdack : STD_LOGIC;
+  signal NLW_XADC_INST_MUXADDR_UNCONNECTED : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \INTR_CTRLR_GEN_I.ip2bus_error_i_1\ : label is "soft_lutpair23";
   attribute SOFT_HLUTNM of \INTR_CTRLR_GEN_I.ip2bus_wrack_i_2\ : label is "soft_lutpair23";
@@ -3460,7 +3470,7 @@ begin
     );
 XADC_INST: unisim.vcomponents.XADC
     generic map(
-      INIT_40 => X"0803",
+      INIT_40 => X"0000",
       INIT_41 => X"21A0",
       INIT_42 => X"0400",
       INIT_43 => X"0000",
@@ -3468,8 +3478,8 @@ XADC_INST: unisim.vcomponents.XADC
       INIT_45 => X"0000",
       INIT_46 => X"0000",
       INIT_47 => X"0000",
-      INIT_48 => X"0800",
-      INIT_49 => X"0000",
+      INIT_48 => X"0000",
+      INIT_49 => X"000F",
       INIT_4A => X"0000",
       INIT_4B => X"0000",
       INIT_4C => X"0000",
@@ -3518,11 +3528,13 @@ XADC_INST: unisim.vcomponents.XADC
       JTAGBUSY => jtagbusy_i,
       JTAGLOCKED => \^d\(6),
       JTAGMODIFIED => \^jtagmodified_i\,
-      MUXADDR(4 downto 0) => muxaddr_out(4 downto 0),
+      MUXADDR(4 downto 0) => NLW_XADC_INST_MUXADDR_UNCONNECTED(4 downto 0),
       OT => \^s_axi_aclk_0\(0),
       RESET => RESET,
-      VAUXN(15 downto 0) => B"0000000000000000",
-      VAUXP(15 downto 0) => B"0000000000000000",
+      VAUXN(15 downto 4) => B"000000000000",
+      VAUXN(3 downto 0) => VAUXN(3 downto 0),
+      VAUXP(15 downto 4) => B"000000000000",
+      VAUXP(3 downto 0) => VAUXP(3 downto 0),
       VN => vn_in,
       VP => vp_in
     );
@@ -4253,6 +4265,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment is
     hard_macro_rst_reg : in STD_LOGIC;
     \s_axi_rdata_i_reg[31]_0\ : in STD_LOGIC_VECTOR ( 18 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment : entity is "embsys_xadc_wiz_0_0_slave_attachment";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment is
@@ -5118,6 +5132,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ipif is
     hard_macro_rst_reg : in STD_LOGIC;
     \s_axi_rdata_i_reg[31]\ : in STD_LOGIC_VECTOR ( 18 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ipif : entity is "embsys_xadc_wiz_0_0_axi_lite_ipif";
 end embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ipif is
@@ -5259,13 +5275,20 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc is
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
     ip2intc_irpt : out STD_LOGIC;
+    vauxp0 : in STD_LOGIC;
+    vauxn0 : in STD_LOGIC;
+    vauxp1 : in STD_LOGIC;
+    vauxn1 : in STD_LOGIC;
+    vauxp2 : in STD_LOGIC;
+    vauxn2 : in STD_LOGIC;
+    vauxp3 : in STD_LOGIC;
+    vauxn3 : in STD_LOGIC;
     busy_out : out STD_LOGIC;
     channel_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     eoc_out : out STD_LOGIC;
     eos_out : out STD_LOGIC;
     ot_out : out STD_LOGIC;
     alarm_out : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    muxaddr_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vp_in : in STD_LOGIC;
     vn_in : in STD_LOGIC
   );
@@ -5281,6 +5304,8 @@ entity embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc is
   attribute C_S_AXI_ADDR_WIDTH of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc : entity is 11;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc : entity is "embsys_xadc_wiz_0_0_axi_xadc";
   attribute hdl : string;
   attribute hdl of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc : entity is "VHDL";
   attribute ip_group : string;
@@ -5302,11 +5327,11 @@ architecture STRUCTURE of embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc is
   signal AXI_LITE_IPIF_I_n_61 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_62 : STD_LOGIC;
   signal AXI_XADC_CORE_I_n_16 : STD_LOGIC;
+  signal AXI_XADC_CORE_I_n_24 : STD_LOGIC;
   signal AXI_XADC_CORE_I_n_29 : STD_LOGIC;
-  signal AXI_XADC_CORE_I_n_34 : STD_LOGIC;
-  signal AXI_XADC_CORE_I_n_35 : STD_LOGIC;
-  signal AXI_XADC_CORE_I_n_36 : STD_LOGIC;
-  signal AXI_XADC_CORE_I_n_37 : STD_LOGIC;
+  signal AXI_XADC_CORE_I_n_30 : STD_LOGIC;
+  signal AXI_XADC_CORE_I_n_31 : STD_LOGIC;
+  signal AXI_XADC_CORE_I_n_32 : STD_LOGIC;
   signal \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_1\ : STD_LOGIC;
   signal \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_22\ : STD_LOGIC;
   signal \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_25\ : STD_LOGIC;
@@ -5489,14 +5514,14 @@ AXI_LITE_IPIF_I: entity work.embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ip
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[16]\(15 downto 0) => do_reg(15 downto 0),
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[21]\(10 downto 0) => status_reg(10 downto 0),
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(8) => \^alarm_out\(7),
-      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(7) => AXI_XADC_CORE_I_n_34,
-      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(6) => AXI_XADC_CORE_I_n_35,
-      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(5) => AXI_XADC_CORE_I_n_36,
-      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(4) => AXI_XADC_CORE_I_n_37,
+      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(7) => AXI_XADC_CORE_I_n_29,
+      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(6) => AXI_XADC_CORE_I_n_30,
+      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(5) => AXI_XADC_CORE_I_n_31,
+      \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(4) => AXI_XADC_CORE_I_n_32,
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(3 downto 1) => \^alarm_out\(2 downto 0),
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23]\(0) => alarm_reg(0),
       \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[31]\ => \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_1\,
-      \INTR_CTRLR_GEN_I.ip2bus_wrack_reg\ => AXI_XADC_CORE_I_n_29,
+      \INTR_CTRLR_GEN_I.ip2bus_wrack_reg\ => AXI_XADC_CORE_I_n_24,
       Intr2Bus_RdAck0 => Intr2Bus_RdAck0,
       Intr2Bus_WrAck_reg => \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_22\,
       Q(16) => p_0_in44_in,
@@ -5615,12 +5640,20 @@ AXI_XADC_CORE_I: entity work.embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_d
       \INTR_CTRLR_GEN_I.ip2bus_error_reg\ => AXI_LITE_IPIF_I_n_42,
       \INTR_CTRLR_GEN_I.ip2bus_error_reg_0\ => \INTR_CTRLR_GEN_I.ip2bus_error_i_3_n_0\,
       Q(8) => \^alarm_out\(7),
-      Q(7) => AXI_XADC_CORE_I_n_34,
-      Q(6) => AXI_XADC_CORE_I_n_35,
-      Q(5) => AXI_XADC_CORE_I_n_36,
-      Q(4) => AXI_XADC_CORE_I_n_37,
+      Q(7) => AXI_XADC_CORE_I_n_29,
+      Q(6) => AXI_XADC_CORE_I_n_30,
+      Q(5) => AXI_XADC_CORE_I_n_31,
+      Q(4) => AXI_XADC_CORE_I_n_32,
       Q(3 downto 1) => \^alarm_out\(2 downto 0),
       Q(0) => alarm_reg(0),
+      VAUXN(3) => vauxn3,
+      VAUXN(2) => vauxn2,
+      VAUXN(1) => vauxn1,
+      VAUXN(0) => vauxn0,
+      VAUXP(3) => vauxp3,
+      VAUXP(2) => vauxp2,
+      VAUXP(1) => vauxp1,
+      VAUXP(0) => vauxp0,
       bus2ip_rdce(1) => bus2ip_rdce(23),
       bus2ip_rdce(0) => bus2ip_rdce(0),
       bus2ip_reset_active_high => bus2ip_reset_active_high,
@@ -5649,8 +5682,7 @@ AXI_XADC_CORE_I: entity work.embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_d
       local_reg_wrack0 => local_reg_wrack0,
       local_reg_wrack_d1 => local_reg_wrack_d1,
       local_reg_wrack_d1_reg_0 => AXI_LITE_IPIF_I_n_60,
-      local_reg_wrack_reg_0 => AXI_XADC_CORE_I_n_29,
-      muxaddr_out(4 downto 0) => muxaddr_out(4 downto 0),
+      local_reg_wrack_reg_0 => AXI_XADC_CORE_I_n_24,
       reset2ip_reset => reset2ip_reset,
       rst_ip2bus_rdack => rst_ip2bus_rdack,
       s_axi_aclk => s_axi_aclk,
@@ -6115,6 +6147,14 @@ entity embsys_xadc_wiz_0_0 is
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
     ip2intc_irpt : out STD_LOGIC;
+    vauxp0 : in STD_LOGIC;
+    vauxn0 : in STD_LOGIC;
+    vauxp1 : in STD_LOGIC;
+    vauxn1 : in STD_LOGIC;
+    vauxp2 : in STD_LOGIC;
+    vauxn2 : in STD_LOGIC;
+    vauxp3 : in STD_LOGIC;
+    vauxn3 : in STD_LOGIC;
     channel_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     busy_out : out STD_LOGIC;
     eoc_out : out STD_LOGIC;
@@ -6124,7 +6164,6 @@ entity embsys_xadc_wiz_0_0 is
     vccint_alarm_out : out STD_LOGIC;
     user_temp_alarm_out : out STD_LOGIC;
     alarm_out : out STD_LOGIC;
-    muxaddr_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vp_in : in STD_LOGIC;
     vn_in : in STD_LOGIC
   );
@@ -6195,7 +6234,6 @@ inst: entity work.embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
       eoc_out => eoc_out,
       eos_out => eos_out,
       ip2intc_irpt => ip2intc_irpt,
-      muxaddr_out(4 downto 0) => muxaddr_out(4 downto 0),
       ot_out => ot_out,
       s_axi_aclk => s_axi_aclk,
       s_axi_araddr(10) => '0',
@@ -6226,6 +6264,14 @@ inst: entity work.embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
       s_axi_wready => s_axi_wready,
       s_axi_wstrb(3 downto 0) => s_axi_wstrb(3 downto 0),
       s_axi_wvalid => s_axi_wvalid,
+      vauxn0 => vauxn0,
+      vauxn1 => vauxn1,
+      vauxn2 => vauxn2,
+      vauxn3 => vauxn3,
+      vauxp0 => vauxp0,
+      vauxp1 => vauxp1,
+      vauxp2 => vauxp2,
+      vauxp3 => vauxp3,
       vn_in => vn_in,
       vp_in => vp_in
     );

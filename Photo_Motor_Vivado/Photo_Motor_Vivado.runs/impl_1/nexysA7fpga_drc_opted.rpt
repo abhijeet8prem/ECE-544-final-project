@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Jun  5 19:47:02 2022
+| Date         : Tue Jun  7 14:25:22 2022
 | Host         : BACCHUS running 64-bit major release  (build 9200)
 | Command      : report_drc -file nexysA7fpga_drc_opted.rpt -pb nexysA7fpga_drc_opted.pb -rpx nexysA7fpga_drc_opted.rpx
 | Design       : nexysA7fpga
@@ -24,26 +24,15 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 24
-+--------+----------+------------------------------------------------+------------+
-| Rule   | Severity | Description                                    | Violations |
-+--------+----------+------------------------------------------------+------------+
-| PLIO-3 | Warning  | Placement Constraints Check for IO constraints | 2          |
-| RPBF-3 | Warning  | IO port buffering is incomplete                | 22         |
-+--------+----------+------------------------------------------------+------------+
+             Violations found: 20
++--------+----------+---------------------------------+------------+
+| Rule   | Severity | Description                     | Violations |
++--------+----------+---------------------------------+------------+
+| RPBF-3 | Warning  | IO port buffering is incomplete | 20         |
++--------+----------+---------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-PLIO-3#1 Warning
-Placement Constraints Check for IO constraints  
-Partially locked IO Bus is found. Following components of the IO Bus XA_N[4:1] are not locked:  XA_N[1]
-Related violations: <none>
-
-PLIO-3#2 Warning
-Placement Constraints Check for IO constraints  
-Partially locked IO Bus is found. Following components of the IO Bus XA_P[4:1] are not locked:  XA_P[1]
-Related violations: <none>
-
 RPBF-3#1 Warning
 IO port buffering is incomplete  
 Device port JA[0] expects both input and output buffering but the buffers are incomplete.
@@ -142,16 +131,6 @@ Related violations: <none>
 RPBF-3#20 Warning
 IO port buffering is incomplete  
 Device port JC[7] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#21 Warning
-IO port buffering is incomplete  
-Device port XA_N[1] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#22 Warning
-IO port buffering is incomplete  
-Device port XA_P[1] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 

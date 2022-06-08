@@ -190,13 +190,20 @@ entity embsys_xadc_wiz_0_0_axi_xadc is
    -- XADC External interface signals
 
     -- Conversion start control signal for Event driven mode
+    vauxp1          : in  STD_LOGIC;                         -- Auxiliary Channel 1
+    vauxn1          : in  STD_LOGIC;
+    vauxp2          : in  STD_LOGIC;                         -- Auxiliary Channel 2
+    vauxn2          : in  STD_LOGIC;
+    vauxp3          : in  STD_LOGIC;                         -- Auxiliary Channel 3
+    vauxn3          : in  STD_LOGIC;
+    vauxp4          : in  STD_LOGIC;                         -- Auxiliary Channel 4
+    vauxn4          : in  STD_LOGIC;
     busy_out        : out  STD_LOGIC;                        -- ADC Busy signal
     channel_out     : out  STD_LOGIC_VECTOR (4 downto 0);    -- Channel Selection Outputs
     eoc_out         : out  STD_LOGIC;                        -- End of Conversion Signal
     eos_out         : out  STD_LOGIC;                        -- End of Sequence Signal
     ot_out          : out STD_LOGIC;
     alarm_out       : out STD_LOGIC_VECTOR (7 downto 0);                         -- OR'ed output of all the Alarms
-    muxaddr_out     : out STD_LOGIC_VECTOR(4 downto 0); 
     vp_in           : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
     vn_in           : in  STD_LOGIC
   );   
@@ -266,13 +273,20 @@ component embsys_xadc_wiz_0_0_xadc_core_drp
      ---------------- interrupt interface with the system  -----------
      Interrupt_status       : out std_logic_vector(0 to IP_INTR_NUM-1);
      ----------------  sysmon macro interface  -------------------
+     vauxp1                 : in  STD_LOGIC;                         -- Auxiliary Channel 1
+     vauxn1                 : in  STD_LOGIC;
+     vauxp2                 : in  STD_LOGIC;                         -- Auxiliary Channel 2
+     vauxn2                 : in  STD_LOGIC;
+     vauxp3                 : in  STD_LOGIC;                         -- Auxiliary Channel 3
+     vauxn3                 : in  STD_LOGIC;
+     vauxp4                 : in  STD_LOGIC;                         -- Auxiliary Channel 4
+     vauxn4                 : in  STD_LOGIC;
      busy_out               : out  STD_LOGIC;                        -- ADC Busy signal
      channel_out            : out  STD_LOGIC_VECTOR (4 downto 0);    -- Channel Selection Outputs
      eoc_out                : out  STD_LOGIC;                        -- End of Conversion Signal
      eos_out                : out  STD_LOGIC;                        -- End of Sequence Signal
      ot_out                 : out STD_LOGIC;
      alarm_out              : out STD_LOGIC_VECTOR (7 downto 0);                   
-     muxaddr_out            : out STD_LOGIC_VECTOR(4 downto 0); 
      vp_in                  : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
      vn_in                  : in  STD_LOGIC
    );
@@ -717,13 +731,20 @@ AXI_XADC_CORE_I : embsys_xadc_wiz_0_0_xadc_core_drp
     Sysmon_IP2Bus_RdAck          => xadc_ip2bus_rdack,
     Interrupt_status             => interrupt_status_i,
     --- external interface signals ------------------
+    vauxp1                       => vauxp1,
+    vauxn1                       => vauxn1,
+    vauxp2                       => vauxp2,
+    vauxn2                       => vauxn2,
+    vauxp3                       => vauxp3,
+    vauxn3                       => vauxn3,
+    vauxp4                       => vauxp4,
+    vauxn4                       => vauxn4,
     busy_out                     => busy_out,
     channel_out                  => channel_out,
     eoc_out                      => eoc_out,
     eos_out                      => eos_out,
     ot_out                       => ot_out,
     alarm_out                    => alarm_out,
-    muxaddr_out                  => muxaddr_out,
     vp_in                        => vp_in,
     vn_in                        => vn_in
    );

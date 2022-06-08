@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sun Jun  5 19:16:44 2022
+//Date        : Tue Jun  7 14:23:08 2022
 //Host        : BACCHUS running 64-bit major release  (build 9200)
 //Command     : generate_target embsys_wrapper.bd
 //Design      : embsys_wrapper
@@ -25,6 +25,16 @@ module embsys_wrapper
     RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
+    Vaux1_v_n,
+    Vaux1_v_p,
+    Vaux2_v_n,
+    Vaux2_v_p,
+    Vaux3_v_n,
+    Vaux3_v_p,
+    Vaux4_v_n,
+    Vaux4_v_p,
+    Vp_Vn_v_n,
+    Vp_Vn_v_p,
     an_0,
     btnC_0,
     btnD_0,
@@ -44,9 +54,7 @@ module embsys_wrapper
     sysclk,
     sysreset_n,
     uart_rtl_0_rxd,
-    uart_rtl_0_txd,
-    vn_in,
-    vp_in);
+    uart_rtl_0_txd);
   output [7:0]PWM;
   inout PmodOLEDrgb_out_0_pin10_io;
   inout PmodOLEDrgb_out_0_pin1_io;
@@ -62,6 +70,16 @@ module embsys_wrapper
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
+  input Vaux1_v_n;
+  input Vaux1_v_p;
+  input Vaux2_v_n;
+  input Vaux2_v_p;
+  input Vaux3_v_n;
+  input Vaux3_v_p;
+  input Vaux4_v_n;
+  input Vaux4_v_p;
+  input Vp_Vn_v_n;
+  input Vp_Vn_v_p;
   output [7:0]an_0;
   input btnC_0;
   input btnD_0;
@@ -82,8 +100,6 @@ module embsys_wrapper
   input sysreset_n;
   input uart_rtl_0_rxd;
   output uart_rtl_0_txd;
-  input vn_in;
-  input vp_in;
 
   wire [7:0]PWM;
   wire PmodOLEDrgb_out_0_pin10_i;
@@ -124,6 +140,16 @@ module embsys_wrapper
   wire RGB2_Blue_0;
   wire RGB2_Green_0;
   wire RGB2_Red_0;
+  wire Vaux1_v_n;
+  wire Vaux1_v_p;
+  wire Vaux2_v_n;
+  wire Vaux2_v_p;
+  wire Vaux3_v_n;
+  wire Vaux3_v_p;
+  wire Vaux4_v_n;
+  wire Vaux4_v_p;
+  wire Vp_Vn_v_n;
+  wire Vp_Vn_v_p;
   wire [7:0]an_0;
   wire btnC_0;
   wire btnD_0;
@@ -144,8 +170,6 @@ module embsys_wrapper
   wire sysreset_n;
   wire uart_rtl_0_rxd;
   wire uart_rtl_0_txd;
-  wire vn_in;
-  wire vp_in;
 
   IOBUF PmodOLEDrgb_out_0_pin10_iobuf
        (.I(PmodOLEDrgb_out_0_pin10_o),
@@ -219,6 +243,16 @@ module embsys_wrapper
         .RGB2_Blue_0(RGB2_Blue_0),
         .RGB2_Green_0(RGB2_Green_0),
         .RGB2_Red_0(RGB2_Red_0),
+        .Vaux1_v_n(Vaux1_v_n),
+        .Vaux1_v_p(Vaux1_v_p),
+        .Vaux2_v_n(Vaux2_v_n),
+        .Vaux2_v_p(Vaux2_v_p),
+        .Vaux3_v_n(Vaux3_v_n),
+        .Vaux3_v_p(Vaux3_v_p),
+        .Vaux4_v_n(Vaux4_v_n),
+        .Vaux4_v_p(Vaux4_v_p),
+        .Vp_Vn_v_n(Vp_Vn_v_n),
+        .Vp_Vn_v_p(Vp_Vn_v_p),
         .an_0(an_0),
         .btnC_0(btnC_0),
         .btnD_0(btnD_0),
@@ -238,7 +272,5 @@ module embsys_wrapper
         .sysclk(sysclk),
         .sysreset_n(sysreset_n),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),
-        .uart_rtl_0_txd(uart_rtl_0_txd),
-        .vn_in(vn_in),
-        .vp_in(vp_in));
+        .uart_rtl_0_txd(uart_rtl_0_txd));
 endmodule

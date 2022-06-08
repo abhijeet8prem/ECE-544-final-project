@@ -663,3 +663,32 @@ Reason: No Platforms Found.
 00:45:34 INFO  : Platform repository initialization has completed.
 00:45:34 INFO  : Successfully done query RDI_DATADIR 
 00:45:34 INFO  : Registering command handlers for Vitis TCF services
+00:52:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+00:52:53 INFO  : XSCT server has started successfully.
+00:52:53 INFO  : Successfully done setting XSCT server connection channel  
+00:52:53 INFO  : plnx-install-location is set to ''
+00:52:53 INFO  : Successfully done setting workspace for the tool. 
+00:52:54 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+00:52:54 INFO  : Platform repository initialization has completed.
+00:52:54 INFO  : Registering command handlers for Vitis TCF services
+00:52:55 INFO  : Successfully done query RDI_DATADIR 
+05:19:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+05:19:24 INFO  : XSCT server has started successfully.
+05:19:24 INFO  : Successfully done setting XSCT server connection channel  
+05:19:24 INFO  : plnx-install-location is set to ''
+05:19:24 INFO  : Successfully done setting workspace for the tool. 
+05:19:26 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+05:19:26 INFO  : Platform repository initialization has completed.
+05:19:26 INFO  : Registering command handlers for Vitis TCF services
+05:19:26 INFO  : Successfully done query RDI_DATADIR 
+06:29:40 INFO  : Result from executing command 'getProjects': SolarMotorPlatform
+06:29:40 INFO  : Result from executing command 'getPlatforms': 
+06:29:41 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+06:36:43 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+06:46:13 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...

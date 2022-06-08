@@ -42,9 +42,14 @@ module nexysA7fpga(
 	inout logic [7:0]  JB,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
 	inout logic [7:0]  JC,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
     inout logic [7:0]  JD,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
-    inout logic [4:1]  XA_N,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
-    inout logic [4:1]  XA_P              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
-
+    input   vauxn1,   
+    input   vauxp1,
+    input   vauxn2,   
+    input   vauxp2,
+    input   vauxn3,   
+    input   vauxp3,
+    input   vauxn4,   
+    input   vauxp4
 
 );
 
@@ -146,8 +151,14 @@ embsys EMBSYS
         //
 
         //
-        .vn_in(XA_N[1]),
-        .vp_in(XA_P[1]),
+        .Vaux1_v_n(vauxn1),
+        .Vaux1_v_p(vauxp1),
+        .Vaux2_v_n(vauxn2),
+        .Vaux2_v_p(vauxp2),
+        .Vaux3_v_n(vauxn3),
+        .Vaux3_v_p(vauxp3),
+        .Vaux4_v_n(vauxn4),
+        .Vaux4_v_p(vauxp4),
         
         .encA(JC[4]),     // A and B quadrature inputs from PmodENC
         .encB(JC[5]),

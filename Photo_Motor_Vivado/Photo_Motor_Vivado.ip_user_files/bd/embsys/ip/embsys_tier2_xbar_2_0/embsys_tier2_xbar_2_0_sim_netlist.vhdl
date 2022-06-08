@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Mon May 30 22:31:50 2022
+-- Date        : Fri Jun  3 07:31:40 2022
 -- Host        : BACCHUS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top embsys_tier2_xbar_2_0 -prefix
 --               embsys_tier2_xbar_2_0_ embsys_tier2_xbar_2_0_sim_netlist.vhdl

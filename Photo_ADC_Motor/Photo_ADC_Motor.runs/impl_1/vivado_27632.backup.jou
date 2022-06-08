@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun  8 07:00:03 2022
+# Process ID: 27632
+# Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_ADC_Motor/Photo_ADC_Motor.runs/impl_1
+# Command line: vivado.exe -log nexysA7fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nexysA7fpga.tcl -notrace
+# Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_ADC_Motor/Photo_ADC_Motor.runs/impl_1/nexysA7fpga.vdi
+# Journal file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_ADC_Motor/Photo_ADC_Motor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nexysA7fpga.tcl -notrace

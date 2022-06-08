@@ -171,7 +171,7 @@ int AXI_Timer_initialize(void);
 
 
 void OLED_Display_Global_DCP();
-void buttonHandling();
+void buttonHandling(int PeriodEditBool);
 void encoderHandling();
 
 // Print Functions
@@ -182,7 +182,7 @@ void xil_print_u8toHex(u8 number);
 
 void PWM_Tester();
 
-
+void LightFollow();
 
 /************************** MAIN PROGRAM ************************************/
 int FIT_Handler_Switch=0;  //This global variable is just used to tell the FIT_Handler when to start and stop
@@ -578,7 +578,7 @@ void FIT_Handler(void){
 *  the functions that handle queries to the Rotary Encoder, the
  *****************************************************************************/
 
-int Period_Global = 0;
+int Period_Global = 20;
 int DutyCycle_Global = 0;
 
 // These two buffers will act to prevent
@@ -594,29 +594,74 @@ int ENC_Filter_Input_Previous=0;
 float setpoint_Light_X= 1.0;  // Fractional Value of Right/Left
 float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
 
+
 int verticle_Angle = 0;  // Positive value are for up facing angles and negative values are for down facing angles
 int horizontal_Angle = 0;  // Positive value are for right facing angles and negative values are for left facing angles
 
-void Light_Servo_Calculations(uint16_t signal_RightTop, uint16_t signal_RightBottom, uint16_t signal_LeftTop, uint16_t signal_LeftBottom){
-	float signal_Right=(float)((uint32_t)signal_RightTop+(uint32_t)signal_RightBottom);
-	float signal_Left=(float)((uint32_t)signal_LeftTop+(uint32_t)signal_LeftBottom);
-	float signal_Top=(float)((uint32_t)signal_RightTop+(uint32_t)signal_LeftTop);
-	float signal_Bottom=(float)((uint32_t)signal_RightBottom+(uint32_t)signal_LeftBottom);
-
-	float horizontalRatio = signal_Right/signal_Left;
+void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
+	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
 	if(horizontalRatio>setpoint_Light_X){
 		horizontal_Angle=horizontal_Angle-1;
 	} else if(horizontalRatio<setpoint_Light_X){
 		horizontal_Angle=horizontal_Angle+1;
 	}
 
-	float verticleRatio = signal_Top/signal_Bottom;
+	float verticleRatio = ((float)signal_Top)/((float)signal_Bottom);
 	if(verticleRatio>setpoint_Light_Y){
 		verticle_Angle=verticle_Angle-1;
 	} else if(verticleRatio<setpoint_Light_Y){
 		verticle_Angle=verticle_Angle+1;
 	}
 }
+
+
+
+
+void LightFollow()
+{
+	//ROTARY ENCODER CODE
+
+	int loopTracker = 0;
+
+	int defaultAngle_Period100us = 200;
+	PWM_Set_Period(PWM_BASEADDR, 100*1000*Period_Global);
+    PWM_Enable(PWM_BASEADDR);
+	while(1) {
+		loopTracker=loopTracker+1;
+		// loopTracker is used to determine which loop certain functions should be called in
+		if (loopTracker>1001){   // Reset loop Tracker
+			loopTracker = 1;
+		}
+
+		// Update Motor Inputs every 200 ticks
+		if(loopTracker%1000==0){
+			// This if statement handles changing the direction  of the motor
+			PWM_Set_Duty(PWM_BASEADDR, 100*100*(defaultAngle_Period100us+verticle_Angle), 0);
+			PWM_Set_Duty(PWM_BASEADDR, 100*100*(defaultAngle_Period100us+horizontal_Angle), 1);
+		}
+
+
+		if(loopTracker%100==0){ // Change Speeds less Frequently
+
+			buttonHandling(0);
+
+			OLED_Display_Angle();
+		}
+
+		usleep(1000);
+
+	} // rotary button has been pressed - exit the loop
+
+
+	// Write one final string
+	OLEDrgb_Clear(&pmodOLEDrgb_inst);
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 0, 4);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "Control Loop Done");
+	usleep(2500 * 1000);
+	return;
+
+}
+
 
 
 void PWM_Tester()
@@ -665,7 +710,7 @@ void PWM_Tester()
 
 		if(loopTracker%100==0){ // Change Speeds less Frequently
 
-			buttonHandling();
+			buttonHandling(1);
 
 			OLED_Display_Global_DCP();
 		}
@@ -722,13 +767,13 @@ void encoderHandling(){
 	}
 
 	if((PMODENC544_getBtnSwReg() & 0x00000002)== 0x00000002) {
-		Period_Global=ENC_Filter_Buffer;
+		DutyCycle_Global=ENC_Filter_Buffer;
 	}
 	ENC_Filter_Input_Previous= ENC_Filter_Input_Current;
 }
 
 // This function handles updating K value using the buttons and switches and reseting RPM with the center button
-void buttonHandling(){
+void buttonHandling(int PeriodEditBool){
 	//Have not tested this code
 	int delta_Period_Sign=0;
 	int delta_DutyCycle_Sign=0;
@@ -752,12 +797,16 @@ void buttonHandling(){
 
 	if(NX4IO_isPressed(BTNC)){ // reset Speed and Controls
 		DutyCycle_Global=0;
-		Period_Global=0;
+		Period_Global=20;
 
 	} else if(NX4IO_isPressed(BTNU)){ // increment
-		delta_Period_Sign=1;
+		if(PeriodEditBool==1){
+			delta_Period_Sign=1;
+		}
 	} else	if(NX4IO_isPressed(BTND)){ // decrement Control
-		delta_Period_Sign=-1;
+		if(PeriodEditBool==1){
+			delta_Period_Sign=-1;
+		}
 	}
 	if(NX4IO_isPressed(BTNR)){ // increment
 		delta_DutyCycle_Sign=1;
@@ -793,6 +842,26 @@ void OLED_Display_Global_DCP(){
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, "00us");
 
 }
+
+
+void OLED_Display_Angle(){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "V");
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 0);
+	PMDIO_putnum(&pmodOLEDrgb_inst, defaultAngle_Period100us+verticle_Angle,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 0);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  ");
+
+
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, 3);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "H");
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
+	PMDIO_putnum(&pmodOLEDrgb_inst, defaultAngle_Period100us+horizontal_Angle,10);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "   "); //Digits from previous number that were not overwritten if previous number had more digits
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 9, 3);
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, "  ");
+
 
 
 int queriedDutyCycle0=0;

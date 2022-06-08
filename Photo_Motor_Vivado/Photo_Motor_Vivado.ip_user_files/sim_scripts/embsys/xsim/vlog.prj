@@ -1,45 +1,37 @@
-verilog xil_defaultlib --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+verilog xil_defaultlib --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ipshared/f811/hdl/nexys4io_v3_0_S00_AXI.v" \
 "../../../bd/embsys/ipshared/f811/hdl/nexys4io_v3_0.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/rgbpwm.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/rgbpwm.v" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/debounce.v" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/f811/src/sevensegment.v" \
 "../../../bd/embsys/ip/embsys_nexys4io_0_0/sim/embsys_nexys4io_0_0.v" \
 "../../../bd/embsys/ip/embsys_lmb_bram_0/sim/embsys_lmb_bram_0.v" \
 "../../../bd/embsys/ip/embsys_xbar_0/sim/embsys_xbar_0.v" \
 "../../../bd/embsys/ip/embsys_microblaze_0_xlconcat_0/sim/embsys_microblaze_0_xlconcat_0.v" \
 "../../../bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_clk_wiz.v" \
 "../../../bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v" \
 "../../../bd/embsys/ip/embsys_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/sim/PmodOLEDrgb_pmod_bridge_0_0.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d9e9/hdl/PmodOLEDrgb_v1_0.v" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d9e9/hdl/PmodOLEDrgb_v1_0.v" \
 "../../../bd/embsys/ip/embsys_PmodOLEDrgb_0_0/sim/embsys_PmodOLEDrgb_0_0.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_pmod_bridge_0_0/sim/PmodENC_pmod_bridge_0_0.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_xlslice_0_0/sim/PmodENC_xlslice_0_0.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_xlslice_0_1/sim/PmodENC_xlslice_0_1.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_xlslice_0_2/sim/PmodENC_xlslice_0_2.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_xlslice_t_0_0/sim/PmodENC_xlslice_t_0_0.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/src/PmodENC_xlconcat_0_0/sim/PmodENC_xlconcat_0_0.v" \
-"../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/4239/src/PmodENC.v" \
-"../../../bd/embsys/ip/embsys_PmodENC_0_0/sim/embsys_PmodENC_0_0.v" \
 "../../../bd/embsys/ip/embsys_xlconcat_0_1/sim/embsys_xlconcat_0_1.v" \
 "../../../bd/embsys/ip/embsys_xlconstant_0_1/sim/embsys_xlconstant_0_1.v" \
 "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.v" \
 
-sv xil_defaultlib --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+sv xil_defaultlib --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ipshared/1f26/hdl/PWM_AXI.sv" \
 "../../../bd/embsys/ipshared/1f26/hdl/PWM_v2_0.sv" \
 "../../../bd/embsys/ip/embsys_PWM_0_0/sim/embsys_PWM_0_0.sv" \
 
-verilog xil_defaultlib --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Light_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+verilog xil_defaultlib --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0_S00_AXI.v" \
 "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0.v" \
 "../../../bd/embsys/ip/embsys_PmodENC544_0_0/sim/embsys_PmodENC544_0_0.v" \
+"../../../bd/embsys/sim/embsys.v" \
 "../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
 "../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
 "../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
 "../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
-"../../../bd/embsys/sim/embsys.v" \
 
 verilog xil_defaultlib "glbl.v"
 

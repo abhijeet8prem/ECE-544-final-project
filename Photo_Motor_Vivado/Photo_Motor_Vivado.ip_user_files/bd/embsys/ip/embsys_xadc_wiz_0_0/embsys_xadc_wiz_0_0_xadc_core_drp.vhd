@@ -169,13 +169,20 @@ entity embsys_xadc_wiz_0_0_xadc_core_drp is
      ---------------- interrupt interface with the system  -----------
      Interrupt_status       : out std_logic_vector(0 to IP_INTR_NUM-1);
      ----------------  sysmon macro interface  -------------------
+     vauxp1                 : in  STD_LOGIC;                         -- Auxiliary Channel 1
+     vauxn1                 : in  STD_LOGIC;
+     vauxp2                 : in  STD_LOGIC;                         -- Auxiliary Channel 2
+     vauxn2                 : in  STD_LOGIC;
+     vauxp3                 : in  STD_LOGIC;                         -- Auxiliary Channel 3
+     vauxn3                 : in  STD_LOGIC;
+     vauxp4                 : in  STD_LOGIC;                         -- Auxiliary Channel 4
+     vauxn4                 : in  STD_LOGIC;
      busy_out               : out  STD_LOGIC;                        -- ADC Busy signal
      channel_out            : out  STD_LOGIC_VECTOR (4 downto 0);    -- Channel Selection Outputs
      eoc_out                : out  STD_LOGIC;                        -- End of Conversion Signal
      eos_out                : out  STD_LOGIC;                        -- End of Sequence Signal
      ot_out                 : out STD_LOGIC;
      alarm_out              : out STD_LOGIC_VECTOR (7 downto 0);
-     muxaddr_out            : out STD_LOGIC_VECTOR(4 downto 0);
      vp_in                  : in  STD_LOGIC;                         -- Dedicated Analog Input Pair
      vn_in                  : in  STD_LOGIC
    );
@@ -885,7 +892,6 @@ alarm_out <= alarm_reg(8 downto 1);-- updated from 2 downto 1 to 8 downto 1 for 
 
 -- Added interface to MUX ADDRESS for external address multiplexer from the
 -- XADC macro to core ports.
-muxaddr_out <= mux_addr_no_i;
 
 -------------------------------------------------------------------------------
 -- == XADC INTERFACE --  OUTPUT Signals ==
@@ -923,17 +929,17 @@ muxaddr_out <= mux_addr_no_i;
         aux_channel_p(0) <= '0';
         aux_channel_n(0) <= '0';
 
-        aux_channel_p(1) <= '0';
-        aux_channel_n(1) <= '0';
+        aux_channel_p(1) <= vauxp1;
+        aux_channel_n(1) <= vauxn1;
 
-        aux_channel_p(2) <= '0';
-        aux_channel_n(2) <= '0';
+        aux_channel_p(2) <= vauxp2;
+        aux_channel_n(2) <= vauxn2;
 
-        aux_channel_p(3) <= '0';
-        aux_channel_n(3) <= '0';
+        aux_channel_p(3) <= vauxp3;
+        aux_channel_n(3) <= vauxn3;
 
-        aux_channel_p(4) <= '0';
-        aux_channel_n(4) <= '0';
+        aux_channel_p(4) <= vauxp4;
+        aux_channel_n(4) <= vauxn4;
 
         aux_channel_p(5) <= '0';
         aux_channel_n(5) <= '0';
@@ -970,11 +976,11 @@ muxaddr_out <= mux_addr_no_i;
 
  XADC_INST : XADC
      generic map(
-        INIT_40 => X"0803", -- config reg 0
+        INIT_40 => X"0000", -- config reg 0
         INIT_41 => X"21A0", -- config reg 1
         INIT_42 => X"0400", -- config reg 2
-        INIT_48 => X"0800", -- Sequencer channel selection
-        INIT_49 => X"0000", -- Sequencer channel selection
+        INIT_48 => X"0000", -- Sequencer channel selection
+        INIT_49 => X"001E", -- Sequencer channel selection
         INIT_4A => X"0000", -- Sequencer Average selection
         INIT_4B => X"0000", -- Sequencer Average selection
         INIT_4C => X"0000", -- Sequencer Bipolar selection
@@ -1017,7 +1023,6 @@ port map (
         JTAGBUSY            => jtagbusy_i,         --: out
         JTAGMODIFIED        => jtagmodified_i,     --: out
         OT                  => ot_i,               --: out
-        MUXADDR             => mux_addr_no_i,       --; out (4 downto 0)-- added for XADC
         VN                  => vn_in,
         VP                  => vp_in
          );

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon May 30 22:31:43 2022
+// Date        : Mon Jun  6 14:54:10 2022
 // Host        : BACCHUS running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top embsys_xadc_wiz_0_0 -prefix
-//               embsys_xadc_wiz_0_0_ embsys_xadc_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_sim_netlist.v
 // Design      : embsys_xadc_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -34,6 +34,14 @@ module embsys_xadc_wiz_0_0
     s_axi_rvalid,
     s_axi_rready,
     ip2intc_irpt,
+    vauxp0,
+    vauxn0,
+    vauxp1,
+    vauxn1,
+    vauxp2,
+    vauxn2,
+    vauxp3,
+    vauxn3,
     channel_out,
     busy_out,
     eoc_out,
@@ -43,7 +51,6 @@ module embsys_xadc_wiz_0_0
     vccint_alarm_out,
     user_temp_alarm_out,
     alarm_out,
-    muxaddr_out,
     vp_in,
     vn_in);
   input s_axi_aclk;
@@ -66,6 +73,14 @@ module embsys_xadc_wiz_0_0
   output s_axi_rvalid;
   input s_axi_rready;
   output ip2intc_irpt;
+  input vauxp0;
+  input vauxn0;
+  input vauxp1;
+  input vauxn1;
+  input vauxp2;
+  input vauxn2;
+  input vauxp3;
+  input vauxn3;
   output [4:0]channel_out;
   output busy_out;
   output eoc_out;
@@ -75,7 +90,6 @@ module embsys_xadc_wiz_0_0
   output vccint_alarm_out;
   output user_temp_alarm_out;
   output alarm_out;
-  output [4:0]muxaddr_out;
   input vp_in;
   input vn_in;
 
@@ -86,7 +100,6 @@ module embsys_xadc_wiz_0_0
   wire eoc_out;
   wire eos_out;
   wire ip2intc_irpt;
-  wire [4:0]muxaddr_out;
   wire ot_out;
   wire s_axi_aclk;
   wire [10:0]s_axi_araddr;
@@ -108,6 +121,14 @@ module embsys_xadc_wiz_0_0
   wire [3:0]s_axi_wstrb;
   wire s_axi_wvalid;
   wire user_temp_alarm_out;
+  wire vauxn0;
+  wire vauxn1;
+  wire vauxn2;
+  wire vauxn3;
+  wire vauxp0;
+  wire vauxp1;
+  wire vauxp2;
+  wire vauxp3;
   wire vccaux_alarm_out;
   wire vccint_alarm_out;
   wire vn_in;
@@ -154,7 +175,6 @@ module embsys_xadc_wiz_0_0
         .eoc_out(eoc_out),
         .eos_out(eos_out),
         .ip2intc_irpt(ip2intc_irpt),
-        .muxaddr_out(muxaddr_out),
         .ot_out(ot_out),
         .s_axi_aclk(s_axi_aclk),
         .s_axi_araddr({1'b0,s_axi_araddr[9:2],1'b0,1'b0}),
@@ -175,10 +195,19 @@ module embsys_xadc_wiz_0_0
         .s_axi_wready(s_axi_wready),
         .s_axi_wstrb(s_axi_wstrb),
         .s_axi_wvalid(s_axi_wvalid),
+        .vauxn0(vauxn0),
+        .vauxn1(vauxn1),
+        .vauxn2(vauxn2),
+        .vauxn3(vauxn3),
+        .vauxp0(vauxp0),
+        .vauxp1(vauxp1),
+        .vauxp2(vauxp2),
+        .vauxp3(vauxp3),
         .vn_in(vn_in),
         .vp_in(vp_in));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_address_decoder" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder
    (\GEN_BKEND_CE_REGISTERS[24].ce_out_i_reg[24]_0 ,
     Bus_RNW_reg_reg_0,
@@ -1696,6 +1725,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_address_decoder
         .O(sw_rst_cond));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_axi_lite_ipif" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_lite_ipif
    (\GEN_BKEND_CE_REGISTERS[24].ce_out_i_reg[24] ,
     bus2ip_reset_active_high,
@@ -2119,7 +2149,8 @@ endmodule
 
 (* C_FAMILY = "virtex7" *) (* C_INCLUDE_INTR = "1" *) (* C_INSTANCE = "embsys_xadc_wiz_0_0_axi_xadc" *) 
 (* C_SIM_MONITOR_FILE = "design.txt" *) (* C_S_AXI_ADDR_WIDTH = "11" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
-(* hdl = "VHDL" *) (* ip_group = "LOGICORE" *) (* iptype = "PERIPHERAL" *) 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_axi_xadc" *) (* hdl = "VHDL" *) (* ip_group = "LOGICORE" *) 
+(* iptype = "PERIPHERAL" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
    (s_axi_aclk,
     s_axi_aresetn,
@@ -2141,13 +2172,20 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
     s_axi_rvalid,
     s_axi_rready,
     ip2intc_irpt,
+    vauxp0,
+    vauxn0,
+    vauxp1,
+    vauxn1,
+    vauxp2,
+    vauxn2,
+    vauxp3,
+    vauxn3,
     busy_out,
     channel_out,
     eoc_out,
     eos_out,
     ot_out,
     alarm_out,
-    muxaddr_out,
     vp_in,
     vn_in);
   (* sigis = "Clk" *) input s_axi_aclk;
@@ -2170,13 +2208,20 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
   output s_axi_rvalid;
   input s_axi_rready;
   (* sigis = "INTR_LEVEL_HIGH" *) output ip2intc_irpt;
+  input vauxp0;
+  input vauxn0;
+  input vauxp1;
+  input vauxn1;
+  input vauxp2;
+  input vauxn2;
+  input vauxp3;
+  input vauxn3;
   output busy_out;
   output [4:0]channel_out;
   output eoc_out;
   output eos_out;
   output ot_out;
   output [7:0]alarm_out;
-  output [4:0]muxaddr_out;
   input vp_in;
   input vn_in;
 
@@ -2192,11 +2237,11 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
   wire AXI_LITE_IPIF_I_n_61;
   wire AXI_LITE_IPIF_I_n_62;
   wire AXI_XADC_CORE_I_n_16;
+  wire AXI_XADC_CORE_I_n_24;
   wire AXI_XADC_CORE_I_n_29;
-  wire AXI_XADC_CORE_I_n_34;
-  wire AXI_XADC_CORE_I_n_35;
-  wire AXI_XADC_CORE_I_n_36;
-  wire AXI_XADC_CORE_I_n_37;
+  wire AXI_XADC_CORE_I_n_30;
+  wire AXI_XADC_CORE_I_n_31;
+  wire AXI_XADC_CORE_I_n_32;
   wire \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_1 ;
   wire \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_22 ;
   wire \INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_25 ;
@@ -2262,7 +2307,6 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
   wire local_reg_rdack_d1;
   wire local_reg_wrack0;
   wire local_reg_wrack_d1;
-  wire [4:0]muxaddr_out;
   wire ot_out;
   wire p_0_in0_in;
   wire p_0_in14_in;
@@ -2328,6 +2372,14 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
   wire status_reg_rdack_d1;
   wire sw_rst_cond;
   wire sw_rst_cond_d1;
+  wire vauxn0;
+  wire vauxn1;
+  wire vauxn2;
+  wire vauxn3;
+  wire vauxp0;
+  wire vauxp1;
+  wire vauxp2;
+  wire vauxp3;
   wire vn_in;
   wire vp_in;
   wire wrack;
@@ -2371,9 +2423,9 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
         .\GEN_BKEND_CE_REGISTERS[24].ce_out_i_reg[24]_0 (AXI_LITE_IPIF_I_n_57),
         .\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[16] (do_reg),
         .\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[21] (status_reg),
-        .\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23] ({\^alarm_out [7],AXI_XADC_CORE_I_n_34,AXI_XADC_CORE_I_n_35,AXI_XADC_CORE_I_n_36,AXI_XADC_CORE_I_n_37,\^alarm_out [2:0],alarm_reg}),
+        .\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[23] ({\^alarm_out [7],AXI_XADC_CORE_I_n_29,AXI_XADC_CORE_I_n_30,AXI_XADC_CORE_I_n_31,AXI_XADC_CORE_I_n_32,\^alarm_out [2:0],alarm_reg}),
         .\INTR_CTRLR_GEN_I.ip2bus_data_int_reg[31] (\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_1 ),
-        .\INTR_CTRLR_GEN_I.ip2bus_wrack_reg (AXI_XADC_CORE_I_n_29),
+        .\INTR_CTRLR_GEN_I.ip2bus_wrack_reg (AXI_XADC_CORE_I_n_24),
         .Intr2Bus_RdAck0(Intr2Bus_RdAck0),
         .Intr2Bus_WrAck_reg(\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_22 ),
         .Q({p_0_in44_in,\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_25 ,p_0_in38_in,p_0_in35_in,p_0_in32_in,p_0_in29_in,\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_30 ,p_0_in23_in,p_0_in20_in,p_0_in17_in,p_0_in14_in,\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_35 ,p_0_in8_in,p_0_in5_in,p_0_in2_in,p_0_in0_in,\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I_n_40 }),
@@ -2467,7 +2519,9 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
         .D({jtaglocked_i,busy_out,channel_out}),
         .\INTR_CTRLR_GEN_I.ip2bus_error_reg (AXI_LITE_IPIF_I_n_42),
         .\INTR_CTRLR_GEN_I.ip2bus_error_reg_0 (\INTR_CTRLR_GEN_I.ip2bus_error_i_3_n_0 ),
-        .Q({\^alarm_out [7],AXI_XADC_CORE_I_n_34,AXI_XADC_CORE_I_n_35,AXI_XADC_CORE_I_n_36,AXI_XADC_CORE_I_n_37,\^alarm_out [2:0],alarm_reg}),
+        .Q({\^alarm_out [7],AXI_XADC_CORE_I_n_29,AXI_XADC_CORE_I_n_30,AXI_XADC_CORE_I_n_31,AXI_XADC_CORE_I_n_32,\^alarm_out [2:0],alarm_reg}),
+        .VAUXN({vauxn3,vauxn2,vauxn1,vauxn0}),
+        .VAUXP({vauxp3,vauxp2,vauxp1,vauxp0}),
         .bus2ip_rdce({bus2ip_rdce[23],bus2ip_rdce[0]}),
         .bus2ip_reset_active_high(bus2ip_reset_active_high),
         .bus2ip_wrce(bus2ip_wrce),
@@ -2494,8 +2548,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
         .local_reg_wrack0(local_reg_wrack0),
         .local_reg_wrack_d1(local_reg_wrack_d1),
         .local_reg_wrack_d1_reg_0(AXI_LITE_IPIF_I_n_60),
-        .local_reg_wrack_reg_0(AXI_XADC_CORE_I_n_29),
-        .muxaddr_out(muxaddr_out),
+        .local_reg_wrack_reg_0(AXI_XADC_CORE_I_n_24),
         .reset2ip_reset(reset2ip_reset),
         .rst_ip2bus_rdack(rst_ip2bus_rdack),
         .s_axi_aclk(s_axi_aclk),
@@ -2809,6 +2862,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_axi_xadc
         .R(reset2ip_reset));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_interrupt_control" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control
    (irpt_wrack_d1,
     \GEN_IP_IRPT_STATUS_REG[0].GEN_REG_STATUS.ip_irpt_status_reg_reg[0]_0 ,
@@ -3650,6 +3704,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_interrupt_control
         .R(reset2ip_reset));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_slave_attachment" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment
    (\GEN_BKEND_CE_REGISTERS[24].ce_out_i_reg[24] ,
     SR,
@@ -4539,6 +4594,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_slave_attachment
         .O(s_axi_awready));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_soft_reset" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset
    (sw_rst_cond_d1,
     wrack,
@@ -4968,13 +5024,13 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_soft_reset
         .R(bus2ip_reset_active_high));
 endmodule
 
+(* ORIG_REF_NAME = "embsys_xadc_wiz_0_0_xadc_core_drp" *) 
 module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
    (D,
     eoc_out,
     eos_out,
     jtagmodified_i,
     s_axi_aclk_0,
-    muxaddr_out,
     local_reg_wrack_d1,
     local_reg_rdack_d1,
     status_reg_rdack_d1,
@@ -4991,6 +5047,8 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
     vn_in,
     vp_in,
     s_axi_wdata,
+    VAUXN,
+    VAUXP,
     \status_reg_reg[7]_0 ,
     reset2ip_reset,
     local_reg_wrack_d1_reg_0,
@@ -5021,7 +5079,6 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
   output eos_out;
   output jtagmodified_i;
   output [7:0]s_axi_aclk_0;
-  output [4:0]muxaddr_out;
   output local_reg_wrack_d1;
   output local_reg_rdack_d1;
   output status_reg_rdack_d1;
@@ -5038,6 +5095,8 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
   input vn_in;
   input vp_in;
   input [15:0]s_axi_wdata;
+  input [3:0]VAUXN;
+  input [3:0]VAUXP;
   input [2:0]\status_reg_reg[7]_0 ;
   input reset2ip_reset;
   input local_reg_wrack_d1_reg_0;
@@ -5073,6 +5132,8 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
   wire \INTR_CTRLR_GEN_I.ip2bus_error_reg_0 ;
   wire [8:0]Q;
   wire RESET;
+  wire [3:0]VAUXN;
+  wire [3:0]VAUXP;
   wire XADC_INST_n_34;
   wire alarm_0_d1;
   wire [8:2]bus2ip_addr;
@@ -5125,7 +5186,6 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
   wire local_reg_wrack_d1;
   wire local_reg_wrack_d1_reg_0;
   wire local_reg_wrack_reg_0;
-  wire [4:0]muxaddr_out;
   wire ot_d1;
   wire [6:5]p_4_out;
   wire reset2ip_reset;
@@ -5143,6 +5203,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
   wire [2:0]\status_reg_reg[7]_0 ;
   wire vn_in;
   wire vp_in;
+  wire [4:0]NLW_XADC_INST_MUXADDR_UNCONNECTED;
 
   LUT2 #(
     .INIT(4'h2)) 
@@ -5191,7 +5252,7 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
         .O(local_reg_wrack_reg_0));
   (* box_type = "PRIMITIVE" *) 
   XADC #(
-    .INIT_40(16'h0803),
+    .INIT_40(16'h0000),
     .INIT_41(16'h21A0),
     .INIT_42(16'h0400),
     .INIT_43(16'h0000),
@@ -5199,8 +5260,8 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
     .INIT_45(16'h0000),
     .INIT_46(16'h0000),
     .INIT_47(16'h0000),
-    .INIT_48(16'h0800),
-    .INIT_49(16'h0000),
+    .INIT_48(16'h0000),
+    .INIT_49(16'h000F),
     .INIT_4A(16'h0000),
     .INIT_4B(16'h0000),
     .INIT_4C(16'h0000),
@@ -5245,11 +5306,11 @@ module embsys_xadc_wiz_0_0_embsys_xadc_wiz_0_0_xadc_core_drp
         .JTAGBUSY(jtagbusy_i),
         .JTAGLOCKED(D[6]),
         .JTAGMODIFIED(jtagmodified_i),
-        .MUXADDR(muxaddr_out),
+        .MUXADDR(NLW_XADC_INST_MUXADDR_UNCONNECTED[4:0]),
         .OT(s_axi_aclk_0[0]),
         .RESET(RESET),
-        .VAUXN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .VAUXP({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .VAUXN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,VAUXN}),
+        .VAUXP({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,VAUXP}),
         .VN(vn_in),
         .VP(vp_in));
   (* SOFT_HLUTNM = "soft_lutpair24" *) 
