@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Tue Jun  7 14:23:07 2022
+//Date        : Wed Jun  8 10:55:43 2022
 //Host        : BACCHUS running 64-bit major release  (build 9200)
 //Command     : generate_target embsys.bd
 //Design      : embsys
@@ -42,14 +42,14 @@ module embsys
     RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
-    Vaux1_v_n,
-    Vaux1_v_p,
+    Vaux10_v_n,
+    Vaux10_v_p,
+    Vaux11_v_n,
+    Vaux11_v_p,
     Vaux2_v_n,
     Vaux2_v_p,
     Vaux3_v_n,
     Vaux3_v_p,
-    Vaux4_v_n,
-    Vaux4_v_p,
     Vp_Vn_v_n,
     Vp_Vn_v_p,
     an_0,
@@ -103,14 +103,14 @@ module embsys
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux1 V_N" *) input Vaux1_v_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux1 V_P" *) input Vaux1_v_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux10 V_N" *) input Vaux10_v_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux10 V_P" *) input Vaux10_v_p;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux11 V_N" *) input Vaux11_v_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux11 V_P" *) input Vaux11_v_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux2 V_N" *) input Vaux2_v_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux2 V_P" *) input Vaux2_v_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux3 V_N" *) input Vaux3_v_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux3 V_P" *) input Vaux3_v_p;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux4 V_N" *) input Vaux4_v_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vaux4 V_P" *) input Vaux4_v_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn V_N" *) input Vp_Vn_v_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn V_P" *) input Vp_Vn_v_p;
   output [7:0]an_0;
@@ -159,14 +159,14 @@ module embsys
   wire PmodOLEDrgb_0_PmodOLEDrgb_out_PIN9_I;
   wire PmodOLEDrgb_0_PmodOLEDrgb_out_PIN9_O;
   wire PmodOLEDrgb_0_PmodOLEDrgb_out_PIN9_T;
-  wire Vaux1_1_V_N;
-  wire Vaux1_1_V_P;
+  wire Vaux10_1_V_N;
+  wire Vaux10_1_V_P;
+  wire Vaux11_1_V_N;
+  wire Vaux11_1_V_P;
   wire Vaux2_1_V_N;
   wire Vaux2_1_V_P;
   wire Vaux3_1_V_N;
   wire Vaux3_1_V_P;
-  wire Vaux4_1_V_N;
-  wire Vaux4_1_V_P;
   wire Vp_Vn_1_V_N;
   wire Vp_Vn_1_V_P;
   wire [7:0]axi_gpio_0_GPIO2_TRI_I;
@@ -509,14 +509,14 @@ module embsys
   assign RGB2_Blue_0 = nexys4io_0_RGB2_Blue;
   assign RGB2_Green_0 = nexys4io_0_RGB2_Green;
   assign RGB2_Red_0 = nexys4io_0_RGB2_Red;
-  assign Vaux1_1_V_N = Vaux1_v_n;
-  assign Vaux1_1_V_P = Vaux1_v_p;
+  assign Vaux10_1_V_N = Vaux10_v_n;
+  assign Vaux10_1_V_P = Vaux10_v_p;
+  assign Vaux11_1_V_N = Vaux11_v_n;
+  assign Vaux11_1_V_P = Vaux11_v_p;
   assign Vaux2_1_V_N = Vaux2_v_n;
   assign Vaux2_1_V_P = Vaux2_v_p;
   assign Vaux3_1_V_N = Vaux3_v_n;
   assign Vaux3_1_V_P = Vaux3_v_p;
-  assign Vaux4_1_V_N = Vaux4_v_n;
-  assign Vaux4_1_V_P = Vaux4_v_p;
   assign Vp_Vn_1_V_N = Vp_Vn_v_n;
   assign Vp_Vn_1_V_P = Vp_Vn_v_p;
   assign an_0[7:0] = nexys4io_0_an;
@@ -1176,10 +1176,10 @@ module embsys
         .M15_ARESETN(rst_clk_wiz_1_100M_peripheral_aresetn),
         .M15_AXI_arready(1'b0),
         .M15_AXI_awready(1'b0),
-        .M15_AXI_bresp({1'b0,1'b0}),
+        .M15_AXI_bresp(1'b0),
         .M15_AXI_bvalid(1'b0),
-        .M15_AXI_rdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .M15_AXI_rresp({1'b0,1'b0}),
+        .M15_AXI_rdata(1'b0),
+        .M15_AXI_rresp(1'b0),
         .M15_AXI_rvalid(1'b0),
         .M15_AXI_wready(1'b0),
         .M16_ACLK(clk_wiz_1_clk_out1),
@@ -1310,14 +1310,14 @@ module embsys
         .di_in({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .dwe_in(1'b0),
         .reset_in(rst_clk_wiz_1_100M_bus_struct_reset),
-        .vauxn1(Vaux1_1_V_N),
+        .vauxn10(Vaux10_1_V_N),
+        .vauxn11(Vaux11_1_V_N),
         .vauxn2(Vaux2_1_V_N),
         .vauxn3(Vaux3_1_V_N),
-        .vauxn4(Vaux4_1_V_N),
-        .vauxp1(Vaux1_1_V_P),
+        .vauxp10(Vaux10_1_V_P),
+        .vauxp11(Vaux11_1_V_P),
         .vauxp2(Vaux2_1_V_P),
         .vauxp3(Vaux3_1_V_P),
-        .vauxp4(Vaux4_1_V_P),
         .vn_in(Vp_Vn_1_V_N),
         .vp_in(Vp_Vn_1_V_P));
   embsys_xlconstant_0_1 xlconstant_0
@@ -1631,9 +1631,11 @@ module embsys_microblaze_0_axi_periph_0
     M15_ACLK,
     M15_ARESETN,
     M15_AXI_araddr,
+    M15_AXI_arprot,
     M15_AXI_arready,
     M15_AXI_arvalid,
     M15_AXI_awaddr,
+    M15_AXI_awprot,
     M15_AXI_awready,
     M15_AXI_awvalid,
     M15_AXI_bready,
@@ -2047,22 +2049,24 @@ module embsys_microblaze_0_axi_periph_0
   output M14_AXI_wvalid;
   input M15_ACLK;
   input M15_ARESETN;
-  output [31:0]M15_AXI_araddr;
+  output M15_AXI_araddr;
+  output M15_AXI_arprot;
   input M15_AXI_arready;
   output M15_AXI_arvalid;
-  output [31:0]M15_AXI_awaddr;
+  output M15_AXI_awaddr;
+  output M15_AXI_awprot;
   input M15_AXI_awready;
   output M15_AXI_awvalid;
   output M15_AXI_bready;
-  input [1:0]M15_AXI_bresp;
+  input M15_AXI_bresp;
   input M15_AXI_bvalid;
-  input [31:0]M15_AXI_rdata;
+  input M15_AXI_rdata;
   output M15_AXI_rready;
-  input [1:0]M15_AXI_rresp;
+  input M15_AXI_rresp;
   input M15_AXI_rvalid;
-  output [31:0]M15_AXI_wdata;
+  output M15_AXI_wdata;
   input M15_AXI_wready;
-  output [3:0]M15_AXI_wstrb;
+  output M15_AXI_wstrb;
   output M15_AXI_wvalid;
   input M16_ACLK;
   input M16_ARESETN;
@@ -2503,17 +2507,19 @@ module embsys_microblaze_0_axi_periph_0
   wire m14_couplers_to_microblaze_0_axi_periph_WSTRB;
   wire m14_couplers_to_microblaze_0_axi_periph_WVALID;
   wire m15_couplers_to_microblaze_0_axi_periph_ARADDR;
+  wire m15_couplers_to_microblaze_0_axi_periph_ARPROT;
   wire m15_couplers_to_microblaze_0_axi_periph_ARREADY;
   wire m15_couplers_to_microblaze_0_axi_periph_ARVALID;
   wire m15_couplers_to_microblaze_0_axi_periph_AWADDR;
+  wire m15_couplers_to_microblaze_0_axi_periph_AWPROT;
   wire m15_couplers_to_microblaze_0_axi_periph_AWREADY;
   wire m15_couplers_to_microblaze_0_axi_periph_AWVALID;
   wire m15_couplers_to_microblaze_0_axi_periph_BREADY;
-  wire [1:0]m15_couplers_to_microblaze_0_axi_periph_BRESP;
+  wire m15_couplers_to_microblaze_0_axi_periph_BRESP;
   wire m15_couplers_to_microblaze_0_axi_periph_BVALID;
-  wire [31:0]m15_couplers_to_microblaze_0_axi_periph_RDATA;
+  wire m15_couplers_to_microblaze_0_axi_periph_RDATA;
   wire m15_couplers_to_microblaze_0_axi_periph_RREADY;
-  wire [1:0]m15_couplers_to_microblaze_0_axi_periph_RRESP;
+  wire m15_couplers_to_microblaze_0_axi_periph_RRESP;
   wire m15_couplers_to_microblaze_0_axi_periph_RVALID;
   wire m15_couplers_to_microblaze_0_axi_periph_WDATA;
   wire m15_couplers_to_microblaze_0_axi_periph_WREADY;
@@ -3202,14 +3208,16 @@ module embsys_microblaze_0_axi_periph_0
   assign M14_AXI_wdata = m14_couplers_to_microblaze_0_axi_periph_WDATA;
   assign M14_AXI_wstrb = m14_couplers_to_microblaze_0_axi_periph_WSTRB;
   assign M14_AXI_wvalid = m14_couplers_to_microblaze_0_axi_periph_WVALID;
-  assign M15_AXI_araddr[0] = m15_couplers_to_microblaze_0_axi_periph_ARADDR;
+  assign M15_AXI_araddr = m15_couplers_to_microblaze_0_axi_periph_ARADDR;
+  assign M15_AXI_arprot = m15_couplers_to_microblaze_0_axi_periph_ARPROT;
   assign M15_AXI_arvalid = m15_couplers_to_microblaze_0_axi_periph_ARVALID;
-  assign M15_AXI_awaddr[0] = m15_couplers_to_microblaze_0_axi_periph_AWADDR;
+  assign M15_AXI_awaddr = m15_couplers_to_microblaze_0_axi_periph_AWADDR;
+  assign M15_AXI_awprot = m15_couplers_to_microblaze_0_axi_periph_AWPROT;
   assign M15_AXI_awvalid = m15_couplers_to_microblaze_0_axi_periph_AWVALID;
   assign M15_AXI_bready = m15_couplers_to_microblaze_0_axi_periph_BREADY;
   assign M15_AXI_rready = m15_couplers_to_microblaze_0_axi_periph_RREADY;
-  assign M15_AXI_wdata[0] = m15_couplers_to_microblaze_0_axi_periph_WDATA;
-  assign M15_AXI_wstrb[0] = m15_couplers_to_microblaze_0_axi_periph_WSTRB;
+  assign M15_AXI_wdata = m15_couplers_to_microblaze_0_axi_periph_WDATA;
+  assign M15_AXI_wstrb = m15_couplers_to_microblaze_0_axi_periph_WSTRB;
   assign M15_AXI_wvalid = m15_couplers_to_microblaze_0_axi_periph_WVALID;
   assign M16_AXI_araddr = m16_couplers_to_microblaze_0_axi_periph_ARADDR;
   assign M16_AXI_arburst = m16_couplers_to_microblaze_0_axi_periph_ARBURST;
@@ -3393,10 +3401,10 @@ module embsys_microblaze_0_axi_periph_0
   assign m14_couplers_to_microblaze_0_axi_periph_WREADY = M14_AXI_wready;
   assign m15_couplers_to_microblaze_0_axi_periph_ARREADY = M15_AXI_arready;
   assign m15_couplers_to_microblaze_0_axi_periph_AWREADY = M15_AXI_awready;
-  assign m15_couplers_to_microblaze_0_axi_periph_BRESP = M15_AXI_bresp[1:0];
+  assign m15_couplers_to_microblaze_0_axi_periph_BRESP = M15_AXI_bresp;
   assign m15_couplers_to_microblaze_0_axi_periph_BVALID = M15_AXI_bvalid;
-  assign m15_couplers_to_microblaze_0_axi_periph_RDATA = M15_AXI_rdata[31:0];
-  assign m15_couplers_to_microblaze_0_axi_periph_RRESP = M15_AXI_rresp[1:0];
+  assign m15_couplers_to_microblaze_0_axi_periph_RDATA = M15_AXI_rdata;
+  assign m15_couplers_to_microblaze_0_axi_periph_RRESP = M15_AXI_rresp;
   assign m15_couplers_to_microblaze_0_axi_periph_RVALID = M15_AXI_rvalid;
   assign m15_couplers_to_microblaze_0_axi_periph_WREADY = M15_AXI_wready;
   assign m16_couplers_to_microblaze_0_axi_periph_ARREADY = M16_AXI_arready;
@@ -4194,17 +4202,19 @@ module embsys_microblaze_0_axi_periph_0
        (.M_ACLK(microblaze_0_axi_periph_ACLK_net),
         .M_ARESETN(microblaze_0_axi_periph_ARESETN_net),
         .M_AXI_araddr(m15_couplers_to_microblaze_0_axi_periph_ARADDR),
+        .M_AXI_arprot(m15_couplers_to_microblaze_0_axi_periph_ARPROT),
         .M_AXI_arready(m15_couplers_to_microblaze_0_axi_periph_ARREADY),
         .M_AXI_arvalid(m15_couplers_to_microblaze_0_axi_periph_ARVALID),
         .M_AXI_awaddr(m15_couplers_to_microblaze_0_axi_periph_AWADDR),
+        .M_AXI_awprot(m15_couplers_to_microblaze_0_axi_periph_AWPROT),
         .M_AXI_awready(m15_couplers_to_microblaze_0_axi_periph_AWREADY),
         .M_AXI_awvalid(m15_couplers_to_microblaze_0_axi_periph_AWVALID),
         .M_AXI_bready(m15_couplers_to_microblaze_0_axi_periph_BREADY),
-        .M_AXI_bresp(m15_couplers_to_microblaze_0_axi_periph_BRESP[0]),
+        .M_AXI_bresp(m15_couplers_to_microblaze_0_axi_periph_BRESP),
         .M_AXI_bvalid(m15_couplers_to_microblaze_0_axi_periph_BVALID),
-        .M_AXI_rdata(m15_couplers_to_microblaze_0_axi_periph_RDATA[0]),
+        .M_AXI_rdata(m15_couplers_to_microblaze_0_axi_periph_RDATA),
         .M_AXI_rready(m15_couplers_to_microblaze_0_axi_periph_RREADY),
-        .M_AXI_rresp(m15_couplers_to_microblaze_0_axi_periph_RRESP[0]),
+        .M_AXI_rresp(m15_couplers_to_microblaze_0_axi_periph_RRESP),
         .M_AXI_rvalid(m15_couplers_to_microblaze_0_axi_periph_RVALID),
         .M_AXI_wdata(m15_couplers_to_microblaze_0_axi_periph_WDATA),
         .M_AXI_wready(m15_couplers_to_microblaze_0_axi_periph_WREADY),

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 -- Date        : Tue Jun  7 14:24:00 2022
 -- Host        : BACCHUS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_tier2_xbar_1_0/embsys_tier2_xbar_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top embsys_tier2_xbar_1_0 -prefix
+--               embsys_tier2_xbar_1_0_ embsys_tier2_xbar_1_0_sim_netlist.vhdl
 -- Design      : embsys_tier2_xbar_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -79,8 +79,6 @@ entity embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_addr_arbiter_sasd is
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_23_addr_arbiter_sasd";
 end embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_addr_arbiter_sasd;
 
 architecture STRUCTURE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_addr_arbiter_sasd is
@@ -1767,8 +1765,6 @@ entity embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_decerr_slave is
     m_axi_awready : in STD_LOGIC_VECTOR ( 1 downto 0 );
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_decerr_slave : entity is "axi_crossbar_v2_1_23_decerr_slave";
 end embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_decerr_slave;
 
 architecture STRUCTURE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_decerr_slave is
@@ -2003,8 +1999,6 @@ entity embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_splitter is
     m_ready_d0 : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_splitter : entity is "axi_crossbar_v2_1_23_splitter";
 end embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_splitter;
 
 architecture STRUCTURE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_splitter is
@@ -2336,8 +2330,6 @@ entity embsys_tier2_xbar_1_0_axi_register_slice_v2_1_22_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_register_slice_v2_1_22_axic_register_slice : entity is "axi_register_slice_v2_1_22_axic_register_slice";
 end embsys_tier2_xbar_1_0_axi_register_slice_v2_1_22_axic_register_slice;
 
 architecture STRUCTURE of embsys_tier2_xbar_1_0_axi_register_slice_v2_1_22_axic_register_slice is
@@ -5251,8 +5243,6 @@ entity embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_crossbar_sasd : entity is "axi_crossbar_v2_1_23_crossbar_sasd";
 end embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_crossbar_sasd;
 
 architecture STRUCTURE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_crossbar_sasd is
@@ -5948,8 +5938,6 @@ entity embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_axi_crossbar : entity is "axi_crossbar_v2_1_23_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of embsys_tier2_xbar_1_0_axi_crossbar_v2_1_23_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

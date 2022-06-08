@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Tue Jun  7 14:23:50 2022
+-- Date        : Wed Jun  8 10:56:13 2022
 -- Host        : BACCHUS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_sim_netlist.vhdl
@@ -22,14 +22,14 @@ entity embsys_xadc_wiz_0_0 is
     di_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
     dwe_in : in STD_LOGIC;
     reset_in : in STD_LOGIC;
-    vauxp1 : in STD_LOGIC;
-    vauxn1 : in STD_LOGIC;
     vauxp2 : in STD_LOGIC;
     vauxn2 : in STD_LOGIC;
     vauxp3 : in STD_LOGIC;
     vauxn3 : in STD_LOGIC;
-    vauxp4 : in STD_LOGIC;
-    vauxn4 : in STD_LOGIC;
+    vauxp10 : in STD_LOGIC;
+    vauxn10 : in STD_LOGIC;
+    vauxp11 : in STD_LOGIC;
+    vauxn11 : in STD_LOGIC;
     busy_out : out STD_LOGIC;
     channel_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
     do_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -68,7 +68,7 @@ inst: unisim.vcomponents.XADC
       INIT_46 => X"0000",
       INIT_47 => X"0000",
       INIT_48 => X"0000",
-      INIT_49 => X"001E",
+      INIT_49 => X"0C0C",
       INIT_4A => X"0000",
       INIT_4B => X"0000",
       INIT_4C => X"0000",
@@ -121,18 +121,20 @@ inst: unisim.vcomponents.XADC
       MUXADDR(4 downto 0) => NLW_inst_MUXADDR_UNCONNECTED(4 downto 0),
       OT => ot_out,
       RESET => reset_in,
-      VAUXN(15 downto 5) => B"00000000000",
-      VAUXN(4) => vauxn4,
+      VAUXN(15 downto 12) => B"0000",
+      VAUXN(11) => vauxn11,
+      VAUXN(10) => vauxn10,
+      VAUXN(9 downto 4) => B"000000",
       VAUXN(3) => vauxn3,
       VAUXN(2) => vauxn2,
-      VAUXN(1) => vauxn1,
-      VAUXN(0) => '0',
-      VAUXP(15 downto 5) => B"00000000000",
-      VAUXP(4) => vauxp4,
+      VAUXN(1 downto 0) => B"00",
+      VAUXP(15 downto 12) => B"0000",
+      VAUXP(11) => vauxp11,
+      VAUXP(10) => vauxp10,
+      VAUXP(9 downto 4) => B"000000",
       VAUXP(3) => vauxp3,
       VAUXP(2) => vauxp2,
-      VAUXP(1) => vauxp1,
-      VAUXP(0) => '0',
+      VAUXP(1 downto 0) => B"00",
       VN => vn_in,
       VP => vp_in
     );

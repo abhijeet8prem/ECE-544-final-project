@@ -42,14 +42,14 @@ module nexysA7fpga(
 	inout logic [7:0]  JB,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
 	inout logic [7:0]  JC,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
     inout logic [7:0]  JD,              // 2 of the pins go to VCC3V3 and 2 go to ground so only 8 are actually used
-    input   vauxn1,   
-    input   vauxp1,
     input   vauxn2,   
     input   vauxp2,
     input   vauxn3,   
     input   vauxp3,
-    input   vauxn4,   
-    input   vauxp4
+    input   vauxn10,   
+    input   vauxp10,
+    input   vauxn11,   
+    input   vauxp11
 
 );
 
@@ -122,6 +122,8 @@ embsys EMBSYS
         
         //PWM Generator pins  
         .PWM(JA),
+        
+        
         //PmodOLEDrgb pins
         .PmodOLEDrgb_out_0_pin1_i(),
         .PmodOLEDrgb_out_0_pin1_o(JB[0]),
@@ -151,15 +153,17 @@ embsys EMBSYS
         //
 
         //
-        .Vaux1_v_n(vauxn1),
-        .Vaux1_v_p(vauxp1),
+        //PMOD Port for JXADC
         .Vaux2_v_n(vauxn2),
         .Vaux2_v_p(vauxp2),
         .Vaux3_v_n(vauxn3),
         .Vaux3_v_p(vauxp3),
-        .Vaux4_v_n(vauxn4),
-        .Vaux4_v_p(vauxp4),
+        .Vaux10_v_n(vauxn10),
+        .Vaux10_v_p(vauxp10),
+        .Vaux11_v_n(vauxn11),
+        .Vaux11_v_p(vauxp11),
         
+        //PMOD ENCODER Ports
         .encA(JC[4]),     // A and B quadrature inputs from PmodENC
         .encB(JC[5]),
         .encBTN(JC[6]),   // pushbutton input from PmodENC

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="OLED_Display_Global_DCP"/>
+		<item key="selection" value="LightFollow"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="LightFollow"/>
+			<item value="buttonHandling"/>
 			<item value="OLED_Display_Global_DCP"/>
 			<item value="display"/>
 			<item value="u_int"/>
@@ -24,7 +26,7 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="485"/>
-		<item key="DIALOG_Y_ORIGIN" value="641"/>
+		<item key="DIALOG_Y_ORIGIN" value="334"/>
 		<item key="DIALOG_WIDTH" value="593"/>
 		<item key="DIALOG_HEIGHT" value="394"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

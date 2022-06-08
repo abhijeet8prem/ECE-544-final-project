@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654636993">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654711447">
   <File Type="PA-TCL" Name="nexysA7fpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nexysA7fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nexysA7fpga_reports.tcl"/>
@@ -80,5 +80,4 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_PmodENC544_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_xadc_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_tier2_xbar_1_0"/>
 </GenRun>

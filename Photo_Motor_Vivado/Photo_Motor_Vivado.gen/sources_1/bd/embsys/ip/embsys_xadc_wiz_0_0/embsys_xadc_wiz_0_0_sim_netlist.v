@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Tue Jun  7 14:23:50 2022
+// Date        : Wed Jun  8 10:56:13 2022
 // Host        : BACCHUS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_sim_netlist.v
@@ -20,14 +20,14 @@ module embsys_xadc_wiz_0_0
     di_in,
     dwe_in,
     reset_in,
-    vauxp1,
-    vauxn1,
     vauxp2,
     vauxn2,
     vauxp3,
     vauxn3,
-    vauxp4,
-    vauxn4,
+    vauxp10,
+    vauxn10,
+    vauxp11,
+    vauxn11,
     busy_out,
     channel_out,
     do_out,
@@ -47,14 +47,14 @@ module embsys_xadc_wiz_0_0
   input [15:0]di_in;
   input dwe_in;
   input reset_in;
-  input vauxp1;
-  input vauxn1;
   input vauxp2;
   input vauxn2;
   input vauxp3;
   input vauxn3;
-  input vauxp4;
-  input vauxn4;
+  input vauxp10;
+  input vauxn10;
+  input vauxp11;
+  input vauxn11;
   output busy_out;
   output [4:0]channel_out;
   output [15:0]do_out;
@@ -84,14 +84,14 @@ module embsys_xadc_wiz_0_0
   wire ot_out;
   wire reset_in;
   wire user_temp_alarm_out;
-  wire vauxn1;
+  wire vauxn10;
+  wire vauxn11;
   wire vauxn2;
   wire vauxn3;
-  wire vauxn4;
-  wire vauxp1;
+  wire vauxp10;
+  wire vauxp11;
   wire vauxp2;
   wire vauxp3;
-  wire vauxp4;
   wire vccaux_alarm_out;
   wire vccint_alarm_out;
   wire vn_in;
@@ -113,7 +113,7 @@ module embsys_xadc_wiz_0_0
     .INIT_46(16'h0000),
     .INIT_47(16'h0000),
     .INIT_48(16'h0000),
-    .INIT_49(16'h001E),
+    .INIT_49(16'h0C0C),
     .INIT_4A(16'h0000),
     .INIT_4B(16'h0000),
     .INIT_4C(16'h0000),
@@ -161,8 +161,8 @@ module embsys_xadc_wiz_0_0
         .MUXADDR(NLW_inst_MUXADDR_UNCONNECTED[4:0]),
         .OT(ot_out),
         .RESET(reset_in),
-        .VAUXN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxn4,vauxn3,vauxn2,vauxn1,1'b0}),
-        .VAUXP({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxp4,vauxp3,vauxp2,vauxp1,1'b0}),
+        .VAUXN({1'b0,1'b0,1'b0,1'b0,vauxn11,vauxn10,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxn3,vauxn2,1'b0,1'b0}),
+        .VAUXP({1'b0,1'b0,1'b0,1'b0,vauxp11,vauxp10,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,vauxp3,vauxp2,1'b0,1'b0}),
         .VN(vn_in),
         .VP(vp_in));
 endmodule

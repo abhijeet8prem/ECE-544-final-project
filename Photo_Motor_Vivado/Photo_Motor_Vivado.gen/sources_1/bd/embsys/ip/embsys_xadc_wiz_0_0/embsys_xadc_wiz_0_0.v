@@ -58,14 +58,14 @@ module embsys_xadc_wiz_0_0
           di_in,               // Input data bus for the dynamic reconfiguration port
           dwe_in,              // Write Enable for the dynamic reconfiguration port
           reset_in,            // Reset signal for the System Monitor control logic
-          vauxp1,              // Auxiliary channel 1
-          vauxn1,
           vauxp2,              // Auxiliary channel 2
           vauxn2,
           vauxp3,              // Auxiliary channel 3
           vauxn3,
-          vauxp4,              // Auxiliary channel 4
-          vauxn4,
+          vauxp10,             // Auxiliary channel 10
+          vauxn10,
+          vauxp11,             // Auxiliary channel 11
+          vauxn11,
           busy_out,            // ADC Busy signal
           channel_out,         // Channel Selection Outputs
           do_out,              // Output data bus for dynamic reconfiguration port
@@ -86,14 +86,14 @@ module embsys_xadc_wiz_0_0
           input [15:0] di_in;
           input dwe_in;
           input reset_in;
-          input vauxp1;
-          input vauxn1;
           input vauxp2;
           input vauxn2;
           input vauxp3;
           input vauxn3;
-          input vauxp4;
-          input vauxn4;
+          input vauxp10;
+          input vauxn10;
+          input vauxp11;
+          input vauxn11;
           input vp_in;
           input vn_in;
 
@@ -121,8 +121,8 @@ module embsys_xadc_wiz_0_0
           assign aux_channel_p[0] = 1'b0;
           assign aux_channel_n[0] = 1'b0;
 
-          assign aux_channel_p[1] = vauxp1;
-          assign aux_channel_n[1] = vauxn1;
+          assign aux_channel_p[1] = 1'b0;
+          assign aux_channel_n[1] = 1'b0;
 
           assign aux_channel_p[2] = vauxp2;
           assign aux_channel_n[2] = vauxn2;
@@ -130,8 +130,8 @@ module embsys_xadc_wiz_0_0
           assign aux_channel_p[3] = vauxp3;
           assign aux_channel_n[3] = vauxn3;
 
-          assign aux_channel_p[4] = vauxp4;
-          assign aux_channel_n[4] = vauxn4;
+          assign aux_channel_p[4] = 1'b0;
+          assign aux_channel_n[4] = 1'b0;
 
           assign aux_channel_p[5] = 1'b0;
           assign aux_channel_n[5] = 1'b0;
@@ -148,11 +148,11 @@ module embsys_xadc_wiz_0_0
           assign aux_channel_p[9] = 1'b0;
           assign aux_channel_n[9] = 1'b0;
 
-          assign aux_channel_p[10] = 1'b0;
-          assign aux_channel_n[10] = 1'b0;
+          assign aux_channel_p[10] = vauxp10;
+          assign aux_channel_n[10] = vauxn10;
 
-          assign aux_channel_p[11] = 1'b0;
-          assign aux_channel_n[11] = 1'b0;
+          assign aux_channel_p[11] = vauxp11;
+          assign aux_channel_n[11] = vauxn11;
 
           assign aux_channel_p[12] = 1'b0;
           assign aux_channel_n[12] = 1'b0;
@@ -170,7 +170,7 @@ XADC #(
         .INIT_41(16'h21A0), // config reg 1
         .INIT_42(16'h0400), // config reg 2
         .INIT_48(16'h0000), // Sequencer channel selection
-        .INIT_49(16'h001E), // Sequencer channel selection
+        .INIT_49(16'h0C0C), // Sequencer channel selection
         .INIT_4A(16'h0000), // Sequencer Average selection
         .INIT_4B(16'h0000), // Sequencer Average selection
         .INIT_4C(16'h0000), // Sequencer Bipolar selection

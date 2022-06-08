@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Tue Jun  7 14:23:50 2022
+// Date        : Wed Jun  8 10:56:13 2022
 // Host        : BACCHUS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0_stub.v
@@ -14,24 +14,24 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 module embsys_xadc_wiz_0_0(daddr_in, dclk_in, den_in, di_in, dwe_in, reset_in, 
-  vauxp1, vauxn1, vauxp2, vauxn2, vauxp3, vauxn3, vauxp4, vauxn4, busy_out, channel_out, do_out, 
+  vauxp2, vauxn2, vauxp3, vauxn3, vauxp10, vauxn10, vauxp11, vauxn11, busy_out, channel_out, do_out, 
   drdy_out, eoc_out, eos_out, ot_out, vccaux_alarm_out, vccint_alarm_out, user_temp_alarm_out, 
   alarm_out, vp_in, vn_in)
-/* synthesis syn_black_box black_box_pad_pin="daddr_in[6:0],dclk_in,den_in,di_in[15:0],dwe_in,reset_in,vauxp1,vauxn1,vauxp2,vauxn2,vauxp3,vauxn3,vauxp4,vauxn4,busy_out,channel_out[4:0],do_out[15:0],drdy_out,eoc_out,eos_out,ot_out,vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out,alarm_out,vp_in,vn_in" */;
+/* synthesis syn_black_box black_box_pad_pin="daddr_in[6:0],dclk_in,den_in,di_in[15:0],dwe_in,reset_in,vauxp2,vauxn2,vauxp3,vauxn3,vauxp10,vauxn10,vauxp11,vauxn11,busy_out,channel_out[4:0],do_out[15:0],drdy_out,eoc_out,eos_out,ot_out,vccaux_alarm_out,vccint_alarm_out,user_temp_alarm_out,alarm_out,vp_in,vn_in" */;
   input [6:0]daddr_in;
   input dclk_in;
   input den_in;
   input [15:0]di_in;
   input dwe_in;
   input reset_in;
-  input vauxp1;
-  input vauxn1;
   input vauxp2;
   input vauxn2;
   input vauxp3;
   input vauxn3;
-  input vauxp4;
-  input vauxn4;
+  input vauxp10;
+  input vauxn10;
+  input vauxp11;
+  input vauxn11;
   output busy_out;
   output [4:0]channel_out;
   output [15:0]do_out;

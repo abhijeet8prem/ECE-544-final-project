@@ -242,13 +242,13 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set PmodOLEDrgb_out_0 [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 PmodOLEDrgb_out_0 ]
 
-  set Vaux1 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux1 ]
-
   set Vaux2 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux2 ]
 
   set Vaux3 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux3 ]
 
-  set Vaux4 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux4 ]
+  set Vaux10 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux10 ]
+
+  set Vaux11 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux11 ]
 
   set Vp_Vn [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vp_Vn ]
 
@@ -421,11 +421,13 @@ proc create_root_design { parentCell } {
    CONFIG.CHANNEL_ENABLE_CALIBRATION {false} \
    CONFIG.CHANNEL_ENABLE_TEMPERATURE {false} \
    CONFIG.CHANNEL_ENABLE_VAUXP0_VAUXN0 {false} \
+   CONFIG.CHANNEL_ENABLE_VAUXP10_VAUXN10 {true} \
+   CONFIG.CHANNEL_ENABLE_VAUXP11_VAUXN11 {true} \
    CONFIG.CHANNEL_ENABLE_VAUXP14_VAUXN14 {false} \
-   CONFIG.CHANNEL_ENABLE_VAUXP1_VAUXN1 {true} \
+   CONFIG.CHANNEL_ENABLE_VAUXP1_VAUXN1 {false} \
    CONFIG.CHANNEL_ENABLE_VAUXP2_VAUXN2 {true} \
    CONFIG.CHANNEL_ENABLE_VAUXP3_VAUXN3 {true} \
-   CONFIG.CHANNEL_ENABLE_VAUXP4_VAUXN4 {true} \
+   CONFIG.CHANNEL_ENABLE_VAUXP4_VAUXN4 {false} \
    CONFIG.CHANNEL_ENABLE_VAUXP5_VAUXN5 {false} \
    CONFIG.CHANNEL_ENABLE_VAUXP6_VAUXN6 {false} \
    CONFIG.CHANNEL_ENABLE_VAUXP7_VAUXN7 {false} \
@@ -460,10 +462,10 @@ proc create_root_design { parentCell } {
 
   # Create interface connections
   connect_bd_intf_net -intf_net PmodOLEDrgb_0_PmodOLEDrgb_out [get_bd_intf_ports PmodOLEDrgb_out_0] [get_bd_intf_pins PmodOLEDrgb_0/PmodOLEDrgb_out]
-  connect_bd_intf_net -intf_net Vaux1_1 [get_bd_intf_ports Vaux1] [get_bd_intf_pins xadc_wiz_0/Vaux1]
+  connect_bd_intf_net -intf_net Vaux10_1 [get_bd_intf_ports Vaux10] [get_bd_intf_pins xadc_wiz_0/Vaux10]
+  connect_bd_intf_net -intf_net Vaux11_1 [get_bd_intf_ports Vaux11] [get_bd_intf_pins xadc_wiz_0/Vaux11]
   connect_bd_intf_net -intf_net Vaux2_1 [get_bd_intf_ports Vaux2] [get_bd_intf_pins xadc_wiz_0/Vaux2]
   connect_bd_intf_net -intf_net Vaux3_1 [get_bd_intf_ports Vaux3] [get_bd_intf_pins xadc_wiz_0/Vaux3]
-  connect_bd_intf_net -intf_net Vaux4_1 [get_bd_intf_ports Vaux4] [get_bd_intf_pins xadc_wiz_0/Vaux4]
   connect_bd_intf_net -intf_net Vp_Vn_1 [get_bd_intf_ports Vp_Vn] [get_bd_intf_pins xadc_wiz_0/Vp_Vn]
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports gpio_rtl_0] [get_bd_intf_pins axi_gpio_0/GPIO]
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO2 [get_bd_intf_ports gpio_rtl_1] [get_bd_intf_pins axi_gpio_0/GPIO2]

@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Tue Jun  7 14:23:08 2022
+//Date        : Wed Jun  8 10:55:43 2022
 //Host        : BACCHUS running 64-bit major release  (build 9200)
 //Command     : generate_target embsys_wrapper.bd
 //Design      : embsys_wrapper
@@ -25,14 +25,14 @@ module embsys_wrapper
     RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
-    Vaux1_v_n,
-    Vaux1_v_p,
+    Vaux10_v_n,
+    Vaux10_v_p,
+    Vaux11_v_n,
+    Vaux11_v_p,
     Vaux2_v_n,
     Vaux2_v_p,
     Vaux3_v_n,
     Vaux3_v_p,
-    Vaux4_v_n,
-    Vaux4_v_p,
     Vp_Vn_v_n,
     Vp_Vn_v_p,
     an_0,
@@ -70,14 +70,14 @@ module embsys_wrapper
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
-  input Vaux1_v_n;
-  input Vaux1_v_p;
+  input Vaux10_v_n;
+  input Vaux10_v_p;
+  input Vaux11_v_n;
+  input Vaux11_v_p;
   input Vaux2_v_n;
   input Vaux2_v_p;
   input Vaux3_v_n;
   input Vaux3_v_p;
-  input Vaux4_v_n;
-  input Vaux4_v_p;
   input Vp_Vn_v_n;
   input Vp_Vn_v_p;
   output [7:0]an_0;
@@ -140,14 +140,14 @@ module embsys_wrapper
   wire RGB2_Blue_0;
   wire RGB2_Green_0;
   wire RGB2_Red_0;
-  wire Vaux1_v_n;
-  wire Vaux1_v_p;
+  wire Vaux10_v_n;
+  wire Vaux10_v_p;
+  wire Vaux11_v_n;
+  wire Vaux11_v_p;
   wire Vaux2_v_n;
   wire Vaux2_v_p;
   wire Vaux3_v_n;
   wire Vaux3_v_p;
-  wire Vaux4_v_n;
-  wire Vaux4_v_p;
   wire Vp_Vn_v_n;
   wire Vp_Vn_v_p;
   wire [7:0]an_0;
@@ -243,14 +243,14 @@ module embsys_wrapper
         .RGB2_Blue_0(RGB2_Blue_0),
         .RGB2_Green_0(RGB2_Green_0),
         .RGB2_Red_0(RGB2_Red_0),
-        .Vaux1_v_n(Vaux1_v_n),
-        .Vaux1_v_p(Vaux1_v_p),
+        .Vaux10_v_n(Vaux10_v_n),
+        .Vaux10_v_p(Vaux10_v_p),
+        .Vaux11_v_n(Vaux11_v_n),
+        .Vaux11_v_p(Vaux11_v_p),
         .Vaux2_v_n(Vaux2_v_n),
         .Vaux2_v_p(Vaux2_v_p),
         .Vaux3_v_n(Vaux3_v_n),
         .Vaux3_v_p(Vaux3_v_p),
-        .Vaux4_v_n(Vaux4_v_n),
-        .Vaux4_v_p(Vaux4_v_p),
         .Vp_Vn_v_n(Vp_Vn_v_n),
         .Vp_Vn_v_p(Vp_Vn_v_p),
         .an_0(an_0),
