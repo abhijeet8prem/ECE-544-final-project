@@ -1,0 +1,6 @@
+/*nexys7_solar_tracker*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

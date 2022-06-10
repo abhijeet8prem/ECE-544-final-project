@@ -1,0 +1,26 @@
+00:53:31 **** Build of configuration Debug for project SolarServoApp_abhi ****
+make all 
+'Building file: ../src/PWMTester.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWMTester.o" -IC:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/nexys7_solar_tracker/export/nexys7_solar_tracker/sw/nexys7_solar_tracker/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PWMTester.d" -MT"src/PWMTester.o" -o "src/PWMTester.o" "../src/PWMTester.c"
+'Finished building: ../src/PWMTester.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/nexys7_solar_tracker/export/nexys7_solar_tracker/sw/nexys7_solar_tracker/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SolarServoApp_abhi.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/nexys7_solar_tracker/export/nexys7_solar_tracker/sw/nexys7_solar_tracker/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SolarServoApp_abhi.elf"  ./src/PWMTester.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SolarServoApp_abhi.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SolarServoApp_abhi.elf  |tee "SolarServoApp_abhi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21520	    396	   3740	  25656	   6438	SolarServoApp_abhi.elf
+'Finished building: SolarServoApp_abhi.elf.size'
+' '
+
+00:53:33 Build Finished (took 2s.148ms)
+

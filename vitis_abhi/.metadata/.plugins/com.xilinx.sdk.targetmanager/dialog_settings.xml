@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Nexys4DDR 210292A8AEAAA&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Nexys4DDR-210292A8AEAAA-13631093-0&quot;}}]}"/>
+	<item key="SolarServoApp_abhi_system-bitFile" value="${project_loc:SolarServoApp_abhi}/_ide/bitstream/nexysA7fpga.bit"/>
+	<item key="SolarServoApp_abhi_system-bmmFile" value="${project_loc:SolarServoApp_abhi}/_ide/bitstream/nexysA7fpga.mmi"/>
+	<item key="SolarServoApp_abhi_system-target" value="Local"/>
+	<item key="SolarServoApp_abhi_system-device" value="Digilent Nexys4DDR 210292A8AEAAA/2-xc7a100t"/>
+	<item key="SolarServoApp_abhi_system-partial_bit" value="false"/>
+	<item key="SolarServoApp_abhi_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="SolarServoApp_abhi_system"/>
+	<item key="SolarServoApp_abhi_system-microblaze_0-initElf" value="bootloop"/>
+</section>
