@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="OLED_Display_Angle"/>
+		<item key="selection" value="FIT_Handler_Switch"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="FIT_Handler_Switch"/>
+			<item value="Debug_Mode"/>
+			<item value="debugcheck"/>
+			<item value="enable"/>
 			<item value="OLED_Display_Angle"/>
 			<item value="OLED_Display_Light_Signal"/>
 			<item value="buttonHandling"/>
@@ -19,10 +23,6 @@
 			<item value="SWITCH15_MASK"/>
 			<item value="switch"/>
 			<item value="queriedDutyCycle0"/>
-			<item value="defaultAngle"/>
-			<item value="defaultAngle_Period"/>
-			<item value="defaultAngle_Period100us"/>
-			<item value="PMODENC544"/>
 		</list>
 		<list key="replacehistory">
 		</list>
