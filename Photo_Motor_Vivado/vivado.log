@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  9 22:06:03 2022
+# Process ID: 34456
+# Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33624 D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Photo_Motor_Vivado\Photo_Motor_Vivado.xpr
+# Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/vivado.log
+# Journal file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/ece544ip_v2021'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/vivado-library-v2019.1-1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 1199.609 ; gain = 55.262
+update_compile_order -fileset sources_1
+open_bd_design {D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/bd/embsys/embsys.bd}
+Reading block design file <D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/bd/embsys/embsys.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- pdx.edu:user:nexys4io:3_0 - nexys4io_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:fit_timer:2.0 - fit_timer_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- digilentinc.com:IP:PmodOLEDrgb:1.0 - PmodOLEDrgb_0
+Adding component instance block -- xilinx.com:ip:axi_timebase_wdt:3.0 - axi_timebase_wdt_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_ButtonSwitch_GPIO
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - UDRLCCCC_Concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- pdx.edu:user:PmodENC544:1.0 - PmodENC544_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_XADC_Data_Read
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_XADC_Data_Write
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- digilentinc.com:IP:PWM:2.0 - PWM_0
+Successfully read diagram <embsys> from block design file <D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/bd/embsys/embsys.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1371.133 ; gain = 134.984
+write_bd_layout -format pdf -orientation portrait D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Deliverables/embsys.pdf
+D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Deliverables/embsys.pdf
