@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jun  8 13:09:48 2022
-# Process ID: 30484
+# Start of session at: Thu Jun  9 22:17:12 2022
+# Process ID: 12496
 # Current directory: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1
 # Command line: vivado.exe -log nexysA7fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexysA7fpga.tcl
 # Log file: D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/nexysA7fpga.vds
@@ -16,6 +16,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PSU_Work_and_Textbooks/ECE
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.cache/ip 
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.262 ; gain = 0.000
 Command: synth_design -top nexysA7fpga -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -23,18 +24,18 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 31044
+INFO: [Synth 8-7075] Helper process launched with PID 20828
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.180 ; gain = 74.176
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.871 ; gain = 92.609
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'nexysA7fpga' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/imports/hardware/nexysA7fpga.sv:18]
 INFO: [Synth 8-6157] synthesizing module 'embsys' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:13]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PWM_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_0_0' (1#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PWM_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PmodENC544_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PmodENC544_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PmodENC544_0_0' (2#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PmodENC544_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PmodOLEDrgb_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PmodOLEDrgb_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PmodOLEDrgb_0_0' (3#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_PmodOLEDrgb_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PWM_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_0_0' (1#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PWM_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PmodENC544_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PmodENC544_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PmodENC544_0_0' (2#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PmodENC544_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PmodOLEDrgb_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PmodOLEDrgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PmodOLEDrgb_0_0' (3#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_PmodOLEDrgb_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'embsys_xlconcat_0_1' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xlconcat_0_1/synth/embsys_xlconcat_0_1.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -169,45 +170,45 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/PSU_Work
 	Parameter NUM_PORTS bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (4#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_xlconcat_0_1' (5#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_xlconcat_0_1/synth/embsys_xlconcat_0_1.v:60]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_4' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_0_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_4' (6#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_0_4_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_0' (7#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_1_0' (8#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_XADC_Data_Out_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_XADC_Data_Out_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_XADC_Data_Out_0' (9#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_gpio_XADC_Data_Out_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timebase_wdt_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_timebase_wdt_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timebase_wdt_0_0' (10#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_timebase_wdt_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (11#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_4' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_4' (6#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_0' (7#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_1_0' (8#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_XADC_Data_Out_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_XADC_Data_Out_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_XADC_Data_Out_0' (9#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_gpio_XADC_Data_Out_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timebase_wdt_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_timebase_wdt_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timebase_wdt_0_0' (10#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_timebase_wdt_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (11#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_timer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:819]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:819]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'embsys_axi_timer_0_0' has 26 connections declared, but only 24 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:819]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_uartlite_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_uartlite_0_0' (12#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_uartlite_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_uartlite_0_0' (12#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_axi_uartlite_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'embsys_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:844]
 WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'embsys_axi_uartlite_0_0' has 22 connections declared, but only 21 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:844]
-INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (13#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_fit_timer_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_fit_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_fit_timer_0_0' (14#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_fit_timer_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (15#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (13#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_fit_timer_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_fit_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_fit_timer_0_0' (14#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_fit_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (15#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_mdm_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Interrupt' of module 'embsys_mdm_1_0' is unconnected for instance 'mdm_1' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:875]
 WARNING: [Synth 8-7023] instance 'mdm_1' of module 'embsys_mdm_1_0' has 30 connections declared, but only 29 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:875]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_0' (16#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (17#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_0' (16#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (17#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1433]
 INFO: [Synth 8-6157] synthesizing module 'i00_couplers_imp_PMIGPX' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:4711]
 INFO: [Synth 8-6155] done synthesizing module 'i00_couplers_imp_PMIGPX' (18#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:4711]
 INFO: [Synth 8-6157] synthesizing module 'i01_couplers_imp_1V78KVO' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:4857]
 INFO: [Synth 8-6155] done synthesizing module 'i01_couplers_imp_1V78KVO' (19#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:4857]
 INFO: [Synth 8-6157] synthesizing module 'i02_couplers_imp_1P1BFWM' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:5003]
-INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_0' (20#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_auto_pc_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_auto_pc_0' (20#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'embsys_auto_pc_0' is unconnected for instance 'auto_pc' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:5226]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'embsys_auto_pc_0' is unconnected for instance 'auto_pc' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:5226]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'embsys_auto_pc_0' has 56 connections declared, but only 54 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:5226]
@@ -250,14 +251,14 @@ INFO: [Synth 8-6157] synthesizing module 'm17_couplers_imp_CO8VTH' [d:/PSU_Work_
 INFO: [Synth 8-6155] done synthesizing module 'm17_couplers_imp_CO8VTH' (39#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:7751]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_QRRRG2' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8243]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_QRRRG2' (40#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8243]
-INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_0_0' (41#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_1_0' (42#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_2_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_2_0' (43#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_tier2_xbar_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (44#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_0_0' (41#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_1_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_1_0' (42#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_tier2_xbar_2_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_tier2_xbar_2_0' (43#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_tier2_xbar_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (44#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (45#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1433]
 WARNING: [Synth 8-7071] port 'M14_AXI_araddr' of module 'embsys_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:986]
 WARNING: [Synth 8-7071] port 'M14_AXI_arprot' of module 'embsys_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:986]
@@ -335,20 +336,20 @@ WARNING: [Synth 8-7071] port 'M17_AXI_wstrb' of module 'embsys_microblaze_0_axi_
 WARNING: [Synth 8-7071] port 'M17_AXI_wvalid' of module 'embsys_microblaze_0_axi_periph_0' is unconnected for instance 'microblaze_0_axi_periph' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:986]
 WARNING: [Synth 8-7023] instance 'microblaze_0_axi_periph' of module 'embsys_microblaze_0_axi_periph_0' has 415 connections declared, but only 341 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:986]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8009]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_0' (46#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_0' (47#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_0' (46#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_0' (47#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8155]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'embsys_dlmb_v10_0' has 25 connections declared, but only 24 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8155]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_0' (48#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_0' (49#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_0' (48#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_0' (49#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8201]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'embsys_ilmb_v10_0' has 25 connections declared, but only 24 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8201]
-INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_0' (50#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_0' (50#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_lmb_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8226]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8226]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'embsys_lmb_bram_0' has 16 connections declared, but only 14 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:8226]
@@ -487,16 +488,16 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterize
 	Parameter NUM_PORTS bound to: 5 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (51#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_xlconcat_0' (52#1) [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_nexys4io_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (53#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_nexys4io_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_nexys4io_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (53#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_nexys4io_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'led' of module 'embsys_nexys4io_0_0' is unconnected for instance 'nexys4io_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1357]
 WARNING: [Synth 8-7023] instance 'nexys4io_0' of module 'embsys_nexys4io_0_0' has 38 connections declared, but only 37 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1357]
-INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (54#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (54#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1395]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'embsys_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 9 given [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1395]
-INFO: [Synth 8-6157] synthesizing module 'embsys_xadc_wiz_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_xadc_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_xadc_wiz_0_0' (55#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-30484-BACCHUS/realtime/embsys_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_xadc_wiz_0_0' [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_xadc_wiz_0_0' (55#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/.Xil/Vivado-12496-BACCHUS/realtime/embsys_xadc_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'busy_out' of module 'embsys_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1405]
 WARNING: [Synth 8-7071] port 'channel_out' of module 'embsys_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1405]
 WARNING: [Synth 8-7071] port 'eos_out' of module 'embsys_xadc_wiz_0_0' is unconnected for instance 'xadc_wiz_0' [d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/synth/embsys.v:1405]
@@ -528,18 +529,18 @@ WARNING: [Synth 8-7071] port 'gpio_rtl_1_tri_i' of module 'embsys' is unconnecte
 WARNING: [Synth 8-7023] instance 'EMBSYS' of module 'embsys' has 61 connections declared, but only 57 given [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/imports/hardware/nexysA7fpga.sv:94]
 INFO: [Synth 8-6155] done synthesizing module 'nexysA7fpga' (61#1) [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.srcs/sources_1/imports/hardware/nexysA7fpga.sv:18]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.121 ; gain = 147.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.676 ; gain = 168.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1291.121 ; gain = 147.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.676 ; gain = 168.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1291.121 ; gain = 147.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.676 ; gain = 168.414
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1291.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1294.676 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -608,21 +609,21 @@ Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-fina
 Finished Parsing XDC File [D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1324.230 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1331.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1324.230 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1331.824 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'EMBSYS/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1328.211 ; gain = 184.207
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1334.785 ; gain = 208.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1328.211 ; gain = 184.207
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1334.785 ; gain = 208.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -665,10 +666,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for EMBSYS/axi_gpio_XADC_Data_Write. 
 Applied set_property KEEP_HIERARCHY = SOFT for EMBSYS/xlconstant_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for EMBSYS/PWM_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1328.211 ; gain = 184.207
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1334.785 ; gain = 208.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1328.211 ; gain = 184.207
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1334.785 ; gain = 208.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -690,25 +691,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1328.211 ; gain = 184.207
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1334.785 ; gain = 208.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1363.891 ; gain = 219.887
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1371.508 ; gain = 245.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1364.812 ; gain = 220.809
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1372.426 ; gain = 246.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1384.570 ; gain = 240.566
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1392.191 ; gain = 265.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -726,37 +727,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -831,23 +832,23 @@ Report Cell Usage:
 |30    |OBUF                          |    55|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1397.617 ; gain = 271.355
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1390.027 ; gain = 208.934
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1390.027 ; gain = 246.023
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1397.617 ; gain = 231.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1397.617 ; gain = 271.355
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1402.062 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1409.684 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1418.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 143 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1409.410 ; gain = 265.406
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.320 ; gain = 292.059
 INFO: [Common 17-1381] The checkpoint 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.runs/synth_1/nexysA7fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nexysA7fpga_utilization_synth.rpt -pb nexysA7fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun  8 13:10:48 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  9 22:18:26 2022...

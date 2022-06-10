@@ -83,8 +83,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="embsys_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0.xci">
+          <Proxy FileSetName="embsys_axi_gpio_XADC_Data_Out_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xci">
           <Proxy FileSetName="embsys_xadc_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_PWM_0_0/embsys_PWM_0_0.xci">
+          <Proxy FileSetName="embsys_PWM_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_1_0/embsys_axi_gpio_1_0.xci">
           <Proxy FileSetName="embsys_axi_gpio_1_0"/>
@@ -92,26 +101,8 @@
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_PmodENC544_0_0/embsys_PmodENC544_0_0.xci">
           <Proxy FileSetName="embsys_PmodENC544_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_XADC_Data_Out_0/embsys_axi_gpio_XADC_Data_Out_0.xci">
-          <Proxy FileSetName="embsys_axi_gpio_XADC_Data_Out_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_PWM_0_0/embsys_PWM_0_0.xci">
-          <Proxy FileSetName="embsys_PWM_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.xci">
-          <Proxy FileSetName="embsys_microblaze_0_axi_intc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_xbar_0/embsys_xbar_0.xci">
-          <Proxy FileSetName="embsys_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_microblaze_0_0/embsys_microblaze_0_0.xci">
-          <Proxy FileSetName="embsys_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0.xci">
-          <Proxy FileSetName="embsys_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_dlmb_v10_0/embsys_dlmb_v10_0.xci">
-          <Proxy FileSetName="embsys_dlmb_v10_0"/>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="embsys_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_ilmb_v10_0/embsys_ilmb_v10_0.xci">
           <Proxy FileSetName="embsys_ilmb_v10_0"/>
@@ -119,41 +110,50 @@
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="embsys_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_fit_timer_0_0/embsys_fit_timer_0_0.xci">
-          <Proxy FileSetName="embsys_fit_timer_0_0"/>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0.xci">
+          <Proxy FileSetName="embsys_axi_timer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="embsys_ilmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_lmb_bram_0/embsys_lmb_bram_0.xci">
-          <Proxy FileSetName="embsys_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_nexys4io_0_0/embsys_nexys4io_0_0.xci">
-          <Proxy FileSetName="embsys_nexys4io_0_0"/>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_microblaze_0_0/embsys_microblaze_0_0.xci">
+          <Proxy FileSetName="embsys_microblaze_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0.xci">
           <Proxy FileSetName="embsys_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="embsys_axi_uartlite_0_0"/>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_nexys4io_0_0/embsys_nexys4io_0_0.xci">
+          <Proxy FileSetName="embsys_nexys4io_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_fit_timer_0_0/embsys_fit_timer_0_0.xci">
+          <Proxy FileSetName="embsys_fit_timer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_dlmb_v10_0/embsys_dlmb_v10_0.xci">
+          <Proxy FileSetName="embsys_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_rst_clk_wiz_1_100M_0/embsys_rst_clk_wiz_1_100M_0.xci">
           <Proxy FileSetName="embsys_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xci">
-          <Proxy FileSetName="embsys_axi_timebase_wdt_0_0"/>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_xbar_0/embsys_xbar_0.xci">
+          <Proxy FileSetName="embsys_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.xci">
+          <Proxy FileSetName="embsys_axi_gpio_0_4"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_PmodOLEDrgb_0_0/embsys_PmodOLEDrgb_0_0.xci">
           <Proxy FileSetName="embsys_PmodOLEDrgb_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_lmb_bram_0/embsys_lmb_bram_0.xci">
+          <Proxy FileSetName="embsys_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="embsys_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_timebase_wdt_0_0/embsys_axi_timebase_wdt_0_0.xci">
+          <Proxy FileSetName="embsys_axi_timebase_wdt_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_mdm_1_0/embsys_mdm_1_0.xci">
           <Proxy FileSetName="embsys_mdm_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0.xci">
           <Proxy FileSetName="embsys_clk_wiz_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="embsys.bd" FileRelPathName="ip/embsys_axi_gpio_0_4/embsys_axi_gpio_0_4.xci">
-          <Proxy FileSetName="embsys_axi_gpio_0_4"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hardware/nexysA7fpga.sv">
@@ -614,9 +614,7 @@
     </Run>
     <Run Id="embsys_PWM_0_0_synth_1" Type="Ft3:Synth" SrcSet="embsys_PWM_0_0" Part="xc7a100tcsg324-1" ConstrsSet="embsys_PWM_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/embsys_PWM_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/embsys_PWM_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -1035,9 +1033,7 @@
     </Run>
     <Run Id="embsys_PWM_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="embsys_PWM_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="embsys_PWM_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/embsys_PWM_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

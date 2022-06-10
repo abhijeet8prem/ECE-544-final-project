@@ -42,6 +42,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_lmb_
 # IP: bd/embsys/ip/embsys_xbar_0/embsys_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xbar_0 || ORIG_REF_NAME==embsys_xbar_0} -quiet] -quiet
 
+# IP: bd/embsys/ip/embsys_tier2_xbar_0_0/embsys_tier2_xbar_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_0_0 || ORIG_REF_NAME==embsys_tier2_xbar_0_0} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_tier2_xbar_1_0/embsys_tier2_xbar_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_1_0 || ORIG_REF_NAME==embsys_tier2_xbar_1_0} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_tier2_xbar_2_0/embsys_tier2_xbar_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_2_0 || ORIG_REF_NAME==embsys_tier2_xbar_2_0} -quiet] -quiet
+
+# IP: bd/embsys/ip/embsys_auto_pc_0/embsys_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_auto_pc_0 || ORIG_REF_NAME==embsys_auto_pc_0} -quiet] -quiet
+
 # IP: bd/embsys/ip/embsys_microblaze_0_axi_periph_0/embsys_microblaze_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_microblaze_0_axi_periph_0 || ORIG_REF_NAME==embsys_microblaze_0_axi_periph_0} -quiet] -quiet
 
@@ -78,9 +90,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xlco
 # IP: bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xadc_wiz_0_0 || ORIG_REF_NAME==embsys_xadc_wiz_0_0} -quiet] -quiet
 
-# IP: bd/embsys/ip/embsys_PWM_0_0/embsys_PWM_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PWM_0_0 || ORIG_REF_NAME==embsys_PWM_0_0} -quiet] -quiet
-
 # IP: bd/embsys/ip/embsys_PmodENC544_0_0/embsys_PmodENC544_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PmodENC544_0_0 || ORIG_REF_NAME==embsys_PmodENC544_0_0} -quiet] -quiet
 
@@ -96,16 +105,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_axi_
 # IP: bd/embsys/ip/embsys_xlconstant_1_0/embsys_xlconstant_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_xlconstant_1_0 || ORIG_REF_NAME==embsys_xlconstant_1_0} -quiet] -quiet
 
-# IP: bd/embsys/ip/embsys_tier2_xbar_0_0/embsys_tier2_xbar_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_0_0 || ORIG_REF_NAME==embsys_tier2_xbar_0_0} -quiet] -quiet
-
-# IP: bd/embsys/ip/embsys_tier2_xbar_1_0/embsys_tier2_xbar_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_1_0 || ORIG_REF_NAME==embsys_tier2_xbar_1_0} -quiet] -quiet
-
-# IP: bd/embsys/ip/embsys_tier2_xbar_2_0/embsys_tier2_xbar_2_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_tier2_xbar_2_0 || ORIG_REF_NAME==embsys_tier2_xbar_2_0} -quiet] -quiet
-
-# IP: bd/embsys/ip/embsys_auto_pc_0/embsys_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_auto_pc_0 || ORIG_REF_NAME==embsys_auto_pc_0} -quiet] -quiet
+# IP: bd/embsys/ip/embsys_PWM_0_0/embsys_PWM_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==embsys_PWM_0_0 || ORIG_REF_NAME==embsys_PWM_0_0} -quiet] -quiet
 
 # XDC: d:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Photo_Motor_Vivado/Photo_Motor_Vivado.gen/sources_1/bd/embsys/embsys_ooc.xdc
