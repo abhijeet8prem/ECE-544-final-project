@@ -1,6 +1,6 @@
 Nothing to build in platform 'nexys7_solar_tracker'
 
-20:16:10 **** Incremental Build of configuration Debug for project SolarServoApp_abhi ****
+20:21:28 **** Incremental Build of configuration Debug for project SolarServoApp_abhi ****
 make all 
 'Building file: ../src/mainPhotoServo.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,6 +15,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/vivado_vitis_workspace/ece544/final_pro
 'Invoking: MicroBlaze Print Size'
 mb-size SolarServoApp_abhi.elf  |tee "SolarServoApp_abhi.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  31620	    404	   3736	  35760	   8bb0	SolarServoApp_abhi.elf
+  31748	    404	   3744	  35896	   8c38	SolarServoApp_abhi.elf
 'Finished building: SolarServoApp_abhi.elf.size'
 ' '
