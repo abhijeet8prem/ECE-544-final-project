@@ -16,3 +16,7 @@ platform write
 platform generate -domains 
 platform active {nexys7_solar_tracker}
 platform generate
+platform active {nexys7_solar_tracker}
+platform config -updatehw {C:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/Photo_Motor_Vivado/nexysA7fpga.xsa}
+platform generate -domains 
+platform generate -domains 

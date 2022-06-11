@@ -489,17 +489,6 @@
 
 /******************************************************************/
 
-/* Definitions for driver PMODENC */
-#define XPAR_PMODENC_NUM_INSTANCES 1
-
-/* Definitions for peripheral PMODENC_0 */
-#define XPAR_PMODENC_0_DEVICE_ID 0
-#define XPAR_PMODENC_0_AXI_LITE_GPIO_BASEADDR 0x00020000
-#define XPAR_PMODENC_0_AXI_LITE_GPIO_HIGHADDR 0x00020FFF
-
-
-/******************************************************************/
-
 /* Definitions for driver PMODENC544 */
 #define XPAR_PMODENC544_NUM_INSTANCES 1
 
@@ -603,7 +592,7 @@
 /******************************************************************/
 
 /* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 2
+#define XPAR_XGPIO_NUM_INSTANCES 4
 
 /* Definitions for peripheral AXI_BUTTONSWITCH_GPIO */
 #define XPAR_AXI_BUTTONSWITCH_GPIO_BASEADDR 0x40010000
@@ -621,6 +610,22 @@
 #define XPAR_AXI_GPIO_0_IS_DUAL 1
 
 
+/* Definitions for peripheral AXI_GPIO_XADC_DATA_READ */
+#define XPAR_AXI_GPIO_XADC_DATA_READ_BASEADDR 0x40020000
+#define XPAR_AXI_GPIO_XADC_DATA_READ_HIGHADDR 0x4002FFFF
+#define XPAR_AXI_GPIO_XADC_DATA_READ_DEVICE_ID 2
+#define XPAR_AXI_GPIO_XADC_DATA_READ_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_XADC_DATA_READ_IS_DUAL 1
+
+
+/* Definitions for peripheral AXI_GPIO_XADC_DATA_WRITE */
+#define XPAR_AXI_GPIO_XADC_DATA_WRITE_BASEADDR 0x40030000
+#define XPAR_AXI_GPIO_XADC_DATA_WRITE_HIGHADDR 0x4003FFFF
+#define XPAR_AXI_GPIO_XADC_DATA_WRITE_DEVICE_ID 3
+#define XPAR_AXI_GPIO_XADC_DATA_WRITE_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_XADC_DATA_WRITE_IS_DUAL 0
+
+
 /******************************************************************/
 
 /* Canonical definitions for peripheral AXI_BUTTONSWITCH_GPIO */
@@ -636,6 +641,20 @@
 #define XPAR_GPIO_1_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
 #define XPAR_GPIO_1_INTERRUPT_PRESENT 0
 #define XPAR_GPIO_1_IS_DUAL 1
+
+/* Canonical definitions for peripheral AXI_GPIO_XADC_DATA_READ */
+#define XPAR_GPIO_2_BASEADDR 0x40020000
+#define XPAR_GPIO_2_HIGHADDR 0x4002FFFF
+#define XPAR_GPIO_2_DEVICE_ID XPAR_AXI_GPIO_XADC_DATA_READ_DEVICE_ID
+#define XPAR_GPIO_2_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_2_IS_DUAL 1
+
+/* Canonical definitions for peripheral AXI_GPIO_XADC_DATA_WRITE */
+#define XPAR_GPIO_3_BASEADDR 0x40030000
+#define XPAR_GPIO_3_HIGHADDR 0x4003FFFF
+#define XPAR_GPIO_3_DEVICE_ID XPAR_AXI_GPIO_XADC_DATA_WRITE_DEVICE_ID
+#define XPAR_GPIO_3_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_3_IS_DUAL 0
 
 
 /******************************************************************/
@@ -705,29 +724,6 @@
 #define XPAR_NEXYS4IO_0_DEVICE_ID 0
 #define XPAR_NEXYS4IO_0_S00_AXI_BASEADDR 0x44A00000
 #define XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR 0x44A0FFFF
-
-
-/******************************************************************/
-
-/* Definitions for driver SYSMON */
-#define XPAR_XSYSMON_NUM_INSTANCES 1U
-
-/* Definitions for peripheral XADC_WIZ_0 */
-#define XPAR_XADC_WIZ_0_IP_TYPE 0U
-#define XPAR_XADC_WIZ_0_DEVICE_ID 0U
-#define XPAR_XADC_WIZ_0_BASEADDR 0x44A60000U
-#define XPAR_XADC_WIZ_0_HIGHADDR 0x44A6FFFFU
-#define XPAR_XADC_WIZ_0_INCLUDE_INTR 1U
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral XADC_WIZ_0 */
-#define XPAR_SYSMON_0_IP_TYPE 0U
-#define XPAR_SYSMON_0_DEVICE_ID XPAR_XADC_WIZ_0_DEVICE_ID
-#define XPAR_SYSMON_0_BASEADDR 0x44A60000U
-#define XPAR_SYSMON_0_HIGHADDR 0x44A6FFFFU
-#define XPAR_SYSMON_0_INCLUDE_INTR 1U
 
 
 /******************************************************************/

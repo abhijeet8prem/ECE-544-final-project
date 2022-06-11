@@ -6,3 +6,10 @@ timestamp=[2022-06-06 00:47:25], mode=PLATFORM_GENERATION, duration=0:00:09.872,
 timestamp=[2022-06-06 00:50:17], mode=PLATFORM_GENERATION, duration=0:00:11.812, duration_ms=11812, data={name=nexys7_solar_tracker}
 timestamp=[2022-06-06 00:52:10], mode=APP_CREATION, duration=0:00:02.877, duration_ms=2877, data={name=SolarServoApp_abhi, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=nexys7_solar_tracker, application_type=application}
 timestamp=[2022-06-06 00:53:33], mode=BUILD, duration=0:00:02.275, duration_ms=2275, data={name=SolarServoApp_abhi, configuration=Debug, clean_build=false}
+timestamp=[2022-06-10 18:42:21], mode=WORKBENCH_START, duration=0:01:05.404, duration_ms=65404, data={}
+timestamp=[2022-06-10 18:42:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.534, duration_ms=534, data={}
+timestamp=[2022-06-10 18:42:26], mode=WORKBENCH_UI_INIT, duration=0:00:04.350, duration_ms=4350, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,SolarServoApp_abhi,SolarServoApp_abhi_system,nexys7_solar_tracker}
+timestamp=[2022-06-10 18:55:50], mode=PLATFORM_GENERATION, duration=0:00:29.262, duration_ms=29262, data={name=nexys7_solar_tracker}
+timestamp=[2022-06-10 18:57:42], mode=PLATFORM_GENERATION, duration=0:00:02.363, duration_ms=2363, data={name=nexys7_solar_tracker}
+timestamp=[2022-06-10 18:57:42], mode=BUILD, duration=0:00:00.178, duration_ms=178, data={name=SolarServoApp_abhi, configuration=Debug, clean_build=true}
+timestamp=[2022-06-10 18:57:46], mode=BUILD, duration=0:00:03.063, duration_ms=3063, data={name=SolarServoApp_abhi, configuration=Debug, clean_build=false}

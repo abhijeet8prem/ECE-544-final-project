@@ -52,3 +52,23 @@ con
 
 00:55:45 INFO  : Launch script is exported to file 'C:\vivado_vitis_workspace\ece544\final_project\repo\ECE-544-final-project\vitis_abhi\SolarServoApp_abhi_system\_ide\scripts\debugger_solarservoapp_abhi-default.tcl'
 02:01:59 INFO  : Disconnected from the channel tcfchan#3.
+18:41:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\vivado_vitis_workspace\ece544\final_project\repo\ECE-544-final-project\vitis_abhi\temp_xsdb_launch_script.tcl
+18:42:00 INFO  : XSCT server has started successfully.
+18:42:00 INFO  : Successfully done setting XSCT server connection channel  
+18:42:00 INFO  : plnx-install-location is set to ''
+18:42:00 INFO  : Successfully done setting workspace for the tool. 
+18:42:25 INFO  : Platform repository initialization has completed.
+18:42:29 INFO  : Registering command handlers for Vitis TCF services
+18:42:46 INFO  : Successfully done query RDI_DATADIR 
+18:55:13 INFO  : Hardware specification for platform project 'nexys7_solar_tracker' is updated.
+18:55:50 INFO  : Result from executing command 'getProjects': nexys7_solar_tracker
+18:55:50 INFO  : Result from executing command 'getPlatforms': nexys7_solar_tracker|C:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/nexys7_solar_tracker/export/nexys7_solar_tracker/nexys7_solar_tracker.xpfm
+18:57:42 INFO  : Result from executing command 'getProjects': nexys7_solar_tracker
+18:57:42 INFO  : Result from executing command 'getPlatforms': nexys7_solar_tracker|C:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/nexys7_solar_tracker/export/nexys7_solar_tracker/nexys7_solar_tracker.xpfm
+18:57:42 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp_abhi'...
+18:57:43 INFO  : Updating application flags with new BSP settings...
+18:57:43 INFO  : Successfully updated application flags for project SolarServoApp_abhi.
+18:59:20 INFO  : Bit file 'C:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/SolarServoApp_abhi/_ide/bitstream/download.bit' is generated.
+18:59:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8AEAAA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8AEAAA-13631093-0"}' command is executed.
+18:59:25 INFO  : Device configured successfully with "C:/vivado_vitis_workspace/ece544/final_project/repo/ECE-544-final-project/vitis_abhi/SolarServoApp_abhi/_ide/bitstream/download.bit"
