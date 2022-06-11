@@ -108,11 +108,8 @@
 #define PWM1_SWITCH_MASK	0x000F
 #define PWM2_SWITCH_MASK	0x00F0
 
-#define MAX_RPM	5000			// Typical RPM for Pololu #4820 powered by 6V is 6200+/-20%.  We are only applying 5V so we shall Round this down to 5000
-#define MAX_POWERFACTOR 255
 
-#define MAX_PERIOD_MS 180 // This value was found experimentally
-#define MIN_PERIOD_MS (60*1000)/MAX_RPM
+
 
 #define FIT_TRACKER_MAX				400 // Reset every 10 millisecond
 
@@ -138,7 +135,7 @@ float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
 int vertical_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms of Percentage for Vertical Servo
 int horizontal_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms of Percentage for vertical Servo
 
-
+// Declaring these to be volatile might improve behavior
 uint16_t UP_Data = 0x0000;
 uint16_t DOWN_Data = 0x0000;
 uint16_t LEFT_Data = 0x0000;
@@ -175,24 +172,23 @@ XTmrCtr		AXITimerInst;				// PWM timer instance
 
 
 volatile uint32_t			gpio_in;			// GPIO input port
-
+//volatile uint16_t UP_Data = 0x0000;
+//volatile uint16_t DOWN_Data = 0x0000;
+//volatile uint16_t LEFT_Data = 0x0000;
+//volatile uint16_t RIGHT_Data = 0x0000;
 
 /************************** Function Prototypes *****************************/
 void PMDIO_itoa(int32_t value, char *string, int32_t radix);
 void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num);
-void PMDIO_put2hex(PmodOLEDrgb* InstancePtr, uint8_t num);
 void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix);
-int	 do_init(void);											// initialize system
-void FIT_Handler(void);										// fixed interval timer interrupt handler
-int AXI_Timer_initialize(void);
+
+
 
 void OLED_Write_Signal(char letter1, char letter2, int value, int row);
 void OLED_Display_Light_Signal();
 void OLED_Display_Angle();
 
-// Print Functions
-void xil_print_u8toBinary(u8 number);
-void xil_print_u8toHex(u8 number);
+
 
 //XADC Functions
 u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction);
@@ -201,6 +197,9 @@ u16 read_ADC();
 
 
 // Define Structural Functions
+int	 do_init(void);											// initialize system
+void FIT_Handler(void);										// fixed interval timer interrupt handler
+int AXI_Timer_initialize(void);
 
 void sample(int FIT_Tracker, uint16_t switchStateString);
 void LightFollow();
@@ -254,11 +253,6 @@ int main(void)
 /**
 * Fixed interval timer interrupt handler
 *
-* Reads the GPIO port which reads back the hardware generated PWM wave for the RGB Leds
-*
-* @note
-* ECE 544 students - When you implement your software solution for pulse width detection in
-* Project 1 this could be a reasonable place to do that processing.
  *****************************************************************************/
 
 
@@ -293,13 +287,10 @@ void sample(int FIT_Tracker, uint16_t switchStateString){
 }
 
 
-// Dedicate each Bank of 7 segment to a different ADC Channel.  Each 7 segment has its value set by a 8 bit arguement I only want it to display a hex (4 bits) or an off state
-//  Use switch to change between pairs of data being displayed
 
-
+// The FIT Handler calls the sampler function and uses it to set the values of the global variables UP_Data, DOWN_Data, LEFT_Data, and RIGHT_Data  once every FIT_TRACKER_MAX FIT_Handler calls
 
 void FIT_Handler(void){
-        // This handler is used to sample to Rotary input encoder PMOD and to sample the Motor Encoder
 		static int FIT_Tracker = 0;
 
 		if(FIT_Tracker>FIT_TRACKER_MAX){
@@ -327,17 +318,17 @@ void FIT_Handler(void){
 
 /****************************************************************************/
 /**
-* This is the main function that calls the functions that controls the outputs to the
-*  7Seg Display, OLED display, and the HB3 Controller IP. The loops calls
-*  the functions that handle queries to the Rotary Encoder, the
+*
  *****************************************************************************/
 
+//
 
+// The LightFollow() function enters debug mode and calls
 void LightFollow(){
     PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
 	PWM_Enable(PWM_BASEADDR);
 	int loopTracker=0;
-	while(1) { //While loop has a minimum period of 1 miliscond ut actually less because of calls
+	while(1) { //While loop has a minimum period of 1 miliscond but is likely actually more because of calls that take long amounts of time
 		if (NX4IO_isPressed(BTNC)){// If Center button pressed
 			OLEDrgb_Clear(&pmodOLEDrgb_inst);
 			PWM_CALIBRATE();
@@ -349,7 +340,7 @@ void LightFollow(){
 			}
 
 			loopTracker=loopTracker+1;
-			if (loopTracker>1001){   // Reset loop Tracker one a second
+			if (loopTracker>1001){   // Reset loop racker around once a second but most likely less frequently than that due to time required by OLED functions
 				loopTracker = 1;
 			}
 
@@ -371,6 +362,8 @@ void LightFollow(){
 
 /****************************  HELPER FUNCTIONS ******************************/
 
+
+//
 void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
 	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
 	if(horizontalRatio>setpoint_Light_X){
@@ -392,7 +385,9 @@ void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint1
 
 
 
-
+//  This Function is called when the center button is pressed and acts as a debug_Mode for the function
+//  This function changes the duty cycle of PWM channel 1 based on the state of switches[3:0] and duty cycle of PWM channel 2 based on the state of switches[7:4]
+// The Function will vary the duty cycle from 3% to 10% if any of the switch for that channel are on and set the duty cycle to 0% if all 4 switches for a channel are off
 void PWM_CALIBRATE(){
     uint16_t switchStateString = NX4IO_getSwitches();
 
@@ -422,7 +417,8 @@ void PWM_CALIBRATE(){
 
 
 
-
+//This function translates the direction enums to the address for their analoge input channel in the xADC
+//I am not 100% sure I have paired the enums and the addresses correctly though all 4 addresses are valid addresses for changing the active channel
 u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction){
 	u8 XADC_data_address= 0x00;
 	switch(direction) {
@@ -444,7 +440,7 @@ u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction){
 	return XADC_data_address;
 }
 
-
+// This function sets which of the analog input channels of the XADC is the active channel the is havings its signal converted
 void set_ADC_channel(enum _XADC_GPIO direction){
 	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_SETTINGS, WRITE);
 	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_IO, XADC_Channel_Data_Address(direction));  // Write Data  Active Channel
@@ -488,7 +484,8 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 
 
 
-
+// This displays the Duty Cycle percentage times 100 that will be sent to the PWMS
+// It was easier to just multiple the float by 100 and treat the result as an int rather than attempt to print a float to OLED
 void OLED_Display_Angle(){
 	OLED_Write_Signal('V','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +vertical_Duty_Percentage_Modifier)), 0);
 	OLED_Write_Signal('H','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +horizontal_Duty_Percentage_Modifier)), 1);
@@ -736,59 +733,6 @@ void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num)
   return;
 }
 
-void PMDIO_put4hex(PmodOLEDrgb* InstancePtr, uint16_t num)
-{
-  char  buf[5];
-  int16_t   cnt;
-  char  *ptr;
-  int16_t  digit;
-
-  ptr = buf;
-  for (cnt = 3; cnt >= 0; cnt--) {
-    digit = (num >> (cnt * 4)) & 0xF;
-
-    if (digit <= 9)
-	{
-      *ptr++ = (char) ('0' + digit);
-	}
-    else
-	{
-      *ptr++ = (char) ('a' - 10 + digit);
-	}
-  }
-
-  *ptr = (char) 0;
-  OLEDrgb_PutString(InstancePtr,buf);
-
-  return;
-}
-
-void PMDIO_put2hex(PmodOLEDrgb* InstancePtr, uint8_t num)
-{
-  char  buf[3];
-  int16_t   cnt;
-  char  *ptr;
-  int16_t  digit;
-
-  ptr = buf;
-  for (cnt = 1; cnt >= 0; cnt--) {
-    digit = (num >> (cnt * 4)) & 0xF;
-
-    if (digit <= 9)
-	{
-      *ptr++ = (char) ('0' + digit);
-	}
-    else
-	{
-      *ptr++ = (char) ('a' - 10 + digit);
-	}
-  }
-
-  *ptr = (char) 0;
-  OLEDrgb_PutString(InstancePtr,buf);
-
-  return;
-}
 
 
 /****************************************************************************/

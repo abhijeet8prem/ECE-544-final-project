@@ -1,4 +1,4 @@
-21:08:07 **** Incremental Build of configuration Debug for project SolarServoApp ****
+08:03:52 **** Build of configuration Debug for project SolarServoApp ****
 make all 
 'Building file: ../src/mainPhotoServo.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -17,5 +17,5 @@ mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
 'Finished building: SolarServoApp.elf.size'
 ' '
 
-21:08:08 Build Finished (took 464ms)
+08:03:52 Build Finished (took 468ms)
 

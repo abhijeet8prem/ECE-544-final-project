@@ -34,3 +34,4 @@ platform generate -domains
 platform active {SolarMotorPlatform}
 platform generate -domains 
 platform generate
+platform generate
