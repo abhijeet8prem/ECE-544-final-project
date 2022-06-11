@@ -344,7 +344,6 @@ void LightFollow(){
 			if(debug_Mode==true){
 				OLEDrgb_Clear(&pmodOLEDrgb_inst);
 				debug_Mode=false;
-
 			}
 
 			loopTracker=loopTracker+1;
@@ -405,7 +404,6 @@ void PWM_CALIBRATE(){
 		PWM_Enable(PWM_BASEADDR);
 		OLEDrgb_Clear(&pmodOLEDrgb_inst);
 		debug_Mode=true;
-		OLED_Write_Signal('%','%', 1, 6);
     }
 
 	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
@@ -475,11 +473,12 @@ u16 read_ADC(){
 
 void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	char name[3]={letter1, letter2, '\0'};
+	char name[3]={letter1, letter2, '\0'};;
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, name );
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
+
 
 
 

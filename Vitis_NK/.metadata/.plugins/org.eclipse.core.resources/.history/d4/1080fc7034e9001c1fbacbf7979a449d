@@ -481,6 +481,14 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
 
+void OLED_Write_Percentage(char letter, int value, int row){
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
+	char name[3]={letter1, '%', '\0'};
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, name );
+	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
+	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
+}
+
 
 
 

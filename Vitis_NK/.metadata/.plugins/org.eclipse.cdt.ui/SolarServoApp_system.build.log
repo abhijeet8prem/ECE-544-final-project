@@ -1,6 +1,6 @@
-18:33:39 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
+20:13:48 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-18:33:39 Build Finished (took 90ms)
+20:13:48 Build Finished (took 101ms)
 

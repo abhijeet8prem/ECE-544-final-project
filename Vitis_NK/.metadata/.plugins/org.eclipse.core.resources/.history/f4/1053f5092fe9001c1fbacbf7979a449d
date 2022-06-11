@@ -104,8 +104,8 @@
 #define SWITCH15_MASK	0x8000
 #define SWITCHOFF_MASK	0x0000
 
-#define PWM1_SWITCH_MASK	0x000F
-#define PWM2_SWITCH_MASK	0x00F0
+#define PWM1_SWITCH_MASK	0x00F0
+#define PWM2_SWITCH_MASK	0x000F
 
 #define MAX_RPM	5000			// Typical RPM for Pololu #4820 powered by 6V is 6200+/-20%.  We are only applying 5V so we shall Round this down to 5000
 #define MAX_POWERFACTOR 255
@@ -123,8 +123,8 @@
 
 //GLOBAL VARIABLES
 
+int FIT_Handler_Switch=0;  //This global variable is just used to tell the FIT_Handler when to start and stop
 
-bool debug_Mode = false;
 
 
 
@@ -269,25 +269,22 @@ int main(void)
 
 void sample(int FIT_Tracker, uint16_t switchStateString){
 	// Does sampling occur 0.001 seconds after change or is my math wrong?
-	if(debug_Mode==false){
-		if(FIT_Tracker==(1*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){set_ADC_channel(UP);}
-		}else if(FIT_Tracker==(3*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){UP_Data = read_ADC();}
-		}else if(FIT_Tracker==(5*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){set_ADC_channel(DOWN);}
-		}else if(FIT_Tracker==(7*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){DOWN_Data = read_ADC();}
-		}else if(FIT_Tracker==(9*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){set_ADC_channel(LEFT);}
-		}else if(FIT_Tracker==(11*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){LEFT_Data = read_ADC();}
-		}else if(FIT_Tracker==(13*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){set_ADC_channel(RIGHT);}
-		}else if(FIT_Tracker==(15*(FIT_TRACKER_MAX/16))){
-			if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){RIGHT_Data = read_ADC();}
-		}
-
+	if(FIT_Tracker==(1*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){set_ADC_channel(UP);}
+	}else if(FIT_Tracker==(3*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){UP_Data = read_ADC();}
+	}else if(FIT_Tracker==(5*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){set_ADC_channel(DOWN);}
+	}else if(FIT_Tracker==(7*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){DOWN_Data = read_ADC();}
+	}else if(FIT_Tracker==(9*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){set_ADC_channel(LEFT);}
+	}else if(FIT_Tracker==(11*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){LEFT_Data = read_ADC();}
+	}else if(FIT_Tracker==(13*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){set_ADC_channel(RIGHT);}
+	}else if(FIT_Tracker==(15*(FIT_TRACKER_MAX/16))){
+		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){RIGHT_Data = read_ADC();}
 	}
 }
 
@@ -332,6 +329,7 @@ void FIT_Handler(void){
  *****************************************************************************/
 
 
+
 void LightFollow(){
     PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
 	PWM_Enable(PWM_BASEADDR);
@@ -341,11 +339,6 @@ void LightFollow(){
 			OLEDrgb_Clear(&pmodOLEDrgb_inst);
 			PWM_CALIBRATE();
 		}else{
-			if(debug_Mode==true){
-				OLEDrgb_Clear(&pmodOLEDrgb_inst);
-				debug_Mode=false;
-
-			}
 
 			loopTracker=loopTracker+1;
 			if (loopTracker>1001){   // Reset loop Tracker one a second
@@ -394,26 +387,20 @@ void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint1
 
 void PWM_CALIBRATE(){
     uint16_t switchStateString = NX4IO_getSwitches();
-
-    if(debug_Mode==false){
-		PWM_Disable(PWM_BASEADDR);
-		PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 0);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 1);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 2);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 3);
-		PWM_Enable(PWM_BASEADDR);
-		OLEDrgb_Clear(&pmodOLEDrgb_inst);
-		debug_Mode=true;
-		OLED_Write_Signal('%','%', 1, 6);
-    }
+	PWM_Disable(PWM_BASEADDR);
+	PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 0);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 1);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 2);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 3);
+	PWM_Enable(PWM_BASEADDR);
 
 	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
 	int val2=(int) ((switchStateString & PWM2_SWITCH_MASK)>>4);
+	//OLEDrgb_Clear(&pmodOLEDrgb_inst);
 
-
-	OLED_Write_Signal('C','1', val1, 0);
-	OLED_Write_Signal('C','2', val2, 2);
+	OLED_Write_Signal('C','2', val1, 1);
+	OLED_Write_Signal('C','1', val2, 2);
 
 	if(val1>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val1), 0);} // Duty Cycle between 3% and 10%
 	if(val2>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val2), 1);} // Duty Cycle between 3% and 10%
@@ -475,11 +462,12 @@ u16 read_ADC(){
 
 void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	char name[3]={letter1, letter2, '\0'};
+	char name[3]={letter1, letter2, '\0'};;
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, name );
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
+
 
 
 

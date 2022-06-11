@@ -405,7 +405,7 @@ void PWM_CALIBRATE(){
 		PWM_Enable(PWM_BASEADDR);
 		OLEDrgb_Clear(&pmodOLEDrgb_inst);
 		debug_Mode=true;
-		OLED_Write_Signal('%','%', 1, 6);
+		OLED_Write_Signal('%','%', 1, 7);
     }
 
 	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
@@ -480,6 +480,7 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
+
 
 
 

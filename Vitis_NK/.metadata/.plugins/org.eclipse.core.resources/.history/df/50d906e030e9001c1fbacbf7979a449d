@@ -104,8 +104,8 @@
 #define SWITCH15_MASK	0x8000
 #define SWITCHOFF_MASK	0x0000
 
-#define PWM1_SWITCH_MASK	0x000F
-#define PWM2_SWITCH_MASK	0x00F0
+#define PWM1_SWITCH_MASK	0x00F0
+#define PWM2_SWITCH_MASK	0x000F
 
 #define MAX_RPM	5000			// Typical RPM for Pololu #4820 powered by 6V is 6200+/-20%.  We are only applying 5V so we shall Round this down to 5000
 #define MAX_POWERFACTOR 255
@@ -341,11 +341,7 @@ void LightFollow(){
 			OLEDrgb_Clear(&pmodOLEDrgb_inst);
 			PWM_CALIBRATE();
 		}else{
-			if(debug_Mode==true){
-				OLEDrgb_Clear(&pmodOLEDrgb_inst);
-				debug_Mode=false;
-
-			}
+			debug_Mode=0;
 
 			loopTracker=loopTracker+1;
 			if (loopTracker>1001){   // Reset loop Tracker one a second
@@ -405,15 +401,14 @@ void PWM_CALIBRATE(){
 		PWM_Enable(PWM_BASEADDR);
 		OLEDrgb_Clear(&pmodOLEDrgb_inst);
 		debug_Mode=true;
-		OLED_Write_Signal('%','%', 1, 6);
     }
 
 	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
 	int val2=(int) ((switchStateString & PWM2_SWITCH_MASK)>>4);
 
 
-	OLED_Write_Signal('C','1', val1, 0);
-	OLED_Write_Signal('C','2', val2, 2);
+	OLED_Write_Signal('C','2', val1, 1);
+	OLED_Write_Signal('C','1', val2, 2);
 
 	if(val1>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val1), 0);} // Duty Cycle between 3% and 10%
 	if(val2>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val2), 1);} // Duty Cycle between 3% and 10%
@@ -475,11 +470,12 @@ u16 read_ADC(){
 
 void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	char name[3]={letter1, letter2, '\0'};
+	char name[3]={letter1, letter2, '\0'};;
 	OLEDrgb_PutString(&pmodOLEDrgb_inst, name );
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
+
 
 
 

@@ -488,6 +488,7 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 
 
 
+
 void OLED_Display_Angle(){
 	OLED_Write_Signal('V','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +vertical_Duty_Percentage_Modifier)), 0);
 	OLED_Write_Signal('H','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +horizontal_Duty_Percentage_Modifier)), 1);

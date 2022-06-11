@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="FIT_Handler_Switch"/>
+		<item key="selection" value="OLEDrgb_PutString"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="OLEDrgb_PutString"/>
+			<item value="OLEDrgb_SetCursor"/>
+			<item value="OLED_Write_Signal"/>
+			<item value="debug_Mode"/>
+			<item value="bool"/>
 			<item value="FIT_Handler_Switch"/>
+			<item value="PWM_CALIBRATE"/>
+			<item value="clear"/>
+			<item value="debugCheck"/>
+			<item value="Light_Servo_Calculations"/>
+			<item value="verticle"/>
 			<item value="Debug_Mode"/>
 			<item value="debugcheck"/>
 			<item value="enable"/>
 			<item value="OLED_Display_Angle"/>
-			<item value="OLED_Display_Light_Signal"/>
-			<item value="buttonHandling"/>
-			<item value="SWITCH"/>
-			<item value="SWITCH04"/>
-			<item value="SWITCH03"/>
-			<item value="SWITCH01"/>
-			<item value="SWITCH00"/>
-			<item value="SWITCH15_MASK"/>
-			<item value="switch"/>
-			<item value="queriedDutyCycle0"/>
 		</list>
 		<list key="replacehistory">
+			<item value="vertical"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="672"/>
+		<item key="DIALOG_X_ORIGIN" value="732"/>
 		<item key="DIALOG_Y_ORIGIN" value="334"/>
 		<item key="DIALOG_WIDTH" value="593"/>
 		<item key="DIALOG_HEIGHT" value="394"/>
