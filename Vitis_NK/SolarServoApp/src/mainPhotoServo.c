@@ -1,38 +1,15 @@
 /**
 *
-* @file ece544ip_test.c
+* @file mainPhotoServo
 *
 * @author Neima Kashani
-* @copyright Portland State University, 2016-2020
-*
-* This file implements a test program for the Nexys4IO and Digilent Pmod peripherals
-* used in ECE 544. The peripherals provides access to the pushbuttons
-* and slide switches, the LEDs, the RGB LEDs (only Nexys A7), and the Seven Segment display
-* on the Digilent Nexys A7 and Basys 3 boards and the PmodOLEDrgb (94 x 64 RGB graphics display)
-* and the PmodENC (rotary encoder + slide switch + pushbutton).
-*
-* The test is basic but covers all of the API functions:
-*	o initialize the Nexys4IO, Pmod drivers and all the other peripherals
-*	o Set the LED's to different values
-*	o Check that the duty cycles can be set for both RGB LEDs
-*	o Write character codes to the digits of the seven segment display banks
-*	o Check that all of the switches and pushbuttons on the Nexys4 can be read
-*	o Performs a basic test on the rotary encoder and pmodOLEDrgb
-*
 
 *
-* @note
-* The minimal hardware configuration for this test is a Microblaze-based system with at least 32KB of memory,
-* an instance of Nexys4IO, an instance of the pmodOLEDrgb AXI slave peripheral, and instance of the pmodENC AXI
-* slave peripheral, an instance of AXI GPIO, an instance of AXI timer and an instance of the AXI UARTLite 
-* (used for xil_printf() console output)
-*
-* @note
-* The driver code and test application(s) for the pmodOLDrgb and pmodENC are
-* based on code provided by Digilent, Inc.
-*
-* @note
-* This test program does not use the FIT Timer or interrupts - one less thing to worry about
+
+
+*This Code uses FIT Interrupts and requires an OLED and a PMODENC but the Pmod Encoder functionality has been removed
+*This code is designeded to control a Solar Panel with 2 servos moving the direction it faces and with a sensor made of 4 Photoresistors on it that can be compared
+* to determine the relative grandiant of light on the resistors
 ******************************************************************************/
 
 #include <stdio.h>
@@ -139,6 +116,11 @@
 #define FIT_TRACKER_MAX				400 // Reset every 10 millisecond
 
 
+#define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
+
+#define DEFAULT_DUTY_PERCENTAGE 6.75f
+
+
 //GLOBAL VARIABLES
 
 int FIT_Handler_Switch=0;  //This global variable is just used to tell the FIT_Handler when to start and stop
@@ -146,19 +128,15 @@ int FIT_Handler_Switch=0;  //This global variable is just used to tell the FIT_H
 
 
 
-int Period_Global = 100*1000*20;
-//100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
-
-int defaultAngle_Period = 4; //milliseconds
-
 // These set points determine the ratio of signals from each light sensor
 //the system changes its motor positions to attempt to achieve
 float setpoint_Light_X= 1.0;  // Fractional Value of Right/Left
 float setpoint_Light_Y= 1.0;  // Fractional Value of Top/Bottom
 
 
-int verticle_Angle = 0;  // Positive value are for up facing angles and negative values are for down facing angles
-int horizontal_Angle = 0;  // Positive value are for right facing angles and negative values are for left facing angles
+int vertical_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms of Percentage for Vertical Servo
+int horizontal_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms of Percentage for vertical Servo
+
 
 uint16_t UP_Data = 0x0000;
 uint16_t DOWN_Data = 0x0000;
@@ -171,7 +149,6 @@ uint16_t RIGHT_Data = 0x0000;
 /**************************** Type Definitions ******************************/
 
 
-enum _MotorEnum8 { MOTOR_OFF = 0x00, MOTOR_ON_CLOCKWISE = 0x0F, MOTOR_ON_COUNTERCLOCKWISE = 0xF0};
 
 enum _GPIO_ENUM {READ = 0x00, WRITE = 0xFF};
 enum _XADC_GPIO {LEFT = 1, RIGHT = 3, UP = 2, DOWN = 4, GPIO1_IO = 0x0000, GPIO1_SETTINGS = 0x0004, GPIO2_IO = 0x0008, GPIO2_SETTINGS = 0x000C};
@@ -208,12 +185,9 @@ int	 do_init(void);											// initialize system
 void FIT_Handler(void);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
-void OLED_Write_Signal(char name[], int value, int row);
+void OLED_Write_Signal(char letter1, char letter2, int value, int row);
 void OLED_Display_Light_Signal();
 void OLED_Display_Angle();
-void OLED_Display_Global_DCP();
-void buttonHandling(int PeriodEditBool);
-void encoderHandling();
 
 // Print Functions
 void xil_print_u8toBinary(u8 number);
@@ -226,11 +200,12 @@ u16 read_ADC();
 
 
 // Define Structural Functions
-int debugCheck();
 
 void sample(int FIT_Tracker, uint16_t switchStateString);
 void LightFollow();
-bool PWM_CALIBRATE();
+void PWM_CALIBRATE();
+
+void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right);
 
 /************************** MAIN PROGRAM ************************************/
 
@@ -255,22 +230,11 @@ int main(void)
 	LightFollow();
 
 
-
-	// blank the display digits and turn off the decimal points
-	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	// loop the test until the user presses the center button
-
-
-	// announce that we're done
-	xil_printf("\nThat's All Folks!\n\n\r");
 	
 
 
 	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	FIT_Handler_Switch=0;
-	NX4IO_SSEG_setDecPt(SSEGLO, DIGIT1 , false);
 	OLEDrgb_Clear(&pmodOLEDrgb_inst);
 	OLEDrgb_end(&pmodOLEDrgb_inst);
 	// cleanup and exit
@@ -300,36 +264,6 @@ int main(void)
 
 
 
-/**************************** MAIN ROUTINE ******************************/
-
-/****************************************************************************/
-/**
-* This is the main function that calls the functions that controls the outputs to the
-*  7Seg Display, OLED display, and the HB3 Controller IP. The loops calls
-*  the functions that handle queries to the Rotary Encoder, the
- *****************************************************************************/
-
-
-
-
-
-
-void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
-	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
-	if(horizontalRatio>setpoint_Light_X){
-		horizontal_Angle=horizontal_Angle-1;
-	} else if(horizontalRatio<setpoint_Light_X){
-		horizontal_Angle=horizontal_Angle+1;
-	}
-
-	float verticleRatio = ((float)signal_Top)/((float)signal_Bottom);
-	if(verticleRatio>setpoint_Light_Y){
-		verticle_Angle=verticle_Angle-1;
-	} else if(verticleRatio<setpoint_Light_Y){
-		verticle_Angle=verticle_Angle+1;
-	}
-}
-
 
 
 
@@ -340,19 +274,24 @@ void sample(int FIT_Tracker, uint16_t switchStateString){
 	}else if(FIT_Tracker==(3*(FIT_TRACKER_MAX/16))){
 		if((switchStateString & SWITCH15_MASK)==SWITCH15_MASK){UP_Data = read_ADC();}
 	}else if(FIT_Tracker==(5*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){set_ADC_channel(UP);}
+		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){set_ADC_channel(DOWN);}
 	}else if(FIT_Tracker==(7*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){UP_Data = read_ADC();}
+		if((switchStateString & SWITCH14_MASK)==SWITCH14_MASK){DOWN_Data = read_ADC();}
 	}else if(FIT_Tracker==(9*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){set_ADC_channel(UP);}
+		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){set_ADC_channel(LEFT);}
 	}else if(FIT_Tracker==(11*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){UP_Data = read_ADC();}
+		if((switchStateString & SWITCH13_MASK)==SWITCH13_MASK){LEFT_Data = read_ADC();}
 	}else if(FIT_Tracker==(13*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){set_ADC_channel(UP);}
+		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){set_ADC_channel(RIGHT);}
 	}else if(FIT_Tracker==(15*(FIT_TRACKER_MAX/16))){
-		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){UP_Data = read_ADC();}
+		if((switchStateString & SWITCH12_MASK)==SWITCH12_MASK){RIGHT_Data = read_ADC();}
 	}
 }
+
+
+// Dedicate each Bank of 7 segment to a different ADC Channel.  Each 7 segment has its value set by a 8 bit arguement I only want it to display a hex (4 bits) or an off state
+//  Use switch to change between pairs of data being displayed
+
 
 
 void FIT_Handler(void){
@@ -375,27 +314,69 @@ void FIT_Handler(void){
 
 
 
-bool PWM_CALIBRATE(){
-        uint16_t switchStateString = NX4IO_getSwitches();
-        if(((int)(switchStateString) & (PWM1_SWITCH_MASK|PWM2_SWITCH_MASK))>0){
 
-			PWM_Disable(PWM_BASEADDR);
-			PWM_Set_Period(PWM_BASEADDR, Period_Global);
-			PWM_Set_Duty(PWM_BASEADDR, 0, 0);
-			PWM_Enable(PWM_BASEADDR);
-			int i =0;
-			OLED_Write_Signal("i", i, 1);
 
-			int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
-			int val2=(int) ((switchStateString & PWM2_SWITCH_MASK)>>3);
-			if(val1>0){PWM_Set_Duty(PWM_BASEADDR, Period_Global*(0.025+0.005*val1), 0);} // Duty Cycle between 3% and 10%
-			if(val1>1){PWM_Set_Duty(PWM_BASEADDR, Period_Global*(0.025+0.005*val2), 1);} // Duty Cycle between 3% and 10%
-			return true;
+
+
+
+/**************************** MAIN ROUTINE ******************************/
+
+/****************************************************************************/
+/**
+* This is the main function that calls the functions that controls the outputs to the
+*  7Seg Display, OLED display, and the HB3 Controller IP. The loops calls
+*  the functions that handle queries to the Rotary Encoder, the
+ *****************************************************************************/
+
+
+
+void LightFollow(){
+    PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
+	PWM_Enable(PWM_BASEADDR);
+	int loopTracker=0;
+	while(1) { //While loop has a minimum period of 1 miliscond ut actually less because of calls
+		if (NX4IO_isPressed(BTNC)){// If Center button pressed
+			OLEDrgb_Clear(&pmodOLEDrgb_inst);
+			PWM_CALIBRATE();
+		}else{
+
+			loopTracker=loopTracker+1;
+			if (loopTracker>1001){   // Reset loop Tracker one a second
+				loopTracker = 1;
 			}
-		else{
-			return false;
-        }
 
+			if(loopTracker%100==0){  // Frequency of less than 10 Hz
+				PWM_Set_Duty(PWM_BASEADDR, (int)(PWM_PERIOD*(DEFAULT_DUTY_PERCENTAGE+vertical_Duty_Percentage_Modifier)/100.0f), 0); // DEFAULT_DUTY_PERCENTAGE currently causes a Duty Cycle of 4 milliseconds
+				PWM_Set_Duty(PWM_BASEADDR, (int)(PWM_PERIOD*(DEFAULT_DUTY_PERCENTAGE+horizontal_Duty_Percentage_Modifier)/100.0f), 1);
+			}
+			if(loopTracker%100==50){ // Frequency of less than 10 Hz
+				OLED_Display_Angle();
+				OLED_Display_Light_Signal();
+				Light_Servo_Calculations(UP_Data, DOWN_Data, LEFT_Data, RIGHT_Data);
+			}
+		usleep(1000);  // Sleep for milli Second
+		}
+	}
+}
+
+
+
+/****************************  HELPER FUNCTIONS ******************************/
+
+void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
+	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
+	if(horizontalRatio>setpoint_Light_X){
+		horizontal_Duty_Percentage_Modifier=horizontal_Duty_Percentage_Modifier-1;
+	} else if(horizontalRatio<setpoint_Light_X){
+		horizontal_Duty_Percentage_Modifier=horizontal_Duty_Percentage_Modifier+1;
+	}
+
+	float verticalRatio = ((float)signal_Top)/((float)signal_Bottom);
+	if(verticalRatio>setpoint_Light_Y){
+		vertical_Duty_Percentage_Modifier=vertical_Duty_Percentage_Modifier-1;
+	} else if(verticalRatio<setpoint_Light_Y){
+		vertical_Duty_Percentage_Modifier=vertical_Duty_Percentage_Modifier+1;
+	}
 }
 
 
@@ -404,10 +385,26 @@ bool PWM_CALIBRATE(){
 
 
 
+void PWM_CALIBRATE(){
+    uint16_t switchStateString = NX4IO_getSwitches();
+	PWM_Disable(PWM_BASEADDR);
+	PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 0);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 1);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 2);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 3);
+	PWM_Enable(PWM_BASEADDR);
 
+	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
+	int val2=(int) ((switchStateString & PWM2_SWITCH_MASK)>>3);
+	OLEDrgb_Clear(&pmodOLEDrgb_inst);
 
+	OLED_Write_Signal('C','2', val1, 1);
+	OLED_Write_Signal('C', '1', val2, 2);
 
-
+	if(val1>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val1), 0);} // Duty Cycle between 3% and 10%
+	if(val2>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val2), 1);} // Duty Cycle between 3% and 10%
+}
 
 
 
@@ -461,104 +458,17 @@ u16 read_ADC(){
 
 
 
-void LightFollow(){
-    PWM_Set_Period(PWM_BASEADDR, Period_Global);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
-	PWM_Enable(PWM_BASEADDR);
-	int loopTracker=0;
-	while(1) { //While loop has a minimum period of 1 miliscond ut actually less because of calls
-		if (NX4IO_isPressed(BTNC)){// If Center button pressed
-			PWM_CALIBRATE();
-		}else{
 
-			loopTracker=loopTracker+1;
-			if (loopTracker>1001){   // Reset loop Tracker one a second
-				loopTracker = 1;
-			}
 
-			if(loopTracker%100==0){  // Frequency of less than 10 Hz
-				PWM_Set_Duty(PWM_BASEADDR, 100*1000*(defaultAngle_Period+verticle_Angle), 0); // defaultAngle_Period currently causes a Duty Cycle of 4 milliseconds
-				PWM_Set_Duty(PWM_BASEADDR, 100*1000*(defaultAngle_Period+horizontal_Angle), 1);
-			}
-			if(loopTracker%100==50){ // Frequency of less than 10 Hz
-				OLED_Display_Angle();
-				OLED_Display_Light_Signal();
-				Light_Servo_Calculations(UP_Data, DOWN_Data, LEFT_Data, RIGHT_Data);
-			}
-		usleep(1000);  // Sleep for milli Second
-		}
-	}
-
-}
-
-int ipow(int base, int exp){ //Efficient Power Function from internet https://stackoverflow.com/questions/101439/the-most-efficient-way-to-implement-an-integer-based-power-function-powint-int
-    int result = 1;
-    for (;;)
-    {
-        if (exp & 1)
-            result *= base;
-        exp >>= 1;
-        if (!exp)
-            break;
-        base *= base;
-    }
-
-    return result;
-}
-
-void OLED_Write_Signal(char name[], int value, int row){
+void OLED_Write_Signal(char letter1, char letter2, int value, int row){
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, name);
+	char name[3]={letter1, letter2, '\0'};;
+	OLEDrgb_PutString(&pmodOLEDrgb_inst, name );
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, row);
 	PMDIO_putnum(&pmodOLEDrgb_inst, value, 10);
 }
 
-/*
-//This was an attempt to make a better line writer that for the OLED
-void OLED_Write_Signal(char name[], int value, int row){
 
-	int lineLength=11;
-	int valueLength=0;
-	int maxDigits=7;
-	char valueString[maxDigits];
-	char printString[lineLength];
-
-
-	int absoluteValue=abs(value);
-
-	sprintf(printString, "%i", ipow(10,lineLength-1)); // Fill string with filler number
-
-	int i=0;
-
-	printString[0]='X';
-	printString[1]='X';
-	if(value<0){
-		printString[2]='-';
-	} else{
-		printString[2]='+';
-	}// Use sign as seperator
-
-
-	printString[0]=name[0];
-	printString[1]=name[1];
-
-
-	for(i=maxDigits-1; i>=0;i--){
-		if((absoluteValue/ipow(10,i))>0){
-			if(valueLength<(i+1)){
-				valueLength=(i+1);
-			}
-			printString[3+i]=valueString[i];
-		}
-	}
-	// The following fills out the remainder of the line with blanks to make sure extra numbers are over written
-	for (i=valueLength+3;i<lineLength+1;i++){
-		printString[i]=' ';
-	}
-	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 1, row);
-	OLEDrgb_PutString(&pmodOLEDrgb_inst, printString);
-
-}
-*/
 
 
 
@@ -567,18 +477,18 @@ void OLED_Write_Signal(char name[], int value, int row){
 
 
 void OLED_Display_Angle(){
-	OLED_Write_Signal("V",defaultAngle_Period +verticle_Angle, 0);
-	OLED_Write_Signal("H",defaultAngle_Period +horizontal_Angle, 1);
+	OLED_Write_Signal('V','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +vertical_Duty_Percentage_Modifier)), 0);
+	OLED_Write_Signal('H','%',(int)(100*(DEFAULT_DUTY_PERCENTAGE +horizontal_Duty_Percentage_Modifier)), 1);
 }
 
 
 
 
 void OLED_Display_Light_Signal(){
-	OLED_Write_Signal("U",UP_Data, 2);
-	OLED_Write_Signal("D",DOWN_Data, 3);
-	OLED_Write_Signal("L",LEFT_Data, 4);
-	OLED_Write_Signal("R",RIGHT_Data, 5);
+	OLED_Write_Signal('U','D',UP_Data, 2);
+	OLED_Write_Signal('D','D', DOWN_Data, 3);
+	OLED_Write_Signal('L','D',LEFT_Data, 4);
+	OLED_Write_Signal('R','D',RIGHT_Data, 5);
 }
 
 
@@ -592,7 +502,7 @@ void OLED_Display_Light_Signal(){
 
 
 
-/**************************** HELPER FUNCTIONS ******************************/
+/**************************** INITIALIZATION HELPER FUNCTIONS ******************************/
 
 /****************************************************************************/
 /**
