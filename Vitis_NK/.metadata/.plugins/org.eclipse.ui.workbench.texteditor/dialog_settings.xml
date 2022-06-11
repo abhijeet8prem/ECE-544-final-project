@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="OLEDrgb_PutString"/>
+		<item key="selection" value="Light_Servo_Calculations"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Light_Servo_Calculations"/>
+			<item value="vertical_Duty_Percentage_Modifier"/>
+			<item value="horizontal_Duty_Percentage_Modifier"/>
+			<item value="UP_Data"/>
+			<item value="OLED_Write_Signal"/>
 			<item value="OLEDrgb_PutString"/>
 			<item value="OLEDrgb_SetCursor"/>
-			<item value="OLED_Write_Signal"/>
 			<item value="debug_Mode"/>
 			<item value="bool"/>
 			<item value="FIT_Handler_Switch"/>
 			<item value="PWM_CALIBRATE"/>
 			<item value="clear"/>
 			<item value="debugCheck"/>
-			<item value="Light_Servo_Calculations"/>
 			<item value="verticle"/>
 			<item value="Debug_Mode"/>
-			<item value="debugcheck"/>
-			<item value="enable"/>
-			<item value="OLED_Display_Angle"/>
 		</list>
 		<list key="replacehistory">
 			<item value="vertical"/>

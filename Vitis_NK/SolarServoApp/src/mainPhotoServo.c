@@ -10,6 +10,7 @@
 *This Code uses FIT Interrupts and requires an OLED and a PMODENC but the Pmod Encoder functionality has been removed
 *This code is designeded to control a Solar Panel with 2 servos moving the direction it faces and with a sensor made of 4 Photoresistors on it that can be compared
 * to determine the relative grandiant of light on the resistors
+* The main code actually works currently but the sampling of the ADC is not as consistent as it needs to be
 ******************************************************************************/
 
 #include <stdio.h>
@@ -118,7 +119,7 @@
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
 
-#define DEFAULT_DUTY_PERCENTAGE 6.75f
+#define DEFAULT_DUTY_PERCENTAGE 6.00f //6.75f was the theoretical value I  was told should be the center point but 6.00f worked better for my system
 
 
 //GLOBAL VARIABLES

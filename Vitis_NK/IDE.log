@@ -2054,3 +2054,268 @@ con
 20:01:03 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
 20:13:47 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
 20:16:19 INFO  : Disconnected from the channel tcfchan#10.
+20:45:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+20:45:21 INFO  : XSCT server has started successfully.
+20:45:21 INFO  : plnx-install-location is set to ''
+20:45:21 INFO  : Successfully done setting XSCT server connection channel  
+20:45:21 INFO  : Successfully done setting workspace for the tool. 
+20:45:23 INFO  : Platform repository initialization has completed.
+20:45:23 INFO  : Registering command handlers for Vitis TCF services
+20:45:23 INFO  : Successfully done query RDI_DATADIR 
+20:57:20 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+20:57:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:23 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+20:57:23 INFO  : 'jtag frequency' command is executed.
+20:57:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+20:57:25 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+20:57:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:25 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+20:57:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:57:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:25 INFO  : System reset is completed.
+20:57:28 INFO  : 'after 3000' command is executed.
+20:57:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:29 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+20:57:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+20:57:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:29 INFO  : 'con' command is executed.
+20:57:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:57:29 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+20:57:32 INFO  : Disconnected from the channel tcfchan#1.
+20:57:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:33 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+20:57:33 INFO  : 'jtag frequency' command is executed.
+20:57:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+20:57:35 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+20:57:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:35 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+20:57:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:57:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:35 INFO  : System reset is completed.
+20:57:38 INFO  : 'after 3000' command is executed.
+20:57:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:39 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+20:57:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+20:57:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:39 INFO  : 'con' command is executed.
+20:57:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:57:39 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+20:57:55 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+20:57:59 INFO  : Disconnected from the channel tcfchan#2.
+20:58:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+20:58:00 INFO  : 'jtag frequency' command is executed.
+20:58:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+20:58:02 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+20:58:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:03 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+20:58:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:58:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:03 INFO  : System reset is completed.
+20:58:06 INFO  : 'after 3000' command is executed.
+20:58:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:06 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+20:58:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+20:58:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:06 INFO  : 'con' command is executed.
+20:58:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:58:06 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+20:58:27 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+20:58:35 INFO  : Disconnected from the channel tcfchan#3.
+20:58:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:36 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+20:58:36 INFO  : 'jtag frequency' command is executed.
+20:58:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+20:58:38 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+20:58:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:38 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+20:58:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:58:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:38 INFO  : System reset is completed.
+20:58:41 INFO  : 'after 3000' command is executed.
+20:58:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:42 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+20:58:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+20:58:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:42 INFO  : 'con' command is executed.
+20:58:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:58:42 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+20:59:14 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+20:59:18 INFO  : Disconnected from the channel tcfchan#4.
+20:59:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:59:19 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+20:59:19 INFO  : 'jtag frequency' command is executed.
+20:59:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+20:59:21 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+20:59:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:59:21 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+20:59:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:59:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:59:21 INFO  : System reset is completed.
+20:59:24 INFO  : 'after 3000' command is executed.
+20:59:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:59:25 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+20:59:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+20:59:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:59:25 INFO  : 'con' command is executed.
+20:59:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:59:25 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+21:08:07 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+21:08:12 INFO  : Disconnected from the channel tcfchan#5.
+21:08:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:08:14 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+21:08:14 INFO  : 'jtag frequency' command is executed.
+21:08:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+21:08:16 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+21:08:16 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:16 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+21:08:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:08:16 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:16 INFO  : System reset is completed.
+21:08:19 INFO  : 'after 3000' command is executed.
+21:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:19 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+21:08:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+21:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+21:08:19 INFO  : 'con' command is executed.
+21:08:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:08:19 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+21:19:09 INFO  : Disconnected from the channel tcfchan#6.
+21:19:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:19:10 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+21:19:10 INFO  : 'jtag frequency' command is executed.
+21:19:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+21:19:12 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+21:19:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:12 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+21:19:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:19:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:12 INFO  : System reset is completed.
+21:19:15 INFO  : 'after 3000' command is executed.
+21:19:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:16 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+21:19:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+21:19:16 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:16 INFO  : 'con' command is executed.
+21:19:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:19:16 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+21:38:55 INFO  : Disconnected from the channel tcfchan#7.
