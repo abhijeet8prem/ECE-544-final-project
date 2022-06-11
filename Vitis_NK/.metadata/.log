@@ -17431,3 +17431,33 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-33: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:01:03.343
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33: Launching Debugger_SolarServoApp-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.463
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.467
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.467
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.471
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-10 20:13:47.471
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.471
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:13:47.472
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-33: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:16:19.796
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-911
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-10 20:16:19.801
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-911

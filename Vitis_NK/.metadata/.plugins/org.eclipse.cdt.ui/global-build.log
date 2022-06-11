@@ -1,6 +1,6 @@
 Nothing to build in platform 'SolarMotorPlatform'
 
-20:00:46 **** Incremental Build of configuration Debug for project SolarServoApp ****
+20:13:47 **** Incremental Build of configuration Debug for project SolarServoApp ****
 make all 
 'Building file: ../src/mainPhotoServo.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -18,6 +18,6 @@ mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
   31748	    404	   3744	  35896	   8c38	SolarServoApp.elf
 'Finished building: SolarServoApp.elf.size'
 ' '
-20:00:47 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
+20:13:48 **** Incremental Build of configuration Debug for project SolarServoApp_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
