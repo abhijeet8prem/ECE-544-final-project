@@ -1,6 +1,2 @@
-18:57:40 **** Incremental Build of project nexys7_solar_tracker ****
-buildplatform.bat 57908 nexys7_solar_tracker no_domain_build 
-XSDB Server Channel: tcfchan#2
-
-18:57:42 Build Finished (took 2s.270ms)
+Nothing to build in platform 'nexys7_solar_tracker'
 
