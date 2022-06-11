@@ -2409,3 +2409,50 @@ con
 ----------------End of Script----------------
 
 08:04:39 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+08:51:42 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+08:52:14 INFO  : Disconnected from the channel tcfchan#3.
+08:59:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+08:59:39 INFO  : XSCT server has started successfully.
+08:59:39 INFO  : Successfully done setting XSCT server connection channel  
+08:59:39 INFO  : plnx-install-location is set to ''
+08:59:39 INFO  : Successfully done setting workspace for the tool. 
+08:59:41 INFO  : Platform repository initialization has completed.
+08:59:41 INFO  : Registering command handlers for Vitis TCF services
+08:59:41 INFO  : Successfully done query RDI_DATADIR 
+08:59:49 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+08:59:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:59:56 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292AE38CEA' is selected.
+08:59:56 INFO  : 'jtag frequency' command is executed.
+08:59:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}' command is executed.
+08:59:58 INFO  : Device configured successfully with "D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit"
+08:59:59 INFO  : Context for processor 'microblaze_0' is selected.
+08:59:59 INFO  : Hardware design and registers information is loaded from 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa'.
+08:59:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:59:59 INFO  : Context for processor 'microblaze_0' is selected.
+08:59:59 INFO  : System reset is completed.
+09:00:02 INFO  : 'after 3000' command is executed.
+09:00:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:02 INFO  : The application 'D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf' is downloaded to processor 'microblaze_0'.
+09:00:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292AE38CEA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292AE38CEA-13631093-0"}
+fpga -file D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarServoApp/Debug/SolarServoApp.elf
+----------------End of Script----------------
+
+09:00:02 INFO  : Context for processor 'microblaze_0' is selected.
+09:00:02 INFO  : 'con' command is executed.
+09:00:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:00:02 INFO  : Launch script is exported to file 'D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarServoApp_system\_ide\scripts\debugger_solarservoapp-default.tcl'
+09:01:57 INFO  : Disconnected from the channel tcfchan#1.

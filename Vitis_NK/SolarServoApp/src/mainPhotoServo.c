@@ -11,6 +11,29 @@
 *This code is designeded to control a Solar Panel with 2 servos moving the direction it faces and with a sensor made of 4 Photoresistors on it that can be compared
 * to determine the relative grandiant of light on the resistors
 * The main code actually works currently but the sampling of the ADC is not as consistent as it needs to be
+*
+*
+*
+* ****** STATUS REPORT ON CURRENT BEHAVIOR ****
+* OLED_Display_Light_Signal() prints out data   UD (UP_Data), DD (DOWN_Data), LD (LEFT_Data), and RD (RIGHT_Data)  global variables to the OLED.
+* OLED_Display_Angle()  print out V%  (DEFAULT_DUTY_PERCENTAGE+vertical_Duty_Percentage_Modifier) and H% (DEFAULT_DUTY_PERCENTAGE+horiztonal_Duty_Percentage_Modifier) to the OLED.
+
+* UD, DD, LD, and RD are each updated from the XADC output using a GPIO connection in the FIT handler.
+* The main function LightFollow() calls Light_Servo_Calculations() which uses  UD, DD, LD, and RD to update
+* horizontal_Duty_Percentage_Modifier and vertical_Duty_Percentage_Modifier, which are then used to update the PWM duty cycles.
+* LightFollow() then calls OLED_Display_Light_Signal() and   OLED_Display_Angle().
+
+* I had originally assumed that our XADC was converting the signal but that we were unable to read it out of our GPIO.
+* I had assumed this because the OLED representation of the 4 XADC channel digital signals UD, DD, LD, and RD looked to be zero.
+* This assumption was incorrect.
+* The Video shows servos moving paired with changes to V% and H%.   While recording the video I noticed that these changes to V% and H% were
+* accompanied by a brief non-zero value for UD (UP_Data), DD (DOWN_Data), LD (LEFT_Data), and RD (RIGHT_Data), but I am not sure I was able to
+* successfully show those very brief flashes.  The code was intended to update V% and H% based on comparisons of UD, DD, LD, and RD but I had assumed that
+* UD, DD, LD, and RD would normally have nonzero values.     The FIT Handler occurs far more frequently than the OLED writing function and
+* Light_Servo_Calculations() are called so I think what is happening is that our variables are getting set in FIT to non-zero values but are often getting set back to zero before
+* anything is done with them by  Light_Servo_Calculations(), OLED_Display_Light_Signal(), or OLED_Display_Angle().
+* I think the erratic servo movement happens when the converted values are kept all the way until they are used, which causes the servos to move themselves as intended
+*
 ******************************************************************************/
 
 #include <stdio.h>
@@ -122,7 +145,7 @@
 //GLOBAL VARIABLES
 
 
-bool debug_Mode = false;
+bool debug_Mode = false;  // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
 
 
 
@@ -323,16 +346,18 @@ void FIT_Handler(void){
 
 //
 
-// The LightFollow() function enters debug mode and calls
+//
 void LightFollow(){
     PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
 	PWM_Enable(PWM_BASEADDR);
 	int loopTracker=0;
 	while(1) { //While loop has a minimum period of 1 miliscond but is likely actually more because of calls that take long amounts of time
-		if (NX4IO_isPressed(BTNC)){// If Center button pressed
+
+
+		if (NX4IO_isPressed(BTNC)){// If Center button pressed The LightFollow() function enters debug mode and calls PWM_CALIBRATE();
 			OLEDrgb_Clear(&pmodOLEDrgb_inst);
 			PWM_CALIBRATE();
-		}else{
+		}else{ // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
 			if(debug_Mode==true){
 				OLEDrgb_Clear(&pmodOLEDrgb_inst);
 				debug_Mode=false;
@@ -363,7 +388,8 @@ void LightFollow(){
 /****************************  HELPER FUNCTIONS ******************************/
 
 
-//
+//  This function is used to udate the horizontal_Duty_Percentage_Modifier and vertical_Duty_Percentage_Modifier global variables.  These global variables are used
+// to determine the duty cycle sent to the PWM when not in debug mode
 void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right){
 	float horizontalRatio = ((float)signal_Right)/((float)signal_Left);
 	if(horizontalRatio>setpoint_Light_X){
@@ -388,7 +414,8 @@ void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint1
 //  This Function is called when the center button is pressed and acts as a debug_Mode for the function
 //  This function changes the duty cycle of PWM channel 1 based on the state of switches[3:0] and duty cycle of PWM channel 2 based on the state of switches[7:4]
 // The Function will vary the duty cycle from 3% to 10% if any of the switch for that channel are on and set the duty cycle to 0% if all 4 switches for a channel are off
-void PWM_CALIBRATE(){
+
+void PWM_CALIBRATE(){  // It would have been more appropriate to call this PWM_Debug_Mode
     uint16_t switchStateString = NX4IO_getSwitches();
 
     if(debug_Mode==false){
@@ -448,6 +475,8 @@ void set_ADC_channel(enum _XADC_GPIO direction){
 }
 
 
+
+// This function queries GPIO connected to the XADC for the Ready Signal and then reads from the the Digital Signal Output if the Ready Signal is true
 u16 read_ADC(){
 	u8 ReadyBool= 0x00;
 	u16 digital_Data= 0x0000;
@@ -455,13 +484,14 @@ u16 read_ADC(){
 	for(i=0; i<100; i++){
 		ReadyBool= Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO1_IO);
 		if((ReadyBool& 0x01)==0x01){
-			digital_Data=Xil_In8(XADC_READ_GPIO_BASEADDR + 0x0008);
+			digital_Data=Xil_In8(XADC_READ_GPIO_BASEADDR + 0x0008); // 0x0008 should have been switch out for GPIO2_IO
 			return digital_Data;
 			break;
 		}
 
 	}
-	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ);
+
+	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ); // I think these 2 lines should actually go first before the for loop.  I cannot remember why they are not called until here
 	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO2_SETTINGS, READ);
 	return digital_Data;
 }
