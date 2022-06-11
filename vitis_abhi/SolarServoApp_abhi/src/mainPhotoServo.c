@@ -118,7 +118,7 @@
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
 
-#define DEFAULT_DUTY_PERCENTAGE 6.75f
+#define DEFAULT_DUTY_PERCENTAGE 10.6f
 
 
 //GLOBAL VARIABLES
