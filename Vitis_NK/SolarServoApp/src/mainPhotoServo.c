@@ -130,22 +130,22 @@
 
 #define PWM1_SWITCH_MASK	0x000F
 #define PWM2_SWITCH_MASK	0x00F0
-
+#define ADC_SWITCH_MASK		0xF000
+#define LS_4_OF_16_MASK 0x000F
 
 
 
 #define FIT_TRACKER_MAX				400 // Reset every 10 millisecond
-
+#define MAIN_LOOP_TRACKER_MAX		100 // Reset time dependant on Sleep times
+#define MAIN_LOOP_SLEEP_MICROSECONDS 1000// Sleep for a Millisecond
+#define DEBUG_SLEEP_MICROSECONDS 1000
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
-
-#define DEFAULT_DUTY_PERCENTAGE 6.00f //6.75f was the theoretical value I  was told should be the center point but 6.00f worked better for my system
+#define DEFAULT_DUTY_PERCENTAGE 7.0f //6.75f was the theoretical value I  was told should be the center point but 6.00f worked better for my system
 
 
 //GLOBAL VARIABLES
 
-
-bool debug_Mode = false;  // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
 
 
 
@@ -159,10 +159,11 @@ int vertical_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms o
 int horizontal_Duty_Percentage_Modifier = 0.0f;  // Duty Cycle modifier in terms of Percentage for vertical Servo
 
 // Declaring these to be volatile might improve behavior
-uint16_t UP_Data = 0x0000;
-uint16_t DOWN_Data = 0x0000;
-uint16_t LEFT_Data = 0x0000;
-uint16_t RIGHT_Data = 0x0000;
+//TODO:  Check if making these volatile improves behavior
+//uint16_t UP_Data = 0x0000;
+//uint16_t DOWN_Data = 0x0000;
+//uint16_t LEFT_Data = 0x0000;
+//uint16_t RIGHT_Data = 0x0000;
 
 
 
@@ -195,10 +196,14 @@ XTmrCtr		AXITimerInst;				// PWM timer instance
 
 
 volatile uint32_t			gpio_in;			// GPIO input port
-//volatile uint16_t UP_Data = 0x0000;
-//volatile uint16_t DOWN_Data = 0x0000;
-//volatile uint16_t LEFT_Data = 0x0000;
-//volatile uint16_t RIGHT_Data = 0x0000;
+//TODO:  Check if making these volatile improves behavior
+volatile uint16_t UP_Data = 0x0000;
+volatile uint16_t DOWN_Data = 0x0000;
+volatile uint16_t LEFT_Data = 0x0000;
+volatile uint16_t RIGHT_Data = 0x0000;
+
+volatile bool debug_Mode = false;  // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
+
 
 /************************** Function Prototypes *****************************/
 void PMDIO_itoa(int32_t value, char *string, int32_t radix);
@@ -226,7 +231,10 @@ int AXI_Timer_initialize(void);
 
 void sample(int FIT_Tracker, uint16_t switchStateString);
 void LightFollow();
-void PWM_CALIBRATE();
+void reset_PWMs();
+
+void manualOverridePWM(u16 switchState);
+void manualOverridePWM();
 
 void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right);
 
@@ -321,7 +329,10 @@ void FIT_Handler(void){
 		}// Frequency of resetting Reset is 100 Hz
 
 		uint16_t switchStateString = NX4IO_getSwitches();
-		if(((int)(switchStateString) & (PWM1_SWITCH_MASK|PWM2_SWITCH_MASK))>0){
+
+		//TODO:  Make sure this if loop works as intended.  The binary was previously made into an int but I cannot remember if ints are stored as 16 bits or 32 bits.  If 16 bits, then
+		//I think that would  caused the Switch[15] to control Sign
+		if(((uint)(switchStateString & ADC_SWITCH_MASK))>0){  // I had previously mistakenly left this as ADC_SWITCH_MASK (PWM1_SWITCH_MASK|PWM2_SWITCH_MASK)
 			sample(FIT_Tracker,switchStateString);
 		}
 		FIT_Tracker=FIT_Tracker+1;
@@ -348,38 +359,62 @@ void FIT_Handler(void){
 
 //
 void LightFollow(){
-    PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);//  Sets period to 20ms by using 100*1000*20 100 to convert from 100MHz system clock to  50 Hz or PWM
-	PWM_Enable(PWM_BASEADDR);
+	reset_PWMs();
+    //PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
+	//PWM_Enable(PWM_BASEADDR);
+	
 	int loopTracker=0;
+	uint16_t bufferUP = 0x0000;
+	uint16_t bufferDOWN = 0x0000;
+	uint16_t bufferLEFT = 0x0000;
+	uint16_t bufferRIGHT = 0x0000;
+    u16 switchStateBuffer= 0x0000;
+
+
 	while(1) { //While loop has a minimum period of 1 miliscond but is likely actually more because of calls that take long amounts of time
+		if (loopTracker>MAIN_LOOP_TRACKER_MAX){   // Reset loop racker around once a second but most likely less frequently than that due to time required by OLED functions
+			loopTracker = 1;
+		}
 
+		if(NX4IO_isPressed(BTNU)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
+			switchStateBuffer= NX4IO_getSwitches();
+			if(debug_Mode==false){
+				reset_PWMs();
+				OLEDrgb_Clear(&pmodOLEDrgb_inst);
+				debug_Mode=true;
+			}
+			manualOverridePWM(switchStateBuffer);
 
-		if (NX4IO_isPressed(BTNC)){// If Center button pressed The LightFollow() function enters debug mode and calls PWM_CALIBRATE();
-			OLEDrgb_Clear(&pmodOLEDrgb_inst);
-			PWM_CALIBRATE();
-		}else{ // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
+		}else if(NX4IO_isPressed(BTND)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
 			if(debug_Mode==true){
 				OLEDrgb_Clear(&pmodOLEDrgb_inst);
 				debug_Mode=false;
-
 			}
-
-			loopTracker=loopTracker+1;
-			if (loopTracker>1001){   // Reset loop racker around once a second but most likely less frequently than that due to time required by OLED functions
-				loopTracker = 1;
-			}
-
-			if(loopTracker%100==0){  // Frequency of less than 10 Hz
+		}else if(debug_Mode==true){
+			manualOverridePWM(switchStateBuffer);
+			OLEDrgb_Clear(&pmodOLEDrgb_inst);
+		}else{
+			if(loopTracker==(1*(MAIN_LOOP_TRACKER_MAX/4))){  // Frequency of less than 10 Hz
 				PWM_Set_Duty(PWM_BASEADDR, (int)(PWM_PERIOD*(DEFAULT_DUTY_PERCENTAGE+vertical_Duty_Percentage_Modifier)/100.0f), 0); // DEFAULT_DUTY_PERCENTAGE currently causes a Duty Cycle of 4 milliseconds
 				PWM_Set_Duty(PWM_BASEADDR, (int)(PWM_PERIOD*(DEFAULT_DUTY_PERCENTAGE+horizontal_Duty_Percentage_Modifier)/100.0f), 1);
 			}
-			if(loopTracker%100==50){ // Frequency of less than 10 Hz
+			if(loopTracker==(3*(MAIN_LOOP_TRACKER_MAX/4))){ // Frequency of less than 10 Hz
 				OLED_Display_Angle();
 				OLED_Display_Light_Signal();
-				Light_Servo_Calculations(UP_Data, DOWN_Data, LEFT_Data, RIGHT_Data);
+
+				XIntc_Disable(&IntrptCtlrInst, FIT_INTERRUPT_ID);  //Disable FIT Interrupt for citical section to prevent it from changing UP_Data, DOWN_Data, LEFT_Data, or RIGHT_Data)
+				bufferUP = UP_Data;
+				bufferDOWN = DOWN_Data;
+				bufferLEFT = LEFT_Data;
+				bufferRIGHT = RIGHT_Data;
+				XIntc_Enable(&IntrptCtlrInst, FIT_INTERRUPT_ID);
+
+				Light_Servo_Calculations(bufferUP, bufferDOWN, bufferLEFT, bufferRIGHT);
 			}
-		usleep(1000);  // Sleep for milli Second
+			usleep(MAIN_LOOP_SLEEP_MICROSECONDS);  // Sleep for milli Second
 		}
+		loopTracker=loopTracker+1;
+
 	}
 }
 
@@ -408,32 +443,35 @@ void Light_Servo_Calculations(uint16_t signal_Top, uint16_t signal_Bottom, uint1
 
 
 
+void reset_PWMs(){
+	PWM_Disable(PWM_BASEADDR);
+	PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);	// Set periods to 20ms aka 50 Hz in relationship to the original 100MHz system clock 
+	PWM_Set_Duty(PWM_BASEADDR, 0, 0); // Ensure the PWM Duty Cycle starts of as 0% for all 4 avaliable channels.
+	PWM_Set_Duty(PWM_BASEADDR, 0, 1);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 2);
+	PWM_Set_Duty(PWM_BASEADDR, 0, 3);
+	PWM_Enable(PWM_BASEADDR);
+}
 
 
-
-//  This Function is called when the center button is pressed and acts as a debug_Mode for the function
+//  This Function is called when the center button is pressed and acts as a means of controlling the PWM Duty Cycle using Switches and thereby control the servos
 //  This function changes the duty cycle of PWM channel 1 based on the state of switches[3:0] and duty cycle of PWM channel 2 based on the state of switches[7:4]
 // The Function will vary the duty cycle from 3% to 10% if any of the switch for that channel are on and set the duty cycle to 0% if all 4 switches for a channel are off
 
-void PWM_CALIBRATE(){  // It would have been more appropriate to call this PWM_Debug_Mode
-    uint16_t switchStateString = NX4IO_getSwitches();
 
-    if(debug_Mode==false){
-		PWM_Disable(PWM_BASEADDR);
-		PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 0);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 1);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 2);
-		PWM_Set_Duty(PWM_BASEADDR, 0, 3);
-		PWM_Enable(PWM_BASEADDR);
-		OLEDrgb_Clear(&pmodOLEDrgb_inst);
-		debug_Mode=true;
-		OLED_Write_Signal('%','%', 1, 6);
-    }
 
-	int val1=(int) ((switchStateString & PWM1_SWITCH_MASK)>>0);
-	int val2=(int) ((switchStateString & PWM2_SWITCH_MASK)>>4);
+void manualOverridePWM(u16 switchState){  // It would have been more appropriate to call this PWM_Debug_Mode
 
+	u16 SwitchCode1 = (u16)(switchState & PWM1_SWITCH_MASK);
+	u16 SwitchCode2 = (u16)(switchState & PWM2_SWITCH_MASK);
+	SwitchCode1 = SwitchCode1>>0;
+	SwitchCode2 = SwitchCode2>>4;
+	SwitchCode1 = (SwitchCode1 & LS_4_OF_16_MASK);
+	SwitchCode2 = (SwitchCode2 & LS_4_OF_16_MASK);
+	uint16_t uvalue1 = ((uint16_t)(SwitchCode1));
+	uint16_t uvalue2 = ((uint16_t)(SwitchCode2));
+	int val1=(int) (uvalue1);
+	int val2=(int) (uvalue2);
 
 	OLED_Write_Signal('C','1', val1, 0);
 	OLED_Write_Signal('C','2', val2, 2);
@@ -442,7 +480,10 @@ void PWM_CALIBRATE(){  // It would have been more appropriate to call this PWM_D
 	if(val2>0){PWM_Set_Duty(PWM_BASEADDR, PWM_PERIOD*(0.025+0.005*val2), 1);} // Duty Cycle between 3% and 10%
 }
 
-
+void manualOverridePWM(){  // It would have been more appropriate to call this PWM_Debug_Mode
+    u16 switchStateBuffer= NX4IO_getSwitches();
+    manualOverridePWM(switchStateBuffer);
+}
 
 //This function translates the direction enums to the address for their analoge input channel in the xADC
 //I am not 100% sure I have paired the enums and the addresses correctly though all 4 addresses are valid addresses for changing the active channel

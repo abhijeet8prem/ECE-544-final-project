@@ -1,15 +1,6 @@
-08:59:49 **** Incremental Build of configuration Debug for project SolarServoApp ****
+11:37:13 **** Incremental Build of configuration Debug for project SolarServoApp ****
 make all 
-'Building file: ../src/mainPhotoServo_v4_Improved Comments.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mainPhotoServo_v4_Improved Comments.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mainPhotoServo_v4_Improved Comments.d" -MT"src/mainPhotoServo_v4_Improved\ Comments.d" -o "src/mainPhotoServo_v4_Improved Comments.o" "../src/mainPhotoServo_v4_Improved Comments.c"
-microblaze-xilinx-elf-gcc.exe: error: Comments.o: No such file or directory
-microblaze-xilinx-elf-gcc.exe: error: Comments.d: No such file or directory
-microblaze-xilinx-elf-gcc.exe: error: Comments.d: No such file or directory
-microblaze-xilinx-elf-gcc.exe: error: Comments.o: No such file or directory
-microblaze-xilinx-elf-gcc.exe: error: ../src/mainPhotoServo_v4_Improved: No such file or directory
-microblaze-xilinx-elf-gcc.exe: error: Comments.c: No such file or directory
-make: *** [src/subdir.mk:36: src/mainPhotoServo_v4_Improved Comments.o] Error 1
+make: Nothing to be done for 'all'.
 
-08:59:49 Build Finished (took 174ms)
+11:37:13 Build Finished (took 96ms)
 

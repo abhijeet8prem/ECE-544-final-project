@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="MAX_PERIOD_MS"/>
+		<item key="selection" value="debug_Mode"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="debug_Mode"/>
+			<item value="manual"/>
+			<item value="int16"/>
+			<item value="manualOverride"/>
+			<item value="horizontal_Duty_Percentage_Modifier"/>
+			<item value="enable"/>
+			<item value="debug"/>
+			<item value="PWM_CALIBRATE"/>
+			<item value="loopTracker"/>
 			<item value="MAX_PERIOD_MS"/>
 			<item value="xil_print_u8toBinary"/>
 			<item value="xil_print_u8toHex"/>
 			<item value="hex"/>
 			<item value="hex4"/>
 			<item value="PMDIO_puthex"/>
-			<item value="PMDIO_put4hex"/>
-			<item value="PMDIO_put2hex"/>
-			<item value="Light_Servo_Calculations"/>
-			<item value="vertical_Duty_Percentage_Modifier"/>
-			<item value="horizontal_Duty_Percentage_Modifier"/>
-			<item value="UP_Data"/>
-			<item value="OLED_Write_Signal"/>
-			<item value="OLEDrgb_PutString"/>
-			<item value="OLEDrgb_SetCursor"/>
 		</list>
 		<list key="replacehistory">
+			<item value="manualOverridePWM"/>
 			<item value="vertical"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="86"/>
-		<item key="DIALOG_Y_ORIGIN" value="326"/>
+		<item key="DIALOG_X_ORIGIN" value="593"/>
+		<item key="DIALOG_Y_ORIGIN" value="319"/>
 		<item key="DIALOG_WIDTH" value="593"/>
 		<item key="DIALOG_HEIGHT" value="394"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
