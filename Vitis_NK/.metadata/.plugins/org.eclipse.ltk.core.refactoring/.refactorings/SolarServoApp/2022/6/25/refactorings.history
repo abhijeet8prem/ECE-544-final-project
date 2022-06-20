@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SolarServoApp/src/mainPhotoServo.c&apos; to &apos;solarServo.c&apos;" description="Rename resource &apos;mainPhotoServo.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/mainPhotoServo.c" name="solarServo.c" stamp="1655524310888" updateReferences="true"/>
+</session>
