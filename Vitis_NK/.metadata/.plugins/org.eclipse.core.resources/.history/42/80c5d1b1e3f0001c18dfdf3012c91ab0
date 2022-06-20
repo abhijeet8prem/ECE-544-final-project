@@ -117,10 +117,10 @@ enum _XADC_GPIO {
 
 /************************** Function Prototypes *****************************/
 
-//Display Control Functions
+
 void OLED_Write_Signal(char letter1, char letter2, int value, int row);
 void OLED_Display_Light_Signal();
-void OLED_Display_Duty_Cycle();
+void OLED_Display_Angle();
 void closeOutDisplays();
 
 //XADC Functions

@@ -95,8 +95,12 @@ int main(void) {
 	microblaze_enable_interrupts();
 	mainLogicLoop();
 
-	closeOutDisplays();
-
+	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK,
+			DP_NONE);
+	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK,
+			DP_NONE);
+	OLEDrgb_Clear(&pmodOLEDrgb_inst);
+	OLEDrgb_end(&pmodOLEDrgb_inst);
 	// cleanup and exit
 	cleanup_platform();
 	exit(0);
@@ -119,7 +123,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (3 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH15_MASK) == SWITCH15_MASK) {
-				read_ADC(&dataUp, &dataUpNeeded);
+				read_ADC(&dataUp);
 			}
 		} else if (FIT_Tracker == (5 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH14_MASK) == SWITCH14_MASK) {
@@ -127,7 +131,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (7 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH14_MASK) == SWITCH14_MASK) {
-				read_ADC(&dataDown,&dataDownNeeded);
+				read_ADC(&dataDown);
 			}
 		} else if (FIT_Tracker == (9 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH13_MASK) == SWITCH13_MASK) {
@@ -135,7 +139,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (11 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH13_MASK) == SWITCH13_MASK) {
-				read_ADC(&dataLeft, &dataLeftNeeded);
+				read_ADC(&dataLeft);
 			}
 		} else if (FIT_Tracker == (13 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH12_MASK) == SWITCH12_MASK) {
@@ -143,7 +147,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (15 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH12_MASK) == SWITCH12_MASK) {
-				read_ADC(&dataRight,&dataRightNeeded);
+				read_ADC(&dataRight);
 			}
 		}
 
@@ -180,13 +184,16 @@ void FIT_Handler(void) {
 //
 //
 void mainLogicLoop() {
+	reset_PWMs();
+	//PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
+	//PWM_Enable(PWM_BASEADDR);
+
 	int loopTracker = 0;
 	u16 switchStateBuffer = 0x0000;
 	long long timeLapsed = 0;
-	reset_PWMs();
+
 	while (1) { //While loop has a minimum period of 1 miliscond but is likely actually more because of calls that take long amounts of time
 		trackTime(true); //Start timer
-
 		if (NX4IO_isPressed(BTNU)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
 			switchStateBuffer = NX4IO_getSwitches();
 			if (debug_Mode == false) {
@@ -291,12 +298,13 @@ void automatedFeedback(int loopTracker) {
 			bufferRIGHT = dataRight;
 			XIntc_Enable(&IntrptCtlrInst, FIT_INTERRUPT_ID);
 
-			servomotorAdjustmentCalculation(bufferUP, bufferDOWN, bufferLEFT, bufferRIGHT);
+			servomotorAdjustmentCalculation(bufferUP, bufferDOWN, bufferLEFT,
+					bufferRIGHT);
 		}
 	}
 
 	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		OLED_Display_Duty_Cycle();
+		OLED_Display_Angle();
 	}
 }
 
@@ -395,7 +403,7 @@ void set_ADC_channel(enum _XADC_GPIO direction) {
 }
 
 // This function queries GPIO connected to the XADC for the Ready Signal and then reads from the the Digital Signal Output if the Ready Signal is true
-bool read_ADC(volatile uint16_t *targetDataPointer, volatile bool *dataNeededFlagPointer) {
+bool read_ADC(volatile uint16_t *targetDataPointer, bool *dataNeededFlagPointer) {
 	u8 ReadyBool = 0x00;
 	u16 digital_Data = 0x0000;
 	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ); // I think these 2 lines should actually go first before the for loop.  I cannot remember why they are not called until here
@@ -427,7 +435,7 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row) {
 
 // This displays the Duty Cycle percentage times 100 that will be sent to the PWMS
 // It was easier to just multiple the float by 100 and treat the result as an int rather than attempt to print a float to OLED
-void OLED_Display_Duty_Cycle() {
+void OLED_Display_Angle() {
 	OLED_Write_Signal('V', '%',
 			(int) (100
 					* (DEFAULT_DUTY_PERCENTAGE
@@ -542,11 +550,4 @@ int AXI_Timer_initialize(void) {
 	XTmrCtr_Enable(AXI_TIMER_BASEADDR, TmrCtrNumber);
 	return XST_SUCCESS;
 
-}
-
-void closeOutDisplays(){
-	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	OLEDrgb_Clear(&pmodOLEDrgb_inst);
-	OLEDrgb_end(&pmodOLEDrgb_inst);
 }

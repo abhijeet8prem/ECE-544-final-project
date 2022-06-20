@@ -117,16 +117,15 @@ enum _XADC_GPIO {
 
 /************************** Function Prototypes *****************************/
 
-//Display Control Functions
+
 void OLED_Write_Signal(char letter1, char letter2, int value, int row);
 void OLED_Display_Light_Signal();
-void OLED_Display_Duty_Cycle();
-void closeOutDisplays();
+void OLED_Display_Angle();
 
 //XADC Functions
 u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction);
 void set_ADC_channel(enum _XADC_GPIO direction);
-bool read_ADC(volatile uint16_t *targetDataPointer, volatile bool *dataNeededFlagPointer);
+bool read_ADC(volatile uint16_t *targetDataPointer);
 
 // Define Structural Functions
 int do_init(void);											// initialize system

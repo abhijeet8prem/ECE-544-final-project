@@ -1,4 +1,5 @@
 
+
 #include "solarServo.h"
 
 //  Define Values to be referenced and Masks
@@ -25,6 +26,7 @@
 #define ADC_SWITCH_MASK		0xF000
 #define LS_4_OF_16_MASK 	0x000F
 
+
 // Fixed Interval timer - 100 MHz input clock, 40KHz output clock
 // FIT_COUNT_1MSEC = FIT_CLOCK_FREQ_HZ * .001
 #define FIT_IN_CLOCK_FREQ_HZ	CPU_CLOCK_FREQ_HZ
@@ -32,16 +34,18 @@
 #define FIT_COUNT				(FIT_IN_CLOCK_FREQ_HZ / FIT_CLOCK_FREQ_HZ)
 #define FIT_COUNT_1MSEC			40
 
+
 #define FIT_TRACKER_MAX				800 // Reset every 10 millisecond
 #define MAIN_LOOP_TRACKER_MAX		100 // Reset time dependant on Sleep times
 #define MAIN_LOOP_SLEEP_MICROSECONDS 1000// Sleep for a Millisecond
+
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
 #define DEFAULT_DUTY_PERCENTAGE 7.0f //6.75f was the theoretical value I  was told should be the center point but 6.00f worked better for my system
 
 //GLOBAL VARIABLES
 
-const int clockCPUTickPerMicrosecond = (CPU_CLOCK_FREQ_HZ / (1000 * 1000));
+const int clockCPUTickPerMicrosecond = (CPU_CLOCK_FREQ_HZ/(1000*1000));
 
 // These set points determine the ratio of signals from each light sensor
 //the system changes its motor positions to attempt to achieve
@@ -51,7 +55,9 @@ float setpoint_Light_Y = 1.0;  // Fractional Value of Top/Bottom
 int vertical_Duty_Percentage_Modifier = 0.0f; // Duty Cycle modifier in terms of Percentage for Vertical Servo
 int horizontal_Duty_Percentage_Modifier = 0.0f; // Duty Cycle modifier in terms of Percentage for vertical Servo
 
+
 /**************************** Type Definitions ******************************/
+
 
 /***************** Macros (Inline Functions) Definitions ********************/
 
@@ -79,6 +85,8 @@ volatile bool dataLeftNeeded = false;
 volatile bool dataRightNeeded = false;
 volatile bool feedbackCalculationNeeded = false;
 
+
+
 /************************** MAIN PROGRAM ************************************/
 
 int main(void) {
@@ -93,10 +101,14 @@ int main(void) {
 	}
 
 	microblaze_enable_interrupts();
-	mainLogicLoop();
+	LightFollow();
 
-	closeOutDisplays();
-
+	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK,
+			DP_NONE);
+	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK,
+			DP_NONE);
+	OLEDrgb_Clear(&pmodOLEDrgb_inst);
+	OLEDrgb_end(&pmodOLEDrgb_inst);
 	// cleanup and exit
 	cleanup_platform();
 	exit(0);
@@ -119,7 +131,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (3 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH15_MASK) == SWITCH15_MASK) {
-				read_ADC(&dataUp, &dataUpNeeded);
+				read_ADC(&dataUp);
 			}
 		} else if (FIT_Tracker == (5 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH14_MASK) == SWITCH14_MASK) {
@@ -127,7 +139,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (7 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH14_MASK) == SWITCH14_MASK) {
-				read_ADC(&dataDown,&dataDownNeeded);
+				 read_ADC(&dataDown);
 			}
 		} else if (FIT_Tracker == (9 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH13_MASK) == SWITCH13_MASK) {
@@ -135,7 +147,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (11 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH13_MASK) == SWITCH13_MASK) {
-				read_ADC(&dataLeft, &dataLeftNeeded);
+				 read_ADC(&dataLeft);
 			}
 		} else if (FIT_Tracker == (13 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH12_MASK) == SWITCH12_MASK) {
@@ -143,7 +155,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 			}
 		} else if (FIT_Tracker == (15 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH12_MASK) == SWITCH12_MASK) {
-				read_ADC(&dataRight,&dataRightNeeded);
+				read_ADC(&dataRight);
 			}
 		}
 
@@ -155,7 +167,7 @@ void sample(int FIT_Tracker, uint16_t switchStateString) {
 void FIT_Handler(void) {
 	static int FIT_Tracker = 0;
 
-	// Frequency of resetting Reset is 100 Hz
+						// Frequency of resetting Reset is 100 Hz
 
 	uint16_t switchStateString = NX4IO_getSwitches();
 
@@ -179,14 +191,21 @@ void FIT_Handler(void) {
 
 //
 //
-void mainLogicLoop() {
-	int loopTracker = 0;
-	u16 switchStateBuffer = 0x0000;
-	long long timeLapsed = 0;
+void LightFollow() {
 	reset_PWMs();
+	//PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);
+	//PWM_Enable(PWM_BASEADDR);
+
+	int loopTracker = 0;
+	uint16_t bufferUP = 0x0000;
+	uint16_t bufferDOWN = 0x0000;
+	uint16_t bufferLEFT = 0x0000;
+	uint16_t bufferRIGHT = 0x0000;
+	u16 switchStateBuffer = 0x0000;
+	long long timeLapsed=0;
+
 	while (1) { //While loop has a minimum period of 1 miliscond but is likely actually more because of calls that take long amounts of time
 		trackTime(true); //Start timer
-
 		if (NX4IO_isPressed(BTNU)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
 			switchStateBuffer = NX4IO_getSwitches();
 			if (debug_Mode == false) {
@@ -207,50 +226,43 @@ void mainLogicLoop() {
 		} else {
 			automatedFeedback(loopTracker);
 		}
-
-
-		/* The following Section is for loop tracking and runtime tracking */
 		loopTracker = loopTracker + 1;
 		if (loopTracker > MAIN_LOOP_TRACKER_MAX) { // Reset loop racker around once a second but most likely less frequently than that due to time required by OLED functions
 			loopTracker = 1;
 		}
-		timeLapsed = trackTime(false);
-		usleep(MAIN_LOOP_SLEEP_MICROSECONDS - timeLapsed);  // Sleep
+		timeLapsed=trackTime(false);
+
+		usleep(MAIN_LOOP_SLEEP_MICROSECONDS-timeLapsed);  // Sleep
 	}
 }
 
-long long trackTime(bool startBool) {
+long long trackTime(bool startBool){
 	/*
-	 //Call Function with startBool as true to start timer and as false to finish timer and get elapsed time
-	 static clock_t start_t=0;  // This is designed for 32 bit Microblaze so the value tracked by clock will have a bit overflow approximately every 72 minutes.
-	 static clock_t end_t=0;
-	 long long timeLapsed=0;
-	 if(startBool){
-	 start_t=clock();
-	 end_t=0;
-	 }
-	 else{
-	 end_t=clock();  // This Methode apparently cannot be called so I need a new method for tracking time
-	 if(start_t<end_t){
-	 timeLapsed=end_t-start_t;
-	 }
-	 else{
-	 timeLapsed=end_t+(ULONG_MAX-start_t); // Approximate better answer if clock experienced bit overflow
-	 }
-	 timeLapsed=(timeLapsed*1000000)/CLOCKS_PER_SEC; // Convert to Microseconds from original scale.  Clock Ticks CLOCKS_PER_SEC is less than 1000*1000 so we have to calculate it in a way that does not require use to change to floats,
-	 // timeLapsed is a bit of an underestimate of the actual time lapsed before sleep is called given the number of calculations done to get it
-	 return timeLapsed;
-	 }
-	 */
+	//Call Function with startBool as true to start timer and as false to finish timer and get elapsed time
+	static clock_t start_t=0;  // This is designed for 32 bit Microblaze so the value tracked by clock will have a bit overflow approximately every 72 minutes.
+	static clock_t end_t=0;
+	long long timeLapsed=0;
+	if(startBool){
+		start_t=clock();
+		end_t=0;
+	}
+	else{
+		end_t=clock();  // This Methode apparently cannot be called so I need a new method for tracking time
+		if(start_t<end_t){
+			timeLapsed=end_t-start_t;
+		}
+		else{
+			timeLapsed=end_t+(ULONG_MAX-start_t); // Approximate better answer if clock experienced bit overflow
+		}
+		timeLapsed=(timeLapsed*1000000)/CLOCKS_PER_SEC; // Convert to Microseconds from original scale.  Clock Ticks CLOCKS_PER_SEC is less than 1000*1000 so we have to calculate it in a way that does not require use to change to floats,
+		// timeLapsed is a bit of an underestimate of the actual time lapsed before sleep is called given the number of calculations done to get it
+		return timeLapsed;
+	}
+	*/
 	return 0;
 }
 void automatedFeedback(int loopTracker) {
-	uint16_t bufferUP = 0x0000;
-	uint16_t bufferDOWN = 0x0000;
-	uint16_t bufferLEFT = 0x0000;
-	uint16_t bufferRIGHT = 0x0000;
-
-	if (loopTracker == (1 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
+	if (loopTracker == (1 * (MAIN_LOOP_TRACKER_MAX / 4))) { // Frequency of less than 10 Hz
 		PWM_Set_Duty(PWM_BASEADDR,
 				(int) (PWM_PERIOD
 						* (DEFAULT_DUTY_PERCENTAGE
@@ -262,41 +274,19 @@ void automatedFeedback(int loopTracker) {
 								+ horizontal_Duty_Percentage_Modifier) / 100.0f),
 				1);
 	}
-
-
-	if (loopTracker == (2 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
+	if (loopTracker == (3 * (MAIN_LOOP_TRACKER_MAX / 4))) { // Frequency of less than 10 Hz
+		OLED_Display_Angle();
 		OLED_Display_Light_Signal();
-		dataUpNeeded = true;
-		dataDownNeeded = true;
-		dataLeftNeeded = true;
-		dataRightNeeded = true;
-		feedbackCalculationNeeded = false;
-	}
 
+		XIntc_Disable(&IntrptCtlrInst, FIT_INTERRUPT_ID); //Disable FIT Interrupt for citical section to prevent it from changing dataUp, dataDown, dataLeft, or dataRight)
+		bufferUP = dataUp;
+		bufferDOWN = dataDown;
+		bufferLEFT = dataLeft;
+		bufferRIGHT = dataRight;
+		XIntc_Enable(&IntrptCtlrInst, FIT_INTERRUPT_ID);
 
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		OLED_Display_Light_Signal();
-		if(!(dataUpNeeded|dataDownNeeded|dataLeftNeeded|dataRightNeeded)){
-			feedbackCalculationNeeded = true;
-		}
-
-	}
-
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		if(feedbackCalculationNeeded){
-			XIntc_Disable(&IntrptCtlrInst, FIT_INTERRUPT_ID); //Disable FIT Interrupt for citical section to prevent it from changing dataUp, dataDown, dataLeft, or dataRight)
-			bufferUP = dataUp;
-			bufferDOWN = dataDown;
-			bufferLEFT = dataLeft;
-			bufferRIGHT = dataRight;
-			XIntc_Enable(&IntrptCtlrInst, FIT_INTERRUPT_ID);
-
-			servomotorAdjustmentCalculation(bufferUP, bufferDOWN, bufferLEFT, bufferRIGHT);
-		}
-	}
-
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		OLED_Display_Duty_Cycle();
+		servomotorAdjustmentCalculation(bufferUP, bufferDOWN, bufferLEFT,
+				bufferRIGHT);
 	}
 }
 
@@ -304,8 +294,8 @@ void automatedFeedback(int loopTracker) {
 
 //  This function is used to udate the horizontal_Duty_Percentage_Modifier and vertical_Duty_Percentage_Modifier global variables.  These global variables are used
 // to determine the duty cycle sent to the PWM when not in debug mode
-void servomotorAdjustmentCalculation(uint16_t signal_Top,
-		uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right) {
+void servomotorAdjustmentCalculation(uint16_t signal_Top, uint16_t signal_Bottom,
+		uint16_t signal_Left, uint16_t signal_Right) {
 	float horizontalRatio = ((float) signal_Right) / ((float) signal_Left);
 	if (horizontalRatio > setpoint_Light_X) {
 		horizontal_Duty_Percentage_Modifier =
@@ -327,7 +317,7 @@ void servomotorAdjustmentCalculation(uint16_t signal_Top,
 
 void reset_PWMs() {
 	PWM_Disable(PWM_BASEADDR);
-	PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD); // Set periods to 20ms aka 50 Hz in relationship to the original 100MHz system clock
+	PWM_Set_Period(PWM_BASEADDR, PWM_PERIOD);// Set periods to 20ms aka 50 Hz in relationship to the original 100MHz system clock 
 	PWM_Set_Duty(PWM_BASEADDR, 0, 0); // Ensure the PWM Duty Cycle starts of as 0% for all 4 avaliable channels.
 	PWM_Set_Duty(PWM_BASEADDR, 0, 1);
 	PWM_Set_Duty(PWM_BASEADDR, 0, 2);
@@ -363,6 +353,8 @@ void manualOverridePWM(u16 switchState) {
 	} // Duty Cycle between 3% and 10%
 }
 
+
+
 //This function translates the direction enums to the address for their analoge input channel in the xADC
 //I am not 100% sure I have paired the enums and the addresses correctly though all 4 addresses are valid addresses for changing the active channel
 u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction) {
@@ -395,24 +387,22 @@ void set_ADC_channel(enum _XADC_GPIO direction) {
 }
 
 // This function queries GPIO connected to the XADC for the Ready Signal and then reads from the the Digital Signal Output if the Ready Signal is true
-bool read_ADC(volatile uint16_t *targetDataPointer, volatile bool *dataNeededFlagPointer) {
+bool read_ADC(volatile uint16_t *targetDataPointer) {
 	u8 ReadyBool = 0x00;
 	u16 digital_Data = 0x0000;
 	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ); // I think these 2 lines should actually go first before the for loop.  I cannot remember why they are not called until here
 	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO2_SETTINGS, READ);
 	int i = 0;
-	if(*dataNeededFlagPointer==true){
-		for (i = 0; i < 100; i++) {
-			ReadyBool = Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO1_IO); // Checks the ready boolian of XADC to see if signal has been converted yet
-			if ((ReadyBool & 0x01) == 0x01) {
-				digital_Data = Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO2_IO);
-				if (digital_Data != 0x0000) {
-					*targetDataPointer = (uint16_t) digital_Data;
-					*dataNeededFlagPointer = false;
-					return true;
-				}
+	for (i = 0; i < 100; i++) {
+		ReadyBool = Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO1_IO);
+		if ((ReadyBool & 0x01) == 0x01) {
+			digital_Data = Xil_In8(XADC_READ_GPIO_BASEADDR + GPIO2_IO); // 0x0008 should have been switch out for GPIO2_IO
+			if(digital_Data!=0x0000){
+				*targetDataPointer= (uint16_t)digital_Data;
+				return true;
 			}
 		}
+
 	}
 	return false;
 }
@@ -427,7 +417,7 @@ void OLED_Write_Signal(char letter1, char letter2, int value, int row) {
 
 // This displays the Duty Cycle percentage times 100 that will be sent to the PWMS
 // It was easier to just multiple the float by 100 and treat the result as an int rather than attempt to print a float to OLED
-void OLED_Display_Duty_Cycle() {
+void OLED_Display_Angle() {
 	OLED_Write_Signal('V', '%',
 			(int) (100
 					* (DEFAULT_DUTY_PERCENTAGE
@@ -474,7 +464,7 @@ int do_init(void) {
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x00144116);
 
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR,
-	RGBDSPLY_SPI_BASEADDR);
+			RGBDSPLY_SPI_BASEADDR);
 
 	PMODENC544_initialize(PMOD_ROTARY_ENC_BASEADDR);
 	status = AXI_Timer_initialize();
@@ -542,11 +532,4 @@ int AXI_Timer_initialize(void) {
 	XTmrCtr_Enable(AXI_TIMER_BASEADDR, TmrCtrNumber);
 	return XST_SUCCESS;
 
-}
-
-void closeOutDisplays(){
-	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
-	OLEDrgb_Clear(&pmodOLEDrgb_inst);
-	OLEDrgb_end(&pmodOLEDrgb_inst);
 }
