@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="_XADC_GPIO"/>
+		<item key="selection" value="FIT"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="_XADC_GPIO"/>
-			<item value="manualOverridePWM"/>
-			<item value="pmodENC_inst"/>
-			<item value="BUTTONSWITCH_GPIO_BASEADDR"/>
-			<item value="debug_Mode"/>
-			<item value="manual"/>
-			<item value="int16"/>
-			<item value="manualOverride"/>
-			<item value="horizontal_Duty_Percentage_Modifier"/>
-			<item value="enable"/>
-			<item value="debug"/>
-			<item value="PWM_CALIBRATE"/>
-			<item value="loopTracker"/>
-			<item value="MAX_PERIOD_MS"/>
-			<item value="xil_print_u8toBinary"/>
+			<item value="FIT"/>
+			<item value="25"/>
+			<item value="250"/>
+			<item value="FIT_COUNT"/>
+			<item value="FIT_CLOCK_FREQ_HZ"/>
+			<item value="FIT_IN_CLOCK_FREQ_HZ"/>
+			<item value="FIT_COUNT_1MSEC"/>
+			<item value="OLED_Display_Angle"/>
+			<item value="closeOutDisplay"/>
+			<item value="MAIN_LOOP_TRACKER_MAX"/>
+			<item value="MAIN_LOOP"/>
+			<item value="RIGHT_Data"/>
+			<item value="LEFT_Data"/>
+			<item value="DOWN_Data"/>
+			<item value="UP_Data"/>
 		</list>
 		<list key="replacehistory">
+			<item value="OLED_Display_Duty_Cycle"/>
+			<item value="dataRight"/>
+			<item value="dataLeft"/>
+			<item value="dataDown"/>
+			<item value="dataUp"/>
 			<item value="manualOverridePWM"/>
 			<item value="vertical"/>
 		</list>

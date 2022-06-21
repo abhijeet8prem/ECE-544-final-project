@@ -1,6 +1,21 @@
-14:57:48 **** Incremental Build of configuration Debug for project SolarServoApp ****
+00:29:35 **** Incremental Build of configuration Debug for project SolarServoApp ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/solarServo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/solarServo.o" -ID:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/solarServo.d" -MT"src/solarServo.o" -o "src/solarServo.o" "../src/solarServo.c"
+'Finished building: ../src/solarServo.c'
+' '
+'Building target: SolarServoApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SolarServoApp.elf"  ./src/helperOLED.o ./src/platform.o ./src/solarServo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SolarServoApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SolarServoApp.elf  |tee "SolarServoApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32524	    404	   3744	  36672	   8f40	SolarServoApp.elf
+'Finished building: SolarServoApp.elf.size'
+' '
 
-14:57:48 Build Finished (took 81ms)
+00:29:36 Build Finished (took 474ms)
 

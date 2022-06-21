@@ -26,14 +26,14 @@
 #define LS_4_OF_16_MASK 	0x000F
 
 // Fixed Interval timer - 100 MHz input clock, 40KHz output clock
-// FIT_COUNT_1MSEC = FIT_CLOCK_FREQ_HZ * .001
-#define FIT_IN_CLOCK_FREQ_HZ	CPU_CLOCK_FREQ_HZ
-#define FIT_CLOCK_FREQ_HZ		40000
-#define FIT_COUNT				(FIT_IN_CLOCK_FREQ_HZ / FIT_CLOCK_FREQ_HZ)
-#define FIT_COUNT_1MSEC			40
+
+#define FIT_INPUT_CLOCK_FREQ_HZ			CPU_CLOCK_FREQ_HZ // This is the frequency of the input clock that the
+#define FIT_CLOCK_FREQ_HZ				40000 // This is the frequency of the FIT INTERRUPTS.  It appears this was configured  in the Vivado module diagram menu by hard coding the clock count for the FIT Interrupt generator
+#define FIT_COUNT						(FIT_INPUT_CLOCK_FREQ_HZ / FIT_CLOCK_FREQ_HZ)
+#define FIT_COUNT_PER_MILLISECOND		40
 
 #define FIT_TRACKER_MAX				800 // Reset every 10 millisecond
-#define MAIN_LOOP_TRACKER_MAX		100 // Reset time dependant on Sleep times
+#define MAIN_LOOP_TRACKER_MAX		100 // Reset time dependent on Sleep times
 #define MAIN_LOOP_SLEEP_MICROSECONDS 1000// Sleep for a Millisecond
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
@@ -302,10 +302,14 @@ void automatedFeedback(int loopTracker) {
 
 /****************************  HELPER FUNCTIONS ******************************/
 
-//  This function is used to udate the horizontal_Duty_Percentage_Modifier and vertical_Duty_Percentage_Modifier global variables.  These global variables are used
-// to determine the duty cycle sent to the PWM when not in debug mode
-void servomotorAdjustmentCalculation(uint16_t signal_Top,
-		uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right) {
+// Link for how to use a Shunt to measure current indirectly by measuring voltage
+//https://eepower.com/resistor-guide/resistor-applications/shunt-resistor/#
+
+
+void servomotorAdjustmentCalculation(uint16_t signal_Top, uint16_t signal_Bottom, uint16_t signal_Left, uint16_t signal_Right) {
+//  This function is used to update the horizontal_Duty_Percentage_Modifier and vertical_Duty_Percentage_Modifier global variables.
+// These global variables are used to determine the duty cycle sent to the PWM when not in debug mode
+
 	float horizontalRatio = ((float) signal_Right) / ((float) signal_Left);
 	if (horizontalRatio > setpoint_Light_X) {
 		horizontal_Duty_Percentage_Modifier =
@@ -335,11 +339,11 @@ void reset_PWMs() {
 	PWM_Enable(PWM_BASEADDR);
 }
 
+
+void manualOverridePWM(u16 switchState) {
 //  This Function is called when the center button is pressed and acts as a means of controlling the PWM Duty Cycle using Switches and thereby control the servos
 //  This function changes the duty cycle of PWM channel 1 based on the state of switches[3:0] and duty cycle of PWM channel 2 based on the state of switches[7:4]
 // The Function will vary the duty cycle from 3% to 10% if any of the switch for that channel are on and set the duty cycle to 0% if all 4 switches for a channel are off
-
-void manualOverridePWM(u16 switchState) {
 
 	u16 SwitchCode1 = (u16) (switchState & PWM1_SWITCH_MASK);
 	u16 SwitchCode2 = (u16) (switchState & PWM2_SWITCH_MASK);
@@ -386,16 +390,18 @@ u8 XADC_Channel_Data_Address(enum _XADC_GPIO direction) {
 	return XADC_data_address;
 }
 
-// This function sets which of the analog input channels of the XADC is the active channel the is havings its signal converted
 void set_ADC_channel(enum _XADC_GPIO direction) {
+	// This function sets which of the analog input channels of the XADC is the active channel the is having its signal converted
+
 	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_SETTINGS, WRITE);
 	Xil_Out8(XADC_WRITE_GPIO_BASEADDR + GPIO1_IO,
 			XADC_Channel_Data_Address(direction)); // Write Data  Active Channel
 
 }
 
-// This function queries GPIO connected to the XADC for the Ready Signal and then reads from the the Digital Signal Output if the Ready Signal is true
 bool read_ADC(volatile uint16_t *targetDataPointer, volatile bool *dataNeededFlagPointer) {
+	// This function queries GPIO connected to the XADC for the Ready Signal and then reads from the the Digital Signal Output if the Ready Signal is true
+
 	u8 ReadyBool = 0x00;
 	u16 digital_Data = 0x0000;
 	Xil_Out8(XADC_READ_GPIO_BASEADDR + GPIO1_SETTINGS, READ); // I think these 2 lines should actually go first before the for loop.  I cannot remember why they are not called until here
