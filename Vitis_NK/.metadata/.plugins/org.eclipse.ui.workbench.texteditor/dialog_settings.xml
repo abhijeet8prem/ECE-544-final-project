@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="FIT"/>
+		<item key="selection" value="MAIN_LOOP_TRACKER_MAX"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="MAIN_LOOP_TRACKER_MAX"/>
 			<item value="FIT"/>
 			<item value="25"/>
 			<item value="250"/>
@@ -17,7 +18,6 @@
 			<item value="FIT_COUNT_1MSEC"/>
 			<item value="OLED_Display_Angle"/>
 			<item value="closeOutDisplay"/>
-			<item value="MAIN_LOOP_TRACKER_MAX"/>
 			<item value="MAIN_LOOP"/>
 			<item value="RIGHT_Data"/>
 			<item value="LEFT_Data"/>

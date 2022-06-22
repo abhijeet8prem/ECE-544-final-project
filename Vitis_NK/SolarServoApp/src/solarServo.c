@@ -32,9 +32,9 @@
 #define FIT_COUNT						(FIT_INPUT_CLOCK_FREQ_HZ / FIT_CLOCK_FREQ_HZ)
 #define FIT_COUNT_PER_MILLISECOND		40
 
-#define FIT_TRACKER_MAX				800 // Reset every 10 millisecond
-#define MAIN_LOOP_TRACKER_MAX		100 // Reset time dependent on Sleep times
-#define MAIN_LOOP_SLEEP_MICROSECONDS 1000// Sleep for a Millisecond
+#define FIT_TRACKER_MAX				400 // Reset every 20 millisecond
+#define MAIN_LOOP_SLEEP_MICROSECONDS 1000// Set default Sleep time for 20 Millisecond which is the Length of a PWM Period
+#define MAIN_LOOP_TRACKER_MAX		25 // Reset every 500 miliseconds
 
 #define PWM_PERIOD 	100*1000*20 //100 to convert from 100MHz to 1MHz, 1000 to convert to 1KHz, and 20 to convert to 50 Hz or Period 20 ms
 #define DEFAULT_DUTY_PERCENTAGE 7.0f //6.75f was the theoretical value I  was told should be the center point but 6.00f worked better for my system
@@ -250,22 +250,44 @@ void automatedFeedback(int loopTracker) {
 	uint16_t bufferLEFT = 0x0000;
 	uint16_t bufferRIGHT = 0x0000;
 
-	if (loopTracker == (1 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		PWM_Set_Duty(PWM_BASEADDR,
-				(int) (PWM_PERIOD
-						* (DEFAULT_DUTY_PERCENTAGE
-								+ vertical_Duty_Percentage_Modifier) / 100.0f),
-				0); // DEFAULT_DUTY_PERCENTAGE currently causes a Duty Cycle of 4 milliseconds
-		PWM_Set_Duty(PWM_BASEADDR,
-				(int) (PWM_PERIOD
-						* (DEFAULT_DUTY_PERCENTAGE
-								+ horizontal_Duty_Percentage_Modifier) / 100.0f),
-				1);
+	static int nextDutyCycleV=0;
+	static int nextDutyCycleH=0;
+	static int lastDutyCycleV=0;
+	static int lastDutyCycleH=0;
+
+	// A Full Loop should be long enough for 25 Periods of the PWM with each Loop Tracker value lasting for 1 Period
+
+
+	if (loopTracker == 1) {
+		lastDutyCycleV = PWM_Get_Duty(PWM_BASEADDR, 0);
+		lastDutyCycleH = PWM_Get_Duty(PWM_BASEADDR, 1);
+		nextDutyCycleV = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + vertical_Duty_Percentage_Modifier) / 100.0f);
+		nextDutyCycleH = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + horizontal_Duty_Percentage_Modifier) / 100.0f);
+		OLED_Display_Light_Signal();
 	}
 
+	if (loopTracker == 2) { // Turn of PWM if it is to be changed so we can be sure the signal will not be misunderstood
+		if(lastDutyCycleV!=nextDutyCycleV){
+			PWM_Set_Duty(PWM_BASEADDR, 0, 0);
+		}
+		if(lastDutyCycleH!=nextDutyCycleH){
+			PWM_Set_Duty(PWM_BASEADDR, 0, 1);
+		}
+	}
 
-	if (loopTracker == (2 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
-		OLED_Display_Light_Signal();
+	//Wait 3 cycles
+
+	if (loopTracker == 6) {
+		if(lastDutyCycleV!=nextDutyCycleV){
+			PWM_Set_Duty(PWM_BASEADDR, nextDutyCycleV, 0);
+		}
+		if(lastDutyCycleH!=nextDutyCycleH){
+			PWM_Set_Duty(PWM_BASEADDR, nextDutyCycleH, 1);
+		}
+	}
+// Wait for Movement to have hopefully finished
+
+	if (loopTracker == 16) {
 		dataUpNeeded = true;
 		dataDownNeeded = true;
 		dataLeftNeeded = true;
@@ -273,8 +295,8 @@ void automatedFeedback(int loopTracker) {
 		feedbackCalculationNeeded = false;
 	}
 
-
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
+// Wait for the ADC to have hopefully finished
+	if (loopTracker == 22) {
 		OLED_Display_Light_Signal();
 		if(!(dataUpNeeded|dataDownNeeded|dataLeftNeeded|dataRightNeeded)){
 			feedbackCalculationNeeded = true;
@@ -282,7 +304,7 @@ void automatedFeedback(int loopTracker) {
 
 	}
 
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
+	if (loopTracker == 23) {
 		if(feedbackCalculationNeeded){
 			XIntc_Disable(&IntrptCtlrInst, FIT_INTERRUPT_ID); //Disable FIT Interrupt for citical section to prevent it from changing dataUp, dataDown, dataLeft, or dataRight)
 			bufferUP = dataUp;
@@ -295,7 +317,7 @@ void automatedFeedback(int loopTracker) {
 		}
 	}
 
-	if (loopTracker == (18 * (MAIN_LOOP_TRACKER_MAX / 20))) { // Frequency of less than 10 Hz
+	if (loopTracker == 24) { // Frequency of less than 10 Hz
 		OLED_Display_Duty_Cycle();
 	}
 }
