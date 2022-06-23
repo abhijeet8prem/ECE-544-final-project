@@ -17543,3 +17543,271 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-06-21 20:14:01.277
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.2/data]. Thread: Worker-2: Initializing s/w repositories
+!SESSION 2022-06-22 18:51:14.793 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2022-06-22 18:51:22.973
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.309
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.310
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.325
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.326
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.327
+!MESSAGE XSCT Command: [setws D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:26.329
+!MESSAGE XSCT command with result: [setws D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:28.197
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:28.565
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:28.567
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 18:51:28.572
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.028
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.144
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.153
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.171
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.171
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-22 19:19:35.177
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.182
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:35.184
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:37.104
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:19:37.110
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa], Result: [null, {"PWM_0": {"hier_name": "PWM_0",
+"type": "PWM",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"PmodENC544_0": {"hier_name": "PmodENC544_0",
+"type": "PmodENC544",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PmodOLEDrgb_0": {"hier_name": "PmodOLEDrgb_0",
+"type": "PmodOLEDrgb",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"UDRLCCCC_Concat": {"hier_name": "UDRLCCCC_Concat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_ButtonSwitch_GPIO": {"hier_name": "axi_ButtonSwitch_GPIO",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_XADC_Data_Read": {"hier_name": "axi_gpio_XADC_Data_Read",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_XADC_Data_Write": {"hier_name": "axi_gpio_XADC_Data_Write",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timebase_wdt_0": {"hier_name": "axi_timebase_wdt_0",
+"type": "axi_timebase_wdt",
+"version": "3.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"fit_timer_0": {"hier_name": "fit_timer_0",
+"type": "fit_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xadc_wiz_0": {"hier_name": "xadc_wiz_0",
+"type": "xadc_wiz",
+"version": "3.3",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_2": {"hier_name": "xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.227
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.229
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.230
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.232
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-22 19:20:21.233
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.234
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:20:21.235
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:54.998
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:55.002
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:55.003
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:55.005
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/hw/nexysA7fpga.xsa D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-06-22 19:21:55.006
+!MESSAGE Generating MD5 hash for file: D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\SolarMotorPlatform\export\SolarMotorPlatform\sw\SolarMotorPlatform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:55.006
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Thread: Worker-9: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-06-22 19:21:55.008
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/sw/SolarMotorPlatform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-9: Building Workspace

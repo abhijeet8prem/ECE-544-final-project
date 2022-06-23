@@ -133,8 +133,8 @@ int do_init(void);											// initialize system
 void FIT_Handler(void);				// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 long long trackTime(bool startBool);
-void automatedFeedback(int loopTracker);
-
+void movementLoopLogic(int loopTracker);
+void sensingLoopLogic(int loopTracker);
 
 void sample(int FIT_Tracker, uint16_t switchStateString);
 void mainLogicLoop();

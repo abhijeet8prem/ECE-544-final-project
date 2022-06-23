@@ -71,13 +71,23 @@ volatile uint16_t dataDown = 0x0000;
 volatile uint16_t dataLeft = 0x0000;
 volatile uint16_t dataRight = 0x0000;
 
-volatile bool debug_Mode = false; // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
+volatile bool debugModeFlag = false; // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
+volatile bool movementNeededFlag = false; // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
+volatile bool movementModeFlag = false; // This is used to active or deactive certain behavior depending on whether the center button has been pressed and held
+
+
 
 volatile bool dataUpNeeded = false;
 volatile bool dataDownNeeded = false;
 volatile bool dataLeftNeeded = false;
 volatile bool dataRightNeeded = false;
 volatile bool feedbackCalculationNeeded = false;
+
+
+volatile int nextDutyCycleV=0;
+volatile int nextDutyCycleH=0;
+volatile int lastDutyCycleV=0;
+volatile int lastDutyCycleH=0;
 
 /************************** MAIN PROGRAM ************************************/
 
@@ -112,7 +122,7 @@ int main(void) {
 
 void sample(int FIT_Tracker, uint16_t switchStateString) {
 	// Does sampling occur 0.001 seconds after change or is my math wrong?
-	if (debug_Mode == false) {
+	if ((debugModeFlag == false) & (movementModeFlag == false)) {
 		if (FIT_Tracker == (1 * (FIT_TRACKER_MAX / 16))) {
 			if ((switchStateString & SWITCH15_MASK) == SWITCH15_MASK) {
 				set_ADC_channel(UP);
@@ -189,23 +199,27 @@ void mainLogicLoop() {
 
 		if (NX4IO_isPressed(BTNU)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
 			switchStateBuffer = NX4IO_getSwitches();
-			if (debug_Mode == false) {
+			if (debugModeFlag == false) {
 				reset_PWMs();
 				OLEDrgb_Clear(&pmodOLEDrgb_inst);
-				debug_Mode = true;
+				debugModeFlag = true;
 			}
 			manualOverridePWM(switchStateBuffer);
 
 		} else if (NX4IO_isPressed(BTND)) { // If the Center Button is not pressed LightFollow uses the routine where it updates PWMs based on global variables that the FIT Handler updates from XADC signals
-			if (debug_Mode == true) {
+			if (debugModeFlag == true) {
 				OLEDrgb_Clear(&pmodOLEDrgb_inst);
-				debug_Mode = false;
+				debugModeFlag = false;
 			}
-		} else if (debug_Mode == true) {
+		} else if (debugModeFlag == true) {
 			manualOverridePWM(switchStateBuffer);
 			OLEDrgb_Clear(&pmodOLEDrgb_inst);
-		} else {
-			automatedFeedback(loopTracker);
+		} else if (movementModeFlag == true) {
+			movementLoopLogic(loopTracker);
+		}
+
+		else {
+			sensingLoopLogic(loopTracker);
 		}
 
 
@@ -213,6 +227,7 @@ void mainLogicLoop() {
 		loopTracker = loopTracker + 1;
 		if (loopTracker > MAIN_LOOP_TRACKER_MAX) { // Reset loop racker around once a second but most likely less frequently than that due to time required by OLED functions
 			loopTracker = 1;
+			movementModeFlag=movementNeededFlag;
 		}
 		timeLapsed = trackTime(false);
 		usleep(MAIN_LOOP_SLEEP_MICROSECONDS - timeLapsed);  // Sleep
@@ -244,29 +259,10 @@ long long trackTime(bool startBool) {
 	 */
 	return 0;
 }
-void automatedFeedback(int loopTracker) {
-	uint16_t bufferUP = 0x0000;
-	uint16_t bufferDOWN = 0x0000;
-	uint16_t bufferLEFT = 0x0000;
-	uint16_t bufferRIGHT = 0x0000;
 
-	static int nextDutyCycleV=0;
-	static int nextDutyCycleH=0;
-	static int lastDutyCycleV=0;
-	static int lastDutyCycleH=0;
+void movementLoopLogic(int loopTracker) {
 
-	// A Full Loop should be long enough for 25 Periods of the PWM with each Loop Tracker value lasting for 1 Period
-
-
-	if (loopTracker == 1) {
-		lastDutyCycleV = PWM_Get_Duty(PWM_BASEADDR, 0);
-		lastDutyCycleH = PWM_Get_Duty(PWM_BASEADDR, 1);
-		nextDutyCycleV = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + vertical_Duty_Percentage_Modifier) / 100.0f);
-		nextDutyCycleH = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + horizontal_Duty_Percentage_Modifier) / 100.0f);
-		OLED_Display_Light_Signal();
-	}
-
-	if (loopTracker == 2) { // Turn of PWM if it is to be changed so we can be sure the signal will not be misunderstood
+	if (loopTracker == 1) { // Turn of PWM if it is to be changed so we can be sure the signal will not be misunderstood
 		if(lastDutyCycleV!=nextDutyCycleV){
 			PWM_Set_Duty(PWM_BASEADDR, 0, 0);
 		}
@@ -275,9 +271,7 @@ void automatedFeedback(int loopTracker) {
 		}
 	}
 
-	//Wait 3 cycles
-
-	if (loopTracker == 6) {
+	if (loopTracker == 4) {
 		if(lastDutyCycleV!=nextDutyCycleV){
 			PWM_Set_Duty(PWM_BASEADDR, nextDutyCycleV, 0);
 		}
@@ -285,6 +279,29 @@ void automatedFeedback(int loopTracker) {
 			PWM_Set_Duty(PWM_BASEADDR, nextDutyCycleH, 1);
 		}
 	}
+		//TODO Check if this is enough time for the movement to occur
+
+	if (loopTracker == 24) { // Frequency of less than 10 Hz
+		movementNeededFlag = false;
+		OLED_Display_Duty_Cycle();
+	}
+
+}
+void sensingLoopLogic(int loopTracker) {
+	uint16_t bufferUP = 0x0000;
+	uint16_t bufferDOWN = 0x0000;
+	uint16_t bufferLEFT = 0x0000;
+	uint16_t bufferRIGHT = 0x0000;
+
+
+	// A Full Loop should be long enough for 25 Periods of the PWM with each Loop Tracker value lasting for 1 Period
+
+
+
+
+	//Wait 3 cycles
+
+
 // Wait for Movement to have hopefully finished
 
 	if (loopTracker == 16) {
@@ -317,9 +334,26 @@ void automatedFeedback(int loopTracker) {
 		}
 	}
 
-	if (loopTracker == 24) { // Frequency of less than 10 Hz
-		OLED_Display_Duty_Cycle();
+
+	if (loopTracker == 24) {
+		lastDutyCycleV = PWM_Get_Duty(PWM_BASEADDR, 0);
+		lastDutyCycleH = PWM_Get_Duty(PWM_BASEADDR, 1);
+		nextDutyCycleV = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + vertical_Duty_Percentage_Modifier) / 100.0f);
+		nextDutyCycleH = (PWM_PERIOD * (DEFAULT_DUTY_PERCENTAGE + horizontal_Duty_Percentage_Modifier) / 100.0f);
+		if(lastDutyCycleV!=nextDutyCycleV){
+			movementNeededFlag=true;
+		} else if(lastDutyCycleH!=nextDutyCycleH){
+			movementNeededFlag=true;
+		} else {
+			movementNeededFlag=false;
+		}
 	}
+	if (loopTracker == 25) {
+		OLED_Display_Light_Signal();
+
+	}
+
+
 }
 
 /****************************  HELPER FUNCTIONS ******************************/

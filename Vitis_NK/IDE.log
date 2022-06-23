@@ -2873,3 +2873,16 @@ con
 20:14:00 INFO  : Platform repository initialization has completed.
 20:14:00 INFO  : Registering command handlers for Vitis TCF services
 20:14:01 INFO  : Successfully done query RDI_DATADIR 
+18:51:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+18:51:26 INFO  : XSCT server has started successfully.
+18:51:26 INFO  : Successfully done setting XSCT server connection channel  
+18:51:26 INFO  : plnx-install-location is set to ''
+18:51:26 INFO  : Successfully done setting workspace for the tool. 
+18:51:28 INFO  : Platform repository initialization has completed.
+18:51:28 INFO  : Registering command handlers for Vitis TCF services
+18:51:28 INFO  : Successfully done query RDI_DATADIR 
+19:19:34 INFO  : Result from executing command 'getProjects': SolarMotorPlatform
+19:19:34 INFO  : Result from executing command 'getPlatforms': SolarMotorPlatform|D:/PSU_Work_and_Textbooks/ECE544/ECE544_ProjFinal/ECE-544-final-project/Vitis_NK/SolarMotorPlatform/export/SolarMotorPlatform/SolarMotorPlatform.xpfm
+19:19:35 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+19:20:21 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+19:21:54 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
