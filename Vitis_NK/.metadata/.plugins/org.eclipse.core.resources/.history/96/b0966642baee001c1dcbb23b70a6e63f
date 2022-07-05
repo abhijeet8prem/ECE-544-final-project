@@ -1,4 +1,0 @@
-#ifndef SOLARSERVO_H   /* prevent circular inclusions */
-#define SOLARSERVO_H   /* by using protection macros */
-
-#endif  /* end of protection macro */

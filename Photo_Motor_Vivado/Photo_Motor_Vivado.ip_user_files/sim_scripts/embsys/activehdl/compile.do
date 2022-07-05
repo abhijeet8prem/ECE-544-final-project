@@ -22,6 +22,7 @@ vlib activehdl/axi_register_slice_v2_1_22
 vlib activehdl/fifo_generator_v13_2_5
 vlib activehdl/axi_data_fifo_v2_1_21
 vlib activehdl/axi_crossbar_v2_1_23
+vlib activehdl/axi_protocol_converter_v2_1_22
 vlib activehdl/axi_intc_v4_1_15
 vlib activehdl/xlconcat_v2_1_4
 vlib activehdl/mdm_v3_2_19
@@ -31,7 +32,6 @@ vlib activehdl/lib_fifo_v1_0_14
 vlib activehdl/axi_quad_spi_v3_2_21
 vlib activehdl/axi_timebase_wdt_v3_0_14
 vlib activehdl/xlconstant_v1_1_7
-vlib activehdl/axi_protocol_converter_v2_1_22
 
 vmap xpm activehdl/xpm
 vmap microblaze_v11_0_4 activehdl/microblaze_v11_0_4
@@ -54,6 +54,7 @@ vmap axi_register_slice_v2_1_22 activehdl/axi_register_slice_v2_1_22
 vmap fifo_generator_v13_2_5 activehdl/fifo_generator_v13_2_5
 vmap axi_data_fifo_v2_1_21 activehdl/axi_data_fifo_v2_1_21
 vmap axi_crossbar_v2_1_23 activehdl/axi_crossbar_v2_1_23
+vmap axi_protocol_converter_v2_1_22 activehdl/axi_protocol_converter_v2_1_22
 vmap axi_intc_v4_1_15 activehdl/axi_intc_v4_1_15
 vmap xlconcat_v2_1_4 activehdl/xlconcat_v2_1_4
 vmap mdm_v3_2_19 activehdl/mdm_v3_2_19
@@ -63,7 +64,6 @@ vmap lib_fifo_v1_0_14 activehdl/lib_fifo_v1_0_14
 vmap axi_quad_spi_v3_2_21 activehdl/axi_quad_spi_v3_2_21
 vmap axi_timebase_wdt_v3_0_14 activehdl/axi_timebase_wdt_v3_0_14
 vmap xlconstant_v1_1_7 activehdl/xlconstant_v1_1_7
-vmap axi_protocol_converter_v2_1_22 activehdl/axi_protocol_converter_v2_1_22
 
 vlog -work xpm  -sv2k12 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -172,6 +172,15 @@ vlog -work axi_crossbar_v2_1_23  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.g
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ip/embsys_xbar_0/sim/embsys_xbar_0.v" \
+"../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
+"../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
+"../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+"../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
 
 vcom -work axi_intc_v4_1_15 -93 \
 "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd" \
@@ -236,13 +245,6 @@ vlog -work xlconstant_v1_1_7  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ip/embsys_xlconstant_0_1/sim/embsys_xlconstant_0_1.v" \
 "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.v" \
-
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
-"../../../bd/embsys/ipshared/1f26/hdl/PWM_AXI.sv" \
-"../../../bd/embsys/ipshared/1f26/hdl/PWM_v2_0.sv" \
-"../../../bd/embsys/ip/embsys_PWM_0_0/sim/embsys_PWM_0_0.sv" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0_S00_AXI.v" \
 "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0.v" \
 "../../../bd/embsys/ip/embsys_PmodENC544_0_0/sim/embsys_PmodENC544_0_0.v" \
@@ -258,15 +260,13 @@ vcom -work xil_defaultlib -93 \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
 "../../../bd/embsys/ip/embsys_xlconstant_1_0/sim/embsys_xlconstant_1_0.v" \
-"../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
-"../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
-"../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
 
-vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
-"../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
+"../../../bd/embsys/ipshared/1f26/hdl/PWM_AXI.sv" \
+"../../../bd/embsys/ipshared/1f26/hdl/PWM_v2_0.sv" \
+"../../../bd/embsys/ip/embsys_PWM_0_0/sim/embsys_PWM_0_0.sv" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/ec67/hdl" "+incdir+../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/d0f7" \
-"../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
 "../../../bd/embsys/sim/embsys.v" \
 
 vlog -work xil_defaultlib \

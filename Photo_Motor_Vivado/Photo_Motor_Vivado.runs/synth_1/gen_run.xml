@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654718986">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1657014616">
   <File Type="PA-TCL" Name="nexysA7fpga.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="nexysA7fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nexysA7fpga_reports.tcl"/>
   <File Type="RDS-RDS" Name="nexysA7fpga.vds"/>
   <File Type="RDS-UTIL" Name="nexysA7fpga_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="nexysA7fpga_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="nexysA7fpga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="nexysA7fpga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="nexysA7fpga_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/embsys/embsys.bd">
@@ -21,6 +24,22 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../Project0_NK/hardware/nexysA7fpga.sv"/>
         <Attr Name="ImportTime" Val="1649594854"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DigitalDataBuffer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dataBuffer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -65,8 +84,8 @@
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_timer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="embsys_lmb_bram_0"/>

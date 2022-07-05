@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1654838314">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1657014675">
   <File Type="BITSTR-BMM" Name="nexysA7fpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="nexysA7fpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="nexysA7fpga_timing_summary_init.rpt"/>
@@ -90,6 +90,22 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../Project0_NK/hardware/nexysA7fpga.sv"/>
         <Attr Name="ImportTime" Val="1649594854"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DigitalDataBuffer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dataBuffer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

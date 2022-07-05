@@ -2886,3 +2886,11 @@ con
 19:19:35 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
 19:20:21 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
 19:21:54 INFO  : Checking for BSP changes to sync application flags for project 'SolarServoApp'...
+09:19:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PSU_Work_and_Textbooks\ECE544\ECE544_ProjFinal\ECE-544-final-project\Vitis_NK\temp_xsdb_launch_script.tcl
+09:19:18 INFO  : XSCT server has started successfully.
+09:19:18 INFO  : plnx-install-location is set to ''
+09:19:18 INFO  : Successfully done setting XSCT server connection channel  
+09:19:18 INFO  : Successfully done setting workspace for the tool. 
+09:19:20 INFO  : Platform repository initialization has completed.
+09:19:20 INFO  : Registering command handlers for Vitis TCF services
+09:19:20 INFO  : Successfully done query RDI_DATADIR 

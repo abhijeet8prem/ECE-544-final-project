@@ -105,6 +105,15 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_xbar_0/sim/embsys_xbar_0.v" \
+  "../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
+  "../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
+  "../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_22 \
+  "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
 -endlib
 -makelib ies_lib/axi_intc_v4_1_15 \
   "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd" \
@@ -169,13 +178,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_xlconstant_0_1/sim/embsys_xlconstant_0_1.v" \
   "../../../bd/embsys/ip/embsys_xadc_wiz_0_0/embsys_xadc_wiz_0_0.v" \
--endlib
--makelib ies_lib/xil_defaultlib -sv \
-  "../../../bd/embsys/ipshared/1f26/hdl/PWM_AXI.sv" \
-  "../../../bd/embsys/ipshared/1f26/hdl/PWM_v2_0.sv" \
-  "../../../bd/embsys/ip/embsys_PWM_0_0/sim/embsys_PWM_0_0.sv" \
--endlib
--makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0_S00_AXI.v" \
   "../../../bd/embsys/ipshared/ddf2/hdl/PmodENC544_v1_0.v" \
   "../../../bd/embsys/ip/embsys_PmodENC544_0_0/sim/embsys_PmodENC544_0_0.v" \
@@ -191,15 +193,13 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_xlconstant_1_0/sim/embsys_xlconstant_1_0.v" \
-  "../../../bd/embsys/ip/embsys_tier2_xbar_0_0/sim/embsys_tier2_xbar_0_0.v" \
-  "../../../bd/embsys/ip/embsys_tier2_xbar_1_0/sim/embsys_tier2_xbar_1_0.v" \
-  "../../../bd/embsys/ip/embsys_tier2_xbar_2_0/sim/embsys_tier2_xbar_2_0.v" \
 -endlib
--makelib ies_lib/axi_protocol_converter_v2_1_22 \
-  "../../../../Photo_Motor_Vivado.gen/sources_1/bd/embsys/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-makelib ies_lib/xil_defaultlib -sv \
+  "../../../bd/embsys/ipshared/1f26/hdl/PWM_AXI.sv" \
+  "../../../bd/embsys/ipshared/1f26/hdl/PWM_v2_0.sv" \
+  "../../../bd/embsys/ip/embsys_PWM_0_0/sim/embsys_PWM_0_0.sv" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_auto_pc_0/sim/embsys_auto_pc_0.v" \
   "../../../bd/embsys/sim/embsys.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
